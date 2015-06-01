@@ -1,0 +1,32 @@
+#F12 Experiments
+
+[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
+F12 experiments can be activated from the **Experiments** tab which is the last tab along the navigation bar along the top of F12. After enabling an experiment you’ll need to close F12 and Microsoft Edge for the change to take effect. 
+
+##Experiment: Edit JavaScript
+
+With this experiment enabled you can edit any JavaScript file in the debugger source viewer. Simply click on the viewer to place the cursor and type away.
+
+![Edge Experiment Tab](../media/Edge_Experiment.gif)
+
+As you make edits you will notice a dirty flag, an **asterisk (*)**, in the document’s tab which implies that the document has changed but has not yet been saved.
+
+
+![Edge Experiment Flag](../media/Edge_Experiment_flag.png)
+
+Your edits can then be applied to the page by pressing the save icon or using the keyboard shortcut CTRL + S.
+
+![Edge Experiment Save](../media/Edge_Experiment_save.png)
+
+Once saved, you will be able to compare the modified document to the original document using the **diff** command. 
+
+![Edge Experiment Diff](../media/Edge_Experiment_diff.png)
+
+Clicking the **diff** command will open up a new **diff view** of the document, highlighting any changes. 
+
+![Edge Experiment Diff View](../media/Edge_Experiment_diff_view.png)
+
+All changes to the document will be lost when you navigate away or refresh from the current page.
+
+You will not be able to edit when paused in the **[Debugger](../Debugger/)** or when a document has been pretty printed. 
