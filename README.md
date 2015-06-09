@@ -10,14 +10,15 @@ TODO:
 * License
 * 
 
-##Format for adding new Docs and Links
-
+## Instructions / Format for adding new Docs and Links
 
   - Docs are grouped by folders
   - A folder can contain more folders or a readme.md
-  - one .md file per folder
-  - links should be formatted as: ../Perfomance/  (not ../Perfomance/ReadMe.md)
-
+  - One .md file per folder
+  - Folder/directory names should be dash-separated (ie. f12-tools) as they will be directly used for documentation URLs on the Microsoft Edge Dev site ---- NOT underscore (ie. f12_tools) or PascaleCase/camelCase (ie. f12Tools). 
+  - Links should be formatted as: ../Perfomance/  (not ../Perfomance/ReadMe.md)
+  - Section headers should use a standard syntax of a space after hashes, formatted as  ## Section Heading *(not ##Section Heading)*. Otherwise markdown is not being parsed correctly when pulled into the Microsoft Edge Dev site.
+  - 
 For a guide to writing GitHub Markdown: https://guides.github.com/features/mastering-markdown/
 :octocat:
 
