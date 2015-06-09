@@ -8,7 +8,6 @@ We are working to port the MS Edge-related topics and resources here, as well as
 TODO: 
 * Contributing guide
 * License
-* 
 
 ## Instructions / Format for adding new Docs and Links
 
@@ -35,5 +34,5 @@ File Structure Screenshot:
 ![Edge Documentation File Structure](./f12_guide/media/github_doc_filestructure.PNG)
 
 
-##Testing Animated GIF feature for demo documentation purposes
+## Testing Animated GIF feature for demo documentation purposes
 ![Edge Animated Gif Test](/f12_guide/media/EdgeDevToolsGIF_Test.gif)
