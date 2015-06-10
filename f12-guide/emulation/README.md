@@ -1,11 +1,11 @@
-#Emulation
+# Emulation
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Use the Emulation tool to test how webpages work with different document modes, user agents, screen sizes and resolutions, and GPS location coordinates.
 
 
-##Testing early and testing often
+## Testing early and testing often
 
 Designing and developing for the modern web means building webpages that work on a wide range of devices and platforms. Using the Emulation tool in F12 developer tools, you can emulate different environments that your webpages can be viewed in. This makes it easier to catch and debug issues early in the development cycle.
 
@@ -19,12 +19,12 @@ The tool is split into three sections, Mode, Display, and Geolocation:
 
 Whenever any of these options are changed from the defaults, the **Emulation tool** icon in the F12 sidebar will have a small informational alert icon overlaid on it to let you know that some portion of your browser's behavior is being emulated.
 
-###Mode
-####Browser profile
+### Mode
+#### Browser profile
 
 If you want to see how your webpages perform on a Windows Phone 8 device, the browser profile selection helps you change a variety of settings to emulate the device quickly and easily, then change back to the default Desktop profile just as easily.
 
-####User agent string
+#### User agent string
 
 Changing your user agent string is a good first step in debugging errors that are only happening in Microsoft Edge, but not in other browsers. It's basically a way of telling Microsoft Edge to identify itself as a different browser.
 
@@ -34,19 +34,19 @@ The problem with browser detection is that it's often used to scale back or chan
 
 If changing your user agent string clears up a problem, it's likely browser detection might be the cause.
 
-###Display
+### Display
 
 Display emulation helps developers preview their webpages on different screen sizes and different resolutions. It helps identify issues as webpages transition from conventional desktop monitors to smaller mobile screens or newer high-resolution displays.
 
 **Important**  Emulations are adapted to try and match the physical dimensions of the screens being emulated. Emulated pixels might appear compressed or expanded, and emulation is not recommended if you need to test pixel-perfect positioning of HTML elements. Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.
 
-####Orientation
+#### Orientation
 
 The standard options are available:
   - Portrait: the screen is taller than it is wide. This tends to be the orientation for most mobile screens.
   - Landscape: the screen is wider than it is tall. This tends to be the orientation for most laptop screens and desktop monitors.
 
-####Resolution
+#### Resolution
 
 ![Edge Emulation Resolutions](../media/F12BlueEmulationResolution.png)
 
@@ -54,13 +54,13 @@ A selection of physical dimensions and resolutions is provided. If none of those
 
 Custom sizes of up to 80 inches and 3820 x 2160 are supported.
 
-##Geolocation
+## Geolocation
 
 Many mobile devices make it possible to determine a user's physical location and deliver information or services tailored to that.
 
 There are three options to **simulate GPS**. They are **Off**, **On**, and **On but no signal** which can be used for testing different device states. When set to **On**, the **latitude** and **longitude** you enter will be provided to your webpage.
 
-##Related topics
+## Related topics
 
 [Strategies for building adaptive sites](https://msdn.microsoft.com/en-us/library/jj583806(v=vs.85).aspx)
 
