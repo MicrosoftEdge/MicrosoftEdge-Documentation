@@ -1,10 +1,10 @@
-#Network
+# Network
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Use the Network tool to view communication between the browser and server(s), inspect request and reply headers, see response codes, and debug AJAX.
 
-##Monitor your browser's communications
+## Monitor your browser's communications
 The **Network** tool in F12 developer tools helps you inspect page load times, responses to AJAX requests, and all network activity used to load and run modern webpages and applications.
 
 **Start with the top row**
@@ -36,12 +36,12 @@ By default, a summary view is displayed, as seen here.
 
 ![Edge F12 Network Toolbar](../media/Edge_Network_files.png)
 
-##Reading and interpreting the data
+## Reading and interpreting the data
 The **Network** tool includes two views of network traffic. The **Summary** view gives a quick look at all captured info for a tab or webpage, and the **Details** view gives you details of each connection, such as request and response headers and detailed timing info. You can view the details of any file/connection by clicking on it and the summary will expand out from the side.
 
 ![Edge F12 Network Summary Details](../media/Edge_Network_details.png)
 
-###Summary view
+### Summary view
 The Summary view shows all network traffic for a page in a table. By default, the info is presented chronologically, but you can sort the table differently by clicking the header of any column. This table describes the type of info you can view.
 
 
@@ -57,7 +57,7 @@ Column header | Description
 **Initiator** |	The type of browser action or DOM node that prompted the network request. Where possible, this is linked to the place in the code where the download was called for or initiated, and clicking it will navigate to the Debugger tool with that file loaded and queued up to that place.
 **Timings** |	A timeline of the network events.
 
-###Details view
+### Details view
 The **Details** view provides info about a specific request. To see the details, click an entry in the Summary view. You will find this info in each tab of the **Details** view.
 
 Tab | Description 
@@ -77,11 +77,11 @@ Column header |	Details
 **HTTP Only**  |	Indicates if the cookie is accessible only through HTTP (not JavaScript). </table> |
 **Timings** | 	Lists events and their corresponding times that are relevant to the request. The timing info is displayed as table and a graphical timeline. The following events are captured: Wait, Start, Request, Response, Gap, DOMContentLoaded, and Load. Clicking an event in the table or the timeline highlights it and shows an explanation of the event type.
 
-##Limitations
+## Limitations
 Microsoft Edge captures and reports network traffic efficiently, but there are some limitations. The network traffic measured and displayed in the **Network** tool has similar characteristics to unmeasured traffic, but the timings don't precisely match the unmonitored results.
 
 HTTP traffic is captured only for the process associated with the Microsoft Edge window/tab that is open when you start capturing traffic in the Network tool. To debug two windows/tabs at the same time, you must open a **F12 developer tools** window for each. The network tools also cannot monitor network traffic for tabs that create multiple processes.
 
-##Related topics
-[Using the F12 developer tools](../../f12_guide/)
+## Related topics
+[Using the F12 developer tools](../../f12-guide/)
  
