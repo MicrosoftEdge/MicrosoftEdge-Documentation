@@ -1,22 +1,22 @@
-#Performance
+# Performance
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Using the **Performance** tool, profile your webpage's frame rate with the Timeline and JavaScript execution times with the JavaScript call stacks. The reports on different types of CPU usage and JavaScript execution profiling help you analyze UI performance problems.
 
-##Speed matters
+## Speed matters
 
 Whether it's a jittery animation or user interface elements that respond slowly, a user's experience on your site is diminished when the UI isn't smooth and responsive. The new **Performance** profiler helps you see what's happening behind the scenes when your pages are slowing down. This info can give clues to improve speed.
 
 ![Edge F12 Tools Performance](../media/Edge_Performance.png)
 
-###Recording a profiling session
+### Recording a profiling session
 
 When you first load the **Performance** tool, you'll see an instruction to **start profiling to begin a performance session** in the main pane. Click the instruction link or the arrow icon at the top of the tool to start profiling.
 
 During profiling, perform the fewest actions you need to capture the slowness you're trying to analyze. Extra interactions with the page produce extra data, which clutters results. 
 
-If you need accurate page load times in the report, visit the [**Network tool**](../Network/) and use its **clear browser cache** option before profiling. Using the **Network tool** ensures you're loading all page resources from the network, and then reloads the page as soon as you start profiling.
+If you need accurate page load times in the report, visit the [**Network tool**](../network/) and use its **clear browser cache** option before profiling. Using the **Network tool** ensures you're loading all page resources from the network, and then reloads the page as soon as you start profiling.
 
 The **Performance** tool automatically marks **app lifecycle events**, such as [**DOMContentLoaded**](https://msdn.microsoft.com/en-us/library/hh869434(v=vs.85).aspx). Use the [`performance.mark()`](https://msdn.microsoft.com/en-us/library/jj585593(v=vs.85).aspx) method to set custom **user marks** from within your code.
 
@@ -24,9 +24,9 @@ When you've captured the behavior you want to profile, click **stop profiling to
 
 Perhaps you don't have time to dig into the information now or want to look at the results of a prior profiling session. The import (folder icon or CTRL + O) and export (disk icon or CTRL + S) functions make it possible to inspect a profiling session at a later date without having to keep the browser and F12 developer tools open the whole time.
 
-##The performance session report
+## The performance session report
 
-###The ruler
+### The ruler
 
 ![Edge F12 Tools Ruler](../media/F12BlueResponsivenessRuler.png)
 
@@ -36,14 +36,14 @@ User marks can be given labels by using a string for the argument of the `perfor
 
 **User marks** are made more useful with the [`performance.measure()`](https://msdn.microsoft.com/en-us/library/jj585594(v=vs.85).aspx) API. After you have set **user marks**, set a **user measure** to group the events that happened between the two marks. For example, if you have two **user marks** labeled "Begin Rotation" and "End Rotation," use the following code to group them and label the group as "box cycler."
 
-######*JavaScript*
+###### *JavaScript*
 ```javascript
 performance.measure("box cycler","Begin Rotation","End Rotation");
 ```
 
 ![Edge F12 Tools Performance Measure](../media/Edge_Performance_measure.png)
 
-###The timeline
+### The timeline
 
 ![Edge F12 Tools Performance Measure](../media/gdr_f12_ResponsivenessTimeline.png)
 
@@ -55,7 +55,7 @@ The **timeline** shows two different measures:
 
 Click and drag horizontally across an area on the **timeline** to highlight it. This filters the **Timeline details** to show just the details of the highlighted area. Zoom for more details. To the right of the zoom controls, at the top of the **Performance** tool is a **clear selection** icon that removes the highlight.
 
-###The timeline details
+### The timeline details
 
 ![Edge F12 Tools Performance Timeline Details](../media/gdr_f12_ResponsivenessTimelineDetails.png)
 
@@ -75,7 +75,7 @@ To the left of the updated filters button is the **Group top level events by fra
 
 For a quick overview of events that contributed to the inclusive duration, the event details pane shows a circular chart using the same color coding as the timeline. Because the colors represent categories of events, the chart might contain multiple segments in the same color. Placing your mouse over a segment shows a tooltip with its event label.
 
-###Filtering to an event
+### Filtering to an event
 
 Right-click events to see a context menu with three options:
 
@@ -83,9 +83,9 @@ Right-click events to see a context menu with three options:
 
   - **Clear selection** zooms out again.
 
-  - **View Source** is only enabled for **Scripting** events. It switches to the [**Debugger**](../Debugger/), opens the file containing the code that generated the event, and moves the cursor to the point in the code where the event was generated.
+  - **View Source** is only enabled for **Scripting** events. It switches to the [**Debugger**](../debugger/), opens the file containing the code that generated the event, and moves the cursor to the point in the code where the event was generated.
 
-###The details of the details
+### The details of the details
 
 Each element in the **Timeline details** shows different info, depending on its type.
 
@@ -99,7 +99,7 @@ When you select a portion of the timeline, that selection's summary information 
 
 ![Edge F12 Tools Performance Selection Summary](../media/Edge_Performance_selectionSummary.png)
 
-##Event categories and definitions
+## Event categories and definitions
 The Responsiveness tool uses 7 main event categories on the timeline. These break down into a selection of events in **Timeline details**.
 
   - **Loading** contains events related to bootstrapping and loading a webpage's resources. This is recorded for the primary window and any frames within it. The events gathered within **Loading** are:
@@ -134,7 +134,7 @@ When a change is explicitly made to a style object via JavaScript (i.e. `element
 
 For a more specific demonstration of using the Performance tool, check out our demo and code sample: [Improving animation performance with the Performance tool](http://samples.msdn.microsoft.com/workshop/samples/UIPerformance/default.html).
 
-##JavaScript Call Stacks
+## JavaScript Call Stacks
 If you remember the F12 tools in Internet Explorer 11, you'll remember the **JavaScript profiler** tool. In Microsoft Edge, it's combined with the prior **UI responsiveness** tool to make the **Performance** tool. We found that the information for both tools was often needed together, so now whenever a **Performance** report is generated, the JavaScript call stack is timed and that profiling information is presented in the **JavaScript call stacks** tab.
 
 ![Edge F12 Tools Performance Timeline Grouping](../media/Edge_Performance_callstacks.png)
@@ -148,7 +148,7 @@ The image above shows the initial load of the Microsoft homepage, a little navig
   - The **URL** provides the URL of the script where that function exists. Because of functions in your code calling libraries that reside in different files, you may see multiple URLs owning the child functions in a call stack.
 
 
-##Performance profiling tips
+## Performance profiling tips
 **Test more than once**: The results you'll see in a profiling report are not just based on your code. They're influenced by other processes on your system competing for your processor and memory. A moment of slowness or a bad overall test might be due to a virus scan running in the background or too many tabs being open on your browser. Alternatively, if you test on a new machine under laboratory conditions, it might be so fast, your code just runs great. It's important to make sure you can reproduce slowness reliably, just like reproducing a bug. Then you can diagnose the cause.
 
 **Consistency feels faster**: The **Performance** profiler's visual map of your frame rate over time can be very useful. Uneven frame rates or skipped frames can make your site feel slow. If it reduces skips and helps keep the frame rate consistent, slowing down your animation could make it feel faster. ["The secret to silky smooth JavaScript animations"](http://creativejs.com/resources/requestanimationframe/) provides a couple of suggestions for reducing frame rate while getting the power-saving and anti-skipping benefits of using [`window.requestAnimationFrame()`](https://msdn.microsoft.com/en-us/library/hh773174(v=vs.85).aspx).
@@ -159,7 +159,7 @@ For most sites, this never becomes a problem. In very large sites with complex s
 
 At this point, the question to ask is: is the cost of the unused styles bigger than the benefit of the single style sheet? Try a few different solutions and profile them. You'll have your answer soon enough.
 
-##Related topics
+## Related topics
 
 [Improving animation performance with the Performance tool](http://samples.msdn.microsoft.com/workshop/samples/UIPerformance/default.html)
 
