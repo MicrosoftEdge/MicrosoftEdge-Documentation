@@ -1,20 +1,20 @@
-#Memory
+# Memory
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Use the Memory tool to diagnose memory issues that can impact the speed and stability of webpages.
 
-##Memory matters
+## Memory matters
 
 If your webpage is performing well when it first loads, but gradually slows and sometimes crashes, the page's memory use might be the problem.
 
-##Diagnosing a memory issue
+## Diagnosing a memory issue
 
 After you've loaded your webpage in the browser, open the F12 developer tools and open the **Memory** tool (CTRL + 7). You can start profiling from this screen and take heap snapshots during the profiling session. 
 
 If your problem is high memory usage from the start, but not memory growth, take one snapshot and examine it to find your bigger areas of memory use. If your memory use grows over time, you can compare snapshots to look at the areas where memory is growing.
 
-###The Summary View
+### The Summary View
 
 After you've started profiling and taken some snapshots, you'll see a summary of the session that looks similar to this:
 
@@ -26,23 +26,23 @@ You can add custom **User marks** to the timeline using the `performance.mark()`
 
 Below the timeline, you'll see summaries of the **heap snapshots**.
 
-###What the snapshots summaries tell you
+### What the snapshots summaries tell you
 
 Each snapshot shows a thumbnail of the webpage as it appeared at the time the snapshot was taken and specifics about the memory usage of your code. After the first snapshot, subsequent snapshots add a summary of changes in memory use and object count. 
 
 In the second snapshot and later, the number of new objects created and old objects removed are shown below the object count. If these numbers are high, you might have a performance problem. When the amount of memory you use isn't bad, but a lot of objects are being created and removed, you create work for the *garbage collector* process which frees up memory. Garbage collecting uses processing power, however, so it's best to find ways to reuse or recycle these objects and give the *garbage collector* a break.
 
-####Tip  To see how much work the *garbage collector* is doing, profile your webpage with the Performance tool.
+#### Tip  To see how much work the *garbage collector* is doing, profile your webpage with the Performance tool.
 
 If you click the memory usage numbers, you see a detailed view of that snapshot. If you click the memory change numbers, you see a comparison view highlighting the objects that have been added or modified. In the image above, **Snapshot #2**  includes a **more info** icon (a circle with an "i" in it) and the number 30 next to it. This number represents objects the **Memory** tool has identified as potential memory issues.
 
-###Something to look for
+### Something to look for
 
 Another important factor to keep in mind is the difference between the number of objects being added and objects being removed. This is displayed in your second snapshot and beyond in the upper right in a "+x/-y" format. 
 
 In the set of snapshots above, it shows that each time we ran the process we suspected of having a memory issue, we increased the number of objects by 90, but only removed 9. This is a strong clue that there's a memory leak in the process. Memory leaks will keep expanding the memory use of your webpage during a user's session with it, causing slowness or even instability if the memory use grows too big.
 
-###The snapshot details view
+### The snapshot details view
 
 Click one of the measurement numbers on a snapshot to see details of that measurement. The image below shows the view when you click on the memory issues number in a snapshot.
 
@@ -54,7 +54,7 @@ If you hover over the more info icon, you'll see a tooltip indicating why this i
 
 If you click the object, you'll see the objects referring to it in the bottom portion of the screen. In this case, an array called nodeholder contains a reference that is keeping the node in memory. If this is not what you expected, you can investigate further.
 
-###The three view types
+### The three view types
 
   - **Dominators** view breaks out all individual HTML elements, DOM nodes, and JavaScript objects your code creates. This is the most detailed of the views.
 
@@ -66,7 +66,7 @@ In all three views, there are column headings for an object's size and retained 
 
 In large, complex pages, only the first two thousand objects are loaded, sorted by their retained size. In that case a filtering option is provided to help you narrow down the object set.
 
-###Additional options
+### Additional options
 
 You can change settings for the detailed display using a drop-down menu in the upper right of the Snapshot details.
 
@@ -76,11 +76,11 @@ You can change settings for the detailed display using a drop-down menu in the u
 
 **Circular references**: In its simplest form, a circular reference happens when one object refers to another object that refers back to it, creating a loop. In more complex forms, the circular reference path can go through many objects. The **Memory** tool performs automatic filtering of circular references, indicating where they occur and trimming them. This makes it easier to dig deeper into object roots without getting lost in circular paths.
 
-When an object representing a function is displayed in the **Memory** tool, it is linked to its location in the source code and the color is changed to blue. Clicking on the function name or clicking its line and pressing ENTER switches you to the [**Debugger**](../Debugger/) and focuses on that function's location in the corresponding script.
+When an object representing a function is displayed in the **Memory** tool, it is linked to its location in the source code and the color is changed to blue. Clicking on the function name or clicking its line and pressing ENTER switches you to the [**Debugger**](../debugger/) and focuses on that function's location in the corresponding script.
 
-**Note**   The **Memory** tool displays function names as they exist in memory. If you're using JavaScript that's been compressed or compiled from another language, and you have a **source map**, you could click on a function named `t` in the **Memory** tool, but find the [**Debugger**](../Debugger/) tool focused on a function named `setOrigination`. If this happens and it bothers you, try toggling off **source map** support for that file in the Debugger.
+**Note**   The **Memory** tool displays function names as they exist in memory. If you're using JavaScript that's been compressed or compiled from another language, and you have a **source map**, you could click on a function named `t` in the **Memory** tool, but find the [**Debugger**](../debugger/) tool focused on a function named `setOrigination`. If this happens and it bothers you, try toggling off **source map** support for that file in the Debugger.
 
-###The comparison view
+### The comparison view
 
 In snapshots where a change in memory use or object count is shown, click the amount of the change to see a comparison between that snapshot and the snapshot before it. 
 
@@ -108,14 +108,14 @@ When you compare **Snapshot #1** to **Snapshot #2**, the **Objects left over fro
 
 When you compare **Snapshot #2** to **Snapshot #3**, the **Objects left over from Snapshot #2** option identifies only the objects added in **Snapshot #2** and still exist in **Snapshot #3**. Now you see the objects that were not only added after the baseline, but which persist after running the scenario a second time. These objects are worth inspecting more closely as you search for the source of your webpage's memory use problem.
 
-##Loading and saving sessions
+## Loading and saving sessions
 
 You shouldn't have to reproduce your test case every time you want to analyze the data it produced. The import (folder) and export (disk) icons on the tool's icon bar let you save and load memory profiling sessions for later inspection.
 
-##ECMAScript 6 containers
+## ECMAScript 6 containers
 
 Microsoft Edge supports [**`Set`**](https://msdn.microsoft.com/en-us/library/dn251547(v=vs.85).aspx), [**`Map`**](https://msdn.microsoft.com/en-us/library/dn263029(v=vs.85).aspx), and [**`WeakMap`**](https://msdn.microsoft.com/en-us/library/dn251546(v=vs.85).aspx) container objects in the **Memory** tool, making it easier to inspect the details of their memory use.
 
-##Related topics
+## Related topics
 
 [Understanding and Solving Internet Explorer Leak Patterns](https://msdn.microsoft.com/en-us/library/bb250448(v=VS.85).aspx)
