@@ -1,10 +1,10 @@
-#Using the Console API
+# Using the Console API
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The Console API provides methods for developers to send meaningful information to the Console from within their applications and to obtain diagnostic information from within the Console tool.
 
-##Reporting out from your code
+## Reporting out from your code
 The [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173(v=vs.85).aspx) gives you methods for sending info out from your code to the console. The info breaks down into these types:
 
   - [Custom messages](#custom-messages)
@@ -14,12 +14,12 @@ The [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173(v=
   - [Assertions](#assertions)
   - [Traces](#traces-and-profiles)
 
-###Custom messages
+### Custom messages
 You have four options for custom messages. Three use the format of system messages: [`console.info()`](https://msdn.microsoft.com/en-us/library/hh772178(v=vs.85).aspx) for information messages, [`console.warn()`](https://msdn.microsoft.com/en-us/library/hh772181(v=vs.85).aspx) for warnings, and [`console.error()`](https://msdn.microsoft.com/en-us/library/hh772176(v=vs.85).aspx) for errors. The fourth, [`console.log()`](https://msdn.microsoft.com/en-us/library/hh772179(v=vs.85).aspx) presents plain text with no alert icon. All four take the same forms of argument for the message.
 
 **Just text:**
 
-######*JavaScript*
+###### *JavaScript*
 
 `console.log('This is some text');`
 >
@@ -29,7 +29,7 @@ You have four options for custom messages. Three use the format of system messag
 
 **Just a variable:**
 
-######*JavaScript*
+###### *JavaScript*
 ```javascript
 var mytext = 'This is some text';
 console.log(mytext);
@@ -38,7 +38,7 @@ console.log(mytext);
 `This is some text`
 
 **Mixed text and variables:**
-######*JavaScript*
+###### *JavaScript*
 ```javascript
 var mytext = 'pieces';
 var myval = 0;
@@ -49,7 +49,7 @@ console.log("The number of " + mytext + "is " + myval);
 
 **Variable Substitution:**
 
-######*JavaScript*
+###### *JavaScript*
 ```javascript
 var mytext = 'pieces';
 var myval = 5;
@@ -70,14 +70,14 @@ Variable substitution has five variable types:
 
 The variable types control how the variable is presented. For example, a float value represented by an integer variable type is displayed as an integer.
 
-###Inspectable objects and nodes
+### Inspectable objects and nodes
 Inspectable objects appear in the console in a collapsed tree format with expandable nodes. The console detects whether you are sending a DOM node like a div or a JavaScript object like an event and displays them as the detected type automatically. You can, however, force the mode using specific methods.
 
 To display an inspectable JavaScript object, send it to the console using [`console.dir()`](https://msdn.microsoft.com/en-us/library/jj152132(v=vs.85).aspx)
 
 To display an inspectable DOM node, send it to the console using [`console.dirxml()`](https://msdn.microsoft.com/en-us/library/dn265067(v=vs.85).aspx)
 
-######*HTML*
+###### *HTML*
 ```html
 <div id="thediv">
    <p>Click the button to show this div as a JavaScript object and a 
@@ -105,12 +105,12 @@ Use the arrows to the left to expand objects and nodes.
 
 Right-clicking DOM nodes provide an **Evaluate as Object** option in the context menu. If you select that option, you send the node to the console as an object. Similarly, JavaScript objects that represent DOM nodes offer an **Evaluate as HTML** option in their context menus.
 
-###Counters
+### Counters
 While setting up a counter in code is relatively easy, it's also a repetitive task. To speed up developer workflow, the Console Debugging API provides a simple shorthand.
 
 Use [`console.count()`](https://msdn.microsoft.com/en-us/library/dn265064(v=vs.85).aspx) with a string containing a counter label as its argument. The first use with a specific label establishes a counter in the Console output. Subsequent uses of `console.count()` with the same label increment the counter. To reset the counter to zero, use `console.countReset()` with the label.
 
-######*JavaScript*
+###### *JavaScript*
 ```javascript
 console.count('mylabel');
 for(var i = 0; i < 10; i++){
@@ -120,24 +120,24 @@ for(var i = 0; i < 10; i++){
 >
 `mylabel:         11`
 
-###Timers
+### Timers
 Like creating [counters](https://msdn.microsoft.com/en-us/library/dn706051(v=vs.85).aspx#counters), creating a timer within code is relatively easy, but the [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173(v=vs.85).aspx) provides a simple shorthand that makes it even easier.
 
 Use [`console.time()`](https://msdn.microsoft.com/en-us/library/dn265071(v=vs.85).aspx) anywhere in your code to begin a timer and [`console.timeEnd()`](https://msdn.microsoft.com/en-us/library/dn265072(v=vs.85).aspx) to end the timer and send the result to the console. If you want to label your timer or need more than one timer, pass a string with a unique label as the argument for both the `console.time()` and `console.timeEnd()` methods. If you don't pass an argument, the methods use "default" as the label.
 
 The `console.timeStamp()` shows you the age of a page, so to speak. It will output a timestamp to the console, showing the number of milliseconds since the current webpage loaded. If you put a number or string as the method's parameter, it will be used as a label, overriding the default label of "timestamp." When you use it during a **UI Responsiveness** profiling session, in addition to its console output, it will add a user mark to the session timeline with the time since the session was initiated.
 
-###Assertions
+### Assertions
 Assertions are another shorthand for speeding up developer workflow. If the first argument used with [`console.assert()`](https://msdn.microsoft.com/en-us/library/hh772171(v=vs.85).aspx) evaluates to false, it runs [`console.error()`](https://msdn.microsoft.com/en-us/library/hh772176(v=vs.85).aspx), using the assertion's additional arguments for the error message.
 
 Use this one line of code:
 
-######*JavaScript*
+###### *JavaScript*
 `console.assert(f < 25, 'f is not less than %d, but is instead %o', 25, f);`
 
 And it's equivalent to writing:
 
-######*JavaScript*
+###### *JavaScript*
 ```javascript
 if(!(f < 25)){
   console.error('f is not less than %d, but is instead %o', 25, f)
@@ -146,14 +146,14 @@ if(!(f < 25)){
 
 In the example code, we used `%o` to output the variable. Because the evaluation above will fail if the variable's value isn't a number, using `%o` makes it possible to see the variable as it is instead of cast into a specific type.
 
-###Traces and profiles
+### Traces and profiles
 Understanding where your code is being called from, what code is running, and how long that execution takes can be useful in analyzing slowness or unexpected behavior.
 
 A stack trace shows you the execution path your code took to reach it, from the trace request upward through the path. Use [`console.trace()`](https://msdn.microsoft.com/en-us/library/hh772176(v=vs.85).aspx) in your code to show a stack trace.
 
 This code...
 
-######*JavaScript*
+###### *JavaScript*
 ```javascript
 function a(){
   c();
@@ -186,7 +186,7 @@ at d (http://www.contoso.com/trace.html:27:3)
 at Global code (http://www.contoso.com/trace.html:31:1)
 ```
 
-###Managing messages for readability
+### Managing messages for readability
 **Organizing messages into groups.**
 
 With all the types of messages and content that get sent to the console, keeping track of them can be difficult. Use the following commands to keep things more orderly:
