@@ -1,15 +1,15 @@
-#Console error and status codes
+# Console error and status codes
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
-Use this reference to interpret error messages shown in the  [Console](./Console/) and the [Debugger](./Debugger/) in Internet Explorer 11.
+Use this reference to interpret error messages shown in the  [Console](./console/) and the [Debugger](./debugger/) in Internet Explorer 11.
 
-##Introduction
+## Introduction
 When you're debugging with F12 developer tools, error codes such as `SEC7111` or `HTML1114` are shown in the Console and the Debugger tools.
 
 Here we list common console error codes and their associated messages. We also provide more detailed descriptions and/or suggestions to fix the problem where appropriate. While the descriptions in the table give you a starting point for debugging problems, the best way to get more info is to search online developer forums or the [Microsoft Edge developer center](https://dev.windows.com/en-us/microsoft-edge-for-devs).
 
-###Security errors
+### Security errors
 Security error codes are in the form `SEC7xxx`, such as `SEC7113`. These reflect security conditions that Microsoft Edge enforces, such as mixed content, and Tracking Protection.
 
 Code | Message | Description | Suggested fix
@@ -35,7 +35,7 @@ SEC7131 | "Security of a sandboxed iframe is potentially compromised by allowing
 
 **Note** For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
 
-###HTML codes
+### HTML codes
 These codes are in the form of HTML1xxx, such as HTML1115. They can specify errors or states that the developer might or might not be able to control.
 
 Code | Message | Description | Suggested fix
@@ -53,7 +53,7 @@ HTML1203 | "`[domain]` has been configured to run in Compatibility View through 
 HTML1204 | "`[domain]` is running in Compatibility View because "Display all websites in Compatibility View" is checked." | The user has selected the **Display all websites in Compatibility View** check box in the **Compatibility View settings**. | User needs to press Alt + T, click **Compatibility View settings**, and then clear the **Display all websites in Compatibility View** check box.
 HTML1300 | "Navigation occurred" | A new page was navigated to, or the current page was refreshed. | This is an informational message and not an error.
 
-###HTML5 parser warnings
+### HTML5 parser warnings
 The following warnings can occur as part of the validation performed during HTML parsing. These warnings don't necessarily mean a page is broken, but that the provided HTML is invalid per the HTML5 standard. Content created according to earlier versions of the HTML or XHTML specifications might not be valid in HTML5, in particular with respect to the use of DOCTYPEs. For more info, see [Creating Standards-Enabled Websites](https://msdn.microsoft.com/en-us/library/hh273394(v=vs.85).aspx).
 
 Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning, Microsoft Edge includes line and character offset information along with a link pointing to the location where the problem was found.
@@ -119,7 +119,7 @@ HTML1530 | "Text found within a structural table element. Table text may only be
 HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "http://www.w3.org/2000/svg"."
 HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "http://www.w3.org/1998/Math/MathML".
 
-###HTTP Error Codes
+### HTTP Error Codes
 HTTP error codes are returned from remote servers in response to requests. Probably the most familiar is HTTP404, which is returned whenever the server can't find the page/document specified in the URI.
 
 Code | Message | Description
@@ -164,7 +164,7 @@ HTTP508 | LOOP DETECTED | The server detected an infinite lop while servicing th
 HTTP510 | NOT EXTENDED | Further extensions to the request are required for the server to fulfill it.
 HTTP511 | NETWORK AUTHENTICATION REQUIRED | The client must authenticate to gain network access.
 
-###CSS codes
+### CSS codes
 These errors are in the form CSS31xx and are related to "Web Open Font Format (WOFF)", and "Embedded OpenType font (EOT)" source and host server problems.
 
 Code | Message | Description | Suggested fix
@@ -179,7 +179,7 @@ CSS3117 | "@font-face failed cross-origin request. Resource access is restricted
 CSS3118 | "Failed to create new stylesheet. There are more than [maximum] stylesheets in the document." | Microsoft Edge has created more than 4095 stylesheet objects during the process of rendering your page. | This might be an out-of-control JavaScript process or a build system error. Reduce the number of stylesheet objects being generated.
 CSS3119 | "The media query -ms-view-state has been deprecated. -ms-view-state media queries may be altered or unavailable for releases after Windows 8.1. Instead, use max-width and min-width queries." | Your CSS contains an `-ms-view-state` media query. | Use max-width and min-width.
 
-##Scalable Vector Graphics (SVG) codes
+## Scalable Vector Graphics (SVG) codes
 F12 tools don't currently support extensive Scalable Vector Graphics (SVG) debugging, but some console messages are displayed to help debug SVG code.
 
 Code | Message | Description | Suggested fix
@@ -187,13 +187,13 @@ Code | Message | Description | Suggested fix
 SVG5601 | "SVG Path data has incorrect format and could not be completely parsed." | The SVG [Path](https://msdn.microsoft.com/en-us/library/ff972086(v=vs.85).aspx) string isn't formatted correctly, or contains unrecognized commands. | Check the format of the commands.
 SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/en-us/library/ff972113(v=vs.85).aspx), is formatted incorrectly. | Make sure that points are complete and correctly formatted for the users coordinate system.
 
-###Script codes
+### Script codes
 JavaScript runtime errors are also reported in F12 tools. These errors are in the form SCRIPT50xx, such as SCRIPT5001. These errors are documented on the [JavaScript errors](https://msdn.microsoft.com/en-us/library/7th8s2xk(v=vs.94).aspx) page.
 
-###WebGL codes
+### WebGL codes
 Error messages from the WebGL context are presented with WEBGL11_xxx_ codes.
 
-###XML codes
+### XML codes
 The F12 tools console can report XML codes. These errors are in the form of XML5xxx, such as XML5603. For more info about XML, see the [XmlLite Reference](https://msdn.microsoft.com/en-us/library/ms752829(v=vs.85).aspx).
 
 Code | Message 
@@ -286,7 +286,7 @@ XML5684 | "The Unicode value of the specified character entity is invalid."
 XML5685 | "Invalid encoding."
 XML5686 | "Unspecified XML error."
  
-##Related topics
+## Related topics
 
 [GLSL errors](https://msdn.microsoft.com/en-us/library/dn611835(v=vs.85).aspx)
 
