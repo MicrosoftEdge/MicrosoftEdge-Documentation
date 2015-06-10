@@ -4,10 +4,10 @@
 
 Microsoft Edge implements the improved F12 developer tools found so useful in Internet Explorer 11. Debug, test, and speed up your webpages using a familiar tool that will continue to grow and improve with Microsoft Edge.
 
-##The F12 tools at work
+## The F12 tools at work
 There are seven distinct tools, each with their own tab in the F12 tools interface. Here you'll find an image of each tool, a quick summary of what it does, and a couple of typical development or debugging tasks the tool makes easier.
 
-##The DOM Explorer tool (CTRL + 1)
+## The DOM Explorer tool (CTRL + 1)
 ![Edge DOM Explorer](./media/Edge_DOMExplorer.png)
 
 [The DOM Explorer tool](./dom-explorer/) shows the structure of your webpage as it's being rendered in the browser and makes it possible to edit your HTML and styles in a live page. You can do this without having to edit and reload your sources, so you can quickly solve display issues or experiment with new ideas.
@@ -26,7 +26,7 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 
 [How the DOM Explorer tool works.](./dom-explorer/)
 
-##The Console tool (CTRL + 2)
+## The Console tool (CTRL + 2)
 ![Edge Console Tool](./media/Edge_Console.png)
 
 The [Console tool](./console/) provides a way to interact with your running code:
@@ -49,7 +49,7 @@ The [Console tool](./console/) provides a way to interact with your running code
 
 [Learn more about the Console tool.](./console/)
 
-##The Debugger tool (CTRL + 3)
+## The Debugger tool (CTRL + 3)
 ![Edge Debugger Tool](./media/Edge_Debugger.png)
 
 You use the [Debugger tool](./debugger/) to examine what your code is doing, when it's doing it, and how it's doing it. Pause code in mid-execution, step through it line-by-line, and watch the state of variables and objects at each step.
@@ -68,7 +68,7 @@ You use the [Debugger tool](./debugger/) to examine what your code is doing, whe
   - 
 [Learn more about the Debugger tool.](./debugger/)
 
-##The Network tool (CTRL + 4)
+## The Network tool (CTRL + 4)
 ![Edge Network Tool](./media/Edge_Network_details.png)
 
 The [Network tool](./network/) gives you the fine details of any network requests involved in the loading and operation of your webpages.
@@ -80,7 +80,7 @@ The [Network tool](./network/) gives you the fine details of any network request
 
 [Learn more about the Network tool.](./network/)
 
-##The Performance Tool (CTRL + 5)
+## The Performance Tool (CTRL + 5)
 ![Edge Performance Tool](./media/Edge_Performance.png)
 
 The [Performance tool](./performance/) helps you dig into what is happening when your page slows down. Using it to profile specific points of slowness shows the operations that are causing them. In Microsoft Edge, the Performance tool combines the previous **UI Responsiveness** and **Profiler** tools to create an end-to-end view of your scripting and painting performance.
@@ -98,7 +98,7 @@ Some interesting features are:
 
 [Learn more about the Performance tool.](./performance/) 
 
-##The Memory tool (CTRL + 7)
+## The Memory tool (CTRL + 7)
 ![Edge Memory Tool](./media/Edge_Memory.png)
 
 When a webpage starts out fast and slows down after you use it for a while, the culprit is usually a memory leak. The [Memory tool](./memory/) tracks the memory use of your webpage, helping you identify where memory use is growing, why it's growing, and how to fix it.
@@ -117,7 +117,7 @@ Some interesting features are:
 
 [Learn more about the Memory tool.](./memory/)
 
-##The Emulation tool (CTRL + 8)
+## The Emulation tool (CTRL + 8)
 ![Edge Emulation Tool](./media/Edge_Emulation.png)
 
 The [Emulation](./emulation/) helps you test how your webpages run on different screen sizes and hardware features, and how they respond to different user agent strings.
