@@ -10,7 +10,7 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 ##The DOM Explorer tool (CTRL + 1)
 ![Edge DOM Explorer](./media/Edge_DOMExplorer.png)
 
-[The DOM Explorer tool](./DOMExplorer/) shows the structure of your webpage as it's being rendered in the browser and makes it possible to edit your HTML and styles in a live page. You can do this without having to edit and reload your sources, so you can quickly solve display issues or experiment with new ideas.
+[The DOM Explorer tool](./dom-explorer/) shows the structure of your webpage as it's being rendered in the browser and makes it possible to edit your HTML and styles in a live page. You can do this without having to edit and reload your sources, so you can quickly solve display issues or experiment with new ideas.
 
 **Features** in the DOM Explorer tool include:
 
@@ -24,21 +24,21 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
   - Figuring out which CSS styles and media queries are being applied to an element.
   - Testing a series of different colors for an element to see which looks best.
 
-[How the DOM Explorer tool works.](./DOMExplorer/)
+[How the DOM Explorer tool works.](./dom-explorer/)
 
 ##The Console tool (CTRL + 2)
 ![Edge Console Tool](./media/Edge_Console.png)
 
-The [Console tool](./Console/) provides a way to interact with your running code:
+The [Console tool](./console/) provides a way to interact with your running code:
 
   - change variable values or inject code into a live site with the Console's command line.
-  - use the [Console Debugging API](./Console/UsingTheConsoleAPI/) to send out debug information.
+  - use the [Console Debugging API](./console/using-the-console-api/) to send out debug information.
   - see browser error messages and status codes.
 
-**Features** in the [Console tool](./Console/) include:
+**Features** in the [Console tool](./console/) include:
 
   - Open the Console at the bottom of any other tool with the Console button or CTRL + `.
-  - [Console Debugging API](./Console/UsingTheConsoleAPI/) methods for timing, counting, grouping, and more.
+  - [Console Debugging API](./console/using-the-console-api/) methods for timing, counting, grouping, and more.
   - IntelliSense autocompletion suggestions on the command line speed up input, reduce typos, and help you discover aspects of JavaScript APIs.
 
 **Development and debugging tasks it makes easier:**
@@ -47,14 +47,14 @@ The [Console tool](./Console/) provides a way to interact with your running code
   - timing code execution down to the statement with new timing methods.
   - changing the value of a variable in running code without reloading.
 
-[Learn more about the Console tool.](./Console/)
+[Learn more about the Console tool.](./console/)
 
 ##The Debugger tool (CTRL + 3)
 ![Edge Debugger Tool](./media/Edge_Debugger.png)
 
-You use the [Debugger tool](./Debugger/) to examine what your code is doing, when it's doing it, and how it's doing it. Pause code in mid-execution, step through it line-by-line, and watch the state of variables and objects at each step.
+You use the [Debugger tool](./debugger/) to examine what your code is doing, when it's doing it, and how it's doing it. Pause code in mid-execution, step through it line-by-line, and watch the state of variables and objects at each step.
 
-**Features** in the [Debugger tool](./Debugger/) include:
+**Features** in the [Debugger tool](./debugger/) include:
 
   - No-refresh debugging. Set your breakpoints and go without reloading and losing state.
   - Tabbed document interface for easier management of multiple scripts.
@@ -66,24 +66,24 @@ You use the [Debugger tool](./Debugger/) to examine what your code is doing, whe
   - Making compressed or minified code more readable using source maps.
   - Monitoring web worker creation and execution.
   - 
-[Learn more about the Debugger tool.](./Debugger/)
+[Learn more about the Debugger tool.](./debugger/)
 
 ##The Network tool (CTRL + 4)
 ![Edge Network Tool](./media/Edge_Network_details.png)
 
-The [Network tool](./Network/) gives you the fine details of any network requests involved in the loading and operation of your webpages.
+The [Network tool](./network/) gives you the fine details of any network requests involved in the loading and operation of your webpages.
 
 **Development and debugging tasks it makes easier:**
   - Viewing the amount of bandwidth your page consumes across resources.
   - Debugging AJAX requests by viewing request and response headers and bodies.
   - Identifying network requests that slow the loading of your webpages.
 
-[Learn more about the Network tool.](./Network/)
+[Learn more about the Network tool.](./network/)
 
 ##The Performance Tool (CTRL + 5)
 ![Edge Performance Tool](./media/Edge_Performance.png)
 
-The [Performance tool](./Performance/) helps you dig into what is happening when your page slows down. Using it to profile specific points of slowness shows the operations that are causing them. In Microsoft Edge, the Performance tool combines the previous **UI Responsiveness** and **Profiler** tools to create an end-to-end view of your scripting and painting performance.
+The [Performance tool](./performance/) helps you dig into what is happening when your page slows down. Using it to profile specific points of slowness shows the operations that are causing them. In Microsoft Edge, the Performance tool combines the previous **UI Responsiveness** and **Profiler** tools to create an end-to-end view of your scripting and painting performance.
 
 Some interesting features are:
 
@@ -96,12 +96,12 @@ Some interesting features are:
   - Testing code optimizations.
   - Speeding up your webpages.
 
-[Learn more about the Performance tool.](./Performance/) 
+[Learn more about the Performance tool.](./performance/) 
 
 ##The Memory tool (CTRL + 7)
 ![Edge Memory Tool](./media/Edge_Memory.png)
 
-When a webpage starts out fast and slows down after you use it for a while, the culprit is usually a memory leak. The [Memory tool](./Memory/) tracks the memory use of your webpage, helping you identify where memory use is growing, why it's growing, and how to fix it.
+When a webpage starts out fast and slows down after you use it for a while, the culprit is usually a memory leak. The [Memory tool](./memory/) tracks the memory use of your webpage, helping you identify where memory use is growing, why it's growing, and how to fix it.
 
 Some interesting features are:
 
@@ -115,12 +115,12 @@ Some interesting features are:
   - Identifying points of memory growth.
   - Measuring the memory use of objects.
 
-[Learn more about the Memory tool.](./Memory/)
+[Learn more about the Memory tool.](./memory/)
 
 ##The Emulation tool (CTRL + 8)
 ![Edge Emulation Tool](./media/Edge_Emulation.png)
 
-The [Emulation](./Emulation/) helps you test how your webpages run on different screen sizes and hardware features, and how they respond to different user agent strings.
+The [Emulation](./emulation/) helps you test how your webpages run on different screen sizes and hardware features, and how they respond to different user agent strings.
 
 Some interesting features are:
 
@@ -132,4 +132,4 @@ Some interesting features are:
   - Testing responsive designs on multiple screen types.
   - Testing location-aware features for a mobile site.
 
-[Learn more about the Emulation tool.](./Emulation/)
+[Learn more about the Emulation tool.](./emulation/)
