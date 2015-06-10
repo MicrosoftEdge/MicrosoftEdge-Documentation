@@ -1,12 +1,12 @@
-#Developer Tools Keyboard Shortcuts
+# Developer Tools Keyboard Shortcuts
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Keyboard shortcuts in F12 developer tools for Microsoft Edge make tools and features accessible without a mouse or pointing device.
 
-##Using keyboard shortcuts
+## Using keyboard shortcuts
 You can use keyboard shortcuts to navigate the F12 developer tools directly from your keyboard. The current shortcut set is listed below. For older versions, see [the keyboard shortcuts for Internet Explorer versions 8, 9, and 10](https://msdnstage.redmond.corp.microsoft.com/en-us/library/dd565630(v=vs.85).aspx).
 
-##General Shortcuts
+## General Shortcuts
 These shortcuts either control the F12 tools window or work across all tools.
 
 
@@ -24,7 +24,7 @@ Switch to Emulation | CTRL + 8
 Previous tool (in order above) | CTRL + [ 
 Next tool (in order above) | CTRl + ] 
 
-##Console shortcuts
+## Console shortcuts
 These shortcuts work with both the main Console panel and the Console you can open in other tools. They only work when focus is on the Console's input area.
 
 Action | Shortcut 
@@ -35,13 +35,13 @@ Execute in single line mode | ENTER
 Execute in multiline mode | CTRL + ENTER 
 Clear the Console of all messages | CTRL + L 
 
-##DOM Explorer Shortcuts
+## DOM Explorer Shortcuts
 
 Action | Shortcut 
 :------------ | :------------- 
 Open/close Color Picker tool  | CTRL + K
 
-##Debugger Shortcuts
+## Debugger Shortcuts
 The Debugger is one of the most complex tools in F12 tools and has the largest set of shortcuts.
 
 
@@ -83,7 +83,7 @@ Toggle Just My Code frames display | CTRL + SHIFT + J
 Toggle Library code in File Picker | CTRL + L 
 Toggle the original / current source display for files with source maps | CTRL + SHIFT + M 
 
-##Network shortcuts
+## Network shortcuts
 These shortcuts start and stop the network capture.
 
 Action | Shortcut 
@@ -91,13 +91,13 @@ Action | Shortcut
 Start capturing network activity in the active tab  | F5
 Stop capturing network activity in the active tab | SHIFT + F5 
 
-##Memory shortcuts
+## Memory shortcuts
 Action | Shortcut 
 :------------ | :------------- 
 Start / Stop a profiling session  | CTRL + E 
 Take a memory heap snapshot | CTRL + SHIFT + T 
 
-##Related topics
+## Related topics
 
 [Keyboard shortcuts in Internet Explorer versions 8, 9, and 10](https://msdn.microsoft.com/en-us/library/dd565630(v=vs.85).aspx)
 
