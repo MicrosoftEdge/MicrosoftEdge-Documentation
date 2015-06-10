@@ -102,7 +102,7 @@ As you make changes to your properties, **Change Bars** (also available in the *
 The **Layout** tab shows a box model diagram for the selected element's positioning with colors matching the highlight around a selected element. You can edit any value in the diagram by clicking it.
 
 ###Events
-The **Events** tab shows the element's DOM events or CSS selectors that have handlers assigned to them in JavaScript. The file names can be clicked to show the file in [the Debugger](./Debugger/).
+The **Events** tab shows the element's DOM events or CSS selectors that have handlers assigned to them in JavaScript. The file names can be clicked to show the file in [the Debugger](./debugger/).
 
 ![Events tab](../media/F12BlueDomExplorerEvents.png)
 
