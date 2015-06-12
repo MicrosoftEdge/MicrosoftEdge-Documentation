@@ -286,6 +286,13 @@ XML5684 | "The Unicode value of the specified character entity is invalid."
 XML5685 | "Invalid encoding."
 XML5686 | "Unspecified XML error."
  
+ ### CSP error codes
+ CSP (Content Security Policy) error codes are in the form of CSP1xxx, such as CSP14312. CSP is a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). By declairing the sources from which the application expects to load resources, the application can detect and block malicious scripts injected by an attacker. A web application opts into using CSP by supplying a `Content-Security-Policy HTTP` header. Such policies apply to the current resource representation only.
+
+Code | Message | Description | Suggested fix
+:------------ | :------------- | :------------- | :-------------
+| CSP14312 | "Resource violated directive 'script-src ms-appx: data: 'unsafe-eval' in Host Defined Policy: inline script. Resource will be blocked." | An inline script was blocked. Authors need to move all inline script and style out-of-line, because the user agent cannot determine whether an inline script was injected by an attacker. | Remove inline script and place it in an external file. |
+ 
 ## Related topics
 
 [GLSL errors](https://msdn.microsoft.com/en-us/library/dn611835(v=vs.85).aspx)
