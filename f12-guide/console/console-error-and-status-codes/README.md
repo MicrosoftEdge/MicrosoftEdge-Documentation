@@ -291,8 +291,9 @@ CSP (Content Security Policy) error codes are in the form of CSP1xxx, such as CS
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
-| CSP14312 | "Resource violated directive 'script-src ms-appx: data: 'unsafe-eval' in Host Defined Policy: inline script. Resource will be blocked." | An inline script was blocked. Authors need to move all inline script and style out-of-line, because the user agent cannot determine whether an inline script was injected by an attacker. | Remove inline script and place it in an external file. |
- 
+| CSP14310 | "DCMS_CSP_UNSUPPORTED_DIRECTIVE" | A directive was found during parsing that is not supported in either the <meta> element or by the `Content-Security-policy-Report-Only` header field. | Remove the unsupported directive. |
+| CSP14311 | "DCMS_CSP_DUPLICATE_DIRECTIVE" | A duplicate directive was found during parsing, the second directive and its source-expressions will be ignored. | Remove the duplicate script. |
+| CSP14312 | "Resource violated directive 'script-src ms-appx: data: 'unsafe-eval' in Host Defined Policy: inline script. Resource will be blocked." | An inline script was blocked. Authors need to move all inline script and style out-of-line because the user agent cannot determine whether an inline script was injected by an attacker. | Remove inline script and place it in an external file. |
 ## Related topics
 
 [GLSL errors](https://msdn.microsoft.com/en-us/library/dn611835(v=vs.85).aspx)
