@@ -287,7 +287,7 @@ XML5685 | "Invalid encoding."
 XML5686 | "Unspecified XML error."
  
 ### CSP error codes
-CSP (Content Security Policy) error codes are in the form of CSP1xxx, such as CSP14312. CSP is a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). By declairing the sources from which the application expects to load resources, the application can detect and block malicious scripts injected by an attacker. A web application opts into using CSP by supplying a `Content-Security-Policy HTTP` header. Such policies apply to the current resource representation only.
+CSP (Content Security Policy) error codes are in the form of CSP1xxx, such as CSP14312. CSP is a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). By declaring the sources from which the application expects to load resources, the application can detect and block malicious scripts injected by an attacker. A web application opts into using CSP by supplying a `Content-Security-Policy HTTP` header. Such policies apply to the current resource representation only.
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
