@@ -29,14 +29,6 @@ Example:
 
 >*Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.*
 
-File Structure Screenshot:
-
-![Edge Documentation File Structure](./f12_guide/media/github_doc_filestructure.PNG)
-
-
-## Testing Animated GIF feature for demo documentation purposes
-![Edge Animated Gif Test](/f12_guide/media/EdgeDevToolsGIF_Test.gif)
-
 # Styling
 
 The following sections you an overview of what elements have been styled up for documentation in the developer portal site.
