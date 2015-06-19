@@ -13,16 +13,15 @@ These shortcuts either control the F12 tools window or work across all tools.
 Action | Shortcut 
 :------------ | :------------- 
 Show/hide Console at the bottom of any other tool  | CTRL + `
-Give focus to Console at the bottom of another tool | CTRL + ALT + I 
+Switch to DOM Explorer | CTRL + 1
 Switch to Console |  CTRL + 2 
 Switch to Debugger | CTRL + 3 
 Switch to Network | CTRL + 4 
-Switch to UI Responsiveness | CTRL + 5 
-Switch to Profiler | CTRL + 6 
-Switch to Memory | CTRL + 7 
-Switch to Emulation | CTRL + 8 
-Previous tool (in order above) | CTRL + [ 
-Next tool (in order above) | CTRl + ] 
+Switch to Performance | CTRL + 5 
+Switch to Memory | CTRL + 6 
+Switch to Emulation | CTRL + 7 
+Switch to Experiments | CTRL + 8 
+Refresh the page | CTRL + SHIFT + F5 or CTRL + R
 
 ## Console shortcuts
 These shortcuts work with both the main Console panel and the Console you can open in other tools. They only work when focus is on the Console's input area.
