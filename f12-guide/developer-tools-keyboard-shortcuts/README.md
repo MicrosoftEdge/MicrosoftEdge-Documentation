@@ -21,7 +21,7 @@ Switch to Performance | CTRL + 5
 Switch to Memory | CTRL + 6 
 Switch to Emulation | CTRL + 7 
 Switch to Experiments | CTRL + 8 
-Refresh the page | CTRL + SHIFT + F5 or CTRL + R
+Refresh the page <br>Note: blah blah | CTRL + SHIFT + F5 or CTRL + R
 
 ## Console shortcuts
 These shortcuts work with both the main Console panel and the Console you can open in other tools. They only work when focus is on the Console's input area.
