@@ -56,14 +56,9 @@ Open "Change exception behavior" drop-down menu | CTRL + SHIFT + E
 Set or unset breakpoints (requires focus to be in Editor) | F9 or CTRL + B 
 Set a breakpoint condition (requires focus to be in Editor) | ALT + F9 
 Enable/disable breakpoints (requires focus to be in Editor) | CTRL + F9 
-Go to Breakpoint window | CTRL + ALT + B 
-Go to Watch window | CTRL + ALT + W 
-Go to Call Stack window | CTRL + ALT + C  
 Go to Script Chooser drop-down menu | CTRL + O 
 Next function on stack | CTRL + PERIOD 
 Previous function on stack | CTRL + COMMA 
-Shortcut for toggle panes in the control panel (right side) | CTRL + ALT + T 
-Focus to Editor | CTRL + E 
 Add watch | CTRL + W 
 Break on new workers | CTRL + SHIFT + W 
 Edit watch (while on watch) | F2 
@@ -74,8 +69,6 @@ Toggle all breakpoints | CTRL + SHIFT + F11
 Find | CTRL + F 
 Find Next | F3 
 Find Previous | SHIFT + F3 
-Set next statement | CTRL + SHIFT + F10 
-Show next statement | ALT + NUM* 
 Run to cursor | CTRL + F10 
 Toggle Just My Code mode | CTRL + J 
 Toggle Just My Code frames display | CTRL + SHIFT + J 
@@ -87,14 +80,21 @@ These shortcuts start and stop the network capture.
 
 Action | Shortcut 
 :------------ | :------------- 
-Start capturing network activity in the active tab  | F5
-Stop capturing network activity in the active tab | SHIFT + F5 
+Start capturing network activity in the active tab  | CTRL + E
+Stop capturing network activity in the active tab | CTRL + E
 
 ## Memory shortcuts
 Action | Shortcut 
 :------------ | :------------- 
 Start / Stop a profiling session  | CTRL + E 
 Take a memory heap snapshot | CTRL + SHIFT + T 
+Import Profiling session | CTRL + O
+Export Profiling session | CTRL + S
+
+## Emulation shortcuts
+Action | Shortcut 
+:------------ | :------------- 
+Reset Emulation settings  | CTRL + E 
 
 ## Related topics
 
