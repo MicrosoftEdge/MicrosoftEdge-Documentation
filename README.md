@@ -1,4 +1,4 @@
-This is the GitHub repository for Microsoft Edge documentation hosted at http://dev.modern.ie
+This is the repository for Microsoft Edge documentation hosted at http://dev.modern.ie
 
 # Conventions
 
@@ -6,7 +6,7 @@ This is the GitHub repository for Microsoft Edge documentation hosted at http://
   - A folder can contain more folders or a readme.md
   - One .md file per folder
   - Folder/directory names are dash-separated (e.g., f12-tools) and lowercase. They are used in URLs on the Microsoft Edge Dev site. Don't use underscores or PascaleCase/camelCase.
-  - Relative links should be formatted with only the folder name of the referenced readme doc. E.g.,   ../perfomance/  (not ../perfomance/readme.md)
+  - Relative links are formatted with only the folder name of the referenced readme doc. E.g.,   ../perfomance/  (not ../perfomance/readme.md)
   - Section headers require a space after hashes, formatted as  ## Section Heading *(not ##Section Heading)*. Otherwise the markdown won't parse correctly into the site.
 
 # Styling
