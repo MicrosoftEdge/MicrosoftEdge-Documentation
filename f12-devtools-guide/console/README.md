@@ -37,7 +37,7 @@ Starting with Cumulative Security Update for Internet Explorer (KB2976627), the 
 
 These messages can be filtered out of the Console output. The icons for each message type at the top of the Console pane act as toggles. Click one to remove its associated message type, then again to return it. You can also right-click in the Console output and find check boxes for each type in the context menu.
 
-When you click the file name that follows a message, you open the **[Debugger](../Debugger/)** tool and load the file in the script pane.
+When you click the file name that follows a message, you open the **[Debugger](../debugger/)** tool and load the file in the script pane.
 
 When the **Clear on navigate** icon is highlighted, the console clears every time the browser navigates to a new webpage. When it isn't highlighted, the browser preserves the contents of the **Console**, but messages from prior webpages are grayed out to better visually indicate they are not from the current page.
 
