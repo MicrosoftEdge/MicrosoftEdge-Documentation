@@ -12,7 +12,7 @@ These shortcuts either control the F12 tools window or work across all tools.
 
 Action | Shortcut 
 :------------ | :------------- 
-Show/hide Console at the bottom of any other tool  | CTRL + `
+Show/hide Console at the bottom of any other tool  | CTRL+**`**
 Switch to DOM Explorer | CTRL + 1
 Switch to Console |  CTRL + 2 
 Switch to Debugger | CTRL + 3 
