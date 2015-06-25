@@ -23,7 +23,7 @@ Once saved, you will be able to compare the modified document to the original do
 
 ![Edge Experiment Diff](../media/Edge_Experiment_diff.png)
 
-Clicking the **diff** command will open up a new **diff view** of the document, highlighting any changes. 
+Clicking the **diff** command will open up a new **diff view** of the document, highlighting any changes. *Note that you will not be able to edit code in the **diff view**, but can do so by switching back to the original file on the tab bar. 
 
 ![Edge Experiment Diff View](../media/Edge_Experiment_diff_view.png)
 
