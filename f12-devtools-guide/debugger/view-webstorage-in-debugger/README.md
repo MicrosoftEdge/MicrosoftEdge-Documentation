@@ -9,7 +9,7 @@ The [**Debugger tool**](./debugger/) provides detailed information about cookies
 
 The cookies view allows you to see and modify existing cookies as well as create new ones. You can also clear individual cookies, session cookies or all cookies using the toolbar or the table's context menu.  
 
-![Creating a Cookie with Edge Debugger](../../media/Edge_Debugger_cookies_addnew.png)
+![Creating a Cookie with Edge Debugger](../../media/Edge_Debugger_cookies_delete.gif)
 
 ## Session and local storage
 Session and local storage contents can also be viewed and edited using the [**Debugger tool**](./debugger/) file picker (CTRL + O). 
