@@ -1,5 +1,5 @@
 # Microsoft Edge documentation
-This is the repository for Microsoft Edge *documentation* hosted at [http://dev.modern.ie](http://dev.modern.ie).
+This is the repository for Microsoft Edge **documentation** hosted at [http://dev.modern.ie](http://dev.modern.ie).
 Find the source code for [Status.Modern.IE](https://status.modern.ie/) at: [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status). Status.Modern.IE provides the latest implementation status and future plans for web platform features in Microsoft Edge.
 Over the coming months we will be working on adding new sections and content to enhance the documentation experience. If you’d like to see new coverage or have feedback, please consider [**contributing**](./contributing.md) by either editing the existing content, adding new content or simply creating new [issues](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues). We’ll take a look at your suggestion and will work together to incorporate them to the docs. 
 
