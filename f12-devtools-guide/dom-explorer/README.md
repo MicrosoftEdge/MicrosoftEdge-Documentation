@@ -8,7 +8,7 @@ HTML and CSS files are the blueprints a browser uses to build the DOM (Document 
 
 This helps you diagnose problems in live code when elements aren't in the right place or don't behave as expected, and then work to solve them.
 
-![Edge DOM Explorer](../media/Edge_DOMExplorer.png)
+![Edge DOM Explorer](../media/Edge_DomExplorer_editing.gif)
 
 ## The elements pane
 The elements pane on the left shows the DOM as it's currently constructed. Navigate through it with your mouse, clicking on the arrows next to parent elements to expand them and see their child elements. You can also navigate through it using the arrow keys on your keyboard, using the right and left arrow keys to expand and collapse elements.
