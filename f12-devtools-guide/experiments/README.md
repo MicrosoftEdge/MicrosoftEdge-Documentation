@@ -8,7 +8,7 @@ F12 experiments can be activated from the **Experiments** tab which is the last 
 
 With this experiment enabled you can edit any JavaScript file in the debugger source viewer. Simply click on the viewer to place the cursor and type away.
 
-![Edge Experiment Tab](../media/Edge_Experiment.gif)
+![Edge Experiment Tab](../media/Edge_Experiments_edit.gif)
 
 As you make edits you will notice a dirty flag, an **asterisk (*)**, in the document’s tab which implies that the document has changed but has not yet been saved.
 
