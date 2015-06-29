@@ -2,6 +2,11 @@
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
+Key/value pairs can be saved and retrieved in the Edge browser's web storage in three ways:
+- [Cookies](#cookies)
+- [Session storage](#sessionstorage)
+- [Local storage](#localstorage)
+
 ## Cookies
 The [**Debugger tool**](./debugger/) provides detailed information about cookies that have been created by an HTTP header or via JavaScript. The cookies folder inside the Debugger's file picker (CTRL + O) displays a list of the frames loaded by the page. Selecting one of these frames opens up a table view of its cookies.  
 
