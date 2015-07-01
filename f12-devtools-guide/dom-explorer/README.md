@@ -49,7 +49,7 @@ If your changes don't produce the desired result, press CTRL + Z to undo the las
 ### Moving an element
 Elements can be moved in two ways:
 
-  - **Drag DOM nodes:** In Internet Explorer 11 you can drag elements in the elements pane. Click and drag an element to it's new location, just like you would any other type of movable item.
+  - **Drag DOM nodes:** In Microsoft Edge you can drag elements in the elements pane. Click and drag an element to it's new location, just like you would any other type of movable item.
 
   - **Cut/copy, and paste:** Use right-click context menus or keyboard shortcuts to cut, copy, and paste elements.
    When you copy an element and then paste with CTRL + V, the element on the clipboard is pasted in as a child of the selected   element. Right-click the element to use the **Paste before** option from the context menu.
@@ -92,7 +92,7 @@ What values are computed, you ask:
 
   - **Implied and default values:** The **Computed** styles tab has a **Display all styles** button ![Display all styles button](../media/F12BlueDOMExplorerDisplayStyles.png).
 
-   When turned on, it shows only user-defined styles. When turned off, it shows Internet Explorer's default styles and any     implied styles that are being applied to the element. The list can be very long, so a Filter properties box is next to it.  Type text in the box and the properties list will be filtered down to only those that match the text.
+   When turned on, it shows only user-defined styles. When turned off, it shows the Microsoft Edge default styles and any     implied styles that are being applied to the element. The list can be very long, so a Filter properties box is next to it.  Type text in the box and the properties list will be filtered down to only those that match the text.
 
 As you make changes to your properties, **Change Bars** (also available in the **Styles** tab) display different colors next to changed, added, and deleted properties.
 
