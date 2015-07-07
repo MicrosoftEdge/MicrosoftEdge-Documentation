@@ -287,14 +287,21 @@ XML5685 | "Invalid encoding."
 XML5686 | "Unspecified XML error."
  
 ### CSP error codes
-CSP (Content Security Policy) error codes are in the form of CSP1xxx, such as CSP14312. CSP is a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). By declaring the sources from which the application expects to load resources, the application can detect and block malicious scripts injected by an attacker. A web application opts into using CSP by supplying a `Content-Security-Policy HTTP` header. Such policies apply to the current resource representation only.
+CSP (Content Security Policy) is a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). The core issue exploited by XSS attacks is the browser’s inability to distinguish between script that’s intended to be part of your application, and script that’s been maliciously injected by a third-party. By declaring the sources from which the application expects to load resources, the application can detect and block malicious scripts injected by an attacker. A web application opts into using CSP by supplying a `Content-Security-Policy HTTP` header. Such policies apply to the current resource representation only.
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
-| CSP14301 | “Failed parsing [the policy type] because [the reason for canceling the operation] --  policy will be ignored.” | The security policy type specified (ie. script-src, base-uri, etc) failed for the reason identified and will be ignored. | Be sure to list all required resources of a specific type in a single directive. For example, in this: `script-src https://host1.com; script-src https://host2.com` the second directive would be ignored. The following would correctly specify both origins as valid: `script-src https://host1.com https://host2.com`. |
-| CSP14310 | “Unsupported directive ‘[directive string entered]’ in [policy type] - directive will be ignored.” | A directive was found during parsing that is not supported in either the <meta> element or by the `Content-Security-policy-Report-Only` header field. | Review the CSP directives that are supported and update accordingly. |
-| CSP14311 | “Directive ‘[directive string entered]’ was already provided in [policy type] - duplicate directive will be ignored.” | A duplicate directive was found during parsing, the second directive and its source-expressions will be ignored. | Remove the duplicate script. |
-| CSP14312 | "Resource violated directive 'script-src ms-appx: data: 'unsafe-eval' in Host Defined Policy: inline script. Resource will be blocked." | An inline script was blocked. Authors need to move all inline script and style out-of-line because the user agent cannot determine whether an inline script was injected by an attacker. | Remove inline script and place it in an external file. |
+| CSP14301 | “Failed parsing [the policy type] because <the reason for canceling the operation> --  policy will be ignored.” | The security policy type specified (ie. script-src, base-uri, etc) failed for the reason identified and will be ignored. | Be sure to list all required resources of a specific type in a single directive. For example, in this: `script-src https://host1.com; script-src https://host2.com` the second directive would be ignored. The following would correctly specify both origins as valid: `script-src https://host1.com https://host2.com`. |
+| CSP14302 | "Failed parsing source in[policy type] for directive[directive type] at [source URL] -- source will be ignored." | Most CSP directives require one or more content sources (indicating a URL that content can be loaded from). This error points out a policy with a directive that contains a source URL that failed when parsing was attempted. | Check the content source (most often a URL) that is defined in the specified directive which you can find in the specified policy type. Correct or replace the source URL or remove the directive.
+*Your policy should include a default-src policy directive, which is a fallback for other resource types when they don't have policies of their own. |
+| CSP14303 | "Unknown source [source URL] for directive [directive type] in [policy type] source will be ignored." | The sources for approved (safe) content in the directive identified are unknown and will be ignored. | Check the content source identified (often this is a URL) to be sure it is correct. |
+|
+
+
+
+
+
+
 ## Related topics
 
 [GLSL errors](https://msdn.microsoft.com/en-us/library/dn611835(v=vs.85).aspx)
