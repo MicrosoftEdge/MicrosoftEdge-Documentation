@@ -2,7 +2,7 @@
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
-Use this reference to interpret error messages shown in the  [Console](./console/) and the [Debugger](./debugger/) in Internet Explorer 11.
+Use this reference to interpret error messages shown in the  [Console](./console/) and the [Debugger](./debugger/) in Microsoft Edge. Link to your sites error or warning codes in the F12 Developer Tools Console, for example [SEC7131](#SEC7131). 
 
 ## Introduction
 When you're debugging with F12 developer tools, error codes such as `SEC7111` or `HTML1114` are shown in the Console and the Debugger tools.
@@ -31,7 +31,7 @@ SEC7127 | "Redirect was blocked for CORS request." | The path to the CORS resour
 SEC7128 | "Multiple Access-Control-Allow-Origin headers are not allowed for CORS response." | The response header contained multiple Access-Control-Allow-Origin headers. | This is a server-side error. The server should return a single Access-Control-Allow-Origin header. Report this error to the developer in charge of the server-side resource.
 SEC7129 | "Multiple Access-Control-Allow-Credentials headers are not allowed for CORS response." | The response header contained multiple Access-Control-Allow-Credentials headers. | This is a server-side error. The server should return a single Access-Control-Allow-Credentials header. Report this error to the developer in charge of the server-side resource.
 SEC7130 | "Potential cross-site scripting detected in [URL]. The content has been modified by the XSS Filter." | The [XSS Filter](https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx) detected potentially malicious content in the response from the resource and removed the offending content. | Find out more about the [XSS Filter](https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx).
-SEC7131 | "Security of a sandboxed iframe is potentially compromised by allowing script and same origin access." | If the content in a sandboxed iframe comes from an untrusted or insecure source, it could escape the sandbox when script and same origin access are both allowed. | This is an informational warning message and should not impact functionality. It's recommended that you avoid combining these permissions unless you're sure of what will be run in the iframe.
+[SEC7131](#SEC7131) | "Security of a sandboxed iframe is potentially compromised by allowing script and same origin access." | If the content in a sandboxed iframe comes from an untrusted or insecure source, it could escape the sandbox when script and same origin access are both allowed. | This is an informational warning message and should not impact functionality. It's recommended that you avoid combining these permissions unless you're sure of what will be run in the iframe.
 
 **Note** For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
 
