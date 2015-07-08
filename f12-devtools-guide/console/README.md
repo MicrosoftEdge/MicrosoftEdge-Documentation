@@ -8,7 +8,7 @@ Use the **Console** tool to view errors and other messages, send debug output, i
 
 The primary use for the **Console** tool is to communicate into and out of running webpages.
 
-![Edge Console](../media/Edge_Console.png)
+![Edge Console](../media/Edge_Console.gif)
 
    - [In:](#sending-javascript-into-the-console) You run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly.
 
