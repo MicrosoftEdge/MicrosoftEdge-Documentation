@@ -23,7 +23,10 @@ The primary use for the **Console** tool is to communicate into and out of runni
 The **Console** has a **Target** drop-down menu just above the **Console** output pane. If the webpage you're viewing has an [iframe element]() in it, select the iframe from the **Target** menu to run **Console** commands solely in the scope of the iframe. If your webpage has no iframes, the only selection will be "_top."
 
 ### Messages Microsoft Edge sends to the console
+<<<<<<< HEAD
 By default, the **Console** won't show any messages until you start it. Start it by opening the F12 developer tools, and selecting the **Console tool** (CTRL + 2). You can also open the **Console** within another tool using the **Show console** button in the upper-right of the tools pane or CTRL + `.
+=======
+>>>>>>> master
 
 ![Console System Messages](../media/Edge_Console_messages.gif)
 <!--By default, the **Console** won't show any messages until you start it. Start it by opening the F12 developer tools, and selecting the **Console tool** (CTRL + 2). You can also open the **Console** within another tool using the **Show console** button in the upper-right of the tools pane or CTRL + `.-->
