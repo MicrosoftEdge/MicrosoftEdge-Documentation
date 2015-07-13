@@ -8,21 +8,25 @@ Use the **Console** tool to view errors and other messages, send debug output, i
 
 The primary use for the **Console** tool is to communicate into and out of running webpages.
 
-![Edge Console](../media/Edge_Console.png)
+![Edge Console](../media/Edge_Console.gif)
 
-   - [In:](#sending-javascript-into-the-console) You run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly.
+   - [In:](#sending-javascript-into-the-console) Run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly, all while taking advantage of the Microsoft Edge [IntelliSense](https://msdn.microsoft.com/en-us/library/hcw1s69b.aspx) auto code completion.
 
-   - [Out:](#sending-info-to-the-console) Internet Explorer and JavaScript code deliver status, error, and debug messages to developers, including inspectable JavaScript objects and DOM Nodes. For more on how to send debug information and other messages to the console from your code, read up on [Using the Console API](./using-the-console-api/).
+   - [Out:](#sending-info-to-the-console) Microsoft Edge and JavaScript code deliver status, error, and debug messages to developers, including inspectable JavaScript objects and DOM Nodes. For more on how to send debug information and other messages to the console from your code, read up on [Using the Console API](./using-the-console-api/).
 
 ## Sending info to the Console
 
    - [Selecting your execution target](#selecting-your-execution-target)
-   - [Messages Internet Explorer sends to the console](#messages-internet-explorer-sends-to-the-console)
+   - [Messages Microsoft Edge sends to the console](#messages-microsoft-edge-sends-to-the-console)
 
 ### Selecting your execution target
 The **Console** has a **Target** drop-down menu just above the **Console** output pane. If the webpage you're viewing has an [iframe element]() in it, select the iframe from the **Target** menu to run **Console** commands solely in the scope of the iframe. If your webpage has no iframes, the only selection will be "_top."
 
 ### Messages Microsoft Edge sends to the console
+<<<<<<< HEAD
+By default, the **Console** won't show any messages until you start it. Start it by opening the F12 developer tools, and selecting the **Console tool** (CTRL + 2). You can also open the **Console** within another tool using the **Show console** button in the upper-right of the tools pane or CTRL + `.
+=======
+>>>>>>> master
 
 ![Console System Messages](../media/Edge_Console_messages.gif)
 <!--By default, the **Console** won't show any messages until you start it. Start it by opening the F12 developer tools, and selecting the **Console tool** (CTRL + 2). You can also open the **Console** within another tool using the **Show console** button in the upper-right of the tools pane or CTRL + `.-->
