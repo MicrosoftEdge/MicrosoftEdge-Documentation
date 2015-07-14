@@ -48,7 +48,8 @@ There are three ways to edit an element:
 ![Edge DOM Explorer Editing an Element](../media/Edge_DomExplorer_editingelement.gif)
 
 **Important**  The doctype, html, head, body, and script elements can't be edited as HTML in the DOM Explorer.
-If your changes don't produce the desired result, press CTRL + Z to undo the last change. CTRL + Y will redo the change, reversing the effect of CTRL + Z.
+
+If your changes don't produce the desired result, press CTRL + Z to undo the last change. CTRL + Y will redo the change.
 
 ### Moving an element
 Elements can be moved in two ways:
