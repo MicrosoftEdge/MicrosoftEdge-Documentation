@@ -8,7 +8,7 @@ HTML and CSS files are the blueprints a browser uses to build the DOM (Document 
 
 This helps you diagnose problems in live code when elements aren't in the right place or don't behave as expected, and then work to solve them.
 
-![Edge DOM Explorer](../media/Edge_DomExplorer_editing.gif)
+![Edge DOM Explorer](../media/Edge_Dom_edit.gif)
 
 ## The elements pane
 The elements pane on the left shows the DOM as it's currently constructed. Navigate through it with your mouse, clicking on the arrows next to parent elements to expand them and see their child elements. You can also navigate through it using the arrow keys on your keyboard, using the right and left arrow keys to expand and collapse elements.
@@ -16,21 +16,23 @@ The elements pane on the left shows the DOM as it's currently constructed. Navig
 ### Selecting an element
 There are five ways to select an element to inspect:
 
+  - **Inspect element:** Right-click any element in the webpage and select **Inspect element** from the context menu.
+
   - **From the elements pane:** Use the keyboard or mouse to navigate through the **elements pane**.
 
   - **Select element:** Click the button next to the **DOM Explorer** title, or press CTRL + B to activate the **Select element** tool. Then click anywhere in the webpage and the element you click is selected.
-
-  - **Inspect element:** Right-click any element in the webpage and select **Inspect element** from the context menu.
 
   - **Breadcrumbs:** After an element has been selected, the bottom of the **elements pane** shows a breadcrumb trail up through its parent elements (if any). Clicking a breadcrumb tile selects the element it represents.
 
   - **Search:** The "Find" box at the top of the tool searches through the DOM by partial string or CSS selector. Click in the box or type CTRL + F to activate it, type your search string, and press the ENTER key. For searches with multiple results, ENTER will move you forward to the next result. The left and right arrow keys in the search box search backward and forward in the result set. The backward/forward search wraps continuously from beginning to end.
 
+![Edge DOM Explorer Selecting an Element](../media/Edge_DomExplorer_selectelement.gif)
+
 When an element has been inspected, it's highlighted.
 
-![Edge DOM Explorer](../media/F12BlueDomExplorerHighlight.png)
+![Edge DOM Explorer](../media/Edge_DomExplorer_elementhighlighting.png)
 
-The highlight displays not only the element boundaries, but the boundaries of its padding, borders, and margin. It can be toggled on or off using the second button to the right of the **DOM Explorer** tool's title.
+The highlight displays not only the element boundaries *(blue)*, but the boundaries of its padding *(pink)*, borders *(green)*, and margin *(yellow)*. It can be toggled on or off using the second button to the right of the **DOM Explorer** tool's title.
 
 ### Editing an element
 There are three ways to edit an element:
