@@ -30,7 +30,7 @@ There are five ways to select an element to inspect:
 
 When an element has been inspected, it's highlighted.
 
-![Edge DOM Explorer](../media/Edge_DomExplorer_elementhighlighting.png)
+![Edge DOM Explorer](../media/Edge_DOMExplorer_elementhighlighting.PNG)
 
 The highlight displays not only the element boundaries *(blue)*, but the boundaries of its padding *(pink)*, borders *(green)*, and margin *(yellow)*. It can be toggled on or off using the second button to the right of the **DOM Explorer** tool's title.
 
