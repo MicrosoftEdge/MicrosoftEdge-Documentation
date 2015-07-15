@@ -137,7 +137,7 @@ If you decide you don't like one of the changes, right-click it and select **Rev
 
 In the upper-right corner of the **Styles** and **Computed** tabs is an icon resembling **a:**. That's called the "pseudo-class toggle." When turned on, check boxes are shown for the common **:hover** and **:visited** pseudo classes. Checking one of those boxes restyles the element as if that pseudo class is active.
 
-![Changes tab](../media/Edge_DOMExplorer_pseudostate.png)
+![Changes tab](../media/Edge_DOMExplorer_pseudostate.PNG)
 
 If you want to experiment with CSS for a hover effect, turning on pseudo classes and checking Hover makes the element display as if a mouse is hovering over it until the box is cleared or the page is reloaded. This saves you time when fine-tuning a hover effect in **DOM Explorer**.
 
