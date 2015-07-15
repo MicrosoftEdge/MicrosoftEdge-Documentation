@@ -61,6 +61,8 @@ Elements can be moved in two ways:
 
   **Note**  Don't use the **Copy element with styles** option in the context menu to move an element within the DOM. It places an HTML document containing the element and all its related styles on the clipboard for pasting to an external editor.
 
+![Edge DOM Explorer Moving an Element](../media/Edge_DomExplorer_dragdrop.gif)
+
 ### The styles pane
 The **styles pane** provides different views for looking at what styles are being applied to the element and what code is being triggered by events associated with it.
 
