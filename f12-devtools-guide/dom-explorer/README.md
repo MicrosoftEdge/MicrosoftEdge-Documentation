@@ -101,6 +101,7 @@ In the **Computed** tab, properties can be edited or toggled on or off using the
 Examples of computed values:
 
   - **Precise calculations / relative to absolute values:** All properties without hardcoded measures, such as calc() expressions, percentages, em or rem units, are shown with the pixel values calculated for them.
+![Edge Computed Sizes](../media/Edge_DOMExplorer_computedstyles.png)
 
   - **Implied and default values:** The **Computed** styles tab has a **Display user styles only** button ![Display all styles button](../media/F12BlueDOMExplorerDisplayStyles.png).
 
