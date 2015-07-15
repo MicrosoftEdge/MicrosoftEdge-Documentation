@@ -73,11 +73,13 @@ The **styles pane** has five tabs.
 ### Styles
 The **Styles** tab is a list of all the styles being applied to the element and which attributes of them are being applied.
 
-Where do the page styles come from? | See inheritance in action
-:------------ | :------------ 
-The style attributes are separated with the styles currently applied to the selected element on top, along with a link to the .css file path, line #, and column # where that style is defined. <br> Inherited styles are listed below, identifing which ancestor the inherited styles come from.<br>Unchecking the box next to the style will remove that style. You can see that the style will be crossed out and that the inherited style below becomes active (removing it's strikeout).<br>The style pane also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/en-us/library/bg124120(v=vs.85).aspx). | ![Edge DOM Explorer Style Inheritance](../media/Edge_DomExplorer_inheritingstyles.gif)
+Styles attributes currently applied to the selected element appear on the top of the style pane, along with a link to the .css file path, line #, and column # where that style is defined. Inherited styles are listed below, identifing which ancestor the inherited styles come from.
 
-It updates in real time, so if you have media queries based on window width, resizing the window alters the list of applied styles as different media queries are matched.
+![Edge DOM Explorer Style Inheritance](../media/Edge_DomExplorer_inheritingstyles.gif)
+
+Unchecking the box next to the style will remove that style. You can see that the style will be crossed out and that the inherited style below becomes active (removing it's strikeout).<br>The style pane also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/en-us/library/bg124120(v=vs.85).aspx).
+
+The style pane updates in real time, so if you have media queries based on window width, resizing the window alters the list of applied styles as different media queries are matched.
 
 ### Editing styles
 You can turn style properties on or off by checking or unchecking the box to the left of the property.
