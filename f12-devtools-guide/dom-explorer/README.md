@@ -66,7 +66,7 @@ Elements can be moved in two ways:
 ### The styles pane
 The **styles pane** provides different views for looking at what styles are being applied to the element and what code is being triggered by events associated with it.
 
-The **styles pane** has five tabs: [**Styles**](#styles), [**Computed**](#computed), [**Layout**](#layout), [**Events**](#events), and [**Changes**](#changes), in addition to the [Pseudo State](#pseudo-state) selector and the [Color Picker](#color-picker).
+The styles pane has five tabs: [Styles](#styles), [Computed](#computed), [Layout](#layout), [Events](#events), and [Changes](#changes), in addition to the [Pseudo State](#pseudo-state) selector and the [Color Picker](#color-picker).
 
 ![Edge DOM Explorer Styles Pane](../media/Edge_DomExplorer_stylespane.gif)
 
