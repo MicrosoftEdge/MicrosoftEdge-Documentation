@@ -71,22 +71,23 @@ The **styles pane** has five tabs.
 ![Edge DOM Explorer Styles Pane](../media/Edge_DomExplorer_stylespane.gif)
 
 ### Styles
-The **Styles** tab is a list of all the styles associated with the slected element and which attributes are being applied.
+The **Styles** tab is a list of all the styles associated with the selected element and which properites are being applied.
 
-Style attributes currently applied to the element appear on the top of the style pane, along with a link to the .css file path, line #, and column # where that style is defined. Inherited styles are listed below, identifing which ancestor the inherited styles come from.
+Style properties currently applied to the element appear on the top of the style pane, along with a link to the .css file path, line #, and column # where that style is defined. Inherited styles are listed below, identifing which ancestor the inherited styles come from.
 
-Unchecking the box next to the style will remove that style. You can see that the style will be crossed out and that the inherited style below becomes active (removing it's strikeout). The style pane also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/en-us/library/bg124120(v=vs.85).aspx).
+You can turn style property on or off by checking or unchecking the box to the left of the property. When unchecked, the style will be crossed out and an inherited style below may become active (removing it's strikeout). The style pane also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/en-us/library/bg124120(v=vs.85).aspx).
 
 ![Edge DOM Explorer Style Inheritance](../media/Edge_DomExplorer_inheritingstyles.gif)
 
 The style pane updates in real time, so if you have media queries based on window width, resizing the window alters the list of applied styles as different media queries are matched.
 
 ### Editing styles
-You can turn style properties on or off by checking or unchecking the box to the left of the property.
 
 To edit a rule name or property, click it. When typing a property name, matching CSS property names are suggested. When typing a property value, if that property has a defined set of possible values, matching values are suggested. Double-click a suggestion or navigate to it with your arrow keys and press Tab or **Enter** to select it.
 
 To add a new rule or add a property to an existing rule, right-click in the tab and click **Add rule** or Add property.
+
+![Edge DOM Explorer Style Editing](../media/Edge_DomExplorer_editingstyles.gif)
 
 ### Computed
 The **Computed** tab traces the source of an element's styling and provides computed values for properties.
