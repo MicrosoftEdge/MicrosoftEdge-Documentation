@@ -120,7 +120,7 @@ The **Layout** tab shows a box model diagram for the selected element's position
 ### Events
 The **Events** tab shows the element's DOM events or CSS selectors that have handlers assigned to them in JavaScript. The file names can be clicked to show the file in [the Debugger](./debugger/).
 
-![Events tab](../media/F12BlueDomExplorerEvents.png)
+![Events tab](../media/Edge_DOMExplorer_events.png)
 
 In the image above, one element's click event is being handled by two functions in two scripts. If you were getting unexpected behavior from clicking that element, it could be because one of the handlers should be listening for events on another element.
 
@@ -129,36 +129,17 @@ As you experiment with different layout and style changes in the **DOM Explorer*
 
 If you decide you don't like one of the changes, right-click it and select **Revert item** to reverse that change. If you'd like to copy the style to paste into your source files, use **Copy** to copy a single style or **Copy All** to copy all the changed styles in the list.
 
+![Changes tab](../media/Edge_DOMExplorer_changes.png)
+
 **Note**  The **Changes** tab will clear if you close the F12 developer tools, but the changes you made with DOM Explorer persist until you refresh the webpage. For example, you can change the width of an element, close the F12 tools, reopen them, and the element remains at its new width while the Changes tab shows no changes.
 
 ### Pseudo state
 
 In the upper-right corner of the **Styles** and **Computed** tabs is an icon resembling **a:**. That's called the "pseudo-class toggle." When turned on, check boxes are shown for the common **:hover** and **:visited** pseudo classes. Checking one of those boxes restyles the element as if that pseudo class is active.
 
-For example, if you want to experiment with CSS for a hover effect, turning on pseudo classes and checking Hover makes the element display as if a mouse is hovering over it until the box is cleared or the page is reloaded. This saves you time when fine-tuning a hover effect in **DOM Explorer**.
+![Changes tab](../media/Edge_DOMExplorer_pseudostate.png)
 
-### Color Picker
-**Note**  As of Microsoft Edge for Windows 10 Insider Preview, the Color Picker is not available.
-
-![Color Picker](../media/colorpicker.png)
-
-The **Color Picker** makes picking or capturing colors much easier in the DOM Explorer.
-
-### Opening the Color Picker
-The **Color Picker** operates in two modes.
-
-To open it in a standalone mode, click on the eyedropper icon in the top of the **DOM Explorer** or use the keyboard shortcut CTRL + K. In standalone mode, you can highlight color values with your mouse and copy them for use elsewhere in your code.
-
-To open it in integrated mode, click on a color square next to a style's color value in the **Styles** pane. When you select a color in the picker, it will replace the original color.
-
-### Picking colors
-There are three options for picking colors in the **Color Picker**. When you've picked the color you want, close the **Color Picker** the same way you opened it.
-
-  - **Eyedropper:** When you select the eyedropper icon, the mouse pointer changes to an eyedropper. Place the tip of the eyedropper over any part of your desktop, inside or outside of the browser, and click to make the Color Picker pick up that color.
-
-  - **Color Wheel:** Clicking the wheel icon will drop down a selection of sliders, giving you control over the Hue, Saturation, Lightness, and Alpha values. If you are in integrated mode and are adjusting an existing style, the color in the Styles pane and in your webpage will change value as you adjust the sliders.
-
-  - **Color Swatch:** The four boxes to the right of the Color Wheel, with arrows on either side, are a pallette of the colors already in your document. Use the arrows to navigate back and forth through the pallette. Clicking on a box will select that color.
+If you want to experiment with CSS for a hover effect, turning on pseudo classes and checking Hover makes the element display as if a mouse is hovering over it until the box is cleared or the page is reloaded. This saves you time when fine-tuning a hover effect in **DOM Explorer**.
 
 ## Related topics
 
