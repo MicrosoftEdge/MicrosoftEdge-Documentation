@@ -66,7 +66,7 @@ Elements can be moved in two ways:
 ### The styles pane
 The **styles pane** provides different views for looking at what styles are being applied to the element and what code is being triggered by events associated with it.
 
-The **styles pane** has five tabs: [**Styles**](#styles), [**Computed**](#computed), [**Layout**](#layout), [**Events**](#events), and [**Changes**](#changes).
+The **styles pane** has five tabs: [**Styles**](#styles), [**Computed**](#computed), [**Layout**](#layout), [**Events**](#events), and [**Changes**](#changes), in addition to the [Pseudo State](#pseudo-state) selector and the [Color Picker](#color-picker).
 
 ![Edge DOM Explorer Styles Pane](../media/Edge_DomExplorer_stylespane.gif)
 
@@ -127,9 +127,9 @@ If you decide you don't like one of the changes, right-click it and select **Rev
 
 **Note**  The **Changes** tab will clear if you close the F12 developer tools, but the changes you made with DOM Explorer persist until you refresh the webpage. For example, you can change the width of an element, close the F12 tools, reopen them, and the element remains at its new width while the Changes tab shows no changes.
 
-### Pseudo state -- :hover and :visited
+### Pseudo state
 
-In the upper-right corner of the **Styles** and **Computed** tabs is an icon resembling **a:**. That's called the "pseudo-class toggle." When turned on, check boxes are shown for the common Hover and Visited pseudo classes. Checking one of those boxes restyles the element as if that pseudo class is active.
+In the upper-right corner of the **Styles** and **Computed** tabs is an icon resembling **a:**. That's called the "pseudo-class toggle." When turned on, check boxes are shown for the common **:hover** and **:visited** pseudo classes. Checking one of those boxes restyles the element as if that pseudo class is active.
 
 For example, if you want to experiment with CSS for a hover effect, turning on pseudo classes and checking Hover makes the element display as if a mouse is hovering over it until the box is cleared or the page is reloaded. This saves you time when fine-tuning a hover effect in **DOM Explorer**.
 
