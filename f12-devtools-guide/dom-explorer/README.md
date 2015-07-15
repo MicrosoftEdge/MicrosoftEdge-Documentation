@@ -96,17 +96,18 @@ The **Computed** tab traces the source of an element's styling and provides comp
 
 This image shows an element's color and the chain of color attributes from parent elements that are being overridden. If a particular property on an element isn't as expected, you can use this visual hierarchy to discover where the property is coming from and what it's overriding.
 
-In the **Computed** tab, properties cannot be edited, but can be toggled on or off using the check boxes beside them. Turning off the currently active property activates the next property in the chain.
+In the **Computed** tab, properties can be edited or toggled on or off using the check boxes beside them. Turning off the currently active property activates the next property in the chain.
 
-What values are computed, you ask:
+Examples of computed values:
 
-  - **Precise calculations:** All properties without hardcoded measures, such as calc() expressions, percentages, or em units, are shown with the pixel values calculated for them.
+  - **Precise calculations / relative to absolute values:** All properties without hardcoded measures, such as calc() expressions, percentages, em or rem units, are shown with the pixel values calculated for them.
 
-  - **Implied and default values:** The **Computed** styles tab has a **Display all styles** button ![Display all styles button](../media/F12BlueDOMExplorerDisplayStyles.png).
+  - **Implied and default values:** The **Computed** styles tab has a **Display user styles only** button ![Display all styles button](../media/F12BlueDOMExplorerDisplayStyles.png).
 
    When turned on, it shows only user-defined styles. When turned off, it shows the Microsoft Edge default styles and any     implied styles that are being applied to the element. The list can be very long, so a Filter properties box is next to it.  Type text in the box and the properties list will be filtered down to only those that match the text.
 
-As you make changes to your properties, **Change Bars** (also available in the **Styles** tab) display different colors next to changed, added, and deleted properties.
+#### Change Bars
+As you make changes to your properties, **Change Bars** display different colors next to changed (yellow), added (green), and deleted (red) properties.
 
 ![Display all styles button](../media/changebars.jpg)
 
