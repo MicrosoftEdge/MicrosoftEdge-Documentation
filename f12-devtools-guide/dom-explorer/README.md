@@ -66,11 +66,9 @@ Elements can be moved in two ways:
 ### The styles pane
 The **styles pane** provides different views for looking at what styles are being applied to the element and what code is being triggered by events associated with it.
 
-In the upper-right corner of the **Styles** and **Computed** tabs is an icon resembling **a:**. That's called the "pseudo-class toggle." When turned on, check boxes are shown for the common Hover and Visited pseudo classes. Checking one of those boxes restyles the element as if that pseudo class is active.
-
-For example, if you want to experiment with CSS for a hover effect, turning on pseudo classes and checking Hover makes the element display as if a mouse is hovering over it until the box is cleared or the page is reloaded. This saves you time when fine-tuning a hover effect in **DOM Explorer**.
-
 The **styles pane** has five tabs.
+
+![Edge DOM Explorer Styles Pane](../media/Edge_DomExplorer_stylespane.gif)
 
 ### Styles
 The **Styles** tab is a list of all the styles being applied to the element and which attributes of them are being applied. It separates styles directly targeting the element from inherited styles, and identifies which ancestors inherited styles come from. It also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/en-us/library/bg124120(v=vs.85).aspx).
@@ -121,6 +119,12 @@ As you experiment with different layout and style changes in the **DOM Explorer*
 If you decide you don't like one of the changes, right-click it and select **Revert item** to reverse that change. If you'd like to copy the style to paste into your source files, use **Copy** to copy a single style or **Copy All** to copy all the changed styles in the list.
 
 **Note**  The **Changes** tab will clear if you close the F12 developer tools, but the changes you made with DOM Explorer persist until you refresh the webpage. For example, you can change the width of an element, close the F12 tools, reopen them, and the element remains at its new width while the Changes tab shows no changes.
+
+### Pseudo state -- :hover and :visited
+
+In the upper-right corner of the **Styles** and **Computed** tabs is an icon resembling **a:**. That's called the "pseudo-class toggle." When turned on, check boxes are shown for the common Hover and Visited pseudo classes. Checking one of those boxes restyles the element as if that pseudo class is active.
+
+For example, if you want to experiment with CSS for a hover effect, turning on pseudo classes and checking Hover makes the element display as if a mouse is hovering over it until the box is cleared or the page is reloaded. This saves you time when fine-tuning a hover effect in **DOM Explorer**.
 
 ### Color Picker
 **Note**  As of Microsoft Edge for Windows 10 Insider Preview, the Color Picker is not available.
