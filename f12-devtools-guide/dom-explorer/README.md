@@ -66,7 +66,7 @@ Elements can be moved in two ways:
 ### The styles pane
 The **styles pane** provides different views for looking at what styles are being applied to the element and what code is being triggered by events associated with it.
 
-The **styles pane** has five tabs.
+The **styles pane** has five tabs: [**Styles**](#styles), [**Computed**](#computed), [**Layout**](#layout), [**Events**](#events), and [**Changes**](#changes).
 
 ![Edge DOM Explorer Styles Pane](../media/Edge_DomExplorer_stylespane.gif)
 
@@ -81,7 +81,7 @@ You can turn style property on or off by checking or unchecking the box to the l
 
 The style pane updates in real time, so if you have media queries based on window width, resizing the window alters the list of applied styles as different media queries are matched.
 
-### Editing styles
+#### Editing styles
 
 To edit a rule name or property, click it. When typing a property name, matching CSS property names are suggested. When typing a property value, if that property has a defined set of possible values, matching values are suggested. Double-click a suggestion or navigate to it with your arrow keys and press Tab or **Enter** to select it.
 
