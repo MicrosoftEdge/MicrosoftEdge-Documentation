@@ -120,7 +120,7 @@ The **Layout** tab shows a box model diagram for the selected element's position
 ### Events
 The **Events** tab shows the element's DOM events or CSS selectors that have handlers assigned to them in JavaScript. The file names can be clicked to show the file in [the Debugger](./debugger/).
 
-![Events tab](../media/Edge_DOMExplorer_events.png)
+![Events tab](../media/Edge_DOMExplorer_events.PNG)
 
 In the image above, one element's click event is being handled by two functions in two scripts. If you were getting unexpected behavior from clicking that element, it could be because one of the handlers should be listening for events on another element.
 
@@ -129,7 +129,7 @@ As you experiment with different layout and style changes in the **DOM Explorer*
 
 If you decide you don't like one of the changes, right-click it and select **Revert item** to reverse that change. If you'd like to copy the style to paste into your source files, use **Copy** to copy a single style or **Copy All** to copy all the changed styles in the list.
 
-![Changes tab](../media/Edge_DOMExplorer_changes.PNG)
+![Changes tab](../media/Edge_DOMExplorer_changes.png)
 
 **Note**  The **Changes** tab will clear if you close the F12 developer tools, but the changes you made with DOM Explorer persist until you refresh the webpage. For example, you can change the width of an element, close the F12 tools, reopen them, and the element remains at its new width while the Changes tab shows no changes.
 
