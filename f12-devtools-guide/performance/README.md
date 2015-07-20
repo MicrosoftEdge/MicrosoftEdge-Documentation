@@ -91,7 +91,7 @@ Each element in the **Timeline details** shows different info, depending on its 
 
 ![Edge F12 Tools Performance Timer Details](../media/F12BlueResponsivenessTimerDetails.png)
 
-This timer was invoked by a [`setTimeout()`](https://msdn.microsoft.com/en-us/library/ms536753(v=vs.85).aspx) which called the **autoNextSlide** function in **script.jsx**. When you click the file name, it opens in the [**Debugger tool**](../Debugger/) and navigates to the function for inspection.
+This timer was invoked by a [`setTimeout()`](https://msdn.microsoft.com/en-us/library/ms536753(v=vs.85).aspx) which called the **autoNextSlide** function in **script.jsx**. When you click the file name, it opens in the [**Debugger tool**](../debugger/) and navigates to the function for inspection.
 
 The circular chart at the bottom shows that while **Scripting** made up a large part of the event's time, **Styling** took up a fair portion. Expanding the timer's event in the **Timeline details** shows more about the different **Styling** operations that contributed to the time it required.
 
