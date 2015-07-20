@@ -5,7 +5,17 @@
 Microsoft Edge implements the improved F12 developer tools found so useful in Internet Explorer 11. Debug, test, and speed up your webpages using a familiar tool that will continue to grow and improve with Microsoft Edge.
 
 ## The F12 tools at work
-There are seven distinct tools, each with their own tab in the F12 tools interface. Here you'll find an image of each tool, a quick summary of what it does, and a couple of typical development or debugging tasks the tool makes easier.
+There are seven distinct tools, each with their own tab in the F12 tools interface:
+
+* [DOM Explorer tool](#the-dom-explorer-tool-ctrl1)
+* [Console tool](#the-console-tool-ctrl2)
+* [Debugger tool](#the-debugger-tool-ctrl3)
+* [Network tool](#the-network-tool-ctrl4)
+* [Performance Tool](#the-performance-tool-ctrl5)
+* [Memory tool](#the-memory-tool-ctrl6)
+* [Emulation tool](#the-emulation-tool-ctrl7)
+ 
+Here you'll find an image of each tool, a quick summary of what it does, and a couple of typical development or debugging tasks the tool makes easier.
 
 ## The DOM Explorer tool (CTRL+1)
 ![Edge DOM Explorer](./media/Edge_DOMExplorer.png)
