@@ -13,17 +13,17 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 [The DOM Explorer tool](./dom-explorer/) shows the structure of your webpage as it's being rendered in the browser and makes it possible to edit your HTML and styles in a live page. You can do this without having to edit and reload your sources, so you can quickly solve display issues or experiment with new ideas.
 ![Edge DOM Explorer](./media/Edge_DOMExplorer.png)
 
-|Features|
-|:-------|
-|IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.|
-|Drag DOM nodes to rearrange them.|
-|Support for compiled CSS sourcemaps|
-
-|Tasks|
-|:----|
-|Determining why an element is not displaying at the right place or right size.|
-|Figuring out which CSS styles and media queries are being applied to an element.|
-|Testing a series of different colors for an element to see which looks best.|
+-**Features** in the DOM Explorer tool include:		+|Features|
+-		+|:-------|
+-  - IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.		+|IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.|
+-  - Drag DOM nodes to rearrange them.		+|Drag DOM nodes to rearrange them.|
+-  - Support for compiled CSS sourcemaps		+|Support for compiled CSS sourcemaps|
+-		
+-**Development and debugging tasks it makes easier:**		
+ 		 
+-  - Determining why an element is not displaying at the right place or right size.		+|Tasks|
+-  - Figuring out which CSS styles and media queries are being applied to an element.		+|:----|
+-  - Testing a series of different colors for an element to see which looks best.
 
 [Learn more about the DOM Explorer tool.](./dom-explorer/)
 
