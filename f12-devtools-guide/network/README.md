@@ -83,5 +83,5 @@ Microsoft Edge captures and reports network traffic efficiently, but there are s
 HTTP traffic is captured only for the process associated with the Microsoft Edge window/tab that is open when you start capturing traffic in the Network tool. To debug two windows/tabs at the same time, you must open a **F12 developer tools** window for each. The network tools also cannot monitor network traffic for tabs that create multiple processes.
 
 ## Related topics
-[Using the F12 developer tools](../../f12-guide/)
+[Using the F12 developer tools](../)
  
