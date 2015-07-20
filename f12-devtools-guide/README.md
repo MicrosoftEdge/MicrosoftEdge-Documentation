@@ -19,8 +19,8 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
  - Support for compiled CSS sourcemaps		+|Support for compiled CSS sourcemaps|
 
 **Development and debugging tasks it makes easier:**		
-  - Determining why an element is not displaying at the right place or right size.		+|Tasks|
- - Figuring out which CSS styles and media queries are being applied to an element.		+|:----|
+  - Determining why an element is not displaying at the right place or right size.
+ - Figuring out which CSS styles and media queries are being applied to an element.
  - Testing a series of different colors for an element to see which looks best.
 
 [Learn more about the DOM Explorer tool.](./dom-explorer/)
