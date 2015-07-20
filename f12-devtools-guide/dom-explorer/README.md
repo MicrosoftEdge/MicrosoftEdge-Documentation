@@ -118,7 +118,7 @@ The **Layout** tab shows a box model diagram for the selected element's position
 ![Edge Layout Tab](../media/Edge_DOMExplorer_layout.PNG)
 
 ### Events
-The **Events** tab shows the element's DOM events or CSS selectors that have handlers assigned to them in JavaScript. The file names can be clicked to show the file in [the Debugger](./debugger/).
+The **Events** tab shows the element's DOM events or CSS selectors that have handlers assigned to them in JavaScript. The file names can be clicked to show the file in [the Debugger](../debugger/).
 
 ![Events tab](../media/Edge_DOMExplorer_events.PNG)
 
