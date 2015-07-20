@@ -2,7 +2,7 @@
 
 [Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
-Use this reference to interpret error messages shown in the  [Console](./console/) and the [Debugger](./debugger/) in Microsoft Edge.
+Use this reference to interpret error messages shown in the  [Console](../console/) and the [Debugger](../debugger/) in Microsoft Edge.
 
 ## Introduction
 When you're debugging with F12 developer tools, error codes such as `SEC7111` or `HTML1114` are shown in the Console and the Debugger tools.
