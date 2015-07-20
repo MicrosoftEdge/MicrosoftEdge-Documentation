@@ -15,26 +15,26 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 * [Memory tool](#the-memory-tool-ctrl6)
 * [Emulation tool](#the-emulation-tool-ctrl7)
  
-Here you'll find an image of each tool, a quick summary of what it does, and a couple of typical development or debugging tasks the tool makes easier.
+Here you'll find an image of each tool and a quick summary of what it does, followed by lists of its main features and typical tasks.
 
 ## The DOM Explorer tool (CTRL+1)
-![Edge DOM Explorer](./media/Edge_DOMExplorer.png)
 
 [The DOM Explorer tool](./dom-explorer/) shows the structure of your webpage as it's being rendered in the browser and makes it possible to edit your HTML and styles in a live page. You can do this without having to edit and reload your sources, so you can quickly solve display issues or experiment with new ideas.
+![Edge DOM Explorer](./media/Edge_DOMExplorer.png)
 
-**Features** in the DOM Explorer tool include:
+|Features|
+|:-------|
+|IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.|
+|Drag DOM nodes to rearrange them.|
+|Support for compiled CSS sourcemaps|
 
-  - IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.
-  - Drag DOM nodes to rearrange them.
-  - Support for compiled CSS sourcemaps
+|Tasks|
+|:----|
+|Determining why an element is not displaying at the right place or right size.|
+|Figuring out which CSS styles and media queries are being applied to an element.|
+|Testing a series of different colors for an element to see which looks best.|
 
-**Development and debugging tasks it makes easier:**
-
-  - Determining why an element is not displaying at the right place or right size.
-  - Figuring out which CSS styles and media queries are being applied to an element.
-  - Testing a series of different colors for an element to see which looks best.
-
-[How the DOM Explorer tool works.](./dom-explorer/)
+[Learn more about the DOM Explorer tool.](./dom-explorer/)
 
 ## The Console tool (CTRL+2)
 ![Edge Console Tool](./media/Edge_Console.png)
