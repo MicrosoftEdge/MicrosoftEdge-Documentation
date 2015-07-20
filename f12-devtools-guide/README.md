@@ -20,6 +20,7 @@ Here you'll find an image of each tool and a quick summary of what it does, foll
 ## The DOM Explorer tool (CTRL+1)
 
 [The DOM Explorer tool](./dom-explorer/) shows the structure of your webpage as it's being rendered in the browser and makes it possible to edit your HTML and styles in a live page. You can do this without having to edit and reload your sources, so you can quickly solve display issues or experiment with new ideas.
+
 ![Edge DOM Explorer](./media/Edge_DOMExplorer.png)
 
 |Features|
