@@ -8,7 +8,7 @@ Key/value pairs can be saved and retrieved in the Edge browser's web storage in 
 - [Local storage](#session-and-local-storage)
 
 ## Cookies
-The [**Debugger tool**](./debugger/) provides detailed information about cookies that have been created by an HTTP header or via JavaScript. The cookies folder inside the Debugger's file picker (CTRL + O) displays a list of the frames loaded by the page. Selecting one of these frames opens up a table view of its cookies.  
+The [**Debugger tool**](../) provides detailed information about cookies that have been created by an HTTP header or via JavaScript. The cookies folder inside the Debugger's file picker (CTRL + O) displays a list of the frames loaded by the page. Selecting one of these frames opens up a table view of its cookies.  
 
 ![Viewing Cookies with Edge Debugger](../../media/Edge_Debugger_cookies.gif)
 
@@ -17,7 +17,7 @@ The cookies view allows you to see and modify existing cookies as well as create
 ![Creating a Cookie with Edge Debugger](../../media/Edge_Debugger_cookies_delete.gif)
 
 ## Session and local storage
-Session and local storage contents can also be viewed and edited using the [**Debugger tool**](./debugger/) file picker (CTRL + O). 
+Session and local storage contents can also be viewed and edited using the [**Debugger tool**](../) file picker (CTRL + O). 
 
 ![View web storage with Edge Debugger](../../media/Edge_Debugger_localstorage.gif)
 

@@ -75,5 +75,5 @@ Sending in single line commands is useful, but some tasks require executing long
 ![F12 Console Multiline Command Line](../media/f12blueconsolecommandmultiple.png)
 
 ## Related topics
-[Using the Console API](/using-the-console-api/)
+[Using the Console API](./using-the-console-api/)
 
