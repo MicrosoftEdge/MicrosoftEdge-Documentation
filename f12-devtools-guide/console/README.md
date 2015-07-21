@@ -26,13 +26,12 @@ The **Console** has a **Target** drop-down menu just above the **Console** outpu
 
 ### Messages Microsoft Edge sends to the console
 
-![Console System Messages](../media/Edge_Console_messages.gif)
-<!--By default, the **Console** won't show any messages until you start it. Start it by opening the F12 developer tools, and selecting the **Console tool** (CTRL + 2). You can also open the **Console** within another tool using the **Show console** button in the upper-right of the tools pane or CTRL + `.-->
-
 The Console has three categories:
    - **Error:** Critical errors that cause code not to run. For more info, see a list of [error codes](./console-error-and-status-codes) used in the console.
    - **Warning:** Possible errors in your webpage that don't necessarily break it, but may cause unexpected behavior.
    - **Information:** Non-critical information you might want to know.
+
+![Console System Messages](../media/Edge_Console_messages.gif)
 
 These messages can be filtered out of the Console output. The icons for each message type at the top of the Console pane act as toggles. Click one to remove its associated message type, then again to return it. You can also right-click in the Console output and find check boxes for each type in the context menu.
 
