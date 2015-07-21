@@ -4,7 +4,7 @@
 Keyboard shortcuts in F12 developer tools for Microsoft Edge make tools and features accessible without a mouse or pointing device.
 
 ## Using keyboard shortcuts
-You can use keyboard shortcuts to navigate the F12 developer tools directly from your keyboard. The current shortcut set is listed below. For older versions, see [the keyboard shortcuts for Internet Explorer versions 8, 9, and 10](https://msdnstage.redmond.corp.microsoft.com/en-us/library/dd565630(v=vs.85).aspx).
+You can use keyboard shortcuts to navigate the F12 developer tools directly from your keyboard. The current shortcut set is listed below. For older versions, see [the keyboard shortcuts for Internet Explorer versions 8, 9, and 10](https://msdn.microsoft.com/en-us/library/dd565630(v=vs.85).aspx).
 
 ## General Shortcuts
 These shortcuts either control the F12 tools window or work across all tools.
