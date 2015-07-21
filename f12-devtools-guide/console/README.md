@@ -16,9 +16,6 @@ The primary use for the **Console** tool is to communicate into and out of runni
 
    - [Out:](#sending-info-to-the-console) Microsoft Edge and JavaScript code deliver status, error, and debug messages to developers, including inspectable JavaScript objects and DOM Nodes. For more on how to send debug information and other messages to the console from your code, read up on [Using the Console API](./using-the-console-api/).
 
-### Selecting your execution target
-The **Console** has a **Target** drop-down menu just above the **Console** output pane. If the webpage you're viewing has an [iframe element]() in it, select the iframe from the **Target** menu to run **Console** commands solely in the scope of the iframe. If your webpage has no iframes, the only selection will be "_top."
-
 ### Messages Microsoft Edge sends to the console
 
 The Console has three categories:
@@ -33,6 +30,13 @@ These messages can be filtered out of the Console output. The icons for each mes
 When you click the file name that follows a message, you open the **[Debugger](../debugger/)** tool and load the file in the script pane.
 
 When the **Clear on navigate** icon is highlighted, the console clears every time the browser navigates to a new webpage. When it isn't highlighted, the browser preserves the contents of the **Console**, but messages from prior webpages are grayed out to better visually indicate they are not from the current page.
+
+### Selecting your execution target
+The **Console** has a **Target** drop-down menu just above the **Console** output pane. If the webpage you're viewing has an [iframe element]() in it, select the iframe from the **Target** menu to run **Console** commands solely in the scope of the iframe. If your webpage has no iframes, the only selection will be "_top."
+
+![Console System Messages](../media/Edge_Console_toggle.gif)
+
+*In the image above, the Target iframe is selected, then the page reloads to output only Error messages, the file name is clicked to follow the error to the script file where it is located in the Debugger. Returning to the Console, the Error Code itself is clicked, opening the documentation page for that error code.*
 
 ### Sending JavaScript into the Console
 The console not only displays output from code, but provides an interface to execute code as well. Just enter any valid JavaScript at the bottom of the Console, in the command line pane.
