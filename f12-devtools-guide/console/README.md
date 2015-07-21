@@ -34,7 +34,7 @@ When the **Clear on navigate** icon is highlighted, the console clears every tim
 ### Selecting your execution target
 The **Console** has a **Target** drop-down menu just above the **Console** output pane. If the webpage you're viewing has an [iframe element]() in it, select the iframe from the **Target** menu to run **Console** commands solely in the scope of the iframe. If your webpage has no iframes, the only selection will be "_top."
 
-![Console System Messages](../media/Edge_Console_toggle.gif)
+![Console System Messages](../media/Edge_Console_toggles.gif)
 
 *In the image above, the Target iframe is selected, then the page reloads to output only Error messages, the file name is clicked to follow the error to the script file where it is located in the Debugger. Returning to the Console, the Error Code itself is clicked, opening the documentation page for that error code.*
 
