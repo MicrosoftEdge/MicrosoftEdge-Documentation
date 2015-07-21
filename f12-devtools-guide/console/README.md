@@ -41,7 +41,7 @@ The **Console** has a **Target** drop-down menu just above the **Console** outpu
 ### Sending JavaScript into the Console
 The console not only displays output from code, but provides an interface to execute code as well. Just enter any valid JavaScript at the bottom of the Console, in the command line pane.
 
-![F12 Console Single Command Line](../media/f12blueconsolecommandsingle.png)
+![F12 Console Command Line](../media/Edge_Console_command.gif)
 
 All script entered in the command line executes in the [global scope](https://msdn.microsoft.com/en-us/library/bzt2dkta(v=vs.85).aspx) of the currently selected window. If your webpage is built with a **[frameset](https://msdn.microsoft.com/en-us/library/ms535251(v=vs.85).aspx)** or **[iframes](https://msdn.microsoft.com/en-us/library/ms535258(v=vs.85).aspx)**, those frames load their own documents in their own windows.
 
