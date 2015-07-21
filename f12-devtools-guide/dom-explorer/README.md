@@ -3,12 +3,6 @@
 
 Use the DOM Explorer tool to see the state of your webpage's DOM (Document Object Model), examine HTML structure and CSS styles, and test changes to solve display issues.
 
-Changing Page Elements | Changing Page Styles | Helpers
-:----- | :----- | :-----
-[Selecting an element](#selecting-an-element) | [Editing a style property](#editing-styles) | [Change bars](#change-bars)
- [Editing an element](#editing-an-element) | [Computed style values](#computed) | [Box model layout](#layout)
- [Moving an element](#moving-an-element) | [Setting pseudo state](#pseudo-state) | [Track changes](#changes)
-
 ## Enter the DOM
 HTML and CSS files are the blueprints a browser uses to build the DOM (Document Object Model), which it then uses to render a webpage. The **DOM Explorer** tool shows you a webpage's integrated structure and allows you to change styles, move HTML elements, and change element attributes without having to edit the page's source files.
 
