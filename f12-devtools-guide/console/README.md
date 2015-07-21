@@ -9,6 +9,7 @@ Use the **Console** tool to view errors and other messages, send debug output, i
 The primary use for the **Console** tool is to communicate into and out of running webpages.
 
 ![Edge Console](../media/Edge_Console.gif)
+*See a JavaScript command to reload the page being entered, IntelliSense auto code completion popping up, and then the console sending JavaScript debugging messages out as the page reloads.*
 
    - [In:](#sending-javascript-into-the-console) Run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly, all while taking advantage of the Microsoft Edge [IntelliSense](https://msdn.microsoft.com/en-us/library/hcw1s69b.aspx) auto code completion.
 
