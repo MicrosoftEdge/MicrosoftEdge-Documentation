@@ -16,11 +16,6 @@ The primary use for the **Console** tool is to communicate into and out of runni
 
    - [Out:](#sending-info-to-the-console) Microsoft Edge and JavaScript code deliver status, error, and debug messages to developers, including inspectable JavaScript objects and DOM Nodes. For more on how to send debug information and other messages to the console from your code, read up on [Using the Console API](./using-the-console-api/).
 
-## Sending info to the Console
-
-   - [Selecting your execution target](#selecting-your-execution-target)
-   - [Messages Microsoft Edge sends to the console](#messages-microsoft-edge-sends-to-the-console)
-
 ### Selecting your execution target
 The **Console** has a **Target** drop-down menu just above the **Console** output pane. If the webpage you're viewing has an [iframe element]() in it, select the iframe from the **Target** menu to run **Console** commands solely in the scope of the iframe. If your webpage has no iframes, the only selection will be "_top."
 
