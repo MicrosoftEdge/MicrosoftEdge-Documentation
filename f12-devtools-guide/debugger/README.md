@@ -233,7 +233,7 @@ To indicate a file is library code you want excluded from debugging, the followi
 
 **Note**   Because the icon displays when you mouse over the file's name, it continues to display after being toggled off if the mouse pointer is still over the file's line in the list. To check that it's been toggled off, move the mouse over another file.
 
-The **Just my code** icon in the **Debugger tool**'s icon bar acts as a toggle to include or exclude all the files that have been marked as library code. When **Just my code** is enabled, if library code is part of the **Call stack** when execution pauses, the **Just my code** icon in the upper right corner of the **Call stack** pane toggles the details of that execution frame on and off. Double-clicking on a "[Library code]" line in the **Call stac** pane expands its details.
+The **Just my code** icon in the **Debugger tool**'s icon bar acts as a toggle to include or exclude all the files that have been marked as library code. When **Just my code** is enabled, if library code is part of the **Call stack** when execution pauses, the **Just my code** icon in the upper right corner of the **Call stack** pane toggles the details of that execution frame on and off. Double-clicking on a "[Library code]" line in the **Call stack** pane expands its details.
 
 Keeping track of libraries between sessions is one of the features of **Just my code**. This is managed via JSON files located at `%APPDATA%\..\LocalLow\Microsoft\F12\header\MyCode.json` and `%APPDATA%\..\Local\Microsoft\F12\header\MyCode.json`.
 
