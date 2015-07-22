@@ -102,9 +102,10 @@ title `"Warning"`.
 If you were to do `>note.pineapple`, you would get a div with class `.note--pineapple`, and a title of "Pineapple". Because we have
 not explicitly styled `.note--pineapple`, the styling would simply match the default note styling.
 
-## Images
 File an issue if you really need a custom note class to be styled to not look "default". For the most part, though, you should
 be using the types provided so that the documentation doesn't turn into a smorgasbord of color.
+
+## Images
 
 Images (like the one above) are styled to be fluid, i.e. they will scale proportionally and will never be displayed bigger
 than the element containing the documentation article. Currently, that containing element spans up to 875px wide at its
