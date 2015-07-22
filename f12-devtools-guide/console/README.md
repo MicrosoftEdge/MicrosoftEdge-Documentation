@@ -43,7 +43,11 @@ The console not only displays output from code, but provides an interface to exe
 
 ![F12 Console Command Line](../media/Edge_Console_command.gif)
 
-All script entered in the command line executes in the [global scope](https://msdn.microsoft.com/en-us/library/bzt2dkta(v=vs.85).aspx) of the currently selected window. If your webpage is built with a **[frameset](https://msdn.microsoft.com/en-us/library/ms535251(v=vs.85).aspx)** or **[iframes](https://msdn.microsoft.com/en-us/library/ms535258(v=vs.85).aspx)**, those frames load their own documents in their own windows.
+Generally, all script entered in the command line executes in the [global scope](https://msdn.microsoft.com/en-us/library/bzt2dkta(v=vs.85).aspx) of the currently selected window. However, if your script is currently paused (for instance, because you set a breakpoint), script executes in the [local scope](https://msdn.microsoft.com/en-us/library/bzt2dkta(v=vs.85).aspx) of the current function within the call stack.
+
+![F12 Console Command Line local scope](../media/Edge_Console_local_scope.png)
+
+If your webpage is built with a **[frameset](https://msdn.microsoft.com/en-us/library/ms535251(v=vs.85).aspx)** or **[iframes](https://msdn.microsoft.com/en-us/library/ms535258(v=vs.85).aspx)**, those frames load their own documents in their own windows.
 
 To target the window of a frameset frame or an iframe, use the `cd()` command, with the frame/iframe's name or ID attribute as the argument. For example, you have a frame with the name microsoftFrame and you're loading the Microsoft homepage in it.
 
