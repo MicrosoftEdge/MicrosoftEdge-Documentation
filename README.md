@@ -8,19 +8,19 @@ Find the source code for [Status.Modern.IE](https://status.modern.ie/) at: [http
 # Conventions
 
   - Docs are grouped by folders (the structure parallels the IA on the site)
-  - A folder can contain more folders or a readme.md
-  - One .md file per folder
-  - Folder/directory names are dash-separated (e.g., f12-tools) and lowercase. They are used in URLs on the Microsoft Edge Dev site. Don't use underscores or PascaleCase/camelCase.
-  - Relative links are formatted with only the folder name of the referenced readme doc. E.g.,   ../perfomance/  (not ../perfomance/readme.md)
-  - Section headers require a space after hashes, formatted as  ## Section Heading *(not ##Section Heading)*. Otherwise the markdown won't parse correctly into the site.
+  - A folder can contain more folders or a `readme.md`
+  - One `.md` file per folder
+  - Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs on the Microsoft Edge Dev site. Don't use underscores or PascaleCase/camelCase.
+  - Relative links are formatted with only the folder name of the referenced readme doc. E.g.,   `../perfomance/`  (not `../perfomance/readme.md`)
+  - Section headers require a space after hashes, formatted as  `## Section Heading` *(not `##Section Heading`)*. Otherwise the markdown won't parse correctly into the site.
 
 # Styling
 
-The following sections you an overview of what elements have been styled up for documentation in the developer portal site.
+The following sections give you an overview of what elements have been styled up for documentation in the developer portal site.
 
 ## Header elements
 
-Only the h3 and the h4 elements have a faint separator line underneath them. h1 (use for main title only) and h2 are simply larger text.
+Only the `h3` and the `h4` elements have a faint separator line underneath them. `h1` (use for main title only) and `h2` are simply larger text.
 
 ### Subsection header
 
@@ -49,7 +49,7 @@ These other text elements have styling available:
 
 _________________________
 
-Horizontal rules are available to use. Would suggest using sparingly to keep things from getting overly cluttered with lines.
+Horizontal rules are available to use. We would suggest using them sparingly to keep things from getting overly cluttered with lines.
 Do not use horizontal rules consecutively with heading tags; some of them are already styled with lines for visual hierarchy.
 
 ## Displaying code
@@ -96,10 +96,10 @@ You precede a single line of Markdown with the `>note.*` syntax, like so:
 No closing tag is needed. If you try to "wrap" this custom syntax around multiple lines, **it will not work!**
 
 But how do the titles ("Note", "Warning", "Error") get inserted into the note output? The custom Markdown tag actually does a lot
-more than you might think. By using `>note.warning`, you are creating a div with class `.note--warning`, and adding to that div a
+more than you might think. By using `>note.warning`, you are creating a `div` with class `.note--warning`, and adding to that `div` a
 title `"Warning"`.
 
-If you were to do `>note.pineapple`, you would get a div with class `.note--pineapple`, and a title of "Pineapple". Because we have
+If you were to do `>note.pineapple`, you would get a `div` with class `.note--pineapple`, and a title of "Pineapple". Because we have
 not explicitly styled `.note--pineapple`, the styling would simply match the default note styling.
 
 File an issue if you really need a custom note class to be styled to not look "default". For the most part, though, you should
