@@ -121,7 +121,7 @@ for(var i = 0; i < 10; i++){
 `mylabel:         11`
 
 ### Timers
-Like creating [counters](https://msdn.microsoft.com/en-us/library/dn706051(v=vs.85).aspx#counters), creating a timer within code is relatively easy, but the [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173(v=vs.85).aspx) provides a simple shorthand that makes it even easier.
+Like creating counters, creating a timer within code is relatively easy, but the [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173(v=vs.85).aspx) provides a simple shorthand that makes it even easier.
 
 Use [`console.time()`](https://msdn.microsoft.com/en-us/library/dn265071(v=vs.85).aspx) anywhere in your code to begin a timer and [`console.timeEnd()`](https://msdn.microsoft.com/en-us/library/dn265072(v=vs.85).aspx) to end the timer and send the result to the console. If you want to label your timer or need more than one timer, pass a string with a unique label as the argument for both the `console.time()` and `console.timeEnd()` methods. If you don't pass an argument, the methods use "default" as the label.
 
