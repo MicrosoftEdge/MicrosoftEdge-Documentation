@@ -12,9 +12,9 @@ The primary use for the **Console** tool is to communicate into and out of runni
 
 *In the image above, as the JavaScript command to reload the page is entered, the IntelliSense auto code completion pops up. Once the reload method is entered, the page reloads and the console sends JavaScript debugging messages out.*
 
-   - [In:](#sendingjavascriptintotheconsole) Run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly, all while taking advantage of the Microsoft Edge [IntelliSense](https://msdn.microsoft.com/en-us/library/hcw1s69b.aspx) auto code completion.
+   - [In:](#sending-javascript-into-the-console) Run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly, all while taking advantage of the Microsoft Edge [IntelliSense](https://msdn.microsoft.com/en-us/library/hcw1s69b.aspx) auto code completion.
 
-   - [Out:](#sendinginfototheconsole) Microsoft Edge and JavaScript code deliver status, error, and debug messages to developers, including inspectable JavaScript objects and DOM Nodes. For more on how to send debug information and other messages to the console from your code, read up on [Using the Console API](./using-the-console-api/).
+   - [Out:](#sending-info-to-the-console) Microsoft Edge and JavaScript code deliver status, error, and debug messages to developers, including inspectable JavaScript objects and DOM Nodes. For more on how to send debug information and other messages to the console from your code, read up on [Using the Console API](./using-the-console-api/).
 
 ### Messages Microsoft Edge sends to the console
 
