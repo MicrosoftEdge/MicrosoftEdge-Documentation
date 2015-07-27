@@ -116,8 +116,8 @@ HTML1527 | "DOCTYPE expected. The shortest valid doctype is `<!DOCTYPE html>`."
 HTML1528 | "Unexpected `<image>` in HTML content. Use `<img>` instead."
 HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "http://www.w3.org/1999/xlink"."
 HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements." 
-HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "http://www.w3.org/2000/svg"."
-HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "http://www.w3.org/1998/Math/MathML".
+HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "http://www.w3.org/2000/svg/"."
+HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "http://www.w3.org/1998/Math/MathML/".
 
 ### HTTP Error Codes
 HTTP error codes are returned from remote servers in response to requests. Probably the most familiar is HTTP404, which is returned whenever the server can't find the page/document specified in the URI.
@@ -260,9 +260,9 @@ XML5658 | "A colon ":" must not occur in a name."
 XML5659 | "Declared prefix."
 XML5660 | "The specified prefix has not been declared."
 XML5661 | "Non-default namespace declarations must not have an empty URI."
-XML5662 | "The "xml" prefix is reserved and must have the URI "http://www.w3.org/XML/1998/namespace"."
+XML5662 | "The "xml" prefix is reserved and must have the URI "http://www.w3.org/XML/1998/namespace/"."
 XML5663 | "The "xmlns" prefix is reserved for use by XML."
-XML5664 | "The xml namespace URI (http://www.w3.org/XML/1998/namespace) must only be assigned to the prefix "xml"."
+XML5664 | "The xml namespace URI (http://www.w3.org/XML/1998/namespace/) must only be assigned to the prefix "xml"."
 XML5665 | "The xmlns namespace URI (http://www.w3.org/2000/xmlns/) is reserved and must not be used."
 XML5666 | "SC_E_SC"
 XML5667 | "Exceeded maximum depth of nested elements."
@@ -273,8 +273,8 @@ XML5671 | "WR_E_NSPREFIXDECLARED: writer: namespace prefix is already declared w
 XML5672 | "WR_E_NSPREFIXWITHEMPTYNSURI: writer: cannot use prefix with empty namespace URI."
 XML5673 | "WR_E_DUPLICATEATTRIBUTE: writer: duplicate attribute."
 XML5674 | "WR_E_XMLNSPREFIXDECLARATION: writer: can not redefine the xmlns prefix."
-XML5675 | "WR_E_XMLPREFIXDECLARATION: writer: xml prefix must have the http://www.w3.org/XML/1998/namespace URI."
-XML5676 | "WR_E_XMLURIDECLARATION: writer: xml namespace URI (http://www.w3.org/XML/1998/namespace) must be assigned only to prefix "xml"."
+XML5675 | "WR_E_XMLPREFIXDECLARATION: writer: xml prefix must have the http://www.w3.org/XML/1998/namespace/ URI."
+XML5676 | "WR_E_XMLURIDECLARATION: writer: xml namespace URI (http://www.w3.org/XML/1998/namespace/) must be assigned only to prefix "xml"."
 XML5677 | "WR_E_XMLNSURIDECLARATION: writer: xmlns namespace URI (http://www.w3.org/2000/xmlns/) is reserved and must not be used."
 XML5678 | "WR_E_NAMESPACEUNDECLARED: writer: namespace is not declared."
 XML5679 | "WR_E_INVALIDXMLSPACE: writer: invalid value of xml:space attribute (allowed values are "default" and "preserve")."
