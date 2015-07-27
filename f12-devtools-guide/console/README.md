@@ -10,7 +10,7 @@ The primary use for the **Console** tool is to communicate into and out of runni
 
 ![Edge Console](../media/Edge_Console.gif)
 
-*In the image above, as the JavaScript command to reload the page is entered **in**, the IntelliSense auto code completion pops up. Once the reload method is selected, the page reloads and the console sends JavaScript debugging messages **out**.*
+*In the image above, as the JavaScript command to reload the page is entered in, the IntelliSense auto code completion pops up. Once the reload method is selected, the page reloads and the console sends JavaScript debugging messages out.*
 
    - **In:** Run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly, all while taking advantage of the Microsoft Edge [IntelliSense](https://msdn.microsoft.com/en-us/library/hcw1s69b.aspx) auto code completion.
 
