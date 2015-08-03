@@ -21,6 +21,20 @@ Switch to Performance | CTRL+5
 Switch to Memory | CTRL+6 
 Switch to Emulation | CTRL+7 
 Switch to Experiments | CTRL+8 
+Help Document | F1 
+Bring application to foreground | F12
+Show/Hide F12 | F12 
+Next tool | CTRL+F6 
+Previous tool | CTRL+SHIFT+F6 
+Previous tool (from history) | CTRL+SHIFT+[ 
+Next tool (from history) | CTRL+SHIFT+] 
+Next Subframe 	  | F6 
+Previous Subframe | SHIFT+F6 
+Next match in Search box | F3
+Previous match in Search box | SHIFT+F3
+Find in search box | CTRL+F
+Give focus to console at the bottom | ALT+SHIFT+I 
+
 Refresh the page <br>**Note:** if you're debugging and paused at a breakpoint,<br> this resumes execution first. | CTRL+SHIFT+F5 <br>or CTRL+R
 
 ## Console shortcuts
@@ -28,11 +42,12 @@ These shortcuts work with both the main Console panel and the Console you can op
 
 Action | Shortcut 
 :------------ | :------------- 
-Enter multiline mode | CTRL+ALT+M or SHIFT+ENTER 
+Enter multiline mode | CTRL+SHIFT+M or SHIFT+ENTER 
 Exit multiline mode | CTRL+ALT+M 
 Execute in single line mode | ENTER 
 Execute in multiline mode | CTRL+ENTER 
 Clear the Console of all messages | CTRL+L 
+Clear input | ESC 
 
 ## DOM Explorer Shortcuts
 
@@ -74,6 +89,22 @@ Toggle Just My Code mode | CTRL+J
 Toggle Just My Code frames display | CTRL+SHIFT+J 
 Toggle Library code in File Picker | CTRL+L 
 Toggle the original / current source display for files with source maps | CTRL+SHIFT+M 
+Go to Breakpoint window | ALT+SHIFT+B 
+Go to Watch window | ALT+SHIFT+W 
+Go to Call Stack window | ALT+SHIFT+C 
+Go to specific line number | CTRL+G 
+Shortcut for toggle panes in the control panel (right side) | ALT+SHIFT+T 
+Focus to Editor | CTRL + E 
+Refresh watch (while on watch) | F5
+Set next statement | CTRL+SHIFT+F10 
+Switch to open debugger document (from left to right. Num* is 1-9) | CTRL+SHIFT+Num* 
+Go to Definition | CTRL+D 
+Find References |CTRL+SHIFT+D 
+Save edits | CTRL+S 
+Refresh Cookies	| CTRL+F5 
+Delete All Cookies | CTRL+SHIFT+DEL 
+Delete All Session Cookies | CTRL+DEL 
+Go To Symbol | CTRL+SHIFT+, 
 
 ## Network shortcuts
 These shortcuts start and stop the network capture.
@@ -82,6 +113,9 @@ Action | Shortcut
 :------------ | :------------- 
 Start capturing network activity in the active tab  | CTRL+E
 Stop capturing network activity in the active tab | CTRL+E
+Export as HAR | CTRL+S
+Find | CTRL+F 
+Copy | CTRL+C
 
 ## Memory shortcuts
 Action | Shortcut 
@@ -90,11 +124,15 @@ Start / Stop a profiling session  | CTRL+E
 Take a memory heap snapshot | CTRL+SHIFT+T 
 Import Profiling session | CTRL+O
 Export Profiling session | CTRL+S
+View source in Detail view | ENTER 
+Extended Nodes | RIGHT ARROW
+Closured Nodes | LEFT ARROW
+
 
 ## Emulation shortcuts
 Action | Shortcut 
 :------------ | :------------- 
-Reset Emulation settings  | CTRL+E 
+Reset Emulation settings | CTRL+SHIFT+L 
 
 ## Related topics
 
