@@ -8,8 +8,7 @@ The following types of WebDriver commands are currently supported in Microsoft E
 | Command Category | Supported Commands |
 | :--------------- | :------------------|
 | [Dialogs](./dialogs/) | Accept Alert, Dismiss Alert, Get Text |
-| [Element Inspection](./element-inspection/) | Get CSS Value, Get Element Attribute, Get Element Tag Name, Get Element Text, Is Element Displayed, Is Element Enabled, Is Element Selected |
-| [Elements](./elements/) | Find Element, Find Elements |
+| [Element Inspection](./element-inspection/) | Find Element, Find Elements, Get CSS Value, Get Element Attribute, Get Element Tag Name, Get Element Text, Is Element Displayed, Is Element Enabled, Is Element Selected |
 | [Input](./input/) | Clear, Click, Send Keys |
 | [Navigation](./navigation/) | Back, Forward, Get, Get Title, Refresh |
 | [Screenshots](./screenshots/) | Take Element Screenshot, Take Screenshot |
