@@ -21,7 +21,8 @@ Microsoft Edge supports the following session-related WebDriver commands.
         "platformVersion": "10"
     },
     "requiredCapabilities": {}
-}```
+}
+```
 
 **JSON Response Value**
 ```
