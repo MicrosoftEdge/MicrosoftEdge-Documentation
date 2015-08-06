@@ -54,7 +54,7 @@ After the **Debugger tool** reaches a breakpoint and you're ready to move on fro
 
 From left to right, the icons are:
 
-  - **Continue** (F5 or F8): Leaves break mode and continues to the next breakpoint. New in Cumulative Security Update for Internet Explorer (KB2976627), holding down F5 will repeatedly move past breaks until you release it.
+  - **Continue** (F5 or F8): Leaves break mode and continues to the next breakpoint. Holding down F5 will repeatedly move past breaks until you release it.
   - **Break** (CTRL + SHIFT + B): Breaks on the next statement run.
   - **Step into** (F11): Steps into the function being called, or if not at a function, to the next statement.
   - **Step over** (F10): Steps over the function being called, or if not at a function, to the next statement.
@@ -162,7 +162,7 @@ You can manage multiple points in the **Breakpoints** pane. Right-click anywhere
 
 The panel can trace many breakpoints from many different scripts that may be feeding your pages. Clicking any breakpoint's associated file name makes that the active file in the *script* pane and scrolls to the appropriate line.
 
-Breakpoints used to be session based in Windows Internet Explorer, but in Internet Explorer 11 the behavior was changed so they are kept and no longer disappear when you close the browser. This means you no longer have to set them every time you open the browser to debug, but it also means you might want to manually delete them when you're done debugging. The easiest way is to open a script file and click the **delete all** icon in the upper-right of the **Breakpoints** pane.
+Breakpoints used to be session based in Windows Internet Explorer, but in Microsoft Edge the behavior was changed so they are kept and no longer disappear when you close the browser. This means you no longer have to set them every time you open the browser to debug, but it also means you might want to manually delete them when you're done debugging. The easiest way is to open a script file and click the **delete all** icon in the upper-right of the **Breakpoints** pane.
 
 Multiple breakpoints can be selected using `CTRL + CLICK, SHIFT + CLICK, or CTRL + A` methods.
 
