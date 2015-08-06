@@ -15,21 +15,22 @@ The top row of icons in the **Network** tool control the recording of network tr
 
 From left to right, the tools are:
 
-  - **Enable/Disable network traffic capturing (F5/SHIFT+ F5)** starts and stops the recording of network traffic.
+  - **Enable/Disable network traffic capturing (Ctrl + E)** starts and stops the recording of network traffic.
 
-  - **Export captured traffic** saves the data you've recorded to an XML or CSV (comma separated value) format.
+  - **Export captured traffic as a HAR** (Ctrl + S) saves the data you've recorded to a .har file (HTTP Archive specification -- captures page loading information in a JSON format).
 
-  - **Always refresh from server** is a toggle switch with on and off states. When on, Internet Explorer 11 downloads all page elements from the remote server, not from the browser cache.
+  - **Always refresh from server** is a toggle switch with on and off states. When on, Microsoft Edge downloads all page elements from the remote server, not from the browser cache.
 
-  - **Clear browser cache (CTRL + R)** removes saved files from the browser's cache. Browsers commonly save page elements to disk and use them again for faster reloads. When you're trying to get the true measure of a page's load time, clearing the cache makes sure all elements are being downloaded from the network.
+  - **Clear cache** removes saved files from the browser's cache. Browsers commonly save page elements to disk and use them again for faster reloads. When you're trying to get the true measure of a page's load time, clearing the cache makes sure all elements are being downloaded from the network.
 
   - **Clear cookies** ensures that all cookies related to the current domain are removed, so that you get the experience of loading the page for the first time.
 
   - **Clear entries on navigate** is a toggle switch with on and off states. When in the off state, network traffic for a window or tab is recorded continuously as the browser moves from page to page. When in the on state, recorded traffic is cleared each time you navigate to a new page. This is turned on by default.
 
-  - **Clear all entries** clears all recorded network traffic from the tool.
+  - **Clear session** clears all recorded network traffic from the tool.
 
-  - **Filter by Content Type** lets you restrict the type of content displayed. Click for a drop down menu of content types, currently offering: Documents, Style sheets, Images, Scripts, Media, Fonts, XHR, and Other. The default is to show all, but you can limit it to any combination of those you choose.
+  - **Content type filter** lets you restrict the type of content displayed. Click for a drop down menu of content types, currently offering: Documents, Style sheets, Images, Scripts, Media, Fonts, XHR, and Other. The default is to show all, but you can limit it to any combination of those you choose.
+ 
   - **Find** (far right, not pictured) provides a text search in the item paths, so you can easily find specific files.
 
 By default, a summary view is displayed, as seen here.
@@ -48,7 +49,7 @@ The Summary view shows all network traffic for a page in a table. By default, th
 Column header | Description 
 :------------ | :------------- 
 **Name/Path** | The filename and/or path of the item loaded.
-**Protocol** |	The connection protocol. For example, connections to a standard web server use HTTP, while encrypted connections generally use HTTPS. Internet Explorer supports a number of connection protocols.
+**Protocol** |	The connection protocol. For example, connections to a standard web server use HTTP, while encrypted connections generally use HTTPS. Microsoft Edge supports a number of connection protocols.
 **Method** |	The HTTP method verb (for example, `POST` or `GET`).
 **Result/Description** |	The HTTP response code and a brief description of what it means.
 **Content Type** |	The type of content that's received.
