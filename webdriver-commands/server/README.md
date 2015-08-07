@@ -5,25 +5,32 @@ Microsoft Edge supports the following server-related WebDriver commands: [Shut D
 
 ### Shut Down
 
-| Command Name | (Shut Down) |
-| :----------- | ---------- |
+| **Name** | (Shut Down) |
+| :------- | :---------- |
 | **Description** | Shuts down the server. |
+| **Spec** | N/A. |
 | **HTTP Request** | `GET /shutdown` |
-| **JSON Parameters** | None |
-| **JSON Response Value** | None |
-| **Spec** | N/A |
-| **Spec Link** | N/A |
+
+**JSON Parameters**
+None.
+
+**JSON Response Value**
+None.
 
 ## /Status
 
 ### Status
 
-| Command Name | Status |
-| :----------- | ------ |
-| **Description** | Queries the current status of the server. |
-| **HTTP Request** | `GET /status` |
-| **JSON Parameters** | None |
-| **JSON Response Value** |
+| **Name** | Status |
+| :------- | :---------- |
+| **Description** | Retrieves the current status of the server. |
+| **Spec** | [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/status) |
+| **HTTP Request** | `GET /status |
+
+**JSON Parameters**
+None.
+
+**JSON Response Value**
 ```
 {
     "sessionId": "{sessionId}",
@@ -40,5 +47,3 @@ Microsoft Edge supports the following server-related WebDriver commands: [Shut D
     }
 }
 ```
-| **Spec** | JSON Wire Protocol |
-| **Spec Link** | https://code.google.com/p/selenium/wiki/JsonWireProtocol#/status |

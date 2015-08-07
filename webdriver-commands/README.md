@@ -12,7 +12,7 @@ The following types of WebDriver commands are currently supported in Microsoft E
 | [Input](./input/) | Clear, Click, Send Keys |
 | [Navigation](./navigation/) | Back, Forward, Get, Get Title, Refresh |
 | [Screenshots](./screenshots/) | Take Element Screenshot, Take Screenshot |
-| [Script Execution](./script-execution/) | Add Cookie, Execute Script, Get Cookie |
+| [Script Execution](./script-execution/) | Add Cookie, Execute Script, Get Cookie, Get Cookies, Delete Cookie, Delete Cookies |
 | [Server](./server/) | Shutdown, Status |
-| [Sessions](./sessions/) | Get Capabilities, New Session, Sessions, Set Timeout |
+| [Sessions](./sessions/) | Delete, Get Capabilities, New Session, Sessions, Set Timeout |
 | [Window](./window/) | Close Window, Get Window Handle, Get Window Handles, Switch To Window |
