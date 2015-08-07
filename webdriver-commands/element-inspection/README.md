@@ -1,23 +1,16 @@
 # Element Inspection Commands
 Microsoft Edge supports the following WebDriver commands for inspecting elements:
 
--  /session/{sessionId}/element
-  - [Find Element](#find-element)
-  - [Find Elements](#find-elements)
-- /session/{sessionId}/element/{id}/attribute/{name}
-  - [Get Element Attribute](#get-element-attribute)
-- /session/{sessionId}/element/{id}/css/{propertyName}
-  - [Get CSS Value](#get-css-value)
-- /session/{sessionId}/element/{id}/displayed
-  - [Is Element Displayed](#is-element-displayed)
-- /session/{sessionId}/element/{id}/enabled
-  - [Is Element Enabled](#is-element-enabled)
-- /session/{sessionId}/element/{id}/name
-  - [Get Element Tag Name](#get-element-tag-name)
-- /session/{sessionId}/element/{id}/selected
-  - [Is Element Selected](#is-element-selected)
-- /session/{sessionId}/element/{id}/text
-  - [Get Element Text](#get-element-text)
+| HTTP Request | Commands |
+| ------------ | -------- |
+|  /session/{sessionId}/element| [Find Element](#find-element), [Find Elements](#find-elements)|
+| /session/{sessionId}/element/{id}/attribute/{name}| [Get Element Attribute](#get-element-attribute|
+| /session/{sessionId}/element/{id}/css/{propertyName}| [Get CSS Value](#get-css-value)|
+| /session/{sessionId}/element/{id}/displayed| [Is Element Displayed](#is-element-displayed)|
+| /session/{sessionId}/element/{id}/enabled| [Is Element Enabled](#is-element-enabled)|
+| /session/{sessionId}/element/{id}/name| [Get Element Tag Name](#get-element-tag-name)|
+| /session/{sessionId}/element/{id}/selected| [Is Element Selected](#is-element-selected)|
+| /session/{sessionId}/element/{id}/text| [Get Element Text](#get-element-text)|
 
 
 ## Find Element

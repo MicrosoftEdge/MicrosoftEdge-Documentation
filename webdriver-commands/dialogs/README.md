@@ -1,12 +1,11 @@
 # Alert Dialog Commands
 Microsoft Edge supports the following WebDriver commands for interacting with alert dialogs:
 
-- /session/{sessionId}/accept_alert
-  - [Accept Alert](#accept-alert)
-- /session/{sessionId}/alert_text
-    - [Get Text](#get-text)
-- /session/{sessionId}/dismiss_alert
-  - [Dismiss Alert](#dismiss-alert)
+| HTTP Request | Commands |
+| ------------ | -------- |
+| /session/{sessionId}/accept_alert|[Accept Alert](#accept-alert)|
+| /session/{sessionId}/alert_text|[Get Text](#get-text)|
+| /session/{sessionId}/dismiss_alert| [Dismiss Alert](#dismiss-alert)|
 
 ## Accept Alert
 

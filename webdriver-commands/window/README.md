@@ -1,13 +1,11 @@
 # Window Commands
 Microsoft Edge supports the following window-related WebDriver commands:
 
-- /session/{sessionId}/window
-  - [Close Window](#close-window)
-  - [Switch To Window](#switch-to-window)
-- /session/{sessionId}/window_handle
-  - [Get Window Handle](#get-window-handle)
-- /session/{sessionId}/window_handles
-  - [Get Window Handles](#get-window-handles)
+| HTTP Request | Commands |
+| ------------ | -------- |
+| /session/{sessionId}/window| [Close Window](#close-window), [Switch To Window](#switch-to-window)|
+| /session/{sessionId}/window_handle| [Get Window Handle](#get-window-handle)|
+| /session/{sessionId}/window_handles| [Get Window Handles](#get-window-handles)|
 
 ## Close Window
 

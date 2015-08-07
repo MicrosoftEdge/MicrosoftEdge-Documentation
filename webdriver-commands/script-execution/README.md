@@ -1,15 +1,11 @@
 # Script Execution Commands
 Microsoft Edge supports the following WebDriver commands for script execution:
 
-- /session/{sessionId}/cookie
-  - [Add Cookie](#add-cookie)
-  - [Delete Cookies](#delete-cookies)
-  - [Get Cookies](#get-cookies)
-- ## /session/{sessionId}/cookie/{name}
-  - [Delete Cookie](#delete-cookie)
-  - [Get Cookie](#get-cookie)
-- /session/{sessionId}/execute
-  - [Execute Script](#execute-script)
+| HTTP Request | Commands |
+| ------------ | -------- |
+| /session/{sessionId}/cookie| [Add Cookie](#add-cookie), [Delete Cookies](#delete-cookies), [Get Cookies](#get-cookies)|
+| /session/{sessionId}/cookie/{name}| [Delete Cookie](#delete-cookie), [Get Cookie](#get-cookie)|
+| /session/{sessionId}/execute}| [Execute Script](#execute-script)|
 
 ## Add Cookie
 | **Name** | Add Cookie |

@@ -1,15 +1,12 @@
 # Session Commands
 Microsoft Edge supports the following session-related WebDriver commands:
 
-- /session
-  - [New Session](#new-session)
-- /sessions
-  - [Sessions](#sessions)
-- /session/{sessionId}
-  - [Delete](#delete)
-  - [Get Capabilities](#get-capabilities)
-- /session/{sessionId}/timeouts
-  - [Set Timeout](#set-timeout)
+| HTTP Request | Commands |
+| ------------ | -------- |
+| /session| [New Session](#new-session)|
+| /sessions| [Sessions](#sessions)|
+| /session/{sessionId}| [Delete](#delete), [Get Capabilities](#get-capabilities)|
+| /session/{sessionId}/timeouts| [Set Timeout](#set-timeout)|
 
 ## New Session
 
