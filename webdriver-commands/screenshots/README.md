@@ -1,10 +1,31 @@
 # Screenshot Commands
-Microsoft Edge supports the following WebDriver commands for taking screenshots: [Take Screenshot](#take-screenshot),
-[Take Element Screenshot](#take-element-screenshot).
+Microsoft Edge supports the following WebDriver commands for taking screenshots:
 
-## /session/{sessionId}/screenshot
+- /session/{sessionId}/element/{id}/screenshot
+  - [Take Element Screenshot](#take-element-screenshot)
+- /session/{sessionId}/screenshot
+  - [Take Screenshot](#take-screenshot)
 
-### Take Screenshot
+## Take Element Screenshot
+| **Name** | Take Element Screenshot |
+| :------- | :------- |
+| **Description** | Takes a screenshot of the currently selected element. |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#take-element-screenshot) |
+| **HTTP Request** | `GET /session/{sessionId}/element/{elementId}/screenshot` |
+
+**JSON Parameters**
+None
+
+**JSON Response Value**
+```
+{
+    "sessionId": "{sessionId}",
+    "status": 0,
+    "value": "{image}"
+}
+```
+
+## Take Screenshot
 
 | **Name** | Take Screenshot |
 | :------- | :---------- |
@@ -21,26 +42,5 @@ None.
     "sessionId": "{sessionId}",
     "status": 0,
     "value": "{base64EncodedString}"
-}
-```
-
-## /session/{sessionId}/element/{id}/screenshot
-
-### Take Element Screenshot
-| **Name** | Take Element Screenshot |
-| :------- | :------- |
-| **Description** | Takes a screenshot of the currently selected element. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#take-element-screenshot) |
-| **HTTP Request** | `GET /session/{sessionId}/element/{elementId}/screenshot` |
-
-**JSON Parameters**
-None
-
-**JSON Response Value**
-```
-{
-    "sessionId": "{sessionId}",
-    "status": 0,
-    "value": "{image}"
 }
 ```

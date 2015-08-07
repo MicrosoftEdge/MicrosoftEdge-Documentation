@@ -1,44 +1,17 @@
 # Script Execution Commands
-Microsoft Edge supports the following WebDriver commands for script execution: [Execute Script](#execute-script),
-[Add Cookie](#add-cookie), [Get Cookies](#get-cookies), [Delete Cookies](#delete-cookies), [Get Cookie](#get-cookie),
-[Delete Cookie](#delete-cookie).
+Microsoft Edge supports the following WebDriver commands for script execution:
 
-## /session/{sessionId}/execute
+- /session/{sessionId}/cookie
+  - [Add Cookie](#add-cookie)
+  - [Delete Cookies](#delete-cookies)
+  - [Get Cookies](#get-cookies)
+- ## /session/{sessionId}/cookie/{name}
+  - [Delete Cookie](#delete-cookie)
+  - [Get Cookie](#get-cookie)
+- /session/{sessionId}/execute
+  - [Execute Script](#execute-script)
 
-### Execute Script
-
-| **Name** | Execute Script |
-| :------- | :---------- |
-| **Description** | Inject a snippet of JavaScript into the page for execution in the context of the currently selected frame. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#execute-script), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/execute) |
-| **HTTP Request** | `POST /session/{sessionId}/execute` |
-
-**JSON Parameters**
-```
-{
-    "script": "return arguments[0].second;",
-    "args": [
-        {
-            "first": "1st",
-            "second": "2nd",
-            "third": "3rd"
-        }
-    ]
-}
-```
-
-**JSON Response Value**
-```
-{
-    "sessionId": "{sessionId}",
-    "status": 0,
-    "value": "2nd"
-}
-```
-
-## /session/{sessionId}/cookie
-
-### Add Cookie
+## Add Cookie
 | **Name** | Add Cookie |
 | :------- | :------- |
 | **Description** | Adds a cookie. |
@@ -65,7 +38,26 @@ Microsoft Edge supports the following WebDriver commands for script execution: [
 }
 ```
 
-### Get Cookies
+## Delete Cookies
+| **Name** | Delete Cookies |
+| :------- | :------- |
+| **Description** | Delete all cookies visible to the current page. |
+| **Spec** | [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#DELETE_/session/:sessionId/cookie) |
+| **HTTP Request** | `DELETE /session/{sessionId}/cookie` |
+
+**JSON Parameters**
+None.
+
+**JSON Response Value**
+```
+{
+    "sessionId": "{sessionId}",
+    "status": 0,
+    "value": null
+}
+```
+
+## Get Cookies
 
 | **Name** | Get Cookies |
 | :------- | :------- |
@@ -95,12 +87,13 @@ None.
 }
 ```
 
-### Delete Cookies
-| **Name** | Delete Cookies |
+## Delete Cookie
+| **Name** | Delete Cookie |
 | :------- | :------- |
-| **Description** | Delete all cookies visible to the current page. |
-| **Spec** | [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#DELETE_/session/:sessionId/cookie) |
-| **HTTP Request** | `DELETE /session/{sessionId}/cookie` |
+| **Description** | Deletes the cookie with the given name. |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#delete-cookie), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#DELETE_/session/:sessionId/cookie/:name
+) |
+| **HTTP Request** | `DELETE /session/{sessionId}/cookie/{name}` |
 
 **JSON Parameters**
 None.
@@ -110,13 +103,19 @@ None.
 {
     "sessionId": "{sessionId}",
     "status": 0,
-    "value": null
+    "value": {
+        "name": "{name}",
+        "value": "{value}",
+        "path": "/",
+        "domain": "{url}",
+        "expiry": null,
+        "secure": false,
+        "httpOnly": false
+    }
 }
 ```
 
-## /session/{sessionId}/cookie/{name}
-
-### Set Timeout
+## Get Cookie
 | **Name** | Get Cookie |
 | :------- | :------- |
 | **Description** | Retrieves the cookie with the given name. |
@@ -143,30 +142,33 @@ None.
 }
 ```
 
-### Delete Cookie
-| **Name** | Delete Cookie |
-| :------- | :------- |
-| **Description** | Deletes the cookie with the given name. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#delete-cookie), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#DELETE_/session/:sessionId/cookie/:name
-) |
-| **HTTP Request** | `DELETE /session/{sessionId}/cookie/{name}` |
+## Execute Script
+
+| **Name** | Execute Script |
+| :------- | :---------- |
+| **Description** | Inject a snippet of JavaScript into the page for execution in the context of the currently selected frame. |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#execute-script), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/execute) |
+| **HTTP Request** | `POST /session/{sessionId}/execute` |
 
 **JSON Parameters**
-None.
+```
+{
+    "script": "return arguments[0].second;",
+    "args": [
+        {
+            "first": "1st",
+            "second": "2nd",
+            "third": "3rd"
+        }
+    ]
+}
+```
 
 **JSON Response Value**
 ```
 {
     "sessionId": "{sessionId}",
     "status": 0,
-    "value": {
-        "name": "{name}",
-        "value": "{value}",
-        "path": "/",
-        "domain": "{url}",
-        "expiry": null,
-        "secure": false,
-        "httpOnly": false
-    }
+    "value": "2nd"
 }
 ```

@@ -1,58 +1,19 @@
 # Navigation Commands
-Microsoft Edge supports the following WebDriver commands for navigation: [Get](#get),
-[Get Current URL](#get-current-url), [Back](#back), [Forward](#forward), [Refresh](#refresh),
-[Title](#title).
+Microsoft Edge supports the following WebDriver commands for navigation:
 
-## /session/{sessionId}/url
+- /session/{sessionId}/back
+  - [Back](#back)
+- /session/{sessionId}/forward
+  - [Forward](#forward)
+- /session/{sessionId}/refresh
+  - [Refresh](#refresh)
+- /session/{sessionId}/title
+ - [Get Title](#get-title)
+- /session/{sessionId}/url
+  - [Get](#get)
+  - [Get Current URL](#get-current-url)
 
-### Get
-
-| **Name** | Get |
-| :------- | :---------- |
-| **Description** | Navigates to the specified URL. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#get), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/url) |
-| **HTTP Request** | `POST /session/{sessionId}/url` |
-
-**JSON Parameters**
-```
-{
-    "url": "https://www.bing.com/"
-
-}
-```
-
-**JSON Response Value**
-```
-{
-    "sessionId": "{sessionId}",
-    "status": 0,
-    "value": null
-}
-```
-
-### Get Current URL
-
-| **Name** | Get Current URL |
-| :------- | :---------- |
-| **Description** | Retrieves the URL of the current page. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#get-current-url), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/url) |
-| **HTTP Request** | `GET /session/{sessionId}/url` |
-
-**JSON Parameters**
-None.
-
-**JSON Response Value**
-```
-{
-    "sessionId": "{sessionId}",
-    "status": 0,
-    "value": "{url}"
-}
-```
-
-## /session/{sessionId}/back
-
-### Back
+## Back
 
 | **Name** | Back |
 | :------- | :---------- |
@@ -72,9 +33,7 @@ None.
 }
 ```
 
-## /session/{sessionId}/forward
-
-### Forward
+## Forward
 
 | **Name** | Forward |
 | :------- | :---------- |
@@ -94,9 +53,7 @@ None.
 }
 ```
 
-## /session/{sessionId}/refresh
-
-### Refresh
+## Refresh
 
 | **Name** | Refresh |
 | :------- | :---------- |
@@ -116,9 +73,7 @@ None.
 }
 ```
 
-## /session/{sessionId}/title
-
-### Get Title
+## Get Title
 
 | **Name** | Get Title |
 | :------- | :---------- |
@@ -135,5 +90,49 @@ None.
     "sessionId": "{sessionId}",
     "status": 0,
     "value": "{title}"
+}
+```
+
+## Get
+
+| **Name** | Get |
+| :------- | :---------- |
+| **Description** | Navigates to the specified URL. |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#get), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/url) |
+| **HTTP Request** | `POST /session/{sessionId}/url` |
+
+**JSON Parameters**
+```
+{
+    "url": "https://www.bing.com/"
+
+}
+```
+**JSON Response Value**
+```
+{
+    "sessionId": "{sessionId}",
+    "status": 0,
+    "value": null
+}
+```
+
+## Get Current URL
+
+| **Name** | Get Current URL |
+| :------- | :---------- |
+| **Description** | Retrieves the URL of the current page. |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#get-current-url), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/url) |
+| **HTTP Request** | `GET /session/{sessionId}/url` |
+
+**JSON Parameters**
+None.
+
+**JSON Response Value**
+```
+{
+    "sessionId": "{sessionId}",
+    "status": 0,
+    "value": "{url}"
 }
 ```

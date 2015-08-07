@@ -1,13 +1,26 @@
 # Element Inspection Commands
-Microsoft Edge supports the following WebDriver commands for inspecting elements: [Find Element](#find-element),
-[Find Elements](#find-elements), [Is Element Displayed](#is-element-displayed),
-[Is Element Selected](#is-element-selected), [Get Element Attribute](#get-element-attribute),
-[Get CSS Value](#get-css-value), [Get Element Text](#get-element-text),
-[Get Element Tag Name](#get-element-tag-name), [Is Element Enabled](#is-element-enabled).
+Microsoft Edge supports the following WebDriver commands for inspecting elements:
 
-## /session/{sessionId}/element
+-  /session/{sessionId}/element
+  - [Find Element](#find-element)
+  - [Find Elements](#find-elements)
+- /session/{sessionId}/element/{id}/attribute/{name}
+  - [Get Element Attribute](#get-element-attribute)
+- /session/{sessionId}/element/{id}/css/{propertyName}
+  - [Get CSS Value](#get-css-value)
+- /session/{sessionId}/element/{id}/displayed
+  - [Is Element Displayed](#is-element-displayed)
+- /session/{sessionId}/element/{id}/enabled
+  - [Is Element Enabled](#is-element-enabled)
+- /session/{sessionId}/element/{id}/name
+  - [Get Element Tag Name](#get-element-tag-name)
+- /session/{sessionId}/element/{id}/selected
+  - [Is Element Selected](#is-element-selected)
+- /session/{sessionId}/element/{id}/text
+  - [Get Element Text](#get-element-text)
 
-### Find Element
+
+## Find Element
 
 | **Name** | Find Element |
 | :------- | :---------- |
@@ -35,7 +48,7 @@ Microsoft Edge supports the following WebDriver commands for inspecting elements
 }
 ```
 
-### Find Elements
+## Find Elements
 
 | **Name** | Find Elements |
 | :------- | :---------- |
@@ -63,9 +76,7 @@ Microsoft Edge supports the following WebDriver commands for inspecting elements
 }
 ```
 
-## /session/{sessionId}/element/{id}/attribute/{name}
-
-### Get Element Attribute
+## Get Element Attribute
 
 | **Name** | Get Element Attribute |
 | :------- | :---------- |
@@ -85,9 +96,7 @@ None.
 }
 ```
 
-## /session/{sessionId}/element/{id}/css/{propertyName}
-
-### Get CSS Value
+## Get CSS Value
 
 | **Name** | Get CSS Value |
 | :------- | :---------- |
@@ -107,52 +116,7 @@ None.
 }
 ```
 
-## /session/{sessionId}/element/{id}/text
-
-### Get Element Text
-
-| **Name** | Get Element Text |
-| :------- | :---------- |
-| **Description** | Returns the visible text for the element. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#getcssvalue), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/element/:id/css/:propertyName) |
-| **HTTP Request** | `GET /session/{sessionId}/element/{elementId}/text` |
-
-**JSON Parameters**
-None.
-
-**JSON Response Value**
-```
-{
-    "sessionId": "{sessionId}",
-    "status": 0,
-    "value": "{value}"
-}
-```
-
-## /session/{sessionId}/element/{id}/name
-
-### Get Element Tag Name
-
-| **Name** | Get Element Text |
-| :------- | :---------- |
-| **Description** | Retrieves the specified element's tag name. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#get-element-tag-name), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/element/:id/name) |
-| **HTTP Request** | `GET /session/{sessionId}/element/{elementId}/name` |
-
-**JSON Parameters**
-None.
-
-**JSON Response Value**
-```
-{
-    "sessionId": "{sessionId}",
-    "status": 0,
-    "value": "{tagName}"
-}
-```
-## /session/{sessionId}/element/{id}/displayed
-
-### Is Element Displayed
+## Is Element Displayed
 
 | **Name** | Is Element Displayed |
 | :------- | :---------- |
@@ -172,8 +136,6 @@ None.
 
 }
 ```
-
-## /session/{sessionId}/element/{id}/enabled
 
 ## Is Element Enabled
 
@@ -195,15 +157,33 @@ None.
 }
 ```
 
-## /session/{sessionId}/element/{id}/selected
+## Get Element Tag Name
 
-### Is Element Selected
+| **Name** | Get Element Text |
+| :------- | :---------- |
+| **Description** | Retrieves the specified element's tag name. |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#get-element-tag-name), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/element/:id/name) |
+| **HTTP Request** | `GET /session/{sessionId}/element/{elementId}/name` |
+
+**JSON Parameters**
+None.
+
+**JSON Response Value**
+```
+{
+    "sessionId": "{sessionId}",
+    "status": 0,
+    "value": "{tagName}"
+}
+```
+
+## Is Element Selected
 
 | **Name** | Is Element Selected |
 | :------- | :---------- |
 | **Description** | Determines if an OPTION element, or an INPUT element of type *checkbox* or *radiobutton* is currently selected. |
 | **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#is-element-selected), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/element/:id/selected) |
-| **HTTP Request** | `GET /session/{sessionId}/element/{elementId}/displayed` |
+| **HTTP Request** | `GET /session/{sessionId}/element/{elementId}/selected` |
 
 **JSON Parameters**
 None.
@@ -215,5 +195,26 @@ None.
     "status": 0,
     "value": {bool}
 
+}
+```
+
+
+## Get Element Text
+
+| **Name** | Get Element Text |
+| :------- | :---------- |
+| **Description** | Returns the visible text for the element. |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#getcssvalue), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/element/:id/css/:propertyName) |
+| **HTTP Request** | `GET /session/{sessionId}/element/{elementId}/text` |
+
+**JSON Parameters**
+None.
+
+**JSON Response Value**
+```
+{
+    "sessionId": "{sessionId}",
+    "status": 0,
+    "value": "{value}"
 }
 ```

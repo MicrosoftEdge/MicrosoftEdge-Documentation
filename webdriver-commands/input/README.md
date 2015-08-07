@@ -1,10 +1,14 @@
 # Input Commands
 Microsoft Edge supports the following WebDriver commands for simulating user input:
-[Click](#click), [Clear](#clear), [Send Keys](#send-keys).
 
-## /session/{sessionId}/element/{id}/clear
+- /session/{sessionId}/element/{id}/clear
+  -  [Clear](#clear)
+- /session/{sessionId}/element/{id}/click
+  -  [Click](#click)
+- /session/{sessionId}/element/{id}/value
+  -  [Send Keys](#send-keys)
 
-### Clear
+## Clear
 
 | **Name** | Clear |
 | :------- | :---------- |
@@ -24,9 +28,7 @@ None.
 }
 ```
 
-## /session/{sessionId}/element/{id}/click
-
-### Click
+## Click
 
 | **Name** | Click |
 | :------- | :---------- |
@@ -46,9 +48,7 @@ None.
 }
 ```
 
-## /session/{sessionId}/element/{id}/value
-
-### Send Keys
+## Send Keys
 
 | **Name** | Click |
 | :------- | :---------- |

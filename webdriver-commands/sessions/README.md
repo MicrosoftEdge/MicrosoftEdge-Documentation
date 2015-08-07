@@ -1,10 +1,17 @@
 # Session Commands
-Microsoft Edge supports the following session-related WebDriver commands: [New Session](#new-session), [Sessions](#sessions),
-[Get Capabilities](#get-capabilities), [Delete](#delete), [Set Timeout](#set-timeout).
+Microsoft Edge supports the following session-related WebDriver commands:
 
-## /session
+- /session
+  - [New Session](#new-session)
+- /sessions
+  - [Sessions](#sessions)
+- /session/{sessionId}
+  - [Delete](#delete)
+  - [Get Capabilities](#get-capabilities)
+- /session/{sessionId}/timeouts
+  - [Set Timeout](#set-timeout)
 
-### New Session
+## New Session
 
 | **Name** | New Session |
 | :------- | :---------- |
@@ -43,9 +50,7 @@ Microsoft Edge supports the following session-related WebDriver commands: [New S
 }
 ```
 
-## /sessions
-
-### Sessions
+## Sessions
 | **Name** | Sessions |
 | :------- | :------- |
 | **Description** | Returns a list of the currently active sessions. |
@@ -77,9 +82,26 @@ None.
 }
 ```
 
-## /session/{sessionId}
+## Delete Session
+| **Name** | Delete Session |
+| :------- | :------- |
+| **Description** | Deletes the specified session. |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-session), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId) |
+| **HTTP Request** | `DELETE /session/{sessionId}` |
 
-### Get Capabilities
+**JSON Parameters**
+None.
+
+**JSON Response Value**
+```
+{
+    "sessionId": "{sessionId}",
+    "status": 0,
+    "value": null
+}
+```
+
+## Get Capabilities
 | **Name** | Get Capabilities |
 | :------- | :------- |
 | **Description** | Retrieves the capabilities of the specified session. |
@@ -108,28 +130,7 @@ None.
 }
 ```
 
-### Delete Session
-| **Name** | Delete Session |
-| :------- | :------- |
-| **Description** | Deletes the specified session. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-session), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId) |
-| **HTTP Request** | `DELETE /session/{sessionId}` |
-
-**JSON Parameters**
-None.
-
-**JSON Response Value**
-```
-{
-    "sessionId": "{sessionId}",
-    "status": 0,
-    "value": null
-}
-```
-
-## /session/{sessionId}/timeouts
-
-### Set Timeout
+## Set Timeout
 | **Name** | Set Timeout |
 | :------- | :------- |
 | **Description** | Configures the amount of time a particular type of operation can execute before it's aborted. |

@@ -1,9 +1,12 @@
 # Server Commands
-Microsoft Edge supports the following server-related WebDriver commands: [Shut Down](#shut-down), [Status](#status).
+Microsoft Edge supports the following server-related WebDriver commands:
 
-## /shutdown
+- /shutdown
+  - [Shut Down](#shut-down)
+- /status
+  - [Status](#status)
 
-### Shut Down
+## Shut Down
 
 | **Name** | (Shut Down) |
 | :------- | :---------- |
@@ -17,9 +20,7 @@ None.
 **JSON Response Value**
 None.
 
-## /Status
-
-### Status
+## Status
 
 | **Name** | Status |
 | :------- | :---------- |
