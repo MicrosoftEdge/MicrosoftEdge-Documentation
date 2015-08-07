@@ -7,7 +7,7 @@ Microsoft Edge supports the following WebDriver commands for navigation:
 | /session/{sessionId}/forward | [Forward](#forward) |
 | /session/{sessionId}/refresh | [Refresh](#refresh) |
 | /session/{sessionId}/title | [Get Title](#get-title) |
-| /session/{sessionId}/url | [Get](#get), [Get Current URL](#get-current-url |
+| /session/{sessionId}/url | [Get](#get), [Get Current URL](#get-current-url) |
 
 ## Back
 
