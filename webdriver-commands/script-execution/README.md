@@ -11,8 +11,7 @@ Microsoft Edge supports the following WebDriver commands for script execution:
 | **Name** | Add Cookie |
 | :------- | :------- |
 | **Description** | Adds a cookie. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#add-cookie
-), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/sessions) |
+| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#add-cookie), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#/sessions) |
 | **HTTP Request** | `POST /session/{sessionId}/cookie` |
 
 **JSON Parameters**
