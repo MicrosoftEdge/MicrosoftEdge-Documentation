@@ -1,7 +1,5 @@
 # Memory
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Use the Memory tool to diagnose memory issues that can impact the speed and stability of webpages.
 
 ## Memory matters
