@@ -1,7 +1,5 @@
 # Performance
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Using the **Performance** tool, profile your webpage's frame rate with the Timeline and JavaScript execution times with the JavaScript call stacks. The reports on different types of CPU usage and JavaScript execution profiling help you analyze UI performance problems.
 
 ## Speed matters
