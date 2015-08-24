@@ -1,7 +1,5 @@
 # Network
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Use the Network tool to view communication between the browser and server(s), inspect request and reply headers, see response codes, and debug AJAX.
 
 ## Monitor your browser's communications
