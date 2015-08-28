@@ -1,6 +1,6 @@
 # The Microsoft Edge API Surface
 
-Microsoft Edge provides support for over ## standards-based open web APIs.
+Microsoft Edge provides support for over 4300 standards-based open web APIs.
 Additionally, Microsoft Edge is part of the larger Universal Windows
 Platform (UWP) that powers [Windows apps using JavaScript and HTML](https://msdn.microsoft.com/library/windows/apps/mt280216.aspx) and
 also the [HTML](https://msdn.microsoft.com/en-us/library/windows/apps/dn301831.aspx) and  [XAML](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.webview)
