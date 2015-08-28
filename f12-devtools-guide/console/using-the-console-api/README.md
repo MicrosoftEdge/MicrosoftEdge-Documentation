@@ -1,7 +1,5 @@
 # Using the Console API
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 The Console API provides methods for developers to send meaningful information to the Console from within their applications and to obtain diagnostic information from within the Console tool.
 
 ## Reporting out from your code

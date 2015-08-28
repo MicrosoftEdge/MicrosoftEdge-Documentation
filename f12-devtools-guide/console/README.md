@@ -1,7 +1,5 @@
 # Console Tool
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Use the **Console** tool to view errors and other messages, send debug output, inspect JavaScript objects and XML nodes, and to run JavaScript in the context of the selected window or frame.
 
 ## A window into your code
