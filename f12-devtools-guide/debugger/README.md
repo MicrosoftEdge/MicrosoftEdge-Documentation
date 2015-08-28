@@ -1,7 +1,5 @@
 # Debugger
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Use the **Debugger tool** to navigate your code as it runs, set watches and breakpoints, view call stacks, and improve the readability of compiled/minified JavaScript.
 
 ## When do you need the Debugger tool?

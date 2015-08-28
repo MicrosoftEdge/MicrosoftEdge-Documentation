@@ -1,5 +1,4 @@
 # Developer Tools Keyboard Shortcuts
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Keyboard shortcuts in F12 developer tools for Microsoft Edge make tools and features accessible without a mouse or pointing device.
 

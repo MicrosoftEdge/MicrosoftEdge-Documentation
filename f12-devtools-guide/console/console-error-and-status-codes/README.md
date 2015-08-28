@@ -1,7 +1,5 @@
 # Console error and status codes
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Use this reference to interpret error messages shown in the  [Console](../) and the [Debugger](../../debugger/) in Microsoft Edge.
 
 ## Introduction
