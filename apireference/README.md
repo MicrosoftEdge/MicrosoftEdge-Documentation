@@ -9,5 +9,5 @@ specific features for building Windows apps.
 
 Here you'll find an index of the APIs currently supported in Microsoft Edge, as well
 as new APIs only available in the latest [Windows Insider](https://insider.windows.com/) preview
-builds. Supported interfaces are described using [Web Interface Definition Language]
-(https://en.wikipedia.org/wiki/Web_IDL) (Web IDL).
+builds. Supported interfaces are described using the *Web Interface Definition Language* [Web IDL]
+(https://en.wikipedia.org/wiki/Web_IDL).
