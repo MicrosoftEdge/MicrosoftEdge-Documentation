@@ -2,7 +2,7 @@
 
 Microsoft Edge implements the improved F12 developer tools found so useful in Internet Explorer 11. Debug, test, and speed up your webpages using a familiar tool that will continue to grow and improve with Microsoft Edge.
 
-<iframe src="https://channel9.msdn.com/Blogs/One-Dev-Minute/Microsoft-Edge-F12-tools/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Blogs/One-Dev-Minute/Microsoft-Edge-F12-tools/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe>
 
 ## The F12 tools at work
 
