@@ -8,7 +8,7 @@ If your webpage is performing well when it first loads, but gradually slows and 
 
 ## Diagnosing a memory issue
 
-After you've loaded your webpage in the browser, open the F12 developer tools and open the **Memory** tool (CTRL + 7). You can start profiling from this screen and take heap snapshots during the profiling session. 
+After you've loaded your webpage in the browser, open the F12 developer tools and open the **Memory** tool (CTRL + 6). You can start profiling from this screen and take heap snapshots during the profiling session. 
 
 If your problem is high memory usage from the start, but not memory growth, take one snapshot and examine it to find your bigger areas of memory use. If your memory use grows over time, you can compare snapshots to look at the areas where memory is growing.
 
