@@ -85,5 +85,5 @@ HTTP traffic is captured only for the process associated with the Microsoft Edge
 [Using the F12 developer tools](../)
 
 >note Testing API relative linking 
-[AppCache API](../../apireference/interfaces/application/cache/)
+[AppCache API](../../apireference/interfaces/applicationcache/)
  
