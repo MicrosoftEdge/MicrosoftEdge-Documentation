@@ -72,7 +72,7 @@ The styles pane has five tabs: [Styles](#styles), [Computed](#computed), [Layout
 ### Styles
 The **Styles** tab is a list of all the styles associated with the selected element and which properites are being applied.
 
-Style properties currently applied to the element appear on the top of the style pane, along with a link to the .css file path, line #, and column # where that style is defined. Inherited styles are listed below, identifing which ancestor the inherited styles come from.
+Style properties currently applied to the element appear on the top of the style pane, along with a link to the .css file path, line #, and column # where that style is defined. Inherited styles are listed below, identifying which ancestor the inherited styles come from.
 
 You can turn style property on or off by checking or unchecking the box to the left of the property. When unchecked, the style will be crossed out and an inherited style below may become active (removing it's strikeout). The style pane also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/en-us/library/bg124120(v=vs.85).aspx).
 
