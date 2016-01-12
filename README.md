@@ -59,7 +59,7 @@ You can use inline `code` Markdown syntax (with the backticks).
 
 Or you can display blocks of code like so:
 
-```
+```css
 body {
 	background: #fff;
 }
