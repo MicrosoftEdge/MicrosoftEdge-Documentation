@@ -1,6 +1,6 @@
 # Contributing to Microsoft Edge documentation
 
-There are several ways you can contribute to the docs on dev.modern.IE:
+There are several ways you can contribute to the docs:
 
 ## Adding new docs
 New contributions are welcome! Currently the GitHub directory structure parallels the table of contents on the site, but the docs are in early stages and things might get reorganized in the future.
