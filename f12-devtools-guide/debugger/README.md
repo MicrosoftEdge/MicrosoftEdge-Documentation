@@ -92,7 +92,7 @@ Becomes this:
 function _ge(n) {
   return _d.getElementById(n);
 }
-function sj_wf(n) {  
+function sj_wf(n) {
   var t = arguments;
   return function () {
     n.apply(null, [].slice.apply(t).slice(1));
@@ -169,7 +169,7 @@ After you've set your breakpoints and stepped into your code, the Debugger tool 
 
 ![Edge Debugger Inspector](../media/Edge_Debugger_inspect.png)
 
-  - In the *script* pane, when the debugger is paused on a statement, hover your mouse over any variable, function, or object to see more info in an overlay. Move your mouse down into the overlay to expand and inspect objects much like you can if you log them to the [**Console**](../console/) with the [**dirxml()**](https://msdn.microsoft.com/en-us/library/dn265067(v=vs.85).aspx) method.
+  - In the *script* pane, when the debugger is paused on a statement, hover your mouse over any variable, function, or object to see more info in an overlay. Move your mouse down into the overlay to expand and inspect objects much like you can if you log them to the [**Console**](../console/) with the [**dirxml()**](https://msdn.microsoft.com/en-us/library/dn265067.aspx) method.
 Click **Add watch** at the bottom of the overlay to add the variable or object to the **Watches** pane.
 
   - The **locals** node in the **Watches** gives you a catalog of all objects and variables, both in the local and global scope, available to the statement that is the focus of the current break. This can help identify variables that are in the wrong scope.
@@ -187,8 +187,8 @@ The image above shows a very simple asynchronous call, created by running the fo
 ###### *JavaScript*
 ```javascript
 function getReturn(){
-  debugger;		
-}		
+  debugger;
+}
 function setup(){
   window.setTimeout(getReturn, 1000);
 }

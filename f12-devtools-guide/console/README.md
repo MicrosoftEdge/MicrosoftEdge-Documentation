@@ -41,11 +41,11 @@ The console not only displays output from code, but provides an interface to exe
 
 ![F12 Console Command Line](../media/Edge_Console_command.gif)
 
-Generally, all script entered in the command line executes in the [global scope](https://msdn.microsoft.com/en-us/library/bzt2dkta(v=vs.85).aspx) of the currently selected window. However, if your script is currently paused (for instance, because you set a breakpoint), script executes in the [local scope](https://msdn.microsoft.com/en-us/library/bzt2dkta(v=vs.85).aspx) of the current function within the call stack.
+Generally, all script entered in the command line executes in the [global scope](https://msdn.microsoft.com/en-us/library/bzt2dkta.aspx) of the currently selected window. However, if your script is currently paused (for instance, because you set a breakpoint), script executes in the [local scope](https://msdn.microsoft.com/en-us/library/bzt2dkta.aspx) of the current function within the call stack.
 
 ![F12 Console Command Line local scope](../media/Edge_Console_local_scope.png)
 
-If your webpage is built with a **[frameset](https://msdn.microsoft.com/en-us/library/ms535251(v=vs.85).aspx)** or **[iframes](https://msdn.microsoft.com/en-us/library/ms535258(v=vs.85).aspx)**, those frames load their own documents in their own windows.
+If your webpage is built with a **[frameset](https://msdn.microsoft.com/en-us/library/ms535251.aspx)** or **[iframes](https://msdn.microsoft.com/en-us/library/ms535258.aspx)**, those frames load their own documents in their own windows.
 
 To target the window of a frameset frame or an iframe, use the `cd()` command, with the frame/iframe's name or ID attribute as the argument. For example, you have a frame with the name microsoftFrame and you're loading the Microsoft homepage in it.
 
@@ -63,8 +63,8 @@ To return to the top level window, use `cd()` with no argument.
 ### Selecting elements in the Console
 Console selectors provide simple shorthands for quickly selecting elements in your DOM structure. They are:
 
-   - **$()** is a shorthand for [**`document.querySelector()`**](https://msdn.microsoft.com/en-us/library/cc288169(v=vs.85).aspx).
-   - **$$()** is a shorthand for [**`document.querySelectorAll()`**](https://msdn.microsoft.com/en-us/library/cc304115(v=vs.85).aspx).
+   - **$()** is a shorthand for [**`document.querySelector()`**](https://msdn.microsoft.com/en-us/library/cc288169.aspx).
+   - **$$()** is a shorthand for [**`document.querySelectorAll()`**](https://msdn.microsoft.com/en-us/library/cc304115.85).aspx).
    - **$_()** is a shorthand for the last selected element or object.
    - **$0, $1, $2, $3, $4** return the last items selected in the [**DOM Explorer tool**](../dom-explorer/).
 

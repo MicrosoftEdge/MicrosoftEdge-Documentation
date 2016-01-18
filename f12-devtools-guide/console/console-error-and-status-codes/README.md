@@ -23,12 +23,12 @@ SEC7121 | "Wildcard in Access-Control-Allow-Origin not allowed when credentials 
 SEC7122 | "Credentials flag was set to true, but Access-Control-Allow-Credentials was not present or was not set to "true." | An XMLHttpRequest was made using the withCredentials flag. Either an Access-Control-Allow-Credentials header was not returned or it was returned with a value other than **true**. | There might be an issue with your credentials or the server's response. See the [XMLHttpRequest Level 2 specification](http://www.w3.org/TR/XMLHttpRequest2/) for info about credentialed requests.
 SEC7123 | "Request header [header] was not present in the Access-Control-Allow-Headers list." | A custom header type was included in the request, but the response's Access-Control-Allow-Headers list didn't include it. | Make sure the server allows custom headers, and specifically allows the one being sent in the request.
 SEC7124 | "Request method [method] was not present in the Access-Control-Allow-Methods list." | A request method, such as POST was used in the XMLHttpRequest, but the response returned an Access-Control-Allow-Methods header that didn't include it. | Make sure the server allows this type of request method and that you're correctly using withCredentials if that method has restricted access.
-SEC7125 | "XMLHttpRequest for [URL] caused a response headers parsing failure." | The response headers from the server could not be parsed, so the request failed. | Use the [Network tool](https://msdn.microsoft.com/en-us/library/dn255004(v=vs.85).aspx) to capture and inspect the response headers to make sure they meet [CORS specifications](http://www.w3.org/TR/cors/).
-SEC7126 | "Redirects are not allowed for CORS preflight requests." | A redirect has been detected in the Origin header and the User Agent won't follow redirects during a preflight. | Use the [Network tool](https://msdn.microsoft.com/en-us/library/dn255004(v=vs.85).aspx) to capture and inspect the request headers and make sure there's a single direct Origin.
+SEC7125 | "XMLHttpRequest for [URL] caused a response headers parsing failure." | The response headers from the server could not be parsed, so the request failed. | Use the [Network tool](https://msdn.microsoft.com/en-us/library/dn255004.aspx) to capture and inspect the response headers to make sure they meet [CORS specifications](http://www.w3.org/TR/cors/).
+SEC7126 | "Redirects are not allowed for CORS preflight requests." | A redirect has been detected in the Origin header and the User Agent won't follow redirects during a preflight. | Use the [Network tool](https://msdn.microsoft.com/en-us/library/dn255004.aspx) to capture and inspect the request headers and make sure there's a single direct Origin.
 SEC7127 | "Redirect was blocked for CORS request." | The path to the CORS resource contained a redirect that violated security rules. | Make sure you have the most direct path to the CORS resource in your XMLHttpRequest.
 SEC7128 | "Multiple Access-Control-Allow-Origin headers are not allowed for CORS response." | The response header contained multiple Access-Control-Allow-Origin headers. | This is a server-side error. The server should return a single Access-Control-Allow-Origin header. Report this error to the developer in charge of the server-side resource.
 SEC7129 | "Multiple Access-Control-Allow-Credentials headers are not allowed for CORS response." | The response header contained multiple Access-Control-Allow-Credentials headers. | This is a server-side error. The server should return a single Access-Control-Allow-Credentials header. Report this error to the developer in charge of the server-side resource.
-SEC7130 | "Potential cross-site scripting detected in [URL]. The content has been modified by the XSS Filter." | The [XSS Filter](https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx) detected potentially malicious content in the response from the resource and removed the offending content. | Find out more about the [XSS Filter](https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx).
+SEC7130 | "Potential cross-site scripting detected in [URL]. The content has been modified by the XSS Filter." | The [XSS Filter](https://msdn.microsoft.com/en-us/library/dd565647.aspx) detected potentially malicious content in the response from the resource and removed the offending content. | Find out more about the [XSS Filter](https://msdn.microsoft.com/en-us/library/dd565647.aspx).
 <a name="SEC7131">SEC7131</a> | "Security of a sandboxed iframe is potentially compromised by allowing script and same origin access." | If the content in a sandboxed iframe comes from an untrusted or insecure source, it could escape the sandbox when script and same origin access are both allowed. | This is an informational warning message and should not impact functionality. It's recommended that you avoid combining these permissions unless you're sure of what will be run in the iframe.
 
 **Note** For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
@@ -52,12 +52,12 @@ HTML1204 | "`[domain]` is running in Compatibility View because "Display all web
 HTML1300 | "Navigation occurred" | A new page was navigated to, or the current page was refreshed. | This is an informational message and not an error.
 
 ### HTML5 parser warnings
-The following warnings can occur as part of the validation performed during HTML parsing. These warnings don't necessarily mean a page is broken, but that the provided HTML is invalid per the HTML5 standard. Content created according to earlier versions of the HTML or XHTML specifications might not be valid in HTML5, in particular with respect to the use of DOCTYPEs. For more info, see [Creating Standards-Enabled Websites](https://msdn.microsoft.com/en-us/library/hh273394(v=vs.85).aspx).
+The following warnings can occur as part of the validation performed during HTML parsing. These warnings don't necessarily mean a page is broken, but that the provided HTML is invalid per the HTML5 standard. Content created according to earlier versions of the HTML or XHTML specifications might not be valid in HTML5, in particular with respect to the use of DOCTYPEs. For more info, see [Creating Standards-Enabled Websites](https://msdn.microsoft.com/en-us/library/hh273394.aspx).
 
 Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning, Microsoft Edge includes line and character offset information along with a link pointing to the location where the problem was found.
 
-Code | Message 
-:------------ | :------------- 
+Code | Message
+:------------ | :-------------
 HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]."
 HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expected [0-9], [a-f], or [A-F]."
 HTML1402 | "Character reference is missing an ending semicolon ";"."
@@ -113,7 +113,7 @@ HTML1526 | "Invalid nesting. A `<nobr>` tag should not be placed within another 
 HTML1527 | "DOCTYPE expected. The shortest valid doctype is `<!DOCTYPE html>`."
 HTML1528 | "Unexpected `<image>` in HTML content. Use `<img>` instead."
 HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "http://www.w3.org/1999/xlink"."
-HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements." 
+HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements."
 HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "http://www.w3.org/2000/svg/"."
 HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "http://www.w3.org/1998/Math/MathML/".
 
@@ -182,20 +182,20 @@ F12 tools don't currently support extensive Scalable Vector Graphics (SVG) debug
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
-SVG5601 | "SVG Path data has incorrect format and could not be completely parsed." | The SVG [Path](https://msdn.microsoft.com/en-us/library/ff972086(v=vs.85).aspx) string isn't formatted correctly, or contains unrecognized commands. | Check the format of the commands.
-SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/en-us/library/ff972113(v=vs.85).aspx), is formatted incorrectly. | Make sure that points are complete and correctly formatted for the users coordinate system.
+SVG5601 | "SVG Path data has incorrect format and could not be completely parsed." | The SVG [Path](https://msdn.microsoft.com/en-us/library/ff972086.aspx) string isn't formatted correctly, or contains unrecognized commands. | Check the format of the commands.
+SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/en-us/library/ff972113.aspx), is formatted incorrectly. | Make sure that points are complete and correctly formatted for the users coordinate system.
 
 ### Script codes
-JavaScript runtime errors are also reported in F12 tools. These errors are in the form SCRIPT50xx, such as SCRIPT5001. These errors are documented on the [JavaScript errors](https://msdn.microsoft.com/en-us/library/7th8s2xk(v=vs.94).aspx) page.
+JavaScript runtime errors are also reported in F12 tools. These errors are in the form SCRIPT50xx, such as SCRIPT5001. These errors are documented on the [JavaScript errors](https://msdn.microsoft.com/en-us/library/7th8s2xk.aspx) page.
 
 ### WebGL codes
 Error messages from the WebGL context are presented with WEBGL11_xxx_ codes.
 
 ### XML codes
-The F12 tools console can report XML codes. These errors are in the form of XML5xxx, such as XML5603. For more info about XML, see the [XmlLite Reference](https://msdn.microsoft.com/en-us/library/ms752829(v=vs.85).aspx).
+The F12 tools console can report XML codes. These errors are in the form of XML5xxx, such as XML5603. For more info about XML, see the [XmlLite Reference](https://msdn.microsoft.com/en-us/library/ms752829.aspx).
 
-Code | Message 
-:------------ | :------------- 
+Code | Message
+:------------ | :-------------
 XML5001 | "Applying Integrated XSLT Handling."
 XML5601 | "MX_E_MX"
 XML5602 | "Unexpected end of input."
@@ -283,7 +283,7 @@ XML5683 | "Unexpected character in character entity. Expected a hexadecimal digi
 XML5684 | "The Unicode value of the specified character entity is invalid."
 XML5685 | "Invalid encoding."
 XML5686 | "Unspecified XML error."
- 
+
 ### CSP error codes
 CSP (Content Security Policy) is a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). The core issue exploited by XSS attacks is the browser’s inability to distinguish between script that’s intended to be part of your application, and script that’s been maliciously injected by a third-party. By declaring the sources from which the application expects to load resources, the application can detect and block malicious scripts injected by an attacker. A web application opts into using CSP by supplying a `Content-Security-Policy HTTP` header. Such policies apply to the current resource representation only.
 
@@ -312,8 +312,8 @@ Code | Message | Description | Suggested fix
 
 ## Related topics
 
-[GLSL errors](https://msdn.microsoft.com/en-us/library/dn611835(v=vs.85).aspx)
+[GLSL errors](https://msdn.microsoft.com/en-us/library/dn611835.aspx)
 
-[JavaScript Run-time Errors](https://msdn.microsoft.com/en-us/library/1dk3k160(v=vs.94).aspx)
+[JavaScript Run-time Errors](https://msdn.microsoft.com/en-us/library/1dk3k160.aspx)
 
-[JavaScript Syntax Errors](https://msdn.microsoft.com/en-us/library/6bby3x2e(v=vs.94).aspx)
+[JavaScript Syntax Errors](https://msdn.microsoft.com/en-us/library/6bby3x2e.aspx)

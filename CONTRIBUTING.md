@@ -6,7 +6,7 @@ There are several ways you can contribute to the docs on dev.modern.IE:
 New contributions are welcome! Currently the GitHub directory structure parallels the table of contents on the site, but the docs are in early stages and things might get reorganized in the future.
 
 ## Updating documentation
-The F12 tools guide is currently the only content set in this repo, but it is open for contributions! (All other content is still being ported from [MSDN Library](https://msdn.microsoft.com/en-us/library/dn997183(v=vs.85).aspx)).
+The F12 tools guide is currently the only content set in this repo, but it is open for contributions! (All other content is still being ported from [MSDN Library](https://msdn.microsoft.com/en-us/library/dn997183.aspx)).
 
 ## Reporting bugs in the docs
 Please [open an issue](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues) if you come across outdated or inaccurate information in docs. You can use the [Feedback & Support](http://dev.modern.ie/community/support/) page for all other questions and issues about Microsoft Edge and the F12 dev tools.
