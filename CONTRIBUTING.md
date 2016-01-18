@@ -9,7 +9,7 @@ New contributions are welcome! Currently the GitHub directory structure parallel
 The F12 tools guide is currently the only content set in this repo, but it is open for contributions! (All other content is still being ported from [MSDN Library](https://msdn.microsoft.com/en-us/library/dn997183.aspx)).
 
 ## Reporting bugs in the docs
-Please [open an issue](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues) if you come across outdated or inaccurate information in docs. You can use the [Feedback & Support](http://dev.modern.ie/community/support/) page for all other questions and issues about Microsoft Edge and the F12 dev tools.
+Please [open an issue](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues) if you come across outdated or inaccurate information in docs. You can use the [Feedback & Support](https://dev.windows.com/en-us/microsoft-edge/community/support/) page for all other questions and issues about Microsoft Edge and the F12 dev tools.
 
 # Using Pull Requests
 If you want to contribute to the repo, please use a GitHub pull request. There are just a couple things to keep in mind:
