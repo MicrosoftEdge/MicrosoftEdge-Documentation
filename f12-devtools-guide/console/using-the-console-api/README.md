@@ -3,7 +3,7 @@
 The Console API provides methods for developers to send meaningful information to the Console from within their applications and to obtain diagnostic information from within the Console tool.
 
 ## Reporting out from your code
-The [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173(v=vs.85).aspx) gives you methods for sending info out from your code to the console. The info breaks down into these types:
+The [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173.aspx) gives you methods for sending info out from your code to the console. The info breaks down into these types:
 
   - [Custom messages](#custom-messages)
   - [Inspectable objects and nodes](#inspectable-objects-and-nodes)
@@ -13,7 +13,7 @@ The [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173(v=
   - [Traces](#traces-and-profiles)
 
 ### Custom messages
-You have four options for custom messages. Three use the format of system messages: [`console.info()`](https://msdn.microsoft.com/en-us/library/hh772178(v=vs.85).aspx) for information messages, [`console.warn()`](https://msdn.microsoft.com/en-us/library/hh772181(v=vs.85).aspx) for warnings, and [`console.error()`](https://msdn.microsoft.com/en-us/library/hh772176(v=vs.85).aspx) for errors. The fourth, [`console.log()`](https://msdn.microsoft.com/en-us/library/hh772179(v=vs.85).aspx) presents plain text with no alert icon. All four take the same forms of argument for the message.
+You have four options for custom messages. Three use the format of system messages: [`console.info()`](https://msdn.microsoft.com/en-us/library/hh772178.aspx) for information messages, [`console.warn()`](https://msdn.microsoft.com/en-us/library/hh772181.aspx) for warnings, and [`console.error()`](https://msdn.microsoft.com/en-us/library/hh772176.aspx) for errors. The fourth, [`console.log()`](https://msdn.microsoft.com/en-us/library/hh772179.aspx) presents plain text with no alert icon. All four take the same forms of argument for the message.
 
 **Just text:**
 
@@ -71,21 +71,21 @@ The variable types control how the variable is presented. For example, a float v
 ### Inspectable objects and nodes
 Inspectable objects appear in the console in a collapsed tree format with expandable nodes. The console detects whether you are sending a DOM node like a div or a JavaScript object like an event and displays them as the detected type automatically. You can, however, force the mode using specific methods.
 
-To display an inspectable JavaScript object, send it to the console using [`console.dir()`](https://msdn.microsoft.com/en-us/library/jj152132(v=vs.85).aspx)
+To display an inspectable JavaScript object, send it to the console using [`console.dir()`](https://msdn.microsoft.com/en-us/library/jj152132.aspx)
 
-To display an inspectable DOM node, send it to the console using [`console.dirxml()`](https://msdn.microsoft.com/en-us/library/dn265067(v=vs.85).aspx)
+To display an inspectable DOM node, send it to the console using [`console.dirxml()`](https://msdn.microsoft.com/en-us/library/dn265067.aspx)
 
 ###### *HTML*
 ```html
 <div id="thediv">
-   <p>Click the button to show this div as a JavaScript object and a 
+   <p>Click the button to show this div as a JavaScript object and a
    <em>DOM</em> node.</p>
    <button id="thebutton">show it</button>
 </div>
 <script>
   document.getElementById('thebutton').addEventListener('click', function(e){
     var divid = document.getElementById('thediv');
-    console.log('Showing the div element as a DOM node.');	
+    console.log('Showing the div element as a DOM node.');
     console.dirxml(divid);
     console.log('Showing the div element as a JavaScript object.');
     console.dir(divid);
@@ -106,7 +106,7 @@ Right-clicking DOM nodes provide an **Evaluate as Object** option in the context
 ### Counters
 While setting up a counter in code is relatively easy, it's also a repetitive task. To speed up developer workflow, the Console Debugging API provides a simple shorthand.
 
-Use [`console.count()`](https://msdn.microsoft.com/en-us/library/dn265064(v=vs.85).aspx) with a string containing a counter label as its argument. The first use with a specific label establishes a counter in the Console output. Subsequent uses of `console.count()` with the same label increment the counter. To reset the counter to zero, use `console.countReset()` with the label.
+Use [`console.count()`](https://msdn.microsoft.com/en-us/library/dn265064.aspx) with a string containing a counter label as its argument. The first use with a specific label establishes a counter in the Console output. Subsequent uses of `console.count()` with the same label increment the counter. To reset the counter to zero, use `console.countReset()` with the label.
 
 ###### *JavaScript*
 ```javascript
@@ -119,14 +119,14 @@ for(var i = 0; i < 10; i++){
 `mylabel:         11`
 
 ### Timers
-Like creating counters, creating a timer within code is relatively easy, but the [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173(v=vs.85).aspx) provides a simple shorthand that makes it even easier.
+Like creating counters, creating a timer within code is relatively easy, but the [Console Debugging API](https://msdn.microsoft.com/en-us/library/hh772173.aspx) provides a simple shorthand that makes it even easier.
 
-Use [`console.time()`](https://msdn.microsoft.com/en-us/library/dn265071(v=vs.85).aspx) anywhere in your code to begin a timer and [`console.timeEnd()`](https://msdn.microsoft.com/en-us/library/dn265072(v=vs.85).aspx) to end the timer and send the result to the console. If you want to label your timer or need more than one timer, pass a string with a unique label as the argument for both the `console.time()` and `console.timeEnd()` methods. If you don't pass an argument, the methods use "default" as the label.
+Use [`console.time()`](https://msdn.microsoft.com/en-us/library/dn265071.aspx) anywhere in your code to begin a timer and [`console.timeEnd()`](https://msdn.microsoft.com/en-us/library/dn265072.aspx) to end the timer and send the result to the console. If you want to label your timer or need more than one timer, pass a string with a unique label as the argument for both the `console.time()` and `console.timeEnd()` methods. If you don't pass an argument, the methods use "default" as the label.
 
 The `console.timeStamp()` shows you the age of a page, so to speak. It will output a timestamp to the console, showing the number of milliseconds since the current webpage loaded. If you put a number or string as the method's parameter, it will be used as a label, overriding the default label of "timestamp." When you use it during a **UI Responsiveness** profiling session, in addition to its console output, it will add a user mark to the session timeline with the time since the session was initiated.
 
 ### Assertions
-Assertions are another shorthand for speeding up developer workflow. If the first argument used with [`console.assert()`](https://msdn.microsoft.com/en-us/library/hh772171(v=vs.85).aspx) evaluates to false, it runs [`console.error()`](https://msdn.microsoft.com/en-us/library/hh772176(v=vs.85).aspx), using the assertion's additional arguments for the error message.
+Assertions are another shorthand for speeding up developer workflow. If the first argument used with [`console.assert()`](https://msdn.microsoft.com/en-us/library/hh772171.aspx) evaluates to false, it runs [`console.error()`](https://msdn.microsoft.com/en-us/library/hh772176.aspx), using the assertion's additional arguments for the error message.
 
 Use this one line of code:
 
@@ -147,7 +147,7 @@ In the example code, we used `%o` to output the variable. Because the evaluation
 ### Traces and profiles
 Understanding where your code is being called from, what code is running, and how long that execution takes can be useful in analyzing slowness or unexpected behavior.
 
-A stack trace shows you the execution path your code took to reach it, from the trace request upward through the path. Use [`console.trace()`](https://msdn.microsoft.com/en-us/library/hh772176(v=vs.85).aspx) in your code to show a stack trace.
+A stack trace shows you the execution path your code took to reach it, from the trace request upward through the path. Use [`console.trace()`](https://msdn.microsoft.com/en-us/library/hh772176.aspx) in your code to show a stack trace.
 
 This code...
 
@@ -189,10 +189,10 @@ at Global code (http://www.contoso.com/trace.html:31:1)
 
 With all the types of messages and content that get sent to the console, keeping track of them can be difficult. Use the following commands to keep things more orderly:
 
-  - [`console.group()`](https://msdn.microsoft.com/en-us/library/dn265068(v=vs.85).aspx) begins a collapsible group in an expanded state. Every message sent to the console after this command is placed in the group until the `console.groupEnd()` method is used. If a string is provided as the first argument for the method, the string is used as a label for the group.
-  - [`console.groupCollapsed()`](https://msdn.microsoft.com/en-us/library/dn265069(v=vs.85).aspx) begins a collapsible group in a collapsed state. In all other respects, it behaves like `console.group()`.
-  - [`console.groupEnd()`](https://msdn.microsoft.com/en-us/library/dn265068(v=vs.85).aspx) closes the most recently opened group.
-  - [`console.clear()`](https://msdn.microsoft.com/en-us/library/jj152131(v=vs.85).aspx) deletes all messages currently displayed in the console.
+  - [`console.group()`](https://msdn.microsoft.com/en-us/library/dn265068.aspx) begins a collapsible group in an expanded state. Every message sent to the console after this command is placed in the group until the `console.groupEnd()` method is used. If a string is provided as the first argument for the method, the string is used as a label for the group.
+  - [`console.groupCollapsed()`](https://msdn.microsoft.com/en-us/library/dn265069.aspx) begins a collapsible group in a collapsed state. In all other respects, it behaves like `console.group()`.
+  - [`console.groupEnd()`](https://msdn.microsoft.com/en-us/library/dn265068.aspx) closes the most recently opened group.
+  - [`console.clear()`](https://msdn.microsoft.com/en-us/library/jj152131.aspx) deletes all messages currently displayed in the console.
 
 Groups can be nested within one another for more detailed levels of grouping.
 
