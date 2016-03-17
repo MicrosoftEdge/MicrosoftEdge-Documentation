@@ -3,7 +3,7 @@ When fully released to mainstream builds of Windows 10, extensions will be avail
 
 ## Adding an extension
 
-1. Open Microsoft Edge and download an extension from [https://dev.windows.com](http://www.aka.ms/msedge-extensions)
+1. Open Microsoft Edge and download an extension from [https://dev.windows.com](http://www.aka.ms/msedge-extensions).
 
 2. Select **"Run"** from the downloads notification.
 
@@ -26,7 +26,7 @@ When fully released to mainstream builds of Windows 10, extensions will be avail
 
 
 ## Moving the extension button
-Some extensions (like "Mouse Gestures") add a button to the **"More" (...)** menu
+Some extensions (like "Mouse Gestures") add a button to the **"More" (...)** menu.
 
    ![actions menu](../media/browseraction.PNG)  
 
@@ -44,7 +44,7 @@ If you want to move the button out of this menu for easier access:
 
 ## Removing an extension
 
-1. Open Microsoft Edge
+1. Open Microsoft Edge.
 
 2. Select **"More (...)"** to open the menu.
 
