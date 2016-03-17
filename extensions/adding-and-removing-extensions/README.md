@@ -35,7 +35,7 @@ If you want to move the button out of this menu for easier access:
 
 1. Right-click the extension button.
 
-2. Select **"Show next to the address bar"**.
+2. Select **"Show next to address bar"**.
 
    ![actions menu](../media/browseraction_contextmenu.png)  
 
