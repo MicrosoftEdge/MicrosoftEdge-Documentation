@@ -1,6 +1,6 @@
 # Contributing to Microsoft Edge documentation
 
-We welcome your contributions to the [Microsoft Edge browser](./f12-devtools-guide) and [F12 tool documentation](./dev-guide)! You will need a GitHub user account to contribute to the documentation. Currently the GitHub directory structure parallels the table of contents on the site. There are several ways you can contribute to the docs:
+We welcome your contributions to the [Microsoft Edge developer guide](./dev-guide) and [F12 tool documentation](./f12-devtools-guide)! You will need a GitHub user account to contribute to the documentation. Currently the GitHub directory structure parallels the table of contents on the site. There are several ways you can contribute to the docs:
 
 ## Reporting bugs or issues in the docs
 Please [open an issue](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues) if you come across outdated or inaccurate information in docs. A documentation editorial team will review and address issues, however, you can also take a crack at fixing any issues you find on your own! Follow the steps for updating documentation below... when you are contributing changes to address an issue, please be sure to reference the issue in your commit message, just use #issueNumber or copy-paste the issue URL.  
