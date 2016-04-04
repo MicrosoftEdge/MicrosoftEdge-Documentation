@@ -11,7 +11,7 @@ For more information about XPath, check out [Improving interoperability with DOM
 ## Example
 The code below demonstrates a use of the new XPath functionality. It delivers the same results across all major browsers: logging the appropriate numbers within the `span` elements to the developer [console](../../f12-devtools-guide/console/).
 
-![codepen](http://codepen.io/MicrosoftEdgeDocumentation/pen/eZEjBN)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/eZEjBN)
 
 ![spec](Document Object Model (DOM) Level 3 Xpath Specification)
 
