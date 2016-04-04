@@ -158,6 +158,4 @@ This example is an updated version of a sample from the W3C specification, with 
 
 ## Specification
 
-[HTML5.1 Animation Frames](http://www.w3.org/TR/html51/webappapis.html#animation-frames)
-
 [Timing control for script-based animations](https://www.w3.org/TR/animation-timing/)
