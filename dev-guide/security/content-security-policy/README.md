@@ -1,7 +1,7 @@
 # Content Security Policy
 
 
-Microsoft Edge now implements Content Security Policy (CSP) 1.0. For extended details, see the [W3C Content Security Policy specification](http://www.w3.org/TR/2012/CR-CSP-20121115/) and this [Webplatform.org article about CSP 1.0](http://go.microsoft.com/fwlink/p/?LinkId=524583).
+Microsoft Edge now implements Content Security Policy (CSP) 1.0. For extended details, see the [W3C Content Security Policy specification](http://www.w3.org/TR/2012/CR-CSP-20121115/).
 
 > NOTE: Content Security Policy 1.0 is supported in Microsoft Edge build 10240+. [Content Security Policy Level 2](http://go.microsoft.com/fwlink/p/?LinkID=524582), an evolution of the specification, is currently [under consideration](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/contentsecuritypolicylevel2?filter=f3f0000bf&search=content%20security) for implementation in the Microsoft Edge browser pending the spec stabilization, foundational work, and an evaluation of community input.
 
