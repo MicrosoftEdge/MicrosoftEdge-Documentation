@@ -154,14 +154,10 @@ div { position: absolute; left: 10px; top:100px; padding: 50px;
 
 This example is an updated version of a sample from the W3C specification, with vender prefixed elements added. The example tests for `window.performance.now`, and if it isn't supported, uses `Date.now` to get the current time. If `requestAnimationFrame` and `cancelAnimationFrame` aren't supported, then [`setTimeout`](https://msdn.microsoft.com/library/ms536753(v=vs.85).aspx) and [`clearTimeout`](https://msdn.microsoft.com/library/ms536357(v=vs.85).aspx) are used. This gives compatibility for earlier versions of the browser.
 
-![spec](RAF)
-## API Reference
-
-[Timing control for script-based animations](https://www.w3.org/TR/animation-timing/)
-
+![spec](Timing control for script-based animations)
 
 ## Specification
 
 [HTML5.1 Animation Frames](http://www.w3.org/TR/html51/webappapis.html#animation-frames)
 
-[Timing control for script-based animations](http://go.microsoft.com/fwlink/p/?LinkId=279056)
+[Timing control for script-based animations](https://www.w3.org/TR/animation-timing/)
