@@ -104,7 +104,7 @@ rect:hover {
 ## foreignObject
 Microsoft Edge now supports the [`foreignObject`](https://msdn.microsoft.com/library/dn806280(v=vs.85).aspx) element, allowing developers to use an HTML and CSS layout within a fixed size SVG element. With `foreignObject` content from a different (foreign) XML namespace can be inserted into the SVG namespace. In the example below, an HTML [**div**](https://msdn.microsoft.com/library/ms535240(v=vs.85).aspx) element is inserted between a circle and rectangle drawn in SVG.
 
-![codepen](http://codepen.io/MicrosoftEdgeDocumentation/pen/ONxPZV)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/ONxPZV)
 
 For more information on `foreignObject` properties, go to the [`foreignObject` API reference page](https://msdn.microsoft.com/library/dn806280.aspx).
 

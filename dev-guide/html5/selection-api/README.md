@@ -21,7 +21,7 @@ For `setBaseAndExtent`, an *anchor* is the start of a selection, a the *focus* i
 
 In this code sample, `removeAllRanges` is used to clear the selection range on a page:
 
-![codepen](http://codepen.io/MicrosoftEdgeDocumentation/pen/WwZQmV)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/WwZQmV)
 
 > Currently, Microsoft Edge doesn't support multiple or disjointed selections. A selection always has one [range](https://msdn.microsoft.com/library/hh772133). 
 
@@ -38,7 +38,7 @@ Method | Description
 
 The following code snippet shows [`collapseToEnd`](https://msdn.microsoft.com/library/ff975174) being used to put the caret at the end of a selection made by the user upon pressing a button:
 
-![codepen](http://codepen.io/MicrosoftEdgeDocumentation/pen/NNaGmQ)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/NNaGmQ)
 
 ## Node manipulation
 

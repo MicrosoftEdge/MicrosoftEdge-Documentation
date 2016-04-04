@@ -86,7 +86,7 @@ The [`transition`](https://msdn.microsoft.com/library/hh772284(v=vs.85).aspx) sh
 }
 ```
 
-![codepen](http://codepen.io/MicrosoftEdgeDocumentation/pen/pyWJEL?editors=1100)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/pyWJEL?editors=1100)
 
 ## Transitions DOM Events
 
@@ -108,7 +108,7 @@ The [`transitionend`](https://msdn.microsoft.com/library/dn632682(v=vs.85).aspx)
 -   Cancelable: Yes
 -   Context Info: [`propertyName`](https://msdn.microsoft.com/library/hh772142(v=vs.85).aspx), [`elapsedTime`](https://msdn.microsoft.com/library/hh772074(v=vs.85).aspx) ([`transitionEvent`](https://msdn.microsoft.com/library/hh772135(v=vs.85).aspx))
 
-![codepen](http://codepen.io/MicrosoftEdgeDocumentation/pen/wGraWJ)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/wGraWJ)
 
 This example applies transitions to a `<div>` element, and fires the `transitionstart` and `transitionend` events to change the text in the box.
 
