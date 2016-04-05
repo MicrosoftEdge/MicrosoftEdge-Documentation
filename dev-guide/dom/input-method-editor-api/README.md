@@ -52,8 +52,6 @@ This property aligns the IME candidate window box relative to the element on whi
 * **auto** : Initial value. The IME may align the candidate window in any manner.
 * **after** : The IME should attempt to align the candidate window below the element (in left-to-right and right-to-left layouts).
 
-To see this feature in action, check out the [IME API demo](https://testdrive-archive.azurewebsites.net/HTML5/IME_API/default.html)!
-
 
 ![IME API demo typing in shanghai with candidate box integerated into dropdown](../../media/ime.gif)
 
