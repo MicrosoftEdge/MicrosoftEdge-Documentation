@@ -9,19 +9,19 @@ The following is the list of JSON manifest keys that are supported as of build 1
 Required keys | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
 author  | | Specifies the author. Not supported in Chrome.
-[name](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/name) | |
-[version](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/version) | |
+[name](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/name) | | |
+[version](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/version) | | |
 **Recommended keys** | **Known issues** | **Chrome incompatibilities** 
-[description](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/description) | |
+[description](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/description) | | |
 [manifest_version](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/manifest_version) | | Currently ignored in Microsoft Edge.
-[icons](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons) | |
+[icons](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons) | | |
 **Pick one key or no key** | **Known issues** | **Chrome incompatibilities**
 [browser_action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action)  | | Microsoft Edge does not support the following syntax:</br> `browser_action : {"default_icon" : "icon.png" }` </br> Size for icons must be specified. Preferred sizes: 20px, 25px, 30px, 40px. Other supported sizes: 19px, 35px, 38px.|
 [page_action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) | | Microsoft Edge does not support the following syntax:</br> `page_action : {"default_icon" : "icon.png" }` </br> Size for icons must be specified. Preffered sizes: 20px, 25px, 30px, 40px. Other supported sizes: 19px, 35px, 38px.|
 **Optional keys** | **Known issues** | **Chrome incompatibilities**
 [background](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background) | | Persistent is a required field for Microsoft Edge.
-[content_scripts](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts)  | |
+[content_scripts](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts)  | | |
 options_page | | |
-[permissions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions)  | |
-short_name  | |
+[permissions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions)  | | |
+short_name  | | |
 [web_accessible_resources](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/web_accessible_resources) | | |
