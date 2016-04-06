@@ -10,7 +10,7 @@ The following snippet provides an example of a Microsoft Edge JSON manifest file
 	{
 		"default_icon" : 
 		{
-			"20" : "icon_20.png"
+			"20" : "icon_20.png",
 			"40" : "icon_40.png"
 		},
 		"default_title" : "Sample extension",
