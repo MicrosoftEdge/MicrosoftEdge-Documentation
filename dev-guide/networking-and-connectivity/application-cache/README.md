@@ -46,9 +46,9 @@ Manifest files are divided into three sections:
 
 Section | Description
 :------- | :-------
-`CACHE`| Defines resources that will be stored locally. </br>In the example above, three files are cached.
-`FALLBACK` | Defines resources to be used when other resources are not available. </br>The example above defines `figure2.png` as a fallback image for the `photos/` folder. </br>If the browser cannot access images in the photos folder (because the browser is offline or because the server cannot be reached), figure2.png will replace the unavailable images in the rendered markup. As a result, `figure2.png` will be cached locally.
-`NETWORK` | Specifies resources to be accessed when there is a network connection. </br>Resources in this section are not cached.</br> This section allows the use of the wildcard (\*) character to indicate that all other resources should not be cached.
+`CACHE`| Defines resources that will be stored locally. In the example above, three files are cached.
+`FALLBACK` | Defines resources to be used when other resources are not available. The example above defines `figure2.png` as a fallback image for the `photos/` folder. If the browser cannot access images in the photos folder (because the browser is offline or because the server cannot be reached), figure2.png will replace the unavailable images in the rendered markup. As a result, `figure2.png` will be cached locally.
+`NETWORK` | Specifies resources to be accessed when there is a network connection. Resources in this section are not cached. This section allows the use of the wildcard (\*) character to indicate that all other resources should not be cached.
 
 Manifest files can contain any number of these sections, and sections can be repeated; however, new sections must begin with the section header followed by a colon, as shown in the previous example. If no section header is provided, the `CACHE:` header is presumed. The following example shows a simplified manifest.
 ```html

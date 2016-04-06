@@ -19,7 +19,8 @@ The [`selectionDirection`](https://msdn.microsoft.com/library/mt587085) attribut
 p = object.selectionDirection;
 ```
 
-This GIF shows a selection being made on some text using `setSelectionRange`, and then `selectionDirection` being used to determine the direction:</br>
+This GIF shows a selection being made on some text using `setSelectionRange`, and then `selectionDirection` being used to determine the direction:
+
 ![selectionDirection](../../media/selectionDirection.gif)
 
 ## srcset attribute
