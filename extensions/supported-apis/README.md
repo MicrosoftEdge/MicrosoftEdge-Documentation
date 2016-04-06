@@ -10,13 +10,13 @@ The following `browserAction` API are supported:
 
 | API                                   | Known issues                                             | Chrome incompatibilities
 |---------------------------------------|----------------------------------------------------------|--------------------------|
-| [browserAction](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction) | The `default_title` attribute is not optional for `browserAction`. </br>The `default_icon` attribute is not optional for `browserAction`.| |
+| [browserAction](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction) | The `default_title` attribute is not optional for `browserAction`.  The `default_icon` attribute is not optional for `browserAction`.| |
 | [browserAction.disable](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/disable) | | |
 | [browserAction.enable](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/enable) | | |
 | [browserAction.getBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeBackgroundColor) |  | |
 | [browserAction.setBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeBackgroundColor) | | |
 | [browserAction.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/onClicked) | | |
-| [browserAction.setBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeText)            | `browserAction.setBadgetText` does not clear on navigate within the same tab. </br> `browserAction.setBadgeText` renders incorrectly for icons in the More (...) menu. | |
+| [browserAction.setBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeText)            | `browserAction.setBadgetText` does not clear on navigate within the same tab.   `browserAction.setBadgeText` renders incorrectly for icons in the More (...) menu. | |
 | [browserAction.getBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeText)   | | |
 | [browserAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setIcon) | `browserAction.setIcon` is not persisted. | |
 
@@ -69,7 +69,7 @@ API | Known issues | Chrome incompatibilities
 :------| :-------- | :---------------------
 [i18n](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/i18n) | | |
 [i18n.getAcceptLanguages](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/i18n/getAcceptLanguages) | | |
-[i18n.getMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/i18n/detectLanguage) | `i18n.getMessage` with invalid key throws exception instead of failing gracefully. </br> `i18n.getMessage` argument expects strings, but should also allow an int or thow an exception. | |
+[i18n.getMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/i18n/detectLanguage) | `i18n.getMessage` with invalid key throws exception instead of failing gracefully.   `i18n.getMessage` argument expects strings, but should also allow an int or thow an exception. | |
 [i18n.getUILanguage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/i18n/getUILanguage) | | |
 
 
@@ -105,7 +105,7 @@ API | Known issues | Chrome incompatibilities
 [runtime.lastError](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/lastError) | | |
 [runtime.onInstalled](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onInstalled) | | | 
 [runtime.onMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onMessage) | `tab` object in `runtime.onMessage` event is not fully implemented. | `MessageSender.tlsChannelId` is not supported in Microsoft Edge.|
-[runtime.sendMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/sendMessage) | Microsoft Edge extension pages can use `runtime.sendMessage`/`onMessage` to send messages to themselves. </br> `runtime.sendmessage` is not supported from site pages. | Microsoft Edge does not support the `options` parameter.|
+[runtime.sendMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/sendMessage) | Microsoft Edge extension pages can use `runtime.sendMessage`/`onMessage` to send messages to themselves.   `runtime.sendmessage` is not supported from site pages. | Microsoft Edge does not support the `options` parameter.|
 
 ## storage
 
@@ -118,7 +118,7 @@ API | Known issues | Chrome incompatibilities
 [storage.local.set](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/local)  |`storage` has a 1MB limit per value. |  |
 storage.local.remove  | | |
 storage.local.clear | | |
-storage.local.getBytesInUse | | `storage.local` data is persisted in a different format than Chrome, causing a different value to be returned when calling `storage.local.getBytesInUse`. </br>Ex:</br>storage.local.set({ "k": { "s": "âas" } }</br>Returns 13 in Chrome and 50 in Microsoft Edge.|
+storage.local.getBytesInUse | | `storage.local` data is persisted in a different format than Chrome, causing a different value to be returned when calling `storage.local.getBytesInUse`.  Ex: storage.local.set({ "k": { "s": "âas" } } Returns 13 in Chrome and 50 in Microsoft Edge.|
 [storage.onChanged](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/onChanged) | | |
 
 ## tabs
@@ -138,7 +138,7 @@ API | Known issues | Chrome incompatibilities
 [tabs.onCreated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onCreated) | | |
 [tabs.onRemoved](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onRemoved) | | |
 [tabs.onUpdated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onUpdated) | After uninstall/reinstall, the URL is not received until Microsoft Edge is restarted. | |
-[tabs.query](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/query) | `pinned`, `audible`, and `muted` are not yet supported.</br> `"popup"` `windowType` is not yet supported. | `highlighted` is not supported. </br> `"panel"`, `"app"`, and `"devtools"` `windowType` are not supported. |
+[tabs.query](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/query) | `pinned`, `audible`, and `muted` are not yet supported.  `"popup"` `windowType` is not yet supported. | `highlighted` is not supported.   `"panel"`, `"app"`, and `"devtools"` `windowType` are not supported. |
 [tabs.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/remove) | | |
 [tabs.sendMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/sendMessage) | Messaging a specific frame is not yet supported. | | 
 [tabs.Tab](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab) | `audible`, `mutedInfo`, `inPrivate`, `width`, and `height` properties are not yet supported. | `openerTabId`, `selected`, and `highlighted` properties are not supported. |
@@ -172,7 +172,7 @@ The following `webRequest` API are supported:
 
 API | Known issues | Chrome incompatibilities
 :------ | :----- | :-------
-[webRequest]() | Tab ids in details are incorrect. </br> `webRequest` not supported for synchronous `XmlHttpRequests`. | Network requests from extensions, such as options, background or popup pages, are not supported.</br>Network requests from `<object>` and `<embed>` elements are not supported. </br> Headers cannot be modified for cached requests.  |
+[webRequest]() | Tab ids in details are incorrect.   `webRequest` not supported for synchronous `XmlHttpRequests`. | Network requests from extensions, such as options, background or popup pages, are not supported. Network requests from `<object>` and `<embed>` elements are not supported.   Headers cannot be modified for cached requests.  |
 [handlerBehaviorChanged](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/handlerBehaviorChanged) | | Handler changes are automatically handled in Microsoft Edge. Calling this has no effect.  |
 [onAuthRequired](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onAuthRequired) | | |
 [onBeforeRedirect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onBeforeRedirect) | | |
