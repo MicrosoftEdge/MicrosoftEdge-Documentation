@@ -1,7 +1,7 @@
 # JSON manifest file example
 
 The following snippet provides an example of a Microsoft Edge JSON manifest file.
-```
+```json
 {
 	"name" : "Sample extension manifest",
 	"version" : "1.0.0.0",
