@@ -6,7 +6,7 @@ See example of a [Microsoft Edge JSON manifest file](json-manifest-example/).
 
 The following is the list of JSON manifest keys that are supported as of build 14316:
 
-Required keys | Known issues | Chrome incompatibilities
+**Required keys** | **Known issues** | **Chrome incompatibilities**
 :------------ | :------------- | :--------------
 author  | | Specifies the author. Not supported in Chrome.
 [name](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/name) | | |
