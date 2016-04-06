@@ -6,9 +6,9 @@ Object Real-Time Communications (ORTC) enables media (audio and/or video) to be 
 
 
 To get a hands-on experience with ORTC, try out these demos on Test Drive:
--  [SimpleWebRTC](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/simplewebrtc/)</br>
--  [ORTC phone call](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/twilioortc/)</br>
--  [ORTC demo](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/ortcdemo/)</br>
+-  [SimpleWebRTC](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/simplewebrtc/)
+-  [ORTC phone call](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/twilioortc/)
+-  [ORTC demo](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/ortcdemo/)
 
 
 For more information about ORTC, check out [ORTC API is now available in Microsoft Edge](http://go.microsoft.com/fwlink/p/?LinkID=627564) on the Microsoft Edge dev blog.
