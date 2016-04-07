@@ -70,7 +70,7 @@ To display an inspectable DOM node, send it to the console using [`console.dirxm
 
 Open this codepen sample with the F12 tool, click the "show it" button to display both objects and nodes in the console.
 
-![codepen](http://codepen.io/MicrosoftEdgeDocumentation/pen/PNEKQX?editors=1010)(325)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/PNEKQX?editors=1010)(325)
 
 Use the arrows to the left to expand objects and nodes as seen in the console image below.
 
