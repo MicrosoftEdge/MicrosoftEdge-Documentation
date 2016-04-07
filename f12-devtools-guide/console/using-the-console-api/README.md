@@ -17,12 +17,10 @@ You have four options for custom messages. Three use the format of system messag
 
 **Just text:**
 
-###### *JavaScript*
-
-`console.log('This is some text');`
->
-`This is some text`
-
+```JavaScript
+console.log('This is some text');
+```
+>`This is some text`
 
 
 **Just a variable:**
