@@ -77,5 +77,8 @@ Sending in single line commands is useful, but some tasks require executing long
 ![F12 Console Multiline Command Line](../media/f12blueconsolecommandmultiple.png)
 
 ## Related topics
+
+[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
+
 [Using the Console API](./using-the-console-api/)
 
