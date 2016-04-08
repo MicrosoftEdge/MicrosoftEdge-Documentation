@@ -219,73 +219,9 @@ The [`animationiteration`](https://msdn.microsoft.com/library/dn632680(v=vs.85).
 -   Bubbles: Yes
 -   Cancellable: Yes
 
-This example animates a `<div>` element, and fires the `animationstart`, `animationend`, and `animationiteration` events to change the text in the box. [Try the example online](http://go.microsoft.com/fwlink/p/?LinkID=394386).
+This example animates a `<div>` element, and fires the `animationstart`, `animationend`, and `animationiteration` events to change the text in the box. 
 
-```HTML
-<!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-<title>CSS Animation Events Example</title>
-<style>
-  body {
-    padding:10px;
-    font-family:"Segoe UI";
-  }
-  div {
-    width:250px; 
-    background-color:lime;
-    padding:10px;
-    font-weight:bold;
-    font-size:20pt;
-  }
-  div:active {
-    animation-delay: 0s;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
-    animation-name: demo;
-  }
-  @keyframes demo {
-    from {
-    animation-timing-function: ease;
-    }
-    50% {
-      background-color: purple;
-      animation-timing-function: ease-in;
-      transform: translate(20px,30px);
-    }
-    to {
-      background-color: blue;
-    }
-  }
-</style>
-</head>
-
-<body>
-<h1>CSS Animation Events Example</h1>
-<p>Click and hold to start the animation.</p>
-<div id="mydiv">
-   Duis ac leo sit amet lectus tristique pulvinar nec rutrum dolor.
-</div>
-
-<script>
-  var divObj = document.getElementById("mydiv");
-  divObj.addEventListener("animationstart", function () {
-   this.innerHTML = "This is the animation start event";
-  }, false);
-
-  divObj.addEventListener("animationend", function () {
-    this.innerHTML = "This is the animation end event";
-  }, false);
-
-  divObj.addEventListener("animationiteration", function () {
-    this.innerHTML = "This is the animation iteration event";
-  }, false);
-</script>
-
-</body>
-</html>
-```
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/oxpmgy?editors=1100)
 
 ![spec](CSS Animations)
 
