@@ -270,7 +270,7 @@ input:out-of-range:hover {
 [`:out-of-range`](https://msdn.microsoft.com/library/mt574721(v=vs.85).aspx)
 
 
-# Keywords: initial and unset
+## Keywords: initial and unset
 
 Microsoft Edge now supports the *initial* and *unset* keywords as part of the [CSS Cascading and Inheritance Level 4](http://go.microsoft.com/fwlink/p/?LinkId=626032) specification. These keywords are supported for all properties. 
 
