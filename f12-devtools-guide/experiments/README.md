@@ -27,4 +27,8 @@ Clicking the **diff** command will open up a new **diff view** of the document, 
 
 All changes to the document will be lost when you navigate away or refresh from the current page.
 
-You will not be able to edit when paused in the **[Debugger](../debugger/)** or when a document has been pretty printed. 
+You will not be able to edit when paused in the **[Debugger](../debugger/)** or when a document has been pretty printed.
+
+## Related topics
+
+[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)

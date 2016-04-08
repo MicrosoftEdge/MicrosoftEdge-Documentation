@@ -28,7 +28,7 @@ Changing your user agent string is a good first step in debugging errors that ar
 
 Front end and/or back end scripts sometimes try to detect which browser you're using. And even when you're not using browser detection in your own code, you may be using a third-party JavaScript library or server-side script that does.
 
-The problem with browser detection is that it's often used to scale back or change the features in a webpage based on what the developer writing the script thinks your browser can do, rather than detecting what your browser can actually do [using feature detection](https://msdn.microsoft.com/en-us/library/hh273397.aspx). This can cause unexpected behavior, because code targeted at Windows Internet Explorer 8 can run very differently in Microsoft Edge, or a feature your browser is perfectly capable of supporting might be disabled because of an assumption made by the developer.
+The problem with browser detection is that it's often used to scale back or change the features in a webpage based on what the developer writing the script thinks your browser can do, rather than detecting what your browser can actually do [using feature detection](https://msdn.microsoft.com/library/hh273397.aspx). This can cause unexpected behavior, because code targeted at Windows Internet Explorer 8 can run very differently in Microsoft Edge, or a feature your browser is perfectly capable of supporting might be disabled because of an assumption made by the developer.
 
 If changing your user agent string clears up a problem, it's likely browser detection might be the cause.
 
@@ -60,6 +60,8 @@ There are three options to **simulate GPS**. They are **Off**, **On**, and **On 
 
 ## Related topics
 
-[Strategies for building adaptive sites](https://msdn.microsoft.com/en-us/library/jj583806.aspx)
+[Strategies for building adaptive sites](https://msdn.microsoft.com/library/jj583806.aspx)
 
-[Geolocation API](https://msdn.microsoft.com/en-us/library/hh772290.aspx)
+[Geolocation API](https://msdn.microsoft.com/library/hh772290.aspx)
+
+[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)

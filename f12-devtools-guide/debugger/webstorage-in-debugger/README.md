@@ -19,7 +19,7 @@ Session and local storage contents can also be viewed and edited using the [**De
 
 ![View web storage with Edge Debugger](../../media/Edge_Debugger_localstorage.gif)
 
-Both [session and local storage](https://msdn.microsoft.com/en-us/library/bg142799.aspx) can store larger amounts of data locally than cookies. Session and local storage never transfer information to the server so there is no affect on performance. Storage persists per domain, so all pages from one domain can store and access the same data using client scripts (think preferences or game scores).
+Both [session and local storage](https://msdn.microsoft.com/library/bg142799.aspx) can store larger amounts of data locally than cookies. Session and local storage never transfer information to the server so there is no affect on performance. Storage persists per domain, so all pages from one domain can store and access the same data using client scripts (think preferences or game scores).
 
 **Session storage** makes data available only for the browser session. All data is deleted when the browser window is closed (though data will survive page reloads). **Local storage** has no expiration date.
 

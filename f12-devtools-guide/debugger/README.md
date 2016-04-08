@@ -86,8 +86,6 @@ function sj_ce(n,t,i){var r=_d.createElement(n);return t&&(r.id=t),i&&(r.classNa
 
 Becomes this:
 
-###### *JavaScript*
-
 ```javascript
 function _ge(n) {
   return _d.getElementById(n);
@@ -112,8 +110,6 @@ When you've written code in a language that compiles to JavaScript or CSS and/or
 A number of compilers and compressors now provide source maps; intermediate files that map the compiled JavaScript or CSS back to the original source. When the compiled or compressed JavaScript or CSS contains a pointer to a source map, all files are present, and source map functionality is enabled, the Debugger tool shows the original source and maps breakpoints and errors to it.
 
 **How do I enable source maps?** The compiler or compressor generating the JavaScript includes a comment with the name of the map file. For example, if `myfile.js` was compressed to `myfile.min.js` by a compressor that supported source maps, it would generate a map file called `myfile.min.js.map` and put a comment in `myfile.min.js` like this:
-
-###### *JavaScript*
 
 ```javascript
 //# sourceMappingURL=myfile.min.js.map
@@ -169,7 +165,7 @@ After you've set your breakpoints and stepped into your code, the Debugger tool 
 
 ![Edge Debugger Inspector](../media/Edge_Debugger_inspect.png)
 
-  - In the *script* pane, when the debugger is paused on a statement, hover your mouse over any variable, function, or object to see more info in an overlay. Move your mouse down into the overlay to expand and inspect objects much like you can if you log them to the [**Console**](../console/) with the [**dirxml()**](https://msdn.microsoft.com/en-us/library/dn265067.aspx) method.
+  - In the *script* pane, when the debugger is paused on a statement, hover your mouse over any variable, function, or object to see more info in an overlay. Move your mouse down into the overlay to expand and inspect objects much like you can if you log them to the [**Console**](../console/) with the [**dirxml()**](https://msdn.microsoft.com/library/dn265067.aspx) method.
 Click **Add watch** at the bottom of the overlay to add the variable or object to the **Watches** pane.
 
   - The **locals** node in the **Watches** gives you a catalog of all objects and variables, both in the local and global scope, available to the statement that is the focus of the current break. This can help identify variables that are in the wrong scope.
@@ -184,7 +180,6 @@ Click **Add watch** at the bottom of the overlay to add the variable or object t
 
 The image above shows a very simple asynchronous call, created by running the following code in the console.
 
-###### *JavaScript*
 ```javascript
 function getReturn(){
   debugger;
@@ -229,7 +224,7 @@ To indicate a file is library code you want excluded from debugging, the followi
 
   - Right click an item in the **Call stack** and select "Library code" from the context menu to mark its parent script as library code.
 
-**Note**   Because the icon displays when you mouse over the file's name, it continues to display after being toggled off if the mouse pointer is still over the file's line in the list. To check that it's been toggled off, move the mouse over another file.
+> NOTE:   Because the icon displays when you mouse over the file's name, it continues to display after being toggled off if the mouse pointer is still over the file's line in the list. To check that it's been toggled off, move the mouse over another file.
 
 The **Just my code** icon in the **Debugger tool**'s icon bar acts as a toggle to include or exclude all the files that have been marked as library code. When **Just my code** is enabled, if library code is part of the **Call stack** when execution pauses, the **Just my code** icon in the upper right corner of the **Call stack** pane toggles the details of that execution frame on and off. Double-clicking on a "[Library code]" line in the **Call stack** pane expands its details.
 
@@ -238,7 +233,7 @@ Keeping track of libraries between sessions is one of the features of **Just my 
 You can edit the files to maintain a default list or add wildcards for a domain or file type. For example, the expression `*.min.js` is used to mark all files ending with `.min.js` as library code automatically.
 
 ## Debugging and In Private Browsing
-In [Private Browsing](http://windows.microsoft.com/en-US/internet-explorer/products/ie-9/features/in-private) lets you browse without leaving a persisting trail in your browser history, but if you debug while using In Private Browsing, the Debugger might save some information that will persist.
+In [Private Browsing](http://windows.microsoft.com/internet-explorer/products/ie-9/features/in-private) lets you browse without leaving a persisting trail in your browser history, but if you debug while using In Private Browsing, the Debugger might save some information that will persist.
 
 The Debugger saves info about the pages and files you debug when you add a breakpoint in a file, mark a file as library code with the Just My Code feature, or open a file in the Debugger that isn't the root page (such as an external CSS or JavaScript file). These are saved to provide debugging functionality across sessions, are separate from the browser history, and are not cleared at the end of an In Private Browsing session.
 
@@ -246,3 +241,11 @@ If you have any privacy concerns, you can remove this info by clearing any break
 
 ## Don't debug and performance profile
 Because of the additional overhead needed to run the Debugger and Performance tools at the same time, the values in your Performance report will not reflect the actual load and running time of your code. Trying to run both of these tools at once is not supported.
+
+## Related topics
+
+[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
+
+[Edit CSS in the Debugger](/edit-css-in-debugger)
+
+[Webstorage in the Debugger](/webstorage-in-debugger)

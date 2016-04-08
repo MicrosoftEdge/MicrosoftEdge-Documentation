@@ -86,6 +86,3 @@ HTTP traffic is captured only for the process associated with the Microsoft Edge
 [Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
 
 [A look at new feedback-driven improvements to the network tool in our F12 Developer Tools](https://blogs.windows.com/msedgedev/2015/05/08/updates-for-the-f12-developer-tools-in-windows-insider-preview-10074/)
-
-[]()
- 
