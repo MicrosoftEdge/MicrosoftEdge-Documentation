@@ -34,7 +34,6 @@ User marks can be given labels by using a string for the argument of the `perfor
 
 **User marks** are made more useful with the [`performance.measure()`](https://msdn.microsoft.com/library/jj585594.aspx) API. After you have set **user marks**, set a **user measure** to group the events that happened between the two marks. For example, if you have two **user marks** labeled "Begin Rotation" and "End Rotation," use the following code to group them and label the group as "box cycler."
 
-###### *JavaScript*
 ```javascript
 performance.measure("box cycler","Begin Rotation","End Rotation");
 ```
