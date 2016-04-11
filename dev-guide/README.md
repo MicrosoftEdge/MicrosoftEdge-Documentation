@@ -6,6 +6,7 @@ This list highlights new documentation for new web platform features in Microsof
 
 Feature | Build Number
 :----------| :-------------
+[Web Authentication and Windows Hello](./device/web-authentication) | 10586
 [Microsoft Edge Extensions](../extensions) | 14291
 Updates to the [Selection  API](./html5/selection-api) | 14291
 [Web Notifications API](./device/web-notifications-api)| 14267

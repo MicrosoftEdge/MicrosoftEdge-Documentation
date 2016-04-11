@@ -7,13 +7,16 @@
 You can use the [Fullscreen API](./fullscreen-api) to bring video, images, and other content to a user's full attention.
 
 ## Geolocation
-The [Geolocation API](./Geolocation) is a built-in location provider that uses Wi-Fi location data and Internet Protocol (IP) address information to determine the latitude and longitude of the computer or device running the browser. 
+The [Geolocation API](./Geolocation) is a built-in location provider that uses Wi-Fi location data and Internet Protocol (IP) address information to determine the latitude and longitude of the computer or device running the browser.
 
 ## High-DPI support
 Microsoft Edge brings enhanced scaling for [high DPI](./high-DPI-support) screens and small slates, ensuring the consistency of your website’s text, touch targets, and layout across devices.
 
 ## Screen Orientation API
 The [Screen Orientation API](./screen-orientation-api) enables you to prevent or override the browser from automatically reflowing your web app's content during changes to the orientation of your user's device. You can also lock the display so that your user's device orientation and motion sensor data is accurate.
+
+## Web Authentication and Windows Hello
+The Web Authentication API in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics for user authentication.
 
 ## Web Notifications API
 The [Web Notifications API](./web-notifications-api) allows websites to send users notifications outside the context of the Microsoft Edge browser.
