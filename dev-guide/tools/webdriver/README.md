@@ -6,7 +6,7 @@ WebDriver enables developers to create automated tests that simulate user intera
 
 Here's how to get started with WebDriver for Microsoft Edge.
 
-The Microsoft Edge implementation of WebDriver supports both the W3C [WebDriver](http://go.microsoft.com/fwlink/p/?LinkID=619305) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests. Check out the [WebDriver Status](http://dev.modern.ie/platform/status/webdriver/details/) page for more details on supported commands.
+The Microsoft Edge implementation of WebDriver supports both the W3C [WebDriver](http://go.microsoft.com/fwlink/p/?LinkID=619305) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests. Check out the [WebDriver Status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webdriver/details/) page for more details on supported commands.
 
 ## Enabling WebDriver with Microsoft Edge
 
