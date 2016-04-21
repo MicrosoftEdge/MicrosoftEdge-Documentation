@@ -52,7 +52,7 @@ Web Audio provides three outputs:
 * Output to a [`MediaStream`](https://msdn.microsoft.com/library/dn954836(v=vs.85).aspx) for Object Real-Time Communications (ORTC).
 
 ## Web Audio Demo
-The following gives a short walkthrough of the [Microphone Streaming & Web Audio Demo](http://dev.modern.ie/testdrive/demos/microphone) that allows local audio to be recorded and played. 
+The following gives a short walkthrough of the [Microphone Streaming & Web Audio Demo](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/microphone/) that allows local audio to be recorded and played. 
 
 ### Create the AudioContext
 Set up the audio context and audio graph with basic JavaScript by creating the necessary nodes (in this case, source, gain, filter, convolver and analyzer nodes), and connect them from one to the next.
