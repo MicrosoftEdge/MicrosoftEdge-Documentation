@@ -12,4 +12,4 @@ Type 'about:flags' into the address bar in Microsoft Edge to open the Developer 
 - Open the Microsoft Edge F12 developer tools by pressing the F12 key or from the more (`...`) menu.
 - Change the Developer Settings by visiting about:flags and checking `Show "View Source" and "Inspect Element" in the context menu`, as illustrated below.
 
-![Edge developer tool settings in about:flags](./media/Edge_Settings_F12AboutFlags.png)
+![Edge developer tool settings in about:flags](../media/Edge_Settings_F12AboutFlags.png)
