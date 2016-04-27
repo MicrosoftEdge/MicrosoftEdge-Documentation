@@ -5,7 +5,7 @@
 Type 'about:flags' into the address bar in Microsoft Edge to open the Developer Settings. The flags found on this page allow you to enable or disable experimental browser features via check-boxes. These experimental features may change, experience bugs, or disappear at any time.
 
 ## Show **Inspect Element** and **View Source** Context Menus
->note Applies to Windows Insider Builds after 14328.
+> Applies to Windows Insider Builds after 14328.
 
 **Inspect Element** and **View Source** are no longer shown by default in the Microsoft Edge context menu (opened when right-clicking on a web page). To enable these context menu items, you can either:
 
