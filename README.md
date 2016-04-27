@@ -89,13 +89,19 @@ Respectively, those look like:
 
 ### How they work
 
-You precede a single line of Markdown with the `>note.*` syntax, like so:
+You precede a single line of Markdown with the `>note.*` syntax. No closing tag is needed. See example below. 
 
 ```
 >note.warning Hello.  Yes.  I am a warning note that has been automagically created. My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single (sometimes very long line) in the Markdown itself.
 ```
 
-No closing tag is needed. If you try to "wrap" this custom syntax around multiple lines, **it will not work!**
+For multi-line blockquote notes, use a > in front of each line of the notes as seen in the example below.
+
+```
+>note(.warning/.error) sometext
+>next line of the note
+>one more line for the note
+```
 
 But how do the titles ("Note", "Warning", "Error") get inserted into the note output? The custom Markdown tag actually does a lot
 more than you might think. By using `>note.warning`, you are creating a `div` with class `.note--warning`, and adding to that `div` a
