@@ -2,9 +2,11 @@
 
 Debugging extensions with F12 is available in Microsoft Edge as of build 14332.
 
+In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](../scratch - adding-and-removing-extensions) for details on how to do this.
+
 Continue reading for step by step how-tos on debugging extension background scripts, content scripts, and popups.
 
-> NOTE: In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](../scratch - adding-and-removing-extensions) for details on how to do this.
+
 
 ## Background script debugging
 To start debugging the background script of your extension:
@@ -31,7 +33,7 @@ To start debugging the content script of your extension:
 1. Launch F12 by either navigating to the **"More (...)"** button and selecting **"F12 Developer Tools"** or by pressing F12 on your keyboard.
 2. Navigate to and select your extension's content script. Content scripts for extensions currently running will be depicted by a different folder for each extension. 
 
- > NOTE: Only running content scripts will appear.
+Only running content scripts will appear.
  
 3. Place breakpoints for debugging by clicking to the left of the source code line number. 
 
