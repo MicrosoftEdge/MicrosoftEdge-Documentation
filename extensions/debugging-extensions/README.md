@@ -2,7 +2,7 @@
 
 Debugging extensions with F12 is available in Microsoft Edge as of build 14332.
 
-In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](../adding-and-removing-extensions) for details on how to do this.
+>note In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](../adding-and-removing-extensions) for details on how to do this.
 
 Continue reading for step by step how-tos on debugging extension background scripts, content scripts, and popups.
 
