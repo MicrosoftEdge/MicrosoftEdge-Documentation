@@ -49,7 +49,7 @@ You can also do this from the extensions details page by:
  ![show button toggle switched on](../media/show-button-toggle.png)
 
 
->note You can always move the button back to the **"More" (...)** menu by right-clicking it and unselecting **"Show next to address bar"** or by going to the extension details page and toggling **"Show button next to address bar"** to off.
+> NOTE: You can always move the button back to the **"More" (...)** menu by right-clicking it and unselecting **"Show next to address bar"** or by going to the extension details page and toggling **"Show button next to address bar"** to off.
 
 ## Removing an extension
 
