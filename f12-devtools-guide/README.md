@@ -8,7 +8,7 @@ Microsoft Edge introduces great new improvements to F12 developer tools, includi
 
 There are seven distinct tools, each with their own tab in the F12 tools interface. Here you'll find an image of each tool and a quick summary of what it does, followed by lists of its main features and typical tasks.
 
->note Visit the [Settings](./settings/) page for more information about how to adjust Developer Settings in Microsoft Edge.
+> Visit the [Settings](./settings/) page for more information about how to adjust Developer Settings in Microsoft Edge.
 
 ## The DOM Explorer tool (CTRL+1)
 
