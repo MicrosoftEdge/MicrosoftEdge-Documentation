@@ -20,11 +20,12 @@ The Page Visibility API also exposes the following event.
 
 By using this API, web applications can choose to alter behavior based on whether they are visible to the user or not. This API can be used to scale back work when the page is no longer visible. For example, if a web-based email client is visible, it might check the server for new mail every few seconds. When hidden, it might scale back so it checks email every few minutes instead of every few seconds. This API can also be used to provide a more effective user experience in situations not related to power management. For example, a puzzle game or a video could be paused when the user no longer has the game visible. Similarly, advertisers could use it to not charge for ads when they are not visible to viewers. The Page Visibility API can be used to guard against scripts firing before they're rendered on the user's screen
 
-## Page Visibility API Logging Demo
+## Live examples
 
+The example below logs the visibility of the current window. Go ahead and try to minimize and reopen the window to see the log in action!
 ![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/eZGGbX)
 
-## Page Visibility API Video Demo
+Like the example above, this example uses the Page Visibility API to determine the visibility of the screen to perform an action. For this situation, if the video is playing and then the window is minimized, the video will pause.
 
 ![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/eZGGxX)
 
