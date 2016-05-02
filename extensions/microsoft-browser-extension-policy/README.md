@@ -16,7 +16,7 @@ At this time, there are no supported mechanisms for software to modify the brows
 
 In March 2016, Microsoft announced the upcoming availability of a native Extensions platform to be delivered in the next version of Windows later in 2016. When this support is available, this document will be updated to note that the native Extensions platform will be the **only supported** mechanism to modify the end-user experience of Microsoft Edge, including the browser configuration and the content displayed in the browser.  
 
-Any other mechanism that impacts the configuration of Microsoft Edge, or the content that the browser displayed, unless explicitly called out in this document is **unsupported**.  
+Any other mechanism that impacts the configuration of Microsoft Edge, or the content that the browser displays, unless explicitly called out in this document is **unsupported**.  
 
 ### Installation, Management, and Removal
 
