@@ -99,7 +99,7 @@ Audio WAV | wav | audio/wav, audio/wave, audio/x-wave, audio/vnd.wave
 
 > Audio WAV support was introduced in Microsoft Edge.
 
-To test other browser support of audio file formats, use the [canPlayType](https://msdn.microsoft.com/library/ff975191(v=vs.85).aspx) method. This method returns `probably`, `maybe`, or an empty string depending on whether or not the client can play a given media resource type. The example below demostrates how to use the `canPlayType` method.
+To test other browser support of audio file formats, use the [`canPlayType`](https://msdn.microsoft.com/library/ff975191(v=vs.85).aspx) method. This method returns `probably`, `maybe`, or an empty string depending on whether or not the client can play a given media resource type. The example below demonstrates how to use the `canPlayType` method.
 
 ``` js
 function checkAudioCompat() {
@@ -120,6 +120,16 @@ function checkAudioCompat() {
    }
 }
 ```
+
+## Dolby Audio
+
+Microsoft Edge includes support for the Dolby Audio format in HTML5 media, [Media Source Extensions (MSE)](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/multimedia/media-source-extensions/), and [Encrypted Media Extensions (EME)](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/multimedia/encrypted-media-extensions/), providing rich, multi-channel audio support that works well with AVC/H.264 video and HLS and DASH streaming. You can feature detect support for Dolby Audio formats using [`canPlayType`](https://msdn.microsoft.com/en-us/library/ff975191(v=vs.85).aspx) (HTML5 media) and `isTypeSupported` (MSE)/(EME) with the following strings:
+
+**Dolby Digital Plus (Enhanced AC-3)**: `'audio/mp4; codecs="ec-3"'`
+**Digital Plus (AC-3)**: `'audio/mp4; codecs="ac-3"'` 
+
+For more info and usage guidance, see [Announcing Dolby Audio for high performance audio in Microsoft Edge](http://go.microsoft.com/fwlink/p/?LinkID=615479).
+
 
 ![spec](HTMLAudioElement)
 
