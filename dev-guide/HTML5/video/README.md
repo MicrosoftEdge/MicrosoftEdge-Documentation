@@ -45,6 +45,25 @@ var myVideoTrack = myVideo.videoTracks.getTrackByID("english");
 
 You also have the ability to get information about the multiple video tracks, and switch between them using the [`selected`](https://msdn.microsoft.com/library/dn806261(v=vs.85).aspx) proprety. 
 
+## HLS and DASH
+
+Microsoft Edge introduces support for HTTP Live Streaming (HLS) and enhanced supported for [MPEG-DASH](http://go.microsoft.com/fwlink/p/?LinkID=533900). These two media streaming protocols automate adaptive streaming, making it simple for web developers to deliver professional quality videos, like live streams, on their web sites without needing a plug-in.
+
+You can detect HLS or the enhanced DASH manifest support using the [`canPlayType`](https://msdn.microsoft.com/en-us/library/ff975191(v=vs.85).aspx) method: 
+
+HLS: Use one of 4 optional MIME types for HLS .m3u8 files (the first two are recommended):
+* `video.canPlayType('application/vnd.apple.mpegurl')` 
+* `video.canPlayType('audio/mpegurl')` 
+* `video.canPlayType('application/x-mpegurl')`
+* `video.canPlayType('audio/x-mpegURL') `
+
+DASH: Use the MIME type for DASH .mpd files:
+
+* `video.canPlayType('application/dash+xml')`
+
+For more information about adaptive video streaming, see [Simplified Adaptive Video Streaming: Announcing support for HLS and DASH in Windows 10](http://go.microsoft.com/fwlink/p/?linkid=529964). For additional format support information, go to the [`video`](https://msdn.microsoft.com/library/hh772959(v=vs.85).aspx) page. 
+
+Microsoft Edge now supports in-band closed captioning based on the [mandate by the FCC](http://go.microsoft.com/fwlink/p/?LinkId=524313). For more information on how to map the in-band 608/708 CC to Text Track cues, see [Conversion of 608/708 captions to WebVTT](http://go.microsoft.com/fwlink/p/?LinkId=524314). 
 
 ## Supported video file formats
 
@@ -82,6 +101,34 @@ function checkVideoCompat() {
 }
 
 ```
+
+## Video element keyboard shortcuts
+
+The following table shows keyboard shortcuts for controlling the `video` element in Microsoft Edge. 
+
+| Key | Action | 
+| ------- | ----------------- |
+Space | Toggle play / pause
+M | Mute
+Down | Volume down
+Up | Volume up
+Home or Control + Left | Go to the beginning of the file
+End or Control + Right | Go to the end of the file
+Left | Rewind back 10 seconds
+Right | Skip forward 10 seconds
+Shift + Left | Rewind back 30 seconds
+Shift + Right | Skip forward 30 seconds
++ | Increase play speed
+- | Decrease play speed
+T | Toggle controls visibility
+K | Skip forward one frame
+J | Rewind back one frame
+U | Show available tracks
+A | Show available subtitles 
+Z | Toggle zoom mode
+Alt + Enter | Toggle full screen
+Escape | Exit full screen
+
 
 ![spec](HTMLVideoElement, AudioTrack, AudioTrackList, VideoTrack, VideoTrackList)
 
