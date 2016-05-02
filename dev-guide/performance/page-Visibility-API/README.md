@@ -23,6 +23,7 @@ By using this API, web applications can choose to alter behavior based on whethe
 ## Live examples
 
 The example below logs the visibility of the current window. Go ahead and try to minimize and reopen the window to see the log in action!
+
 ![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/eZGGbX)
 
 Like the example above, this example uses the Page Visibility API to determine the visibility of the screen to perform an action. For this situation, if the video is playing and then the window is minimized, the video will pause.
