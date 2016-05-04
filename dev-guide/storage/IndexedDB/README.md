@@ -5,7 +5,7 @@ Microsoft Edge includes support for the [Indexed Database API (`IndexedDB`)](htt
 
 Microsoft Edge brings a number of improvements to the [IndexedDB API](https://msdn.microsoft.com/library/hh772651(v=vs.85).aspx), including:
 * **Local use**: Added support for webpages loaded via a `"file://"` URI scheme. This allows developers accessing files from disk to use these APIs.
-* **Removal of soft limits**: The `IndexDB` API and [Application Cache ("AppCache")](../../html5/application-cache/) will not request user authorization to use more than 10 megabytes of space.
+* **Removal of soft limits**: The `IndexDB` API and [Application Cache ("AppCache")](../../HTML5/application-cache/) will not request user authorization to use more than 10 megabytes of space.
 * **Changes to default hard limits**: Limits are removed for Windows Store apps using JavaScript.
 
 ## Asynchronous versus synchronous
