@@ -46,7 +46,7 @@ Alternatively, you can pass it one of the following "shorthand" values:
 | landscape | Value that represents both landscape-primary and landscape-secondary cases. |
 
 
-Locking the screen orientation is only possible when Microsoft Edge is in full screen mode (by the user pressing F11, or via the [Fullscreen API](../../misc/fullscreen-api)).
+Locking the screen orientation is only possible when Microsoft Edge is in full screen mode (by the user pressing F11, or via the [Fullscreen API](../fullscreen-API)).
 If the lock is done on only one orientation, the screen stays on the given orientation and never changes until the screen orientation is unlocked. Otherwise, the screen orientation can change between any of the specified orientations it is locked to, as the user rotates the host device.
 
 To unlock, call the [`screen.msUnlockOrientation`](https://msdn.microsoft.com/library/Dn342935) method.

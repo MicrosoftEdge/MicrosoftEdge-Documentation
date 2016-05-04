@@ -58,7 +58,7 @@ To be included on the HSTS preload list, your site must:
 -  If you are serving an additional redirect from your HTTPS site, that redirect must still have the HSTS header (not the page it redirects to).
 -  **Be aware that inclusion in the preload list cannot really be undone.** You can request to be removed, but it will take months for the deleted entry to reach users. Don't request inclusion unless you're sure that you can support HTTPS for the long term.
 
-HTTPS is not a magic bullet, but an serve to make hijacking secure information a lot more difficult. Read more about securing your site by adding [Content Security Policy (CSP)](../content-security-policy) to your header.
+HTTPS is not a magic bullet, but an serve to make hijacking secure information a lot more difficult. Read more about securing your site by adding [Content Security Policy (CSP)](../content-Security-Policy) to your header.
 
 ## Specification
 
@@ -74,7 +74,7 @@ HTTPS is not a magic bullet, but an serve to make hijacking secure information a
 
 [HTTP Strict Transport Security comes to Internet Explorer 11 on Windows 8.1 and Windows 7](https://blogs.windows.com/msedgedev/2015/06/09/http-strict-transport-security-comes-to-internet-explorer-11-on-windows-8-1-and-windows-7/)
 
-[Content Security Policy(CSP)](../content-security-policy)
+[Content Security Policy(CSP)](../content-Security-Policy)
 
 [Securityheadders.io: Scan your site security now](https://securityheaders.io/)
 

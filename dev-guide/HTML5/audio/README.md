@@ -2,7 +2,7 @@
 
 You can use the `audio` element to embed simple sound effects, background audio, or more sophisticated audio engies to your webpage without requiring script or add-on controls.
 
-To do more complex processing and syntehsizing of audio in web applications, check out the [Web Audio API](../../multimedia/web-audio). 
+To do more complex processing and syntehsizing of audio in web applications, check out the [Web Audio API](../../multimedia/web-Audio). 
 
 ## Adding an audio element
 

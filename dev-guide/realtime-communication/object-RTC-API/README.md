@@ -53,7 +53,7 @@ The steps below are scoped to operations taken by one peer. Both peers must go t
 
 This example uses audio-video and RTP/RTCP multiplexing, so you will see only a single ICE and DTLS transport, used to transport RTP and RTCP packets for both audio and video.
 
-`Step #1.` Create [`MediaStream`](https://msdn.microsoft.com/library/Mt131875) object (i.e. [Media Capture and Streams API](../../multimedia/media-capture-and-streams/)) with one audio track and one video track.
+`Step #1.` Create [`MediaStream`](https://msdn.microsoft.com/library/Mt131875) object (i.e. [Media Capture and Streams API](../../multimedia/media-Capture-and-Streams/)) with one audio track and one video track.
 
 ```js
 navigator.MediaDevices.getUserMedia ({

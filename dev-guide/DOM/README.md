@@ -6,11 +6,11 @@ The `createEvent()`/`initEvent()` constructor pattern for synthetic events is no
 
 ## Gamepad API
 
-The [Gamepad API](./gamepad-api) enables your web-based game to take advantage of the specialized input functionality of gamepad devices.
+The [Gamepad API](./gamepad-API) enables your web-based game to take advantage of the specialized input functionality of gamepad devices.
 
 ## Input Method Editor API
 
-The [Input Method Editor API](./input-method-editor-api) provides composition information for auto-complete or search suggestions, and enables you to avoid user interface collisions between an IME candidate window and a search suggestion list.
+The [Input Method Editor API](./input-Method-Editor-API) provides composition information for auto-complete or search suggestions, and enables you to avoid user interface collisions between an IME candidate window and a search suggestion list.
 
 ## Mutation Observers
 
