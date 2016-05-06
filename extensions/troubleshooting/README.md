@@ -12,6 +12,7 @@ This usually means that Microsoft Edge cannot access the extension folder you at
 Until extensions are available via the Windows Store, this button *should* be visible by default. If you open the "More" (...) menu, select the "Extensions" menu item and don't see the button, follow these steps:
 
 1. In the address bar type **"about:flags"** and press the **"Enter"** key.
+2. Under the heading **"Developer settings"** make sure the checkbox next to **"Enable extension developer features"** is selected.
 
    ![about flags](../media/aboutflags.PNG)  
 
