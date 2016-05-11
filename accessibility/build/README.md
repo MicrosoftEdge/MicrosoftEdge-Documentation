@@ -70,6 +70,9 @@ The OpenAjax Alliance website is an excellent resource for verifying the rules f
 [The A11Y Project](http://a11yproject.com/) offers a library of accessible widgets and patterns like menus, buttons, tooltips, and more. 
 
 ### Accessibility Techniques & Tools
+#### [Accessibility: Creating accessible extension icons for Microsoft Edge](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/extensions/accessibility/)
+Get guidance on creating accessible extensions icons for Microsoft Edge.
+
 #### [Accessible Name and Description: Computation and Mappings 1.1](http://rawgit.com/w3c/aria/master/accname-aam/accname-aam.html)
 This W3C mapping document explains how browsers determine name and descriptions of accessible objects from web content languages and expose them in accessibility APIs.
 
