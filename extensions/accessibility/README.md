@@ -10,13 +10,13 @@ First-party extensions developed by Microsoft apply a “stickering” visual tr
 
 The main goal of “stickering” is to make the icon visually accessible on any background color. The recommended color ratio between the white outer stroke and your icon should be 14:1 to support the high contrast requirements.
 
-##### Good icon
+#### Good icon
 With stickering, a primarily dark icon will remain visible on any background color.
 
 
 ![image of icon being visible on any background color](../media/accessibility-light-to-dark-good.png)
  
-##### Bad icon
+#### Bad icon
 Without stickering, an icon could blend in with the background and become impossible to see.
 
 
