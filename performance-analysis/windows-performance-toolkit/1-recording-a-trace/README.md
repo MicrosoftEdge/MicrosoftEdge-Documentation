@@ -27,4 +27,4 @@ The WPR tool will indicate that your trace information was saved successfully:
 ![Windows Performance Record Start](../../media/WPRUI-SaveComplete.PNG)
 
 ## 4. Analyze the trace
-Now that you've gathered your performance data, you can [analyze the trace using Windows Performance Analyzer](../analyzing-a-trace) to see what optimizations can be made.
+Now that you've gathered your performance data, you can [analyze the trace using Windows Performance Analyzer](../1-analyzing-a-trace) to see what optimizations can be made.
