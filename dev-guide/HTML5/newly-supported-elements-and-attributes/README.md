@@ -2,9 +2,9 @@
 
 Microsoft Edge for Windows 10 adds supports for new HTML features per the World Wide Web Consortium (W3C) specifications for [HTML5](http://go.microsoft.com/fwlink/p/?LinkId=203771) and [HTML 5.1](http://go.microsoft.com/fwlink/p/?LinkId=506795).
 
-# Attributes
+## Attributes
 
-## a[download] attribute
+### a[download] attribute
 
 Microsoft Edge (build 10547+) now supports the [a[download]](../..//apireference/interfaces/htmlanchorelement/) attribute signifying that the resource pointed to in an a-tag link should be downloaded by the browser, and saved as a local file, rather than navigating to it.
 
@@ -12,7 +12,7 @@ Microsoft Edge (build 10547+) now supports the [a[download]](../..//apireference
 <a href="/images/example.png" download="image_example">
 ```
 
-## selectionDirection attribute
+### selectionDirection attribute
 
 The [`selectionDirection`](https://msdn.microsoft.com/library/mt587085) attribute is now supported. With this attribute, you can easily distinguish which direction a selection has been made on a text input whether it be forward, backward, or none.
 ```javascript
@@ -23,7 +23,7 @@ This GIF shows a selection being made on some text using `setSelectionRange`, an
 
 ![selectionDirection](../../media/selectionDirection.gif)
 
-## srcset attribute
+### srcset attribute
 Edge now supports the [`srcset`](https://msdn.microsoft.com/library/dn955124(v=vs.85).aspx) and [`sizes`](https://msdn.microsoft.com/library/mt599604(v=vs.85).aspx)  attributes, a big step towards providing full support for the picture element, and in turn responsive images.
 
 
@@ -52,12 +52,7 @@ In this code snippet, `sizes` is used to specify that the viewport must be at le
 <img src="fallback.jpg" sizes="(min-width: 900px) 25vw, 100vw" srcset="small.jpg 320w, medium.jpg 640w, large.jpg 1024w">
 ```
 
-## Input types
-
-Enhancing user input capabilities, Microsoft Edge adds support for [`input type=time`](https://msdn.microsoft.com/library/mt584201(v=vs.85).aspx) and [`input type=datetime-local`](https://msdn.microsoft.com/library/mt584200(v=vs.85).aspx) type attributes.  
-
-
-## input datetime-local attribute
+### input datetime-local attribute
 With [`input type=datetime-local`](https://msdn.microsoft.com/library/mt584200(v=vs.85)), you have the combined support of both the time and date inputs, allowing you to select both a date and time in one input. This input type does not support timezone selection.
 
 
@@ -70,7 +65,7 @@ As can be seen here, clicking on the date or time section of the input will make
 ![datetime-local selection example](../../media/input-types_datetime.gif)
 
 
-## input time attribute
+### input time attribute
 With [`input type=time`](https://msdn.microsoft.com/library/mt584201(v=vs.85).aspx), you are able to easily gather time input. The dropdown that is seen when selecting the time for the `datetime-local` input is the same dropdown for the `time` input. This input type does not support timezone selection.
 
 
@@ -79,7 +74,7 @@ The following example creates a `time` input that is not set. The user is able t
 <input type="time" min="09:00" max="17:00">
 ```
 
-## oninvalid attribute
+### oninvalid attribute
 
 Microsoft Edge (build 10532+) supports the `oninvalid` attribute and event handler as defined in the [W3C HTML5 API specification](https://www.w3.org/TR/html5/webappapis.html#events). The HTML5 `oninvalid` event attribute executes a specified JavaScript alert when an input element is invalid.
 
@@ -90,7 +85,7 @@ Microsoft Edge (build 10532+) supports the `oninvalid` attribute and event handl
 
 ## Elements
 
-## datalist element
+### datalist element
 Support for the [`<datalist>`](https://msdn.microsoft.com/library/hh772925(v=vs.85).aspx) element from the [HTML 5.1 spec](https://www.w3.org/html/wg/drafts/html/master/semantics.html#the-datalist-element) was introduced in Microsoft Edge (build 10240+). `<datalist>` shows a list of pre-defined [`<option>`](https://msdn.microsoft.com/library/ms535877(v=vs.85).aspx) elements to suggest (usually via dropdown menu) as you type in an [`<input>`](https://msdn.microsoft.com/library/ms535260(v=vs.85).aspx) element. While `<datalist>` makes suggestions, it does not lock you into any specific value. You still have the ability to enter whatever you want. To connect the `<datalist>` to an `<input>` element, add the `list` attribute and refer to the `id` attribute, as shown below.
 
 ```HTML
@@ -161,13 +156,13 @@ The `time` type suggests times in the `11:04 AM` format. The `week` type suggest
 </datalist>
 ```
 
-> NOTE: As of build 10586, Microsoft Edge does not yet support input[type=color] for the `<datalist>` element. If this is a need, add your request to the Microsoft Edge Developer section of [UserVoice](https://wpdev.uservoice.com/).
+>note As of build 10586, Microsoft Edge does not yet support input[type=color] for the `<datalist>` element. If this is a need, add your request to the Microsoft Edge Developer section of [UserVoice](https://wpdev.uservoice.com/).
 
-## main element
+### main element
 Support for the [`<main>`](https://msdn.microsoft.com/library/mt634542(v=vs.85).aspx) element from the [HTML 5.1 spec](https://www.w3.org/TR/html51/grouping-content.html#the-main-element) was introduced in build 10240+. This is a semantic HTML5 element that represents the main content of the document or application. The `<main>` element is used to indicate what is unique to a document, so repeated content such as navigation links and copyright footers aren't included. This element lets assistive reading technologies know where the main content begins, making it a great tool for increasing accessibility. 
 
 
-## meter element
+### meter element
 Microsoft Edge now provides support for the [`<meter>`](https://msdn.microsoft.com/library/mt573149(v=vs.85).aspx) element, which is detailed in the [HTML5 spec](https://www.w3.org/TR/html51/sec-forms.html#the-meter-element). The `<meter>` element provides you with a way to visually depict a measurement on a known scale. This can be useful for showing capacity. For example, you could use the `<meter>` element to convey that a bus is half full, or that a harddrive is at 100% capacity.
 
 The following example shows a `<meter>` element that displays the capacity of a bus that holds 100 people. As the bus's capacity grows, as signified by the increasing `value`, the meter becomes more full.
@@ -182,7 +177,7 @@ The reason for the meter color changes are detailed below:
 * A `value` of 95 is between the specified values for `high` and `max`, and is two brackets away from `optimum`, making the meter red.
 
 
-## picture element
+### picture element
 
 Microsoft Edge now supports the [`<picture>`](https://msdn.microsoft.com/library/mt574001(v=vs.85).aspx) element from the [HTML 5.1 spec](https://www.w3.org/TR/html51/semantics-embedded-content.html#the-picture-element). The `<picture>` element provides you with a simple way to achieve responsive images by allowing you to create adaptive layouts for a variety of devices. The `<picture>` element makes things easy by having you specify multiple [`<img>`](https://msdn.microsoft.com/library/ms535259(v=vs.85).aspx) elements of varying resolutions and screen size requirements, and then having your browser make the correct selection. See [`srcset`](https://msdn.microsoft.com/library/dn955124(v=vs.85).aspx) for more info on how a browser selects the proper image to display. For more information about how the picture element works, see [Using extended srcset and the picture element to tailor your image to every device and layout](http://go.microsoft.com/fwlink/p/?LinkId=690269).
 
@@ -192,7 +187,7 @@ Click this picture to see a demo of it being responsive!
 
 For more information about the `picture` element, check out [Using extended srcset and the picture element to tailor your image to every device and layout](https://blogs.windows.com/msedgedev/2015/10/07/using-extended-srcset-and-the-picture-element-to-tailor-your-image-to-every-device-and-layout/) on the Microsoft Edge dev blog.
 
-## template element
+### template element
 
 Introduced in the [HTML5 spec](https://www.w3.org/TR/html51/semantics-scripting.html#the-template-element), the [`<template>`](https://msdn.microsoft.com/library/mt586693(v=vs.85).aspx) element allows you to easily clone fragments of HTML that can then be inserted into a document by using script. This element is frequently used with Web Components.
 
