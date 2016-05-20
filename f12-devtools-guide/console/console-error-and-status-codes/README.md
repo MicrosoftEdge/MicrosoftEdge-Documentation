@@ -1,13 +1,11 @@
 # Console error and status codes
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Use this reference to interpret error messages shown in the  [Console](../) and the [Debugger](../../debugger/) in Microsoft Edge.
 
 ## Introduction
 When you're debugging with F12 developer tools, error codes such as `SEC7111` or `HTML1114` are shown in the Console and the Debugger tools.
 
-Here we list common console error codes and their associated messages. We also provide more detailed descriptions and/or suggestions to fix the problem where appropriate. While the descriptions in the table give you a starting point for debugging problems, the best way to get more info is to search online developer forums or the [Microsoft Edge developer center](https://dev.windows.com/en-us/microsoft-edge-for-devs).
+Here we list common console error codes and their associated messages. We also provide more detailed descriptions and/or suggestions to fix the problem where appropriate. While the descriptions in the table give you a starting point for debugging problems, the best way to get more info is to search online developer forums or the [Microsoft Edge developer center](https://dev.windows.com/microsoft-edge-for-devs).
 
 ### Security errors
 Security error codes are in the form `SEC7xxx`, such as `SEC7113`. These reflect security conditions that Microsoft Edge enforces, such as mixed content, and Tracking Protection.
@@ -15,22 +13,22 @@ Security error codes are in the form `SEC7xxx`, such as `SEC7113`. These reflect
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
 SEC7111 | "HTTPS security is compromised by [name of resource]" | A Secure Hypertext Transfer Protocol (HTTPS) page has content from a non-secure source. | Make sure all content in the page, including scripts, stylesheets, and images, are from HTTPS sources.
-SEC7112 | "Script from [URL] was blocked due to mime type mismatch" | The HTTP response header for the JavaScript file specified by the URL has an "X-Content-Type-Options: nosniff" header, and didn't have a recognized content type declaration. | Update the server to send the correct content type for the JavaScript file (such as text/javascript, application/javascript", and so on) in theHTTP response header. See [MIME-Handling Changes in Internet Explorer](http://blogs.msdn.com/b/ie/archive/2010/10/26/mime-handling-changes-in-internet-explorer.aspx) for more info and a full list of content types.
-SEC7113 | "CSS was ignored due to mime type mismatch" | An imported style sheet wasn't used because the wrong MIME type was in the HTTP header. | Make sure the style sheet file is delivered with the proper HTTP response header, which includes a content type of text/css. See [MIME-Handling Changes in Internet Explorer](http://blogs.msdn.com/b/ie/archive/2010/10/26/mime-handling-changes-in-internet-explorer.aspx) for more info.
+SEC7112 | "Script from [URL] was blocked due to mime type mismatch" | The HTTP response header for the JavaScript file specified by the URL has an "X-Content-Type-Options: nosniff" header, and didn't have a recognized content type declaration. | Update the server to send the correct content type for the JavaScript file (such as text/javascript, application/javascript", and so on) in theHTTP response header. See [MIME-Handling Changes in Internet Explorer](https://blogs.msdn.microsoft.com/ie/2010/10/26/mime-handling-changes-in-internet-explorer/) for more info and a full list of content types.
+SEC7113 | "CSS was ignored due to mime type mismatch" | An imported style sheet wasn't used because the wrong MIME type was in the HTTP header. | Make sure the style sheet file is delivered with the proper HTTP response header, which includes a content type of text/css. See [MIME-Handling Changes in Internet Explorer](https://blogs.msdn.microsoft.com/ie/2010/10/26/mime-handling-changes-in-internet-explorer/) for more info.
 SEC7114 | "A download in this page was blocked by Tracking Protection.[URL provided here]" | The user blocked a script or content by using Tracking Protection. | None - user initiated.
 SEC7115 | ":visited and :link styles can only differ by color. Some styles were not applied to :visited." | More than one attribute, such as font or size, were changed by using the visited and link styles. | Change only the color attribute.
 SEC7116 | "Access Denied. Failed to revoke cross-origin URL: [URL]." | A script that has a different site of origin than the blob tried to revoke a blob URL. Due to blob origin policies, the attempt failed. | Make sure that all blob URLs are revoked using scripts from the same site of origin as the document that created the blob URL.
-SEC7120 | "Origin [domain] not found in Access-Control-Allow-Origin header." | In the response to your XMLHttpRequest, the "Access-Control-Allow-Origin" header was returned with a value that doesn't contain/match your site's origin value. | The resource is returning the right type of header codes, but is not allowing your site. Contact the developer in charge of the resource to update their "Access-Control-Allow-Origin" header so your site is allowed. You can point them to [CORS for XHR in IE10](http://blogs.msdn.com/b/ie/archive/2012/02/09/cors-for-xhr-in-ie10.aspx) for more info about CORS in response headers.
+SEC7120 | "Origin [domain] not found in Access-Control-Allow-Origin header." | In the response to your XMLHttpRequest, the "Access-Control-Allow-Origin" header was returned with a value that doesn't contain/match your site's origin value. | The resource is returning the right type of header codes, but is not allowing your site. Contact the developer in charge of the resource to update their "Access-Control-Allow-Origin" header so your site is allowed. You can point them to [CORS for XHR in IE10](https://blogs.msdn.microsoft.com/ie/2012/02/09/cors-for-xhr-in-ie10/) for more info about CORS in response headers.
 SEC7121 | "Wildcard in Access-Control-Allow-Origin not allowed when credentials flag is set to true." | The server is returning "Access-Control-Allow-Origin: *" in the headers, but this is not allowed when the withCredentials flag is set to "true" in the XMLHttpRequest. | The server-side handler needs to be modified to return an "Access-Control-Allow-Origin" header that specifically allows your origin point on this type of request. If you do not control the server-side handler, you'll need to talk to the developer who does.
-SEC7122 | "Credentials flag was set to true, but Access-Control-Allow-Credentials was not present or was not set to "true." | An XMLHttpRequest was made using the withCredentials flag. Either an Access-Control-Allow-Credentials header was not returned or it was returned with a value other than **true**. | There might be an issue with your credentials or the server's response. See the [XMLHttpRequest Level 2 specification](http://www.w3.org/TR/XMLHttpRequest2/) for info about credentialed requests.
+SEC7122 | "Credentials flag was set to true, but Access-Control-Allow-Credentials was not present or was not set to "true." | An XMLHttpRequest was made using the withCredentials flag. Either an Access-Control-Allow-Credentials header was not returned or it was returned with a value other than **true**. | There might be an issue with your credentials or the server's response. See the [XMLHttpRequest Level 2 specification](https://www.w3.org/TR/XMLHttpRequest2/) for info about credentialed requests.
 SEC7123 | "Request header [header] was not present in the Access-Control-Allow-Headers list." | A custom header type was included in the request, but the response's Access-Control-Allow-Headers list didn't include it. | Make sure the server allows custom headers, and specifically allows the one being sent in the request.
 SEC7124 | "Request method [method] was not present in the Access-Control-Allow-Methods list." | A request method, such as POST was used in the XMLHttpRequest, but the response returned an Access-Control-Allow-Methods header that didn't include it. | Make sure the server allows this type of request method and that you're correctly using withCredentials if that method has restricted access.
-SEC7125 | "XMLHttpRequest for [URL] caused a response headers parsing failure." | The response headers from the server could not be parsed, so the request failed. | Use the [Network tool](https://msdn.microsoft.com/en-us/library/dn255004(v=vs.85).aspx) to capture and inspect the response headers to make sure they meet [CORS specifications](http://www.w3.org/TR/cors/).
-SEC7126 | "Redirects are not allowed for CORS preflight requests." | A redirect has been detected in the Origin header and the User Agent won't follow redirects during a preflight. | Use the [Network tool](https://msdn.microsoft.com/en-us/library/dn255004(v=vs.85).aspx) to capture and inspect the request headers and make sure there's a single direct Origin.
+SEC7125 | "XMLHttpRequest for [URL] caused a response headers parsing failure." | The response headers from the server could not be parsed, so the request failed. | Use the [Network tool](https://msdn.microsoft.com/library/dn255004.aspx) to capture and inspect the response headers to make sure they meet [CORS specifications](https://www.w3.org/TR/cors/).
+SEC7126 | "Redirects are not allowed for CORS preflight requests." | A redirect has been detected in the Origin header and the User Agent won't follow redirects during a preflight. | Use the [Network tool](https://msdn.microsoft.com/library/dn255004.aspx) to capture and inspect the request headers and make sure there's a single direct Origin.
 SEC7127 | "Redirect was blocked for CORS request." | The path to the CORS resource contained a redirect that violated security rules. | Make sure you have the most direct path to the CORS resource in your XMLHttpRequest.
 SEC7128 | "Multiple Access-Control-Allow-Origin headers are not allowed for CORS response." | The response header contained multiple Access-Control-Allow-Origin headers. | This is a server-side error. The server should return a single Access-Control-Allow-Origin header. Report this error to the developer in charge of the server-side resource.
 SEC7129 | "Multiple Access-Control-Allow-Credentials headers are not allowed for CORS response." | The response header contained multiple Access-Control-Allow-Credentials headers. | This is a server-side error. The server should return a single Access-Control-Allow-Credentials header. Report this error to the developer in charge of the server-side resource.
-SEC7130 | "Potential cross-site scripting detected in [URL]. The content has been modified by the XSS Filter." | The [XSS Filter](https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx) detected potentially malicious content in the response from the resource and removed the offending content. | Find out more about the [XSS Filter](https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx).
+SEC7130 | "Potential cross-site scripting detected in [URL]. The content has been modified by the XSS Filter." | The [XSS Filter](https://msdn.microsoft.com/library/dd565647.aspx) detected potentially malicious content in the response from the resource and removed the offending content. | Find out more about the [XSS Filter](https://msdn.microsoft.com/library/dd565647.aspx).
 <a name="SEC7131">SEC7131</a> | "Security of a sandboxed iframe is potentially compromised by allowing script and same origin access." | If the content in a sandboxed iframe comes from an untrusted or insecure source, it could escape the sandbox when script and same origin access are both allowed. | This is an informational warning message and should not impact functionality. It's recommended that you avoid combining these permissions unless you're sure of what will be run in the iframe.
 
 **Note** For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
@@ -54,25 +52,25 @@ HTML1204 | "`[domain]` is running in Compatibility View because "Display all web
 HTML1300 | "Navigation occurred" | A new page was navigated to, or the current page was refreshed. | This is an informational message and not an error.
 
 ### HTML5 parser warnings
-The following warnings can occur as part of the validation performed during HTML parsing. These warnings don't necessarily mean a page is broken, but that the provided HTML is invalid per the HTML5 standard. Content created according to earlier versions of the HTML or XHTML specifications might not be valid in HTML5, in particular with respect to the use of DOCTYPEs. For more info, see [Creating Standards-Enabled Websites](https://msdn.microsoft.com/en-us/library/hh273394(v=vs.85).aspx).
+The following warnings can occur as part of the validation performed during HTML parsing. These warnings don't necessarily mean a page is broken, but that the provided HTML is invalid per the HTML5 standard. Content created according to earlier versions of the HTML or XHTML specifications might not be valid in HTML5, in particular with respect to the use of DOCTYPEs. For more info, see [Creating Standards-Enabled Websites](https://msdn.microsoft.com/library/hh273394.aspx).
 
 Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning, Microsoft Edge includes line and character offset information along with a link pointing to the location where the problem was found.
 
-Code | Message 
-:------------ | :------------- 
+Code | Message
+:------------ | :-------------
 HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]."
 HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expected [0-9], [a-f], or [A-F]."
 HTML1402 | "Character reference is missing an ending semicolon ";"."
 HTML1403 | "Numeric character reference does not resolve to a valid character."
 HTML1404 | "Unrecognized named character reference."
 HTML1405 | "Invalid character: U+0000 NULL. Null characters should not be used."
-HTML1406 | "Invalid tag start: "<?". Question marks should not start tags."
+HTML1406 | "Invalid tag start: `<?`. Question marks should not start tags."
 HTML1407 | "Invalid tag name. First character should match [a-zA-Z]."
-HTML1408 | "Invalid end tag "</>". End tags should not be empty."
+HTML1408 | "Invalid end tag `</>`. End tags should not be empty."
 HTML1409 | "Invalid attribute name character. Attribute names should not contain ("),('),(<), or (=)."
 HTML1410 | "Invalid unquoted attribute value. Unquoted attribute values should not contain ("), ('), (<), (=), or (`)."
 HTML1411 | "Unexpected end of file."
-HTML1412 | "Malformed comment. Comments should start with "<!-- "."
+HTML1412 | "Malformed comment. Comments should start with `<!-- `."
 HTML1413 | "Unexpected character: U+003E GREATER-THAN SIGN (>)"
 HTML1414 | "Unexpected character: U+0021 EXCLAMATION MARK (!)"
 HTML1415 | "Unexpected character: U+002D HYPHEN-MINUS (-)"
@@ -115,7 +113,7 @@ HTML1526 | "Invalid nesting. A `<nobr>` tag should not be placed within another 
 HTML1527 | "DOCTYPE expected. The shortest valid doctype is `<!DOCTYPE html>`."
 HTML1528 | "Unexpected `<image>` in HTML content. Use `<img>` instead."
 HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "http://www.w3.org/1999/xlink"."
-HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements." 
+HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements."
 HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "http://www.w3.org/2000/svg/"."
 HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "http://www.w3.org/1998/Math/MathML/".
 
@@ -184,20 +182,20 @@ F12 tools don't currently support extensive Scalable Vector Graphics (SVG) debug
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
-SVG5601 | "SVG Path data has incorrect format and could not be completely parsed." | The SVG [Path](https://msdn.microsoft.com/en-us/library/ff972086(v=vs.85).aspx) string isn't formatted correctly, or contains unrecognized commands. | Check the format of the commands.
-SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/en-us/library/ff972113(v=vs.85).aspx), is formatted incorrectly. | Make sure that points are complete and correctly formatted for the users coordinate system.
+SVG5601 | "SVG Path data has incorrect format and could not be completely parsed." | The SVG [Path](https://msdn.microsoft.com/library/ff972086.aspx) string isn't formatted correctly, or contains unrecognized commands. | Check the format of the commands.
+SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/en-us/library/ff972113.aspx), is formatted incorrectly. | Make sure that points are complete and correctly formatted for the users coordinate system.
 
 ### Script codes
-JavaScript runtime errors are also reported in F12 tools. These errors are in the form SCRIPT50xx, such as SCRIPT5001. These errors are documented on the [JavaScript errors](https://msdn.microsoft.com/en-us/library/7th8s2xk(v=vs.94).aspx) page.
+JavaScript runtime errors are also reported in F12 tools. These errors are in the form SCRIPT50xx, such as SCRIPT5001. These errors are documented on the [JavaScript errors](https://msdn.microsoft.com/en-us/library/7th8s2xk.aspx) page.
 
 ### WebGL codes
 Error messages from the WebGL context are presented with WEBGL11_xxx_ codes.
 
 ### XML codes
-The F12 tools console can report XML codes. These errors are in the form of XML5xxx, such as XML5603. For more info about XML, see the [XmlLite Reference](https://msdn.microsoft.com/en-us/library/ms752829(v=vs.85).aspx).
+The F12 tools console can report XML codes. These errors are in the form of XML5xxx, such as XML5603. For more info about XML, see the [XmlLite Reference](https://msdn.microsoft.com/en-us/library/ms752829.aspx).
 
-Code | Message 
-:------------ | :------------- 
+Code | Message
+:------------ | :-------------
 XML5001 | "Applying Integrated XSLT Handling."
 XML5601 | "MX_E_MX"
 XML5602 | "Unexpected end of input."
@@ -285,13 +283,13 @@ XML5683 | "Unexpected character in character entity. Expected a hexadecimal digi
 XML5684 | "The Unicode value of the specified character entity is invalid."
 XML5685 | "Invalid encoding."
 XML5686 | "Unspecified XML error."
- 
+
 ### CSP error codes
 CSP (Content Security Policy) is a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). The core issue exploited by XSS attacks is the browser’s inability to distinguish between script that’s intended to be part of your application, and script that’s been maliciously injected by a third-party. By declaring the sources from which the application expects to load resources, the application can detect and block malicious scripts injected by an attacker. A web application opts into using CSP by supplying a `Content-Security-Policy HTTP` header. Such policies apply to the current resource representation only.
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
-| CSP14301 | “Failed parsing [the policy type] because <the reason for canceling the operation> --  policy will be ignored.” | The security policy type specified (ie. script-src, base-uri, etc) failed for the reason identified and will be ignored. | Be sure to list all required resources of a specific type in a single directive. For example, in this: `script-src https://host1.com; script-src https://host2.com` the second directive would be ignored. The following would correctly specify both origins as valid: `script-src https://host1.com https://host2.com`. |
+| CSP14301 | “Failed parsing [the policy type] because `<the reason for canceling the operation>` --  policy will be ignored.” | The security policy type specified (ie. script-src, base-uri, etc) failed for the reason identified and will be ignored. | Be sure to list all required resources of a specific type in a single directive. For example, in this: `script-src https://host1.com; script-src https://host2.com` the second directive would be ignored. The following would correctly specify both origins as valid: `script-src https://host1.com https://host2.com`. |
 | CSP14302 | "Failed parsing source in[policy type] for directive[directive type] at [source URL] -- source will be ignored." | Most CSP directives require one or more content sources (indicating a URL that content can be loaded from). This error points out a policy with a directive that contains a source URL that failed when parsing was attempted. | Check the content source (most often a URL) that is defined in the specified directive which you can find in the specified policy type. Correct or replace the source URL or remove the directive. <br> **Your policy should include a default-src policy directive, which is a fallback for other resource types when they don't have policies of their own.* |
 | CSP14303 | "[Policy type] policy was empty." | The policy type (ie. Content-Security-Policy in the HTTP header) is empty. | A quick reference for setting up a Content Security Policy can be found at [http://content-security-policy.com/](http://content-security-policy.com/) |
 | CSP14304 | "Unknown source [source URL] for directive [directive type] in [policy type] source will be ignored." | The sources for approved (safe) content in the directive identified are unknown and will be ignored. | Check the content source identified (often this is a URL) to be sure it is correct. |
@@ -300,9 +298,9 @@ Code | Message | Description | Suggested fix
 | CSP14307 | "Source [source URL]was already provided for directive [directive type] for[policy type]." | A duplicate source (URL, Keyword, or Data) has been listed in this directive and will be ignored. | Remove the duplicate source identified. |
 | CSP14308 | "Failed parsing directive in[policy type] at [directive name]." | The directive identified failed. For a reference list of how to write supported directives, see [http://content-security-policy.com](http://content-security-policy.com/). | Directives must be separated with semicolons. If, for example, you have an application that loads all of it’s resources from a content delivery network, e.g. `https://cdn.example.net`, and know that you don’t need framed content or any plugins, then your policy might look like: `Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'.` **While directives are separated with semicolons, sources within a directive are not, but should only be separated with a space.* |
 | CSP14309 | "Unknown directive in[directive name] in [policy type] -- directive will be ignored." | The directive set in the CSP policy is not known and will be ignored. | For a list of supported directives, see [http://content-security-policy.com](http://content-security-policy.com/). |
-| CSP14310 | "Unsupported directive[directive name] in [policy type] -- directive will be ignored." | A directive was found during parsing in the policy type (ie.`Content-Security-policy-Report-Only` header field) that is not supported and will be ignored. For supported directives, see [http://content-security-policy.com](http://content-security-policy.com/). | Remove the unsupported directive. *Some directives are not supported in the <meta> element or in the `Content-Security-policy-Report-Only` header field. |
+| CSP14310 | "Unsupported directive[directive name] in [policy type] -- directive will be ignored." | A directive was found during parsing in the policy type (ie.`Content-Security-policy-Report-Only` header field) that is not supported and will be ignored. For supported directives, see [http://content-security-policy.com](http://content-security-policy.com/). | Remove the unsupported directive. *Some directives are not supported in the `<meta>` element or in the `Content-Security-policy-Report-Only` header field. |
 | CSP14311 | "Directive [directive name]was already provided in[policy type] -- duplicate directive will be ignored." | A duplicate directive was found during parsing, the second directive and its source-expressions will be ignored. | Remove the duplicate script. |
-| CSP14312 | "Resource violated directive[directive name] in [policy type]: [target uri]. Resource will be blocked." | In this example: "Resource violated directive 'script-src ms-appx: data: 'unsafe-eval' in Host Defined Policy: inline script. Resource will be blocked." | An inline script (target uri) was blocked due to the directive `'script-src ms-appx: data: 'unsafe-eval'` in the 'host defined' policy. | Authors need to move all inline script and style out-of-line because the user agent cannot determine whether an inline script was injected by an attacker. Remove inline script and place it in an external file. |
+| CSP14312 | "Resource violated directive[directive name] in [policy type]: [target uri]. Resource will be blocked." | In this example: "Resource violated directive 'script-src ms-appx: data: 'unsafe-eval' in Host Defined Policy: inline script. Resource will be blocked." | An inline script (target uri) was blocked due to the directive `'script-src ms-appx: data: 'unsafe-eval'` in the 'host defined' policy.<br> Authors need to move all inline script and style out-of-line because the user agent cannot determine whether an inline script was injected by an attacker. Remove inline script and place it in an external file. |
 | CSP14313 | "Resource violated directive[directive name] in [policy type]: [target uri]. Resource will not be blocked due to policy being report-only." | A resource was identified that violates the directive specified in the `Content-Security-policy-Report-Only` header field. Because it is in a `Report-Only` policy type, the resource will not be blocked. | Move the directive into a Content-Security-policy header field if this resource should be blocked in order to protect your site. |
 | CSP14314 | "Failed to send policy violation report to [target destination uri] because [reason for canceling the operation]." | There was a problem with reporting a policy violation, the target destination where the report is designated to be sent and the reason for not sending it should be identified. | The `report-uri` directive specifies a URL where a browser will send reports when a content security policy is violated. **It cant be used in `<meta>` tags.* |
 | CSP14315 | "Failed to enforce sandbox directive in [policy type] because [reason for canceling the operation]." | The sandbox directive failed for the reasons specified. This directive places restrictions on actions the page can take, rather than on resources that the page can load. If the sandbox directive is present, the page will be treated as though it was loaded inside of an iframe. It can prevent popups, plugins and block script execution. | Keep the sandbox value empty to keep all restrictions in place, or add values: `allow-forms` `allow-same-origin` `allow-scripts`, and `allow-top-navigation`. **The sandbox directive is not supported in the `<meta>` element or in the `Content-Security-policy-Report-Only` header field.* |
@@ -314,8 +312,8 @@ Code | Message | Description | Suggested fix
 
 ## Related topics
 
-[GLSL errors](https://msdn.microsoft.com/en-us/library/dn611835(v=vs.85).aspx)
+[GLSL errors](https://msdn.microsoft.com/library/dn611835.aspx)
 
-[JavaScript Run-time Errors](https://msdn.microsoft.com/en-us/library/1dk3k160(v=vs.94).aspx)
+[JavaScript Run-time Errors](https://msdn.microsoft.com/library/1dk3k160.aspx)
 
-[JavaScript Syntax Errors](https://msdn.microsoft.com/en-us/library/6bby3x2e(v=vs.94).aspx)
+[JavaScript Syntax Errors](https://msdn.microsoft.com/library/6bby3x2e.aspx)

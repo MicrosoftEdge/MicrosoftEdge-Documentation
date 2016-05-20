@@ -1,7 +1,5 @@
 # Performance
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Using the **Performance** tool, profile your webpage's frame rate with the Timeline and JavaScript execution times with the JavaScript call stacks. The reports on different types of CPU usage and JavaScript execution profiling help you analyze UI performance problems.
 
 ## Speed matters
@@ -18,7 +16,7 @@ During profiling, perform the fewest actions you need to capture the slowness yo
 
 If you need accurate page load times in the report, visit the [**Network tool**](../network/) and use its **clear browser cache** option before profiling. Using the **Network tool** ensures you're loading all page resources from the network, and then reloads the page as soon as you start profiling.
 
-The **Performance** tool automatically marks **app lifecycle events**, such as [**DOMContentLoaded**](https://msdn.microsoft.com/en-us/library/hh869434(v=vs.85).aspx). Use the [`performance.mark()`](https://msdn.microsoft.com/en-us/library/jj585593(v=vs.85).aspx) method to set custom **user marks** from within your code.
+The **Performance** tool automatically marks **app lifecycle events**, such as [**DOMContentLoaded**](https://msdn.microsoft.com/library/hh869434.aspx). Use the [`performance.mark()`](https://msdn.microsoft.com/library/jj585593.aspx) method to set custom **user marks** from within your code.
 
 When you've captured the behavior you want to profile, click **stop profiling to generate a report** or the square icon at the top of the tool.
 
@@ -34,9 +32,8 @@ The ruler displays the amount of time the session ran as well as **app lifecycle
 
 User marks can be given labels by using a string for the argument of the `performance.mark()` method.
 
-**User marks** are made more useful with the [`performance.measure()`](https://msdn.microsoft.com/en-us/library/jj585594(v=vs.85).aspx) API. After you have set **user marks**, set a **user measure** to group the events that happened between the two marks. For example, if you have two **user marks** labeled "Begin Rotation" and "End Rotation," use the following code to group them and label the group as "box cycler."
+**User marks** are made more useful with the [`performance.measure()`](https://msdn.microsoft.com/library/jj585594.aspx) API. After you have set **user marks**, set a **user measure** to group the events that happened between the two marks. For example, if you have two **user marks** labeled "Begin Rotation" and "End Rotation," use the following code to group them and label the group as "box cycler."
 
-###### *JavaScript*
 ```javascript
 performance.measure("box cycler","Begin Rotation","End Rotation");
 ```
@@ -91,7 +88,7 @@ Each element in the **Timeline details** shows different info, depending on its 
 
 ![Edge F12 Tools Performance Timer Details](../media/F12BlueResponsivenessTimerDetails.png)
 
-This timer was invoked by a [`setTimeout()`](https://msdn.microsoft.com/en-us/library/ms536753(v=vs.85).aspx) which called the **autoNextSlide** function in **script.jsx**. When you click the file name, it opens in the [**Debugger tool**](../debugger/) and navigates to the function for inspection.
+This timer was invoked by a [`setTimeout()`](https://msdn.microsoft.com/library/ms536753.aspx) which called the **autoNextSlide** function in **script.jsx**. When you click the file name, it opens in the [**Debugger tool**](../debugger/) and navigates to the function for inspection.
 
 The circular chart at the bottom shows that while **Scripting** made up a large part of the event's time, **Styling** took up a fair portion. Expanding the timer's event in the **Timeline details** shows more about the different **Styling** operations that contributed to the time it required.
 
@@ -110,11 +107,11 @@ The Responsiveness tool uses 7 main event categories on the timeline. These brea
 
   - **Scripting** contains events related to processing and executing JavaScript. These events are gathered within **Scripting**:
     - **Animation frame callback**: A new frame was being prepared and a registered callback was triggered so that it could contribute any visual changes. Details include the location of the callback within the webpage or external scripts.
-    - **DOM event**: A [**DOM event**](https://msdn.microsoft.com/en-us/library/hh771866(v=vs.85).aspx) was fired. Event listeners attached to it are shown as children of the event.
+    - **DOM event**: A [**DOM event**](https://msdn.microsoft.com/library/hh771866.aspx) was fired. Event listeners attached to it are shown as children of the event.
     - **Script evaluation**: Processing content within `<script>` elements. Details include the URL of the script or **inline** if it's part of the webpage.
-    - **Timer**: An [interval](https://msdn.microsoft.com/en-us/library/ms536749(v=vs.85).aspx) or [timeout](https://msdn.microsoft.com/en-us/library/ms536753(v=vs.85).aspx) completed and triggered execution of its callback. The details include the location of the timer within the webpage or external scripts, the time it took, and the name of its callback function (if any). Actions triggered by the callback are shown as children of the event.
-    - [**Media query listener**](https://msdn.microsoft.com/en-us/library/hh772369(v=vs.85).aspx): When script that responds to a media query event runs, this is broken out as its own category.
-    - [**Mutation observer**](https://msdn.microsoft.com/en-us/library/dn265034(v=vs.85).aspx): Script responding to events fired by mutation observers is broken out as a category.
+    - **Timer**: An [interval](https://msdn.microsoft.com/library/ms536749.aspx) or [timeout](https://msdn.microsoft.com/library/ms536753.aspx) completed and triggered execution of its callback. The details include the location of the timer within the webpage or external scripts, the time it took, and the name of its callback function (if any). Actions triggered by the callback are shown as children of the event.
+    - [**Media query listener**](https://msdn.microsoft.com/library/hh772369.aspx): When script that responds to a media query event runs, this is broken out as its own category.
+    - [**Mutation observer**](https://msdn.microsoft.com/library/dn265034.aspx): Script responding to events fired by mutation observers is broken out as a category.
 
 When a change is explicitly made to a style object via JavaScript (i.e. `element.style.height="20px"`), requiring the DOM to be updated, the individual changes and their exclusive times are shown as descendants of the Scripting event that caused them.
 
@@ -151,7 +148,7 @@ The image above shows the initial load of the Microsoft homepage, a little navig
 ## Performance profiling tips
 **Test more than once**: The results you'll see in a profiling report are not just based on your code. They're influenced by other processes on your system competing for your processor and memory. A moment of slowness or a bad overall test might be due to a virus scan running in the background or too many tabs being open on your browser. Alternatively, if you test on a new machine under laboratory conditions, it might be so fast, your code just runs great. It's important to make sure you can reproduce slowness reliably, just like reproducing a bug. Then you can diagnose the cause.
 
-**Consistency feels faster**: The **Performance** profiler's visual map of your frame rate over time can be very useful. Uneven frame rates or skipped frames can make your site feel slow. If it reduces skips and helps keep the frame rate consistent, slowing down your animation could make it feel faster. ["The secret to silky smooth JavaScript animations"](http://creativejs.com/resources/requestanimationframe/) provides a couple of suggestions for reducing frame rate while getting the power-saving and anti-skipping benefits of using [`window.requestAnimationFrame()`](https://msdn.microsoft.com/en-us/library/hh773174(v=vs.85).aspx).
+**Consistency feels faster**: The **Performance** profiler's visual map of your frame rate over time can be very useful. Uneven frame rates or skipped frames can make your site feel slow. If it reduces skips and helps keep the frame rate consistent, slowing down your animation could make it feel faster. ["The secret to silky smooth JavaScript animations"](http://creativejs.com/resources/requestanimationframe/) provides a couple of suggestions for reducing frame rate while getting the power-saving and anti-skipping benefits of using [`window.requestAnimationFrame()`](https://msdn.microsoft.com/library/hh773174.aspx).
 
 **How much of this CSS is necessary?** Many sites use a site-wide style sheet to make pages load faster. It can reduce the number of network requests and take advantage of caching on subsequent loads. However, every style in a style sheet must be parsed and adds to the complexity of **Styling** calculations whether the style is used in the page or not.
 
@@ -163,4 +160,6 @@ At this point, the question to ask is: is the cost of the unused styles bigger t
 
 [Improving animation performance with the Performance tool](http://samples.msdn.microsoft.com/workshop/samples/UIPerformance/default.html)
 
-[The Performance tool in Visual Studio](https://msdn.microsoft.com/en-us/library/dn194502(v=vs.85).aspx)
+[The Performance tool in Visual Studio](https://msdn.microsoft.com/library/dn194502.aspx)
+
+[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)

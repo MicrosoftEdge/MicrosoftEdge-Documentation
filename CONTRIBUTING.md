@@ -1,19 +1,13 @@
 # Contributing to Microsoft Edge documentation
 
-There are several ways you can contribute to the docs on dev.modern.IE:
+We welcome your contributions to the [Microsoft Edge developer guide](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/), [(opensource content)](./dev-guide), and [F12 tool documentation](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/), [(opensource content)](./f12-devtools-guide)! You will need a GitHub user account to contribute to the documentation. Currently the GitHub directory structure parallels the table of contents on the site. There are several ways you can contribute to the docs:
 
-## Adding new docs
-New contributions are welcome! Currently the GitHub directory structure parallels the table of contents on the site, but the docs are in early stages and things might get reorganized in the future.
+## Reporting bugs or issues in the docs
+Please [open an issue](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues) if you come across outdated or inaccurate information in docs. A documentation editorial team will review and address issues, however, you can also take a crack at fixing any issues you find on your own! Follow the steps for updating documentation below... when you are contributing changes to address an issue, please be sure to reference the issue in your commit message, just use #issueNumber or copy-paste the issue URL.  
+
+Visit the [Feedback & Support](https://developer.microsoft.com/en-us/microsoft-edge/community/support/) page for other FAQs, to request a new Microsoft Edge feature, to file a bug related to Microsoft Edge (the browser, rather than the documentation), or for a link to follow @MSEdgeDev on twitter.
 
 ## Updating documentation
-The F12 tools guide is currently the only content set in this repo, but it is open for contributions! (All other content is still being ported from [MSDN Library](https://msdn.microsoft.com/en-us/library/dn997183(v=vs.85).aspx)).
-
-## Reporting bugs in the docs
-Please [open an issue](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues) if you come across outdated or inaccurate information in docs. You can use the [Feedback & Support](http://dev.modern.ie/community/support/) page for all other questions and issues about Microsoft Edge and the F12 dev tools.
-
-# Using Pull Requests
-If you want to contribute to the repo, please use a GitHub pull request. There are just a couple things to keep in mind:
-- Make sure there is an issue open for your PR. If there isn't, please file a new one.
-- The commit message should reference the issue and hopefully fix it (you can use "fixes #issueNumber" or "ref #issueNumber" if it doesn't fix it completely).
+Microsoft Edge documentation is written in [GitHub Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/) and all contributions will be be covered by the [Creative Commons license](./LICENSE.md). Begin by [forking this repository](https://help.github.com/articles/fork-a-repo/) to your GitHub account. Clone the forked repository to your local machine. Add, tweak, reword and even remove any content that you believe should be updated. Push the changes to your forked repository and then initiate a pull request with a description of your changes. The documentation editorial team will review your work and may accept all of your changes, only portions of you changes, or may contact you with questions about your suggested changes before accepting.
 
 Thank you for contributing to the Microsoft Edge docs!

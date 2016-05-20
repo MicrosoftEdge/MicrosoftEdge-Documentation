@@ -1,5 +1,4 @@
 # DOM Explorer
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Use the DOM Explorer tool to see the state of your webpage's DOM (Document Object Model), examine HTML structure and CSS styles, and test changes to solve display issues.
 
@@ -73,9 +72,9 @@ The styles pane has five tabs: [Styles](#styles), [Computed](#computed), [Layout
 ### Styles
 The **Styles** tab is a list of all the styles associated with the selected element and which properites are being applied.
 
-Style properties currently applied to the element appear on the top of the style pane, along with a link to the .css file path, line #, and column # where that style is defined. Inherited styles are listed below, identifing which ancestor the inherited styles come from.
+Style properties currently applied to the element appear on the top of the style pane, along with a link to the .css file path, line #, and column # where that style is defined. Inherited styles are listed below, identifying which ancestor the inherited styles come from.
 
-You can turn style property on or off by checking or unchecking the box to the left of the property. When unchecked, the style will be crossed out and an inherited style below may become active (removing it's strikeout). The style pane also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/en-us/library/bg124120(v=vs.85).aspx).
+You can turn style property on or off by checking or unchecking the box to the left of the property. When unchecked, the style will be crossed out and an inherited style below may become active (removing it's strikeout). The style pane also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/library/bg124120.aspx).
 
 ![Edge DOM Explorer Style Inheritance](../media/Edge_DomExplorer_inheritingstyles.gif)
 
@@ -101,6 +100,7 @@ In the **Computed** tab, properties can be edited or toggled on or off using the
 Examples of computed values:
 
   - **Precise calculations / relative to absolute values:** All properties without hardcoded measures, such as calc() expressions, percentages, em or rem units, are shown with the pixel values calculated for them.
+
 ![Edge Computed Sizes](../media/Edge_DOMExplorer_computedstyles.PNG)
 
   - **Implied and default values:** The **Computed** styles tab has a **Display user styles only** button ![Display all styles button](../media/F12BlueDOMExplorerDisplayStyles.png).
@@ -143,6 +143,8 @@ If you want to experiment with CSS for a hover effect, turning on pseudo classes
 
 ## Related topics
 
-[The Document Object Model (DOM)](https://msdn.microsoft.com/en-us/library/hh772384(v=vs.85).aspx)
+[The Document Object Model (DOM)](https://msdn.microsoft.com/library/hh772384.aspx)
 
-[Cascading Style Sheets](https://msdn.microsoft.com/en-us/library/ms531209(v=vs.85).aspx)
+[Cascading Style Sheets](https://msdn.microsoft.com/library/ms531209.aspx)
+
+[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)

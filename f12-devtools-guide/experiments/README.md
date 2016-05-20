@@ -1,7 +1,5 @@
 # F12 Experiments
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 F12 experiments can be activated from the **Experiments** tab which is the last tab along the navigation bar along the top of F12. After enabling an experiment you’ll need to close F12 and Microsoft Edge for the change to take effect. 
 
 ## Experiment: Edit JavaScript
@@ -29,4 +27,8 @@ Clicking the **diff** command will open up a new **diff view** of the document, 
 
 All changes to the document will be lost when you navigate away or refresh from the current page.
 
-You will not be able to edit when paused in the **[Debugger](../debugger/)** or when a document has been pretty printed. 
+You will not be able to edit when paused in the **[Debugger](../debugger/)** or when a document has been pretty printed.
+
+## Related topics
+
+[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
