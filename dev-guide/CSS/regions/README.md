@@ -2,8 +2,6 @@
 
 CSS Regions is a layout feature used to achieve more flexible, Magazine-like, content flow through specified regions of the page (for example, flowing text along the contour of a mountain). A single HTML content stream of text and images can be segmented into multiple empty containers defined in a standard HTML template. HTML templates are documents that are mostly empty of original content, but are instead composed primarily of empty containers that are sized and positioned to give incoming content a specific layout.
 
-> CSS Regions are defined by the World Wide Web Consortium (W3C) in the [CSS Regions specification](http://go.microsoft.com/fwlink/p/?LinkId=228450), and currently has a [Working Draft](https://drafts.csswg.org/css-regions/). 
-
 Within a single page, CSS Regions allows web developers to create complex content layouts equivalent to what might be seen in a magazine or newspaper, where multiple regions of the same flow of content (text, related pictures, video, and so on) are shaped around unrelated content elements, such as alternate stories or advertisements.
 
 
@@ -163,4 +161,4 @@ In addition to the two examples given previously, CSS Regions enables several ot
 
 ## Specification
 
-[CSS Regions Module Level 3](http://go.microsoft.com/fwlink/p/?LinkID=228450)
+[CSS Regions Module Level 3](http://go.microsoft.com/fwlink/p/?LinkID=228450), also see the [Working Draft](https://drafts.csswg.org/css-regions/) for upcoming changes. 
