@@ -14,6 +14,7 @@ Microsoft Edge supports uploading files, folders, and combinations of files and 
 This snippet demonstrates how to differentiate between the files and folders of an item
 that's been selected for upload.
 
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/wWwBqa?editors=1010)
 
 ![spec](FileSystemAPI)
 
