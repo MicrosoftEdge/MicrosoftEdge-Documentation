@@ -5,7 +5,7 @@ When fully released to mainstream builds of Windows 10, extensions will be avail
 
 1. Open Microsoft Edge and type 'about:flags' into the address bar.
 
-2. Check any unchecked boxes in the "Developer settings" section.
+2. Make sure the "Enable extension developer features" box is checked.
 
    ![about:flags turn on developer features](../media/sideload-aboutflags.png)
 
