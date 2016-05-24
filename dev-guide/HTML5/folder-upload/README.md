@@ -3,7 +3,7 @@
 Microsoft Edge supports uploading files, folders, and combinations of files and folders using APIs that are interoperable with Chrome.
 
 | API | Description |
----------------------
+| --- | ----------- |
 | DataTransferItem.[webkitGetAsEntry]() method | Returns the `WebKitEntry` object (a file or directory) corresponding to the `DataTransferItem`. |
 | [WebKitEntry]() interface | Represents a file or directory. (Use the `isDirectory` and `isFile` properties to determine what it is.) |
 | [WebKitDirectoryReader]() interface | Provides the `readEntries` method to traverse the files in the given directory. |
