@@ -6,6 +6,10 @@ You can use the [HTML5 audio](./audio) element to embed simple sound effects, ba
 ## File API
 The [File  API](./file-API) provides a means to manipulate file objects in web applications.
 
+## Folder upload
+
+Microsoft Edge supports [drag and drop with folders](./folder-upload) using the same API (webkitGetAsEntry) as [Chrome](https://developers.google.com/web/updates/2012/07/Drag-and-drop-a-folder-onto-Chrome-now-available).
+
 ## Newly supported elements and attributes
 Check out the latest [HTML5 elements and attributes](./newly-supported-elements-and-attributes) supported in Microsoft Edge.
 
@@ -17,5 +21,3 @@ The  [selection](./selection-API) object represents the active selection, which 
 
 ## Video
 Using [HTML5 video](./video) you can embed a full featured video player on your webpage without requiring a third-party plug-in or JavaScript.
-
-
