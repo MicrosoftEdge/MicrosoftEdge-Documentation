@@ -70,7 +70,7 @@ Shutdown |/Shutdown|Supported |10240|
 [Async Script Timeout](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidtimeoutsasync_script)|{POST} /session/{sessionId}/timeouts/async_script|Under Consideration|Priority 3|
 [Get Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#get-cookie)|{GET} /session/{sessionId}/cookie/{name}|Supported|10240|
 [Add Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#add-cookie)|{GET} /session/{sessionId}/cookie|Supported|10240|
-[Delete Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#delete-cookie)|{GET} /session/{sessionId}/cookie/{name}|Supported|10240|
+[Delete Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#delete-cookie)|{DELETE} /session/{sessionId}/cookie/{name}|Supported|10240|
 [Click()](https://w3c.github.io/webdriver/webdriver-spec.html#click)|{POST} /session/{sessionId}/element/{elementId}/click|Supported|10240|
 [Clear()](https://w3c.github.io/webdriver/webdriver-spec.html#clear)|{POST} /session/{sessionId}/element/{elementId}/clear|Supported|10240|
 [sendKeys()](https://w3c.github.io/webdriver/webdriver-spec.html#sendkeys)|{POST} /session/{shessionId}/element/{elementId}/value|Supported|10240|
