@@ -1,7 +1,7 @@
 # Application cache
 
 
-The [Application Cache API](http://www.w3.org/TR/html5/browsers.html#offline) (or *AppCache*) was introduced in the [HTML5 spec](http://www.w3.org/TR/html5/browsers.html#application-cache-api), allowing you to create offline web applications. 
+The [Application Cache API](http://www.w3.org/TR/html5/browsers.html#offline) (or *AppCache*) was introduced in the [HTML5 spec](http://www.w3.org/TR/html5/browsers.html#application-cache-api), allowing you to create offline web applications.
 
 AppCache enables webpages to *cache* (or save) resources locally, including images, script libraries, style sheets, and so on. AppCache also allows URLs to be served from cached content using standard Uniform Resource Identifier (URI) notation.
 
@@ -12,6 +12,17 @@ To cache resources locally:
 
 1. Create a [manifest file](http://go.microsoft.com/fwlink/p/?LinkId=228543) that defines the resources you want to save.
 2. Reference the manifest file in each webpage designed to use cached resources.
+
+## New in Microsoft Edge
+Microsoft Edge brings a number of improvements to the Application Cache API, including:
+* **Removal of soft limits**: Application Cache will not request user authorization to use more than 10 megabytes of space.
+
+ Volume size | AppCache (per domain / total limit)
+ :---------- | :----------
+ Less than or equal to 8 GB | 10 MB / 50 MB
+ More than 8 GB up to 32 GB | 50 MB / 500 MB
+ More than 32 GB up to 128 GB | 50 MB / 1 GB
+ More than 128 GB | 100 MB / 2 GB
 
 
 ## The manifest file
@@ -89,7 +100,7 @@ In this example, the webpage declares "appcache.manifest" as the manifest file. 
 
 > NOTE: File references in the manifest are interpreted with respect to the location of the manifest file, not the webpage that declares it.
 
- 
+
 
 It's not necessary for the manifest to include the name of the webpage declaring the manifest; webpages that declare manifests are cached automatically.
 
@@ -103,7 +114,7 @@ The [`ApplicationCache`](http://go.microsoft.com/fwlink/p/?LinkId=228546) object
 
 > NOTE: The updated cache is not used by the webpage until it is reloaded, either manually by the user or programmatically using the [reload](http://go.microsoft.com/fwlink/p/?LinkId=228553) method of the [window.location](http://go.microsoft.com/fwlink/p/?LinkId=228554) object.
 
- 
+
 
 The [`ApplicationCache`](http://go.microsoft.com/fwlink/p/?LinkId=228546) object supports the following events:
 
@@ -128,31 +139,31 @@ The following example shows how you can use the [`applicationCache`](http://go.m
 
 ```html
 var sCacheStatus = "Not supported";
-if (window.applicationCache) 
+if (window.applicationCache)
 {
    var oAppCache = window.applicationCache;
-   switch ( oAppCache.status ) 
+   switch ( oAppCache.status )
    {
-      case oAppCache.UNCACHED : 
-         sCacheStatus = "Not cached"; 
+      case oAppCache.UNCACHED :
+         sCacheStatus = "Not cached";
          break;
-      case oAppCache.IDLE : 
-         sCacheStatus = "Idle"; 
+      case oAppCache.IDLE :
+         sCacheStatus = "Idle";
          break;
-      case oAppCache.CHECKING : 
-         sCacheStatus = "Checking"; 
+      case oAppCache.CHECKING :
+         sCacheStatus = "Checking";
          break;
-      case oAppCache.DOWNLOADING : 
-         sCacheStatus = "Downloading"; 
+      case oAppCache.DOWNLOADING :
+         sCacheStatus = "Downloading";
          break;
-      case oAppCache.UPDATEREADY : 
-         sCacheStatus = "Update ready"; 
+      case oAppCache.UPDATEREADY :
+         sCacheStatus = "Update ready";
          break;
-      case oAppCache.OBSOLETE : 
-         sCacheStatus = "Obsolete"; 
+      case oAppCache.OBSOLETE :
+         sCacheStatus = "Obsolete";
          break;
-      default : 
-        sCacheStatus = "Unexpected Status ( " + 
+      default :
+        sCacheStatus = "Unexpected Status ( " +
                        oAppCache.status.toString() + ")";
         break;
    }

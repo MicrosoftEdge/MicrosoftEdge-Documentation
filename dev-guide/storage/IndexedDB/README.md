@@ -3,25 +3,33 @@
 Microsoft Edge includes support for the [Indexed Database API (`IndexedDB`)](https://msdn.microsoft.com/library/hh772651). `IndexedDB` enables you to store structured data. Unlike cookies and DOM Storage, `IndexedDB` provides features that enable you to group, iterate, search, and filter JavaScript objects.
 
 
-Microsoft Edge brings a number of improvements to the [IndexedDB API](https://msdn.microsoft.com/library/hh772651(v=vs.85).aspx), including:
+## New in Microsoft Edge
+
+Microsoft Edge brings a number of improvements to the [IndexedDB](https://msdn.microsoft.com/library/hh772651) API, including:
 * **Local use**: Added support for webpages loaded via a `"file://"` URI scheme. This allows developers accessing files from disk to use these APIs.
-* **Removal of soft limits**: The `IndexDB` API and [Application Cache ("AppCache")](../../HTML5/application-cache/) will not request user authorization to use more than 10 megabytes of space.
-* **Changes to default hard limits**: Limits are removed for Windows Store apps using JavaScript.
+
+ Volume size | IndexedDB (per domain / total limit)
+ :---------- | :----------
+ Less than or equal to 8 GB | 10 MB / 50 MB
+ More than 8 GB up to 32 GB | 50 MB / 500 MB
+ More than 32 GB up to 128 GB | 250 MB / 4% of volume size
+ More than 128 GB | 500 MB / 4% or 20 GB(whichever is smaller)
+
 
 ## Asynchronous versus synchronous
 
-The Indexed Database API specification defines two APIs: a synchronous API and an asynchronous one. Microsoft Edge supports the asynchronous API. As a result, database operations do not execute immediately; instead operations return request objects that are executed in the background. Consequently, `IndexedDB` is an event-driven API. You create requests and then define event handlers to respond to the success or failure of those requests. 
+The Indexed Database API specification defines two APIs: a synchronous API and an asynchronous one. Microsoft Edge supports the asynchronous API. As a result, database operations do not execute immediately; instead operations return request objects that are executed in the background. Consequently, `IndexedDB` is an event-driven API. You create requests and then define event handlers to respond to the success or failure of those requests.
 
 
 ## Common database operations
 
-The following are some common database operations along with steps to accomplishing them: 
+The following are some common database operations along with steps to accomplishing them:
 
 Operation | Steps
 :--------- | :-----------
 Adding objects to an object store | To add objects to an object store, open the object store and call the [`add`](http://go.microsoft.com/fwlink/p/?LinkId=227774) method.
 Updating a record object in an object store | To update a record object in an object store, use the [`put`](http://go.microsoft.com/fwlink/p/?LinkId=227760) method and set the key value of the record you want to replace. Be aware that this adds a new record if the key value does not already exist in the object store.
-Updating a record object in a cursor | To update a record object in a cursor, use the [`update`](http://go.microsoft.com/fwlink/p/?LinkId=227761) method of the cursor. Be aware that this will create a new record if the original record has been deleted previously. 
+Updating a record object in a cursor | To update a record object in a cursor, use the [`update`](http://go.microsoft.com/fwlink/p/?LinkId=227761) method of the cursor. Be aware that this will create a new record if the original record has been deleted previously.
 Accessing individual records in an object store | To access individual records in an object store: <ul><li>To return an individual record in an object store, open the object store and then use the [`get`](http://go.microsoft.com/fwlink/p/?LinkId=227762) method to return the object that corresponds to the key value.</li><li>To retrieve a set of records in an object store, open the object store and then use the [`openCursor`](http://go.microsoft.com/fwlink/p/?LinkId=227763) method to obtain a cursor that lets you iterate through each record.</li><ul>
 Filtering the records in an object store | Use a [key range](http://go.microsoft.com/fwlink/p/?LinkId=227770) to filter the records in an object store. This returns a cursor that you can iterate. If you want this cursor to present records in a different order, such as descending order or sorted by a common attribute value, pass the key range as a parameter to the `openCursor` method of an index. You can also: <ul><li>Define a key range, open the object store, and then use the key range as a parameter to the `openCursor` method of the object store.</li><li>Open the object store, define a new or open an existing index for the object store, and then call the **openCursor** method on the index. Be aware that you can also pass a key range as an optional parameter to the `openCursor` method.</li></ul>
 Deleting records from an object store or cursor | Use the [`delete`](http://go.microsoft.com/fwlink/p/?LinkId=227764) method to remove individual records from an object store or a cursor. Use the [`clear`](http://go.microsoft.com/fwlink/p/?LinkId=227775) method to delete all records from an object store.
@@ -47,12 +55,12 @@ Requests can only be processed when transactions are active. The following examp
   oTx.onerror = handleTransactionError;  try {
     var objStore = otx.objectStore("ObjectStore1");    
     var req = objStore.get("AKeyValue");
-    req.onsuccess = function( evt ) { 
+    req.onsuccess = function( evt ) {
        doSomethingWithValue( evt.target.result );
     }
     req.onerror = handleRequestFailure;
   }
-  catch (ex) { 
+  catch (ex) {
     handleException( ex );
 ```
 
@@ -68,15 +76,15 @@ if ( oDB == null ) {
   var dbReq = oDB.setVersion( "1.0" );
   dbReq.onsuccess = createSchema;
   dbReq.onerror = function( evt ) {
-     showResults ( "The transaction encountered an error: " + 
-                    evt.message ); 
+     showResults ( "The transaction encountered an error: " +
+                    evt.message );
   }
   dbReq.onabort = function( evt ) {
-    showResults ( "The transaction was canceled." ); 
+    showResults ( "The transaction was canceled." );
   }
   }
 }
-function createSchema(evt) 
+function createSchema(evt)
 {
    var oTx = evt.target.result;
    oTx.oncomplete = function( evt ) {
@@ -95,15 +103,15 @@ In this example, the [`onsuccess`](http://go.microsoft.com/fwlink/p/?LinkId=2277
 
 
 ## Using requests to open a database
-Microsoft Edge can use the `indexedDB` property to access supported features of the Indexed Database API spec. 
+Microsoft Edge can use the `indexedDB` property to access supported features of the Indexed Database API spec.
 
 > NOTE: For security reasons, support for the `indexedDB` property is limited to Windows Store apps and to webpages loaded using the "http://" or "https://" protocols. `"file://"` is also supported for local use.
 
 For best results, use feature detection to access the IndexedDB API, as shown in the following example:
 ```js
-var ixDB; 
-if ( window.indexedDB ) { 
-   ixDB = window.indexedDB; 
+var ixDB;
+if ( window.indexedDB ) {
+   ixDB = window.indexedDB;
 }
 ```
 
@@ -116,11 +124,11 @@ dbReq.onsuccess = function( evt ) {
 };
 ```
 
-Request objects support events such as [`onsuccess`](https://msdn.microsoft.com/library/windows/apps/hh466044) and [`onerror`](https://msdn.microsoft.com/library/windows/apps/hh466119). In the previous example, an inline function assigns the results of the request to a global variable that maintains the connection to the opened database. The result varies according to the request. 
+Request objects support events such as [`onsuccess`](https://msdn.microsoft.com/library/windows/apps/hh466044) and [`onerror`](https://msdn.microsoft.com/library/windows/apps/hh466119). In the previous example, an inline function assigns the results of the request to a global variable that maintains the connection to the opened database. The result varies according to the request.
 
-Request objects execute when they go out of scope; that is, when the current JavaScript block finishes. 
+Request objects execute when they go out of scope; that is, when the current JavaScript block finishes.
 
-![spec](Indexed Database API) 
+![spec](Indexed Database API)
 
 ## API reference
 [IndexedDB](https://msdn.microsoft.com/library/hh77265)
@@ -131,4 +139,3 @@ Request objects execute when they go out of scope; that is, when the current Jav
 
 ## Specification
 [Indexed Database API](https://www.w3.org/TR/IndexedDB/)
-
