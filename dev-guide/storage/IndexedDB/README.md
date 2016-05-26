@@ -7,6 +7,8 @@ Microsoft Edge includes support for the [Indexed Database API (`IndexedDB`)](htt
 
 Microsoft Edge brings a number of improvements to the [IndexedDB](https://msdn.microsoft.com/library/hh772651) API, including:
 * **Local use**: Added support for webpages loaded via a `"file://"` URI scheme. This allows developers accessing files from disk to use these APIs.
+* **Removal of soft limits**: `IndexedDB` will not request user authorization to use more than 10 megabytes of space.
+* **Changes to default hard limits**: Indexed Database limits are removed for Windows Store apps using JavaScript. Additionally, Microsoft Edge now considers the volume size in determining the per-domain and per-total limit on how much disk space can be used. The table below applies to both phone and desktop versions of Microsoft Edge.
 
  Volume size | IndexedDB (per domain / total limit)
  :---------- | :----------
