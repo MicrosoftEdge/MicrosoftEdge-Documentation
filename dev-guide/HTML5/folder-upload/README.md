@@ -7,7 +7,7 @@ Microsoft Edge supports uploading files, folders, and combinations of files and 
 | DataTransferItem.[webkitGetAsEntry](https://msdn.microsoft.com/library/mt709130) method | Returns the `WebKitEntry` object (a file or directory) corresponding to the `DataTransferItem`. |
 | [WebKitEntry](https://msdn.microsoft.com/library/mt732557) interface | Represents a file or directory. (Use the `isDirectory` and `isFile` properties to determine what it is.) |
 | [WebKitDirectoryReader](https://msdn.microsoft.com/library/mt732554) interface | Provides the `readEntries` method to traverse the files in the given directory. |
-| [WebKitFileSystem](https://msdn.microsoft.com/library/mt732564) interface | Provides an interface to the (sandboxed) file system for the upload. You can use the `filesystem` property of a `WebKitEntry` object to get the globally unique name and the root folder of the file system being used for the drag and drop (or file/folder picker) operation. |
+| [WebKitFileSystem](https://msdn.microsoft.com/library/mt732564) interface | Provides an interface to the (sandboxed) file system for the upload. You can use the `filesystem` property of a `WebKitEntry` object to get the globally unique name and the root folder of the file system being used for the drag and drop (or file/folder picker) operation. Current support is scoped to drag-and-drop scenarios via `webkitGetAsEntry` (and not file/folder picker). |
 
 ## Example
 
