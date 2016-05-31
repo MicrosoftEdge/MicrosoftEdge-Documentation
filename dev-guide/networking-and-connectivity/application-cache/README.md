@@ -18,12 +18,12 @@ Microsoft Edge brings a number of improvements to the Application Cache API, inc
 * **Removal of soft limits**: Application Cache will not request user authorization to use more than 10 megabytes of space.
 * **Changes to default hard limits**: Application Cache limits are removed from Windows Store apps using JavaScript. Additionally, Microsoft Edge now considers the volume size in determining the per-domain and per-total limit on how much disk space can be used. The table below applies to both phone and desktop versions of Microsoft Edge.
 
- Volume size | AppCache (per domain / total limit)
- :---------- | :----------
- Less than or equal to 8 GB | 10 MB / 50 MB
- More than 8 GB up to 32 GB | 50 MB / 500 MB
- More than 32 GB up to 128 GB | 50 MB / 1 GB
- More than 128 GB | 100 MB / 2 GB
+Volume size | Per domain | Total limit
+:---------- | :---------- | :-----------
+Less than or equal to 8 GB | 10 MB | 50 MB
+More than 8 GB up to 32 GB | 50 MB | 500 MB
+More than 32 GB up to 128 GB | 50 MB | 1 GB
+More than 128 GB | 100 MB | 2 GB
 
 
 ## The manifest file

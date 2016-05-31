@@ -10,12 +10,12 @@ Microsoft Edge brings a number of improvements to the [IndexedDB](https://msdn.m
 * **Removal of soft limits**: `IndexedDB` will not request user authorization to use more than 10 megabytes of space.
 * **Changes to default hard limits**: Indexed Database limits are removed for Windows Store apps using JavaScript. Additionally, Microsoft Edge now considers the volume size in determining the per-domain and per-total limit on how much disk space can be used. The table below applies to both phone and desktop versions of Microsoft Edge.
 
- Volume size | IndexedDB (per domain / total limit)
- :---------- | :----------
- Less than or equal to 8 GB | 10 MB / 50 MB
- More than 8 GB up to 32 GB | 50 MB / 500 MB
- More than 32 GB up to 128 GB | 250 MB / 4% of volume size
- More than 128 GB | 500 MB / 4% or 20 GB(whichever is smaller)
+Volume size | Per domain | Total limit
+:---------- | :---------- | :-----------
+Less than or equal to 8 GB | 10 MB | 50 MB
+More than 8 GB up to 32 GB | 50 MB | 500 MB
+More than 32 GB up to 128 GB | 250 MB | 4% of volume size
+More than 128 GB | 500 MB | 4% or 20 GB (whichever is smaller)
 
 
 ## Asynchronous versus synchronous
