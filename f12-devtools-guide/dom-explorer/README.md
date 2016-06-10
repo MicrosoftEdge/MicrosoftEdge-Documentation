@@ -125,6 +125,9 @@ The **Events** tab shows the element's DOM events or CSS selectors that have han
 In the image above, one element's click event is being handled by two functions in two scripts. If you were getting unexpected behavior from clicking that element, it could be because one of the handlers should be listening for events on another element.
 
 ### Changes
+
+![channel9](https://channel9.msdn.com/Blogs/One-Dev-Minute/Edge-F12-Tools-for-Tracking-Changes)
+
 As you experiment with different layout and style changes in the **DOM Explorer**, it's easy to lose track of everything you changed. The **Changes** tab shows a list of all the changes you've made to the DOM structure and CSS styles in your current session with the **DOM Explorer**. Original and current values are shown with different highlight colors.
 
 If you decide you don't like one of the changes, right-click it and select **Revert item** to reverse that change. If you'd like to copy the style to paste into your source files, use **Copy** to copy a single style or **Copy All** to copy all the changed styles in the list.
