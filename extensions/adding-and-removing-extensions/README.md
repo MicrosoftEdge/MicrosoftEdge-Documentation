@@ -26,7 +26,7 @@ When fully released to mainstream builds of Windows 10, extensions will be avail
 
 ![extension in extension pane](../media/sideload-extension-installed.PNG)
 
->note Unsigned extensions are automatically turned off on subsequent launches of Microsoft Edge. When the browser enters an idle state (after approximately 10 seconds of inactivity) you will see the following notification at the bottom of the window. To turn on the unsigned extensions, click "Turn on anyway". ![risky notification](../media/riskynotification.png)
+>note Unsigned extensions are automatically turned off on subsequent launches of Microsoft Edge. When the browser enters an idle state (after approximately 10 seconds of inactivity) you will see the following notification at the bottom of the window. ![risky notification](../media/riskynotification.png) To turn on the unsigned extensions, click "Turn on anyway". 
 
 
 ## Moving the extension button
