@@ -26,6 +26,8 @@ When fully released to mainstream builds of Windows 10, extensions will be avail
 
 ![extension in extension pane](../media/sideload-extension-installed.PNG)
 
+>note Unsigned extensions are automatically turned off on subsequent launches of Microsoft Edge. When the browser enters an idle state (after approximately 10 seconds of inactivity) you will see the following notification at the bottom of the window. To turn on the unsigned extensions, click "Turn on anyway". ![extension in extension pane](../media/riskynotification.png)
+
 
 ## Moving the extension button
 Depending on your extension's settings, it could appear in the **"More" (...)** menu.
@@ -40,12 +42,12 @@ If you want to move the button out of this menu for easier access:
 2. Select **"Show button next to address bar"**.
 
    ![actions menu](../media/browseraction_contextmenu.png)  
-   
+
 You can also do this from the extensions details page by:
 
 1. Click on the extension button.
 2. Toggle **"Show button next to address bar"** to on.
- 
+
    ![show button toggle switched on](../media/show-button-toggle.png)
 
 > NOTE: You can always move the button back to the **"More" (...)** menu by right-clicking it and unselecting **"Show next to address bar"** or by going to the extension details page and toggling **"Show button next to address bar"** to off.
@@ -63,4 +65,3 @@ You can also do this from the extensions details page by:
    ![actions menu](../media/remove.png)  
 
 **The extension should disappear from the list in Microsoft Edge.**
-
