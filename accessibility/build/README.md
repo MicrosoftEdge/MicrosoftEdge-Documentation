@@ -107,6 +107,9 @@ The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries
 #### [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)
 Techniques from the W3C that provide guidance for web developers on meeting [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) success criteria.
 
+#### [Tips on Developing for Web Accessibility](http://www.w3.org/WAI/gettingstarted/tips/developing.html)
+Tips from the W3C on developing web content that is more accessible to people with disabilities. 
+
 #### [WAI-ARIA Authoring Practices 1.1](http://w3c.github.io/aria-practices/)
 A document by the W3C that provides readers with an understanding of how to use WAI-ARIA 1.1 and recommends approaches to make widgets, navigation, and behaviors accessible using WAI-ARIA roles, states, and properties.
 
@@ -115,6 +118,9 @@ A series of web accessibility guidelines and standards developed by the WAI.
 
 #### [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html)
 A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
+
+#### [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](http://www.w3.org/WAI/perspectives/)
+A series of short situational videos by the W3C about the impact of accessibility and the benefits for everyone. 
 
 
 
