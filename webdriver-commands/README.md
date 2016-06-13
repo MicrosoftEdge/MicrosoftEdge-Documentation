@@ -1,100 +1,168 @@
-The WebDriver API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control
-the behavior of a web browser. The Microsoft Edge implementation of WebDriver supports both the W3C WebDriver specification
-and the JSON Wire Protocol. Here's how to [enable WebDriver for Microsoft Edge](https://msdn.microsoft.com/library/mt188085).
+The WebDriver API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser. The Microsoft Edge implementation of WebDriver supports commands from both the W3C WebDriver Specification and the JSON Wire Protocol. Here's how to [get started with WebDriver for Microsoft Edge](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/tools/webdriver/).
 
-# WebDriver status
-The following table details the support status of WebDriver commands in Microsoft Edge.
+# [W3C WebDriver Specification Support](https://w3c.github.io/webdriver/webdriver-spec.html)
+The support on a per command basis for the W3C WebDriver Spectication.
 
-Command name | EndPoint | Status | Available build/priority
+Locator Strategies | Status | Available Build
+:---------------| :----------- | :--------------
+[CSS selector](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-css-selector)|Supported|10240|
+[Link text selector](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-link-text)|Supported|10240|
+[Partial link text selector](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-partial-link-text)|Supported|10240|
+[XPath selector](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-xpath-selector)|Supported|10586|
+
+Method|URI Template|Command|Status|Available Build/Priority
+:---------------| :------------ | :----------- | :----------- | :--------------
+POST|/session|[New Session](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-new-session)|Supported|10240|
+DELETE|/session/{session id}|[Delete Session](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-session)|Supported|10240|
+POST|/session/{session id}/url|[Go](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-go)|Supported|10240|
+GET|/session/{session id}/url|[Get Current URL](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-current-url)|Supported|10240|
+POST|/session/{session id}/back|[Back](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-back)|Supported|10240|
+POST|/session/{session id}/forward|[Forward](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-forward)|Supported|10240|
+POST|/session/{session id}/refresh|[Refresh](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-refresh)|Supported|10240|
+GET|/session/{session id}/title|[Get Title](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-title)|Supported|10240|
+GET|/session/{session id}/window|[Get Window Handle](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handle)|Not Supported|Priority 2|
+DELETE|/session/{session id}/window|[Close Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-close-window)|Supported|10586|
+POST|/session/{session id}/window|[Switch to Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-switch-to-window)|Supported|10586|
+GET|/session/{session id}/window/handles|[Get Window Handles](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles)|Not Supported|Priority 2|
+POST|/session/{session id}/window/fullscreen|[Fullscreen Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-fullscreen-window)|Not Supported|Priority 4|
+POST|/session/{session id}/window/maximize|[Maximize Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-maximize-window)|Not Supported|Priority 2|
+POST|/session/{session id}/window/size|[Set Window Size](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-set-window-size)|Not Supported|Priority 2|
+GET|/session/{session id}/window/size|[Get Window Size](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-size)|Not Supported|Priority 2|
+POST|/session/{session id}/frame|[Switch To Frame](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-switch-to-frame)|Supported|10586|
+POST|/session/{session id}/frame/parent|[Switch to Parent Frame](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-switch-to-parent-frame)|Supported|10586|
+POST|/session/{session id}/element|[Find Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-element)|Supported|10586|
+POST|/session/{session id}/element/{element id}/element|[Find Element From Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-element-from-element)|Supported|10586|
+POST|/session/{session id}/elements|[Find Elements](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-elements)|Supported|10586|
+POST|/session/{session id}/element/{element id}/elements|[Find Elements From Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-elements-from-element)|Supported|10586|
+GET|/session/{session id}/element/active|[Get Active Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-active-element)|Supported|10586|
+GET|/session/{session id}/element/{element id}/selected|[Is Element Selected](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-is-element-selected)|Supported|10240|
+GET|/session/{session id}/element/{element id}/attribute/{name}|[Get Element Attribute](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-attribute)|Supported|10240|
+GET|/session/{session id}/element/{element id}/property/{name}|[Get Element Property](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-property)|Not Supported|Priority 2|
+GET|/session/{session id}/element/{element id}/css/{property name}|[Get Element CSS Value](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-css-value)|Supported|10240|
+GET|/session/{session id}/element/{element id}/text|[Get Element Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-text)|Supported|10240|
+GET|/session/{session id}/element/{element id}/name|[Get Element Tag Name](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-tag-name)|Supported|10240|
+GET|/session/{session id}/element/{element id}/rect|[Get Element Rect](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-rect)|Supported|10586|
+GET|/session/{session id}/element/{element id}/enabled|[Is Element Enabled](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-is-element-enabled)|Supported|10240|
+GET|/session/{session id}/source|[Get Page Source](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-page-source)|Supported|10586|
+POST|/session/{session id}/execute/sync|[Execute Script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-script)|Not Supported|Priority 2|
+POST|/session/{session id}/execute/async|[Execute Async Script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-async-script)|Not Supported|Priority 2|
+GET|/session/{session id}/cookie/{name}|[Get Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-cookie)|Supported|10240|
+POST|/session/{session id}/cookie|[Add Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-add-cookie)|Supported|10240|
+DELETE|/session/{session id}/cookie/{name}|[Delete Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-cookie)|Supported|10240|
+DELETE|/session/{session id}/cookie|[Delete All Cookies](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-all-cookies)|Supported|10586|
+POST|/session/{session id}/timeouts|[Set Timeout](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-set-timeout)|Supported|10240|
+POST|/session/{session id}/actions|[Perform Actions](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-perform-actions)|Not Supported|Priority 3|
+DELETE|/session/{session id}/actions|Releasing Actions|Not Supported|Priority 3|
+POST|/session/{session id}/element/{element id}/click|[Element Click](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-element-click)|Supported|10240|
+POST|/session/{session id}/element/{element id}/clear|[Element Clear](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-element-clear)|Supported|10240|
+POST|/session/{session id}/element/{element id}/sendKeys|[Element Send Keys](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-element-send-keys)|Not Supported|Priority 2|
+POST|/session/{session id}/alert/dismiss|[Dismiss Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-dismiss-alert)|Not Supported|Priority 2|
+POST|/session/{session id}/alert/accept|[Accept Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-accept-alert)|Not Supported|Priority 2|
+GET|/session/{session id}/alert/text|[Get Alert Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-alert-text)|Not Supported|Priority 2|
+POST|/session/{session id}/alert/text|[Send Alert Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-send-alert-text)|Not Supported|Priority 2|
+GET|/session/{session id}/screenshot|[Take Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-take-screenshot)|Supported|10240|
+GET|/session/{session id}/element/{element id}/screenshot|[Take Element Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-take-element-screenshot)|Supported|10240|
+
+# [JSON Wire Protocol Support](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol)
+The support on a per command basis for the JSON Wire Protocol.
+
+HTTP Method|Path|Status|Available Build/Priority
 :---------------| :------------ | :----------- | :--------------
-Shutdown |/Shutdown|Supported |10240|
-[Status](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#status)|{GET} /Status|Supported|10240|
-[Sessions](https://w3c.github.io/webdriver/webdriver-spec.html#sessions)|{GET} /sessions|Supported|10240|
-[New session](https://w3c.github.io/webdriver/webdriver-spec.html#new-session)|{POST} /session|Supported|10240|
-[Delete session](https://w3c.github.io/webdriver/webdriver-spec.html#delete-session)|{DELETE} /session/{sessionId}|Supported|10240|
-[Set Timeout](https://w3c.github.io/webdriver/webdriver-spec.html#set-timeout)|{POST} /session/{sessionId}/timeouts|Supported|10240|
-[Sessions](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessions)|/sessions|Supported|10240|
-[Session ID](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionid)|/session/{sessionId}|Supported|10240|
-[Page Source](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidsource)|{GET} /session/{sessionId}/Source|Preview|10547|
-[Keys](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidkeys)|{POST} /session/{sessionId}/Keys|Preview|10532|
-[Orientation](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidorientation)|{GET} /session/{sessionId}/orientation|Not Yet|Priority 2|
-[moveTo](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidmoveto)|{GET} /session/{sessionId}/moveTo|Preview|10550|
-[buttonDown](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidbuttondown)|{POST} /session/{sessionId}/buttonDown|Preview|10550|
-[buttonUp](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidbuttonup)|{POST} /session/{sessionId}/buttonUp|Preview|10550|
-[doubleClick](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessioniddoubleclick)|{POST} /session/{sessionId}/doubleClick|Preview|10550|
-[GEO Location](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidlocation)|{GET} /session/{sessionId}/location|Preview|10547|
-[local_storage](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidlocal_storage)|{GET} /session/{sessionId}/local_storage|Preview|10547|
-[session_storage](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidsession_storage)|{GET} /session/{sessionId}/session_storage|Preview|10547|
-[log](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidlog)|{GET} /session/{sessionId}/log|Not Yet|Priority 3|
-[Log Types](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidlogtypes)|{GET} /session/{sessionId}/log/types|Not Yet|Priority 3|
-[Get](https://w3c.github.io/webdriver/webdriver-spec.html#get)|{POST} /session/{sessionId}/url|Supported|10240|
-[Get Current Url](https://w3c.github.io/webdriver/webdriver-spec.html#get-current-url)|{GET} /session/{sessionId}/url|Supported|10240|
-[Back](https://w3c.github.io/webdriver/webdriver-spec.html#back)|{POST} /session/{sessionId}/back|Supported|10240|
-[Forward](https://w3c.github.io/webdriver/webdriver-spec.html#forward)|{POST} /session/{sessionId}/forward|Supported|10240|
-[Refresh](https://w3c.github.io/webdriver/webdriver-spec.html#refresh)|{POST} /session/{sessionId}/refresh|Supported|10240|
-[Get Title](https://w3c.github.io/webdriver/webdriver-spec.html#get-title)|{GET} /session/{sessionId}/title|Supported|10240|
-[Invalid SSL Certificates](https://w3c.github.io/webdriver/webdriver-spec.html#invalid-ssl-certificates)|N/A|Partial|10240 - ongoing work|
-[Get Window Handle](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle)|{GET} /session/{sessionId}/window/handle|Preview|10532|
-[Get Window Handles](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handles)|{GET} /session/{sessionId}/window/handles|Preview|10532|
-[Switch to Window](https://w3c.github.io/webdriver/webdriver-spec.html#switch-to-window)|{POST} /session/{sessionId}/window|Preview|10532|
-[Close Window](https://w3c.github.io/webdriver/webdriver-spec.html#close-window)|{DELETE} /session/{sessionId}/window|Preview|10532|
-[Switch to Frame](https://w3c.github.io/webdriver/webdriver-spec.html#switch-to-frame)|{POST} /session/{sessionId}/frame|Preview|10532|
-[Switch to Parent Window](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle)|{POST} /session/{sessionId}/frame/parent|Preview|10532|
-[Resizing and Positioning Windows](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle)|{GET} /session/{sessionId}/window/size|Preview|10532|
-[Get Window Size](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-size)|{GET} /session/{sessionId}/window/size|Preview|10532|
-[Set Window Size](https://w3c.github.io/webdriver/webdriver-spec.html#set-window-size)|{POST} /session/{sessionId}/window/size|Preview|10532|
-[Maximize Window](https://w3c.github.io/webdriver/webdriver-spec.html#maximize-window)|{GET} /session/{sessionId}/window/maximize|Preview|10532|
-[Fullscreen Window](https://w3c.github.io/webdriver/webdriver-spec.html#fullscreen-window)|{GET} /session/{sessionId}/window/fullsize|Not Yet|Priority 4|
-[Set Window Position](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidwindowwindowhandleposition)|{POST} /session/{sessionId}/window/{windowHandle}/position|Preview|10532|
-[Find Elements](https://w3c.github.io/webdriver/webdriver-spec.html#findelements)|{POST} /session/{sessionId}/elements|Partial|10547|
-[Find Elements](https://w3c.github.io/webdriver/webdriver-spec.html#findelements)|{POST} /session/{sessionId}/element/{elementId}/elements|Preview|10547|
-[Find Element](https://w3c.github.io/webdriver/webdriver-spec.html#findelement)|{POST} /session/{sessionId}/element|Preview|10547|
-[Find Element](https://w3c.github.io/webdriver/webdriver-spec.html#findelement)|{POST} /session/{sessionId}/element/{elementId}/element|Preview|10547|
-[Get Active Element](https://w3c.github.io/webdriver/webdriver-spec.html#get-active-element)|{GET} /session/{sessionId}/element/active|Preview|10550|
-[Describe Element](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidelementid)|{GET} /session/{sessionId}/element/{Id}|Under Consideration|Priority 3|
-[Element Location Strategies](https://w3c.github.io/webdriver/webdriver-spec.html#element-location-strategies)|N/A|Supported/Preview | CSS Selectors - 10240, ECMA Script - 10240, Link Text - 10240, Partial Link Text - 10240, XPATH - 10547
-[Is Element Displayed](https://w3c.github.io/webdriver/webdriver-spec.html#is-element-displayed)|{GET} /session/{sessionId}/element/{elementId}/displayed|Supported|10240|
-[Is Element Selected](https://w3c.github.io/webdriver/webdriver-spec.html#is-element-selected)|{GET} /session/{sessionId}/element/{elementId}/selected|Supported|10240|
-[Get Element Attribute](https://w3c.github.io/webdriver/webdriver-spec.html#getelementattribute)|{GET /session/{sessionId}/element/{elementId}/attribute/{name}|Supported|10240|
-[Get Element Property](https://w3c.github.io/webdriver/webdriver-spec.html#get-element-property)|{GET} /session/{sessionId}/element/{elementId}/property/{name}|Under Consideration|Priority 2|
-[Get Element CSS Value](https://w3c.github.io/webdriver/webdriver-spec.html#getcssvalue)|{GET} /session/{sessionId}/element/{id}/css/{propertyName}|Supported|10240|
-[getElementText()](https://w3c.github.io/webdriver/webdriver-spec.html#gettext)|{GET} /session/{sessionId}/element/{elementId}/text|Supported|10240|
-[Get Element Tag Name](https://w3c.github.io/webdriver/webdriver-spec.html#get-element-tag-name)|{GET} /session/{sessionId}/element/{id}/name|Supported|10240|
-[Get Element Rect](https://w3c.github.io/webdriver/webdriver-spec.html#get-element-rect)|{GET} /session/{sessionId}/element/{elementId}/rect|Preview|10532|
-[Is Element Enabled](https://w3c.github.io/webdriver/webdriver-spec.html#is-element-enabled)|{GET} /session/{sessionId}/element/{elementId}/enabled|Supported|10240|
-[Element Location](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidelementidlocation)|{POST} /session/{sessionId}/element/{id}/location|Preview|10532|
-[Element Location in View](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#get-sessionsessionidelementidlocation_in_view)|{POST}/session/{sessionId}/element/{id}/location_in_view|Preview|10532|
-[Element Size](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidelementidsize)|{GET} /session/{sessionId}/element/{id}/size|Preview|10532|
-[Execute Script](https://w3c.github.io/webdriver/webdriver-spec.html#execute-script)|{POST} /session/{sessionId}/execute|Supported|10240|
-[Execute Async Script](https://w3c.github.io/webdriver/webdriver-spec.html#execute-aysnc-script)|{POST} /session/{sessionId}/execute_async|Preview|10532|
-[Async Script Timeout](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidtimeoutsasync_script)|{POST} /session/{sessionId}/timeouts/async_script|Under Consideration|Priority 3|
-[Get Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#get-cookie)|{GET} /session/{sessionId}/cookie/{name}|Supported|10240|
-[Add Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#add-cookie)|{GET} /session/{sessionId}/cookie|Supported|10240|
-[Delete Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#delete-cookie)|{DELETE} /session/{sessionId}/cookie/{name}|Supported|10240|
-[Click()](https://w3c.github.io/webdriver/webdriver-spec.html#click)|{POST} /session/{sessionId}/element/{elementId}/click|Supported|10240|
-[Clear()](https://w3c.github.io/webdriver/webdriver-spec.html#clear)|{POST} /session/{sessionId}/element/{elementId}/clear|Supported|10240|
-[sendKeys()](https://w3c.github.io/webdriver/webdriver-spec.html#sendkeys)|{POST} /session/{shessionId}/element/{elementId}/value|Supported|10240|
-[dismiss() Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dismiss)|{POST} /session/{sessionId}/dismiss_alert|Supported|10240|
-[accept() Alert](https://w3c.github.io/webdriver/webdriver-spec.html#accept)|{POST} /session/{sessionId}/accept_alert|Supported|10240|
-[getText() Alert](https://w3c.github.io/webdriver/webdriver-spec.html#gettext)|{GET} /session/{sessionId}/alert_text|Supported|10240|
-[sendKeys() Alert](https://w3c.github.io/webdriver/webdriver-spec.html#sendkeys-1)|{POST} /session/{sessionId}/alert/text|Under Consideration|Priority 1|
-[Modal Dialogs](https://w3c.github.io/webdriver/webdriver-spec.html#modal-dialogs)|N/A|Preview|10550|
-[Take Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#take-screenshot)|{GET} /session/{sessionId}/screenshot|Supported|10240|
-[Take Element Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#take-element-screenshot)|{GET} /session/{sessionId}/element/{elementId}/screenshot|Supported|10240|
-[Implicit Wait](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#post-sessionsessionidtimeoutsimplicit_wait)|{POST} /session/{sessionId}/timeouts/implicit_wait|Preview|10532|
-[IME Available Engines](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidimeavailable_engines)|{GET} /session/{sessionId}/ime/available_engines|Under Consideration|Priority 3|
-[IME Active Engine](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidimeactive_engine)|{GET} /session/{sessionId}/ime/active_engines|Under Consideration|Priority 3|
-[IME Activated](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidimeactivated)|{POST} /session/{sessionId}/ime/activated|Under Consideration|Priority 3|
-[IME Decativate](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidimedeactivate)|{POST} /session/{sessionId}/ime/deactivate|Under Consideration|Priority 3|
-[IME Activate](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidimeactivate)|{POST} /session/{sessionId}/ime/activate|Under Consideration|Priority 3|
-[Application Cache Status](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidapplication_cachestatus)|{POST} /session/{sessionId}/application_cache/status|Preview|10550|
-[Find Element From](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidelementidelement)|{POST} /session/{sessionId}/element/{id}/element|Preview|10550|
-[Find Elements From](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidelementidelements)|{POST} /session/{sessionId}/element/{id}/elements|Preview|10550|
-[Submit Form](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidelementidsubmit)|{POST} /session/{sessionId}/element/{id}/submit|Preview|10550|
-[Local Storage Key](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidlocal_storagekeykey)|{GET} /session/{sessionId}/local_storage/key/{key}|Preview|10547|
-[Local Storage Size](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidlocal_storagesize)|{GET} /session/{sessionId}/local_storage/size|Preview|10547|
-[Session Storage Key](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidsession_storagekeykey)|{GET} /session/{sessionId}/session_storage/key/{key}|Preview|10547|
-[Session Storage Size](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidsession_storagesize)|{GET} /session/{sessionId}/session_storage/size|Preview|10547|
-[Equals](https://github.com/seleniumhq/selenium/wiki/jsonwireprotocol#sessionsessionidelementidequalsother)|{GET} /session/{sessionId}/element/{id}/equals/{other}|Preview|10550|
-Testing Profiles|N/A|Under Consideration|Priority 2|
-
+GET|[/status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#status)|Supported|10240|
+POST|[/session](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#session-1)|Supported|10240|
+GET|[/sessions](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessions)|Supported|10240|
+GET|[/session/:sessionId](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionid)|Supported|10240|
+DELETE|[/session/:sessionId](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionid)|Supported|10240|
+POST|[/session/:sessionId/timeouts](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeouts)|Supported|10240|
+POST|[/session/:sessionId/timeouts/async_script](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeoutsasync_script)|Not Supported|Priority 3|
+POST|[/session/:sessionId/timeouts/implicit_wait](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeoutsimplicit_wait)|Supported|10586|
+GET|[/session/:sessionId/window_handle](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow_handle)|Supported|10586|
+GET|[/session/:sessionId/window_handles](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow_handles)|Supported|10586|
+GET|[/session/:sessionId/url](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidurl)|Supported|10240|
+POST|[/session/:sessionId/url](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidurl)|Supported|10240|
+POST|[/session/:sessionId/forward](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidforward)|Supported|10240|
+POST|[/session/:sessionId/back](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidback)|Supported|10240|
+POST|[/session/:sessionId/refresh](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidrefresh)|Supported|10240|
+POST|[/session/:sessionId/execute](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidexecute)|Supported|10240|
+POST|[/session/:sessionId/execute_async](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidexecute_async)|Supported|10586|
+GET|[/session/:sessionId/screenshot](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidscreenshot)|Supported|10240|
+GET|[/session/:sessionId/ime/available_engines](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeavailable_engines)|Not Supported|Priority 3|
+GET|[/session/:sessionId/ime/active_engine](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactive_engine)|Not Supported|Priority 3|
+GET|[/session/:sessionId/ime/activated](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactivated)|Not Supported|Priority 3|
+POST|[/session/:sessionId/ime/deactivate](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimedeactivate)|Not Supported|Priority 3|
+POST|[/session/:sessionId/ime/activate](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactivate)|Not Supported|Priority 3|
+POST|[/session/:sessionId/frame](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframe)|Supported|10586|
+POST|[/session/:sessionId/frame/parent](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframeparent)|Supported|10586|
+POST|[/session/:sessionId/window](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow)|Supported|10586|
+DELETE|[/session/:sessionId/window](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow)|Supported|10586|
+POST|[/session/:sessionId/window/:windowHandle/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlesize)|Supported|10586|
+GET|[/session/:sessionId/window/:windowHandle/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlesize)|Supported|10586|
+POST|[/session/:sessionId/window/:windowHandle/position](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandleposition)|Supported|10586|
+GET|[/session/:sessionId/window/:windowHandle/position](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandleposition)|Supported|10586|
+GET|[/session/:sessionId/window/:windowHandle/maximize](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlemaximize)|Supported|10586|
+GET|[/session/:sessionId/cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)|Supported|10586|
+POST|[/session/:sessionId/cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)|Supported|10240|
+DELETE|[/session/:sessionId/cookie](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookie)|Supported|10586|
+DELETE|[/session/:sessionId/cookie/:name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidcookiename)|Supported|10240|
+GET|[/session/:sessionId/source](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsource)|Supported|10586|
+GET|[/session/:sessionId}/title](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtitle)|Supported|10240|
+POST|[/session/:sessionId/element](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelement)|Supported|10586|
+POST|[/session/:sessionId/elements](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelements)|Supported|10586|
+POST|[/session/:sessionId/element/active](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementactive)|Supported|10586|
+GET|[/session/:sessionId/element/:id](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementid)|Not Supported|Priority 3|
+POST|[/session/:sessionId/element/:id/element](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidelement)|Supported|10586|
+POST|[/session/:sessionId/element/:id/elements](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidelements)|Supported|10586|
+POST|[/session/:sessionId/element/:id/click](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclick)|Supported|10240|
+POST|[/session/:sessionId/element/:id/submit](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidsubmit)|Supported|10586|
+GET|[/session/:sessionId/element/:id/text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidtext)|Supported|10240|
+POST|[/session/:sessionId/element/:id/value](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidvalue)|Supported|10240|
+POST|[/session/:sessionId/keys](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidkeys)|Supported|10586|
+GET|[/session/:sessionId/element/:id/name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidname)|Supported|10240|
+POST|[/session/:sessionId/element/:id/clear](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclear)|Supported|10240|
+GET|[/session/:sessionId/element/:id/selected](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidselected)|Supported|10240|
+GET|[/session/:sessionId/element/:id/enabled](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidenabled)|Supported|10240|
+GET|[/session/:sessionId/element/:id/attribute/:name](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidattribute/:name)|Supported|10240|
+GET|[/session/:sessionId/element/:id/equals/:other](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidequals/:other)|Supported|10586|
+GET|[/session/:sessionId/element/:id/displayed](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementiddisplayed)|Supported|10240|
+GET|[/session/:sessionId/element/:id/location](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidlocation)|Supported|10586|
+GET|[/session/:sessionId/element/:id/location_in_view](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidlocation_in_view)|Supported|10586|
+GET|[/session/:sessionId/element/:id/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidsize)|Supported|10586|
+GET|[/session/:sessionId/element/:id/css/:propertyName](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidcss/:propertyName)|Supported|10240|
+GET|[/session/:sessionId/orientation](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidorientation)|Not Supported|Priority 3|
+POST|[/session/:sessionId/orientation](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidorientation)|Not Supported|Priority 3|
+GET|[/session/:sessionId/alert_text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidalert_text)|Supported|10240|
+POST|[/session/:sessionId/alert_text](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidalert_text)|Supported|10586|
+POST|[/session/:sessionId/accept_alert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidaccept_alert)|Supported|10240|
+POST|[/session/:sessionId/dismiss_alert](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessioniddismiss_alert)|Supported|10240|
+POST|[/session/:sessionId/moveto](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidmoveto)|Supported|10586|
+POST|[/session/:sessionId/click](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidclick)|Supported|10240|
+POST|[/session/:sessionId/buttondown](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidbuttondown)|Supported|10586|
+POST|[/session/:sessionId/buttonup](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidbuttonup)|Supported|10586|
+POST|[/session/:sessionId/doubleclick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessioniddoubleclick)|Supported|10586|
+POST|[/session/:sessionId/touch/click](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchclick)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/down](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchdown)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/up](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchup)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/move](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchmove)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/scroll](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchscroll)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/scroll](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchscroll-1)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/doubleclick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchdoubleclick)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/longclick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchlongclick)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/flick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchflick)|Not Supported|Priority 3|
+POST|[/session/:sessionId/touch/flick](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchflick-1)|Not Supported|Priority 3|
+GET|[/session/:sessionId/location](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocation)|Supported|10586|
+POST|[/session/:sessionId/location](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocation)|Supported|10586|
+GET|[/session/:sessionId/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)|Supported|10586|
+POST|[/session/:sessionId/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)|Supported|10586|
+DELETE|[/session/:sessionId/local_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storage)|Supported|10586|
+GET|[/session/:sessionId/local_storage/key/:key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagekeykey)|Supported|10586|
+DELETE|[/session/:sessionId/local_storage/key/:key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagekeykey)|Supported|10586|
+GET|[/session/:sessionId/local_storage/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagesize)|Supported|10586|
+GET|[/session/:sessionId/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)|Supported|10586|
+POST|[/session/:sessionId/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)|Supported|10586|
+DELETE|[/session/:sessionId/session_storage](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storage)|Supported|10586|
+GET|[/session/:sessionId/session_storage/key/:key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagekeykey)|Supported|10586|
+DELETE|[/session/:sessionId/session_storage/key/:key](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagekeykey)|Supported|10586|
+GET|[/session/:sessionId/session_storage/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagesize)|Supported|10586|
+GET|[/session/:sessionId/log](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlog)|Not Supported|Priority 3|
+GET|[/session/:sessionId/log/types](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlogtypes)|Not Supported|Priority 3|
+GET|[/session/:sessionId/application_cache/status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidapplication_cachestatus)|Supported|10586|
