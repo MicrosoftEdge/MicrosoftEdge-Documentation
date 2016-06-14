@@ -1,5 +1,15 @@
 The WebDriver API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser. The Microsoft Edge implementation of WebDriver supports commands from both the W3C WebDriver Specification and the JSON Wire Protocol. Here's how to [get started with WebDriver for Microsoft Edge](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/tools/webdriver/).
 
+# WebDriver Server Command Line Flags
+List of command line flags for the WebDriver server.
+
+Name | Description | Example
+:----------------| :-------------| :------------
+host|Specify the host the server should use|--host=localhost|
+port|Specify the port the server should use|--port=17556|
+package|Specify the package id of the UWP app to be launched with WebDriver|--package=packageid|
+verbose|Enable verbose log output from the server|--verbose|
+
 # [W3C WebDriver Specification Support](https://w3c.github.io/webdriver/webdriver-spec.html)
 The support on a per command basis for the W3C WebDriver Spectication.
 
