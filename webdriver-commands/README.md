@@ -7,7 +7,7 @@ Name | Description | Example
 :----------------| :-------------| :------------
 host|Specify the host the server should use|--host=localhost|
 port|Specify the port the server should use|--port=17556|
-package|Specify the package id of the UWP app to be launched with WebDriver|--package=packageid|
+package|Specify the application id of the UWP app to be launched with WebDriver|--package=packageid|
 verbose|Enable verbose log output from the server|--verbose|
 
 # [W3C WebDriver Specification Support](https://w3c.github.io/webdriver/webdriver-spec.html)
