@@ -9,6 +9,6 @@ Selecting a file allows you to edit directly on the Debugger's text editor. New 
  ![Saving edited CSS files with Edge Debugger](../../media/Edge_Debugger_css_save.png)
 
 ## Editing a Sass file with the Debugger
-![Editing CSS files with Edge Debugger](../../media/Edge_Debugger_css_editing.gif)
+![video](../../media/Edge_Debugger_css_editing.mp4,../../media/Edge_Debugger_css_editing.webm)
 
 
