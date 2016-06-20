@@ -202,7 +202,7 @@ textarea:read-write:focus{
 
 > NOTE: An HTML element with the `diabled` attribute set still inherits the `read-write` default styling, *not* the `read-only` styling. 
 
-![Demo of in-range and hover pseudo classes](../../media/read-write-pseudo-class-demo.gif)
+![video](../../media/read-write-pseudo-class-demo.mp4,../../media/read-write-pseudo-class-demo.webm)
 
 ### API Reference
 [`:read-write`](https://msdn.microsoft.com/library/mt574723(v=vs.85).aspx)
@@ -262,7 +262,7 @@ input:out-of-range:hover {
 }
 ```
 
-![Demo of in-range and hover pseudo classes](../../media/range-pseudo-class-demo.gif)
+![video](../../media/range-pseudo-class-demo.mp4,../../media/range-pseudo-class-demo.webm)
 
 ### API Reference
 [`:in-range`](https://msdn.microsoft.com/library/mt574720(v=vs.85).aspx)
