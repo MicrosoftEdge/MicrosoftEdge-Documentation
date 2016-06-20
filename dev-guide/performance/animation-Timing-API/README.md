@@ -2,7 +2,7 @@
 
 The [Animation Timing API](https://msdn.microsoft.com/library/hh772738(v=vs.85).aspx) deals with the control of script-based animations, specifically the [`requestAnimationFrame()`](https://msdn.microsoft.com/library/hh773174(v=vs.85).aspx) method of the [`window`](https://msdn.microsoft.com/library/ms535873(v=vs.85).aspx) object. The `requestAnimationFrame` method provides a smoother and more efficient way to create animated webpages by calling the animation frame when the system is ready to paint the frame. Prior to this API, animations drawn using [`setTimeout()`](https://msdn.microsoft.com/library/ms536753(v=vs.85).aspxd) and [`setInterval()`](https://msdn.microsoft.com/library/ms536749(v=vs.85).aspx) didn't provide web developers an efficient way to schedule graphics timers for animations. This resulted in overdrawn animations, wasted CPU cycles, and extra power usage. Further, animation frequently occurs even when a website isn't visible, particularly when the website uses pages in background tabs or when the browser is minimized.
 
-![requestAnimationFrame demo](../../media/animationTiming.gif)
+![video](../../media/animationTiming.mp4,../../media/animationTiming.webm)
 
 When an animation uses a JavaScript timer resolution of 10ms to draw animations, you get a timing mismatch as shown here.
 
@@ -35,9 +35,9 @@ This takes care of your first repaint. To keep the animation going, call `reques
   <head>
     <title>Script-based animation using requestAnimationFrame</title>
     <style type="text/css">
-     #animated { 
-       position: absolute; top:100px; 
-       padding: 50px; background: crimson; color: white; 
+     #animated {
+       position: absolute; top:100px;
+       padding: 50px; background: crimson; color: white;
        }
     </style>
   </head>
@@ -45,7 +45,7 @@ This takes care of your first repaint. To keep the animation going, call `reques
     <div>Click the box to stop and start it</div>
     <div id="animated">Hello there.</div>
     <script type="text/javascript">
-      // global variables 
+      // global variables
       var elm = document.getElementById("animated");
       var handle = 0;
       var lPos = 0;
@@ -54,7 +54,7 @@ This takes care of your first repaint. To keep the animation going, call `reques
           elm.style.left = ((lPos += 3) % 600) + "px";
           handle = window.requestAnimationFrame(renderLoop);
       }
-      // click the box to stop the animation 
+      // click the box to stop the animation
       document.getElementById("animated").addEventListener("click", function () {
         if (handle) {
           window.cancelAnimationFrame(handle);
@@ -74,7 +74,7 @@ The [`addEventListener`](https://msdn.microsoft.com/library/ff975245(v=vs.85).as
 
 ## Time in a callback function
 
-You can use the callback function to animate almost anything, for example, SVG, Canvas, or as we show here, CSS properties. The callback function has one incoming *time* parameter, which represents the time the callback function is called. This is a `DOMHighResTimeStamp`, a high resolution time measured from the beginning of the navigation of the page. `DOMHighResTimeStamp` is measured in milliseconds accurate to a thousandth of a millisecond. This time value isn't directly comparable with `Date.now()`, which measures time in milliseconds since 01 January 1970. If you want to compare the *time* parameter with the current time, use [`window.performance.now`](https://msdn.microsoft.com/library/hh973355(v=vs.85).aspx) for the current time. 
+You can use the callback function to animate almost anything, for example, SVG, Canvas, or as we show here, CSS properties. The callback function has one incoming *time* parameter, which represents the time the callback function is called. This is a `DOMHighResTimeStamp`, a high resolution time measured from the beginning of the navigation of the page. `DOMHighResTimeStamp` is measured in milliseconds accurate to a thousandth of a millisecond. This time value isn't directly comparable with `Date.now()`, which measures time in milliseconds since 01 January 1970. If you want to compare the *time* parameter with the current time, use [`window.performance.now`](https://msdn.microsoft.com/library/hh973355(v=vs.85).aspx) for the current time.
 
 > NOTE: Changing the time value from `DOMTimeStamp` to `DOMHighResTimeStamp` was a change in 2012 (see Editors Draft of the [W3C Timing control for script-based animation](http://go.microsoft.com/fwlink/p/?LinkID=229562) specification). Earlier versions of the W3C specification used the DOMTimeStamp, which allowed you to use `Date.now` for the current time. The difference being `DOMTimeStamp` has a millisecond precision and `DOMHighResTimeStamp` has a minimal precision of ten microseconds.
 
@@ -100,7 +100,7 @@ div { position: absolute; left: 10px; top:100px; padding: 50px;
     function init() {
         elm = document.getElementById("animated");
     }
-    
+
     function render() {
         elm.style.left = ((lpos += 3) % 600) + "px";
         requestId = window.requestAFrame(render);
