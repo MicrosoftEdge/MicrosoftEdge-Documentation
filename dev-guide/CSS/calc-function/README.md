@@ -46,7 +46,7 @@ To position an element halfway down the height of the viewport of a screen, use 
 }
 ```
 
-![video](../media/calc_verticalCenter.mp4,../media/calc_verticalCenter.webm)
+![video](../../media/calc_verticalCenter.mp4,../../media/calc_verticalCenter.webm)
 
 ## Demo
 

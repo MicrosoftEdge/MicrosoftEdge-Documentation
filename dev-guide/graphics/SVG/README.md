@@ -61,7 +61,7 @@ svg {
     animation: example 3s alternate infinite;
 }
 ```
-![video](../media/svgKeyframe1.mp4,../media/svgKeyframe1.webm)
+![video](../../media/svgKeyframe1.mp4,../../media/svgKeyframe1.webm)
 
 Utilzing more steps in the Keyframe.
 
@@ -80,7 +80,7 @@ svg {
     animation: example 3s alternate infinite;
 }
 ```
-![video](../media/svgKeyframe2.mp4,../media/svgKeyframe2.webm)
+![video](../../media/svgKeyframe2.mp4,../../media/svgKeyframe2.webm)
 
 ## Example CSS transition on an SVG elements
 
@@ -99,7 +99,7 @@ rect:hover {
   fill: blue;
 }
 ```
-![video](../media/SVG_cssTransition.mp4,../media/SVG_cssTransition.webm)
+![video](../../media/SVG_cssTransition.mp4,../../media/SVG_cssTransition.webm)
 
 ## foreignObject
 Microsoft Edge now supports the [`foreignObject`](https://msdn.microsoft.com/library/dn806280(v=vs.85).aspx) element, allowing developers to use an HTML and CSS layout within a fixed size SVG element. With `foreignObject` content from a different (foreign) XML namespace can be inserted into the SVG namespace. In the example below, an HTML [**div**](https://msdn.microsoft.com/library/ms535240(v=vs.85).aspx) element is inserted between a circle and rectangle drawn in SVG.

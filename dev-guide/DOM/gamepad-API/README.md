@@ -49,7 +49,7 @@ The following example shows one way to use the Gamepad API in a webpage.
 To see the Gamepad API in action, plug an Xbox controller into a device running Microsoft Edge for Windows 10 and then head over to the [Flight Arcade](http://www.flightarcade.com/) demo on Test Drive. Check out this [Gamepad sample](http://internetexplorer.github.io/Gamepad-Sample/) on GitHub to see the Gamepad API in use.
 
 
-![video](../media/gamepad.mp4,../media/gamepad.webm)
+![video](../../media/gamepad.mp4,../../media/gamepad.webm)
 
 For in-depth information about the Gamepad API, check out the [Flight Arcade demo's learning page](http://www.flightarcade.com/learn/gamepad).
 
