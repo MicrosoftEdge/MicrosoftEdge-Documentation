@@ -1,6 +1,6 @@
 # The calc() function
 
-The `calc()` function can be used wherever length values are allowed -- it's a way to do simple math right in the native CSS. The expression within the parentheses is computed at the same time as 'em' lengths are computed. The `calc()` function supports the following arithmetic operators: 
+The `calc()` function can be used wherever length values are allowed -- it's a way to do simple math right in the native CSS. The expression within the parentheses is computed at the same time as 'em' lengths are computed. The `calc()` function supports the following arithmetic operators:
 -  Addition (+)
 -  Subtraction (-)
 -  Multiplication (*)
@@ -26,27 +26,27 @@ Example | Operator | Result
 50% + 10px | Addition | Sum of 50% and 10px
 2.5em - 10px | Subtraction | Difference of 2.5em and 10px
 100% * 1 / 4 | Multiplication | Product of taking 1/4th of total (25%)
-100vw / 2 | Division | Quotient of 100 viewport width and 2 
+100vw / 2 | Division | Quotient of 100 viewport width and 2
 
 > NOTE:  The + and - operators must always be surrounded by whitespace. For example, `calc(100% -25px)` is parsed as a percentage followed by a negative length, an invalid expression, while `calc(100% - 25px)` is a percentage followed by a minus sign and a length. Negative lengths can be used, for example, `calc(25px + -50%)` is treated as a length followed by a plus sign and a negative percentage.
 
 ## Using calc() to find the vertical center
 
 To position an element halfway down the height of the viewport of a screen, use 50vh (50% of the viewport height), then subtract the height of the element to vertically center it's position:
- `calc(50vh - 1/2 the height of the element)`. 
+ `calc(50vh - 1/2 the height of the element)`.
 
 ```CSS
 .block {
 	display: block;
 	margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;
 	margin-top: calc (50vh - 25px);
 	width: 200px;
 	height: 50px;
 }
 ```
 
-![Example of using calc() to vertically center](../../media/calc_verticalCenter.gif)
+![video](../media/calc_verticalCenter.mp4,../media/calc_verticalCenter.webm)
 
 ## Demo
 

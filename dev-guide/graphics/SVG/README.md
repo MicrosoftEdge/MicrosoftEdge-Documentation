@@ -31,7 +31,7 @@ Property | Description
 [animation-direction](https://msdn.microsoft.com/library/hh772217.aspx) | Sets the direction of the animation after the cycle. Its default resets on each cycle.
 [animation-iteration-count](https://msdn.microsoft.com/library/hh772233.aspx) |  Specifies the number of times an animation cycle is played. Value can be a number or `infinite`.
 [animation-fill-mode](https://msdn.microsoft.com/library/hh772232.aspx) | Specifies whether the effects of an animation are visible before or after it plays. Value can be `forwards` (final property value as defined in the last @keyframes rule is maintained after the animation completes), `backwards` (beginning property value applied before the animation), `both`, or `none` (no change to value except during animation).
-[animation-play-state](https://msdn.microsoft.com/library/hh772238.aspx) | Specifies whether an animation is playing or paused. Values can be `running` or `paused`. 
+[animation-play-state](https://msdn.microsoft.com/library/hh772238.aspx) | Specifies whether an animation is playing or paused. Values can be `running` or `paused`.
 
 The following is an example of using the `animation` shorthand property to set the animation-name of 'sample' with a 3 second duration, an animation-timing-function of 'ease-out', a delay of 2 seconds before beginning, alternating direction back-and-forth, with 4 iterations, no values held before or after the animation, currently in a paused play-state.
 ```CSS
@@ -61,7 +61,7 @@ svg {
     animation: example 3s alternate infinite;
 }
 ```
-![SVG Styles Animated with CSS Keyframes](../../media/svgKeyframe1.gif)
+![video](../media/svgKeyframe1.mp4,../media/svgKeyframe1.webm)
 
 Utilzing more steps in the Keyframe.
 
@@ -80,7 +80,7 @@ svg {
     animation: example 3s alternate infinite;
 }
 ```
-![SVG Styles Animated with CSS Keyframes Part 2](../../media/svgKeyframe2.gif)
+![video](../media/svgKeyframe2.mp4,../media/svgKeyframe2.webm)
 
 ## Example CSS transition on an SVG elements
 
@@ -99,7 +99,7 @@ rect:hover {
   fill: blue;
 }
 ```
-![CSS Transition of SVG fill property](../../media/SVG_cssTransition.gif)
+![video](../media/SVG_cssTransition.mp4,../media/SVG_cssTransition.webm)
 
 ## foreignObject
 Microsoft Edge now supports the [`foreignObject`](https://msdn.microsoft.com/library/dn806280(v=vs.85).aspx) element, allowing developers to use an HTML and CSS layout within a fixed size SVG element. With `foreignObject` content from a different (foreign) XML namespace can be inserted into the SVG namespace. In the example below, an HTML [**div**](https://msdn.microsoft.com/library/ms535240(v=vs.85).aspx) element is inserted between a circle and rectangle drawn in SVG.
@@ -109,9 +109,9 @@ Microsoft Edge now supports the [`foreignObject`](https://msdn.microsoft.com/lib
 For more information on `foreignObject` properties, go to the [`foreignObject` API reference page](https://msdn.microsoft.com/library/dn806280.aspx).
 
 ## feBlend
-Microsoft Edge also introduces full support for [`<feBlend>`](https://msdn.microsoft.com/library/hh773211(v=vs.85).aspx) blend modes, providing filter effects to blend together two inputs (similar to image layers). The new blend modes expand the existing values normal, multiply, screen, overlay, darken, and lighten with color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity. 
+Microsoft Edge also introduces full support for [`<feBlend>`](https://msdn.microsoft.com/library/hh773211(v=vs.85).aspx) blend modes, providing filter effects to blend together two inputs (similar to image layers). The new blend modes expand the existing values normal, multiply, screen, overlay, darken, and lighten with color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity.
 
-> The [W3C Filter Effects spec](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/#element-attrdef-feblend-mode) extended `<feBlend>` to support all blend modes per the [CSS compositing and blending specification](http://www.w3.org/TR/compositing-1/#ltblendmodegt). 
+> The [W3C Filter Effects spec](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/#element-attrdef-feblend-mode) extended `<feBlend>` to support all blend modes per the [CSS compositing and blending specification](http://www.w3.org/TR/compositing-1/#ltblendmodegt).
 
 To use the new modes just specify the desired mode in the `<feBlend>` element. For example:
 ```html
@@ -121,10 +121,10 @@ To use the new modes just specify the desired mode in the `<feBlend>` element. F
 #### Microsoft Edge
 ![Expanded feBlend modes in Microsoft Edge](../../media/feBlend_Edge.png)
 
-Try the [Adobe feBlend demo on CodePen](https://codepen.io/adobe/pen/emedOj). 
+Try the [Adobe feBlend demo on CodePen](https://codepen.io/adobe/pen/emedOj).
 
 ### xlink:href
-Also new in Microsoft Edge is support for referencing external resources with xlink:href in the SVG `<use>` element. The SVG `<use>` element finds a chunk of an SVG with an #identifier, copies it, and places it at the coordinates given. It is often used in SVG icon systems. 
+Also new in Microsoft Edge is support for referencing external resources with xlink:href in the SVG `<use>` element. The SVG `<use>` element finds a chunk of an SVG with an #identifier, copies it, and places it at the coordinates given. It is often used in SVG icon systems.
 
 For example, you can now reference a shape defined in the **same document** using: `<svg><use xlink:href="#circle-2"></use></svg>`. Or reference an **external** resource using: `<svg> <use xlink:href="defs.svg#rect-2"></use> </svg>`. External references also leverage the browser cache -- the server can be set to serve the referenced file with all of the correct headers so that the browser will store it just like any other cached asset.
 
@@ -149,9 +149,9 @@ Microsoft Edge supports the following SVG implementation:
 		 <object data="rect2.svg" width="100%" height="400px"
 		    type="image/svg+xml"></object>
 		```
-		
+
 		 - SVG using the **img**, **embed**, **iframe**, or **frame** elements, as in the following:
-		
+
 		```html
 		<embed id="Smiley" src="smiley.svg" type="image/svg+xml">
 		```
