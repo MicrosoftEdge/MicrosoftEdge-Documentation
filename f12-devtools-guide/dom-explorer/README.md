@@ -7,7 +7,7 @@ HTML and CSS files are the blueprints a browser uses to build the DOM (Document 
 
 This helps you diagnose problems in live code when elements aren't in the right place or don't behave as expected, and then work to solve them.
 
-![Edge DOM Explorer](../media/Edge_Dom_edit.gif)
+![video](../media/Edge_Dom_edit.mp4,../media/Edge_Dom_edit.webm)  
 
 ## The elements pane
 The elements pane on the left shows the DOM as it's currently constructed. Navigate through it with your mouse, clicking on the arrows next to parent elements to expand them and see their child elements. You can also navigate through it using the arrow keys on your keyboard, using the right and left arrow keys to expand and collapse elements.
@@ -25,11 +25,12 @@ There are five ways to select an element to inspect:
 
   - **Search:** The "Find" box at the top of the tool searches through the DOM by partial string or CSS selector. Click in the box or type CTRL + F to activate it, type your search string, and press the ENTER key. For searches with multiple results, ENTER will move you forward to the next result. The left and right arrow keys in the search box search backward and forward in the result set. The backward/forward search wraps continuously from beginning to end.
 
-![Edge DOM Explorer Selecting an Element](../media/Edge_DomExplorer_selectelement.gif)
+![video](../media/Edge_DomExplorer_selectelement.mp4,../media/Edge_DomExplorer_selectelement.webm)  
 
 When an element has been inspected, it's highlighted.
 
 ![Edge DOM Explorer](../media/Edge_DOMExplorer_elementhighlighting.PNG)
+
 
 The highlight displays not only the element boundaries *(blue)*, but the boundaries of its padding *(pink)*, borders *(green)*, and margin *(yellow)*. It can be toggled on or off using the second button to the right of the **DOM Explorer** tool's title.
 
@@ -44,7 +45,7 @@ There are three ways to edit an element:
 
   - **Edit as HTML:** Right-click the element and click **Edit as HTML**. The element and its child elements appear as plain text inside a bounding box. Edit the text just as you might in a text editor and then click anywhere outside the box to commit your changes.
 
-![Edge DOM Explorer Editing an Element](../media/Edge_DomExplorer_editingelement.gif)
+![video](../media/Edge_DomExplorer_editingelement.mp4,../media/Edge_DomExplorer_editingelement.webm)  
 
 **Important**  The doctype, html, head, body, and script elements can't be edited as HTML in the DOM Explorer.
 
@@ -60,14 +61,14 @@ Elements can be moved in two ways:
 
   **Note**  Don't use the **Copy element with styles** option in the context menu to move an element within the DOM. It places an HTML document containing the element and all its related styles on the clipboard for pasting to an external editor.
 
-![Edge DOM Explorer Moving an Element](../media/Edge_DomExplorer_dragdrop.gif)
+![video](../media/Edge_DomExplorer_dragdrop.mp4,../media/Edge_DomExplorer_dragdrop.webm) 
 
 ### The styles pane
 The **styles pane** provides different views for looking at what styles are being applied to the element and what code is being triggered by events associated with it.
 
 The styles pane has five tabs: [Styles](#styles), [Computed](#computed), [Layout](#layout), [Events](#events), and [Changes](#changes), in addition to the [Pseudo State](#pseudo-state) selector and the [Color Picker](#color-picker).
 
-![Edge DOM Explorer Styles Pane](../media/Edge_DomExplorer_stylespane.gif)
+![video](../media/Edge_DomExplorer_stylespane.mp4,../media/Edge_DomExplorer_stylespane.webm)  
 
 ### Styles
 The **Styles** tab is a list of all the styles associated with the selected element and which properites are being applied.
@@ -76,7 +77,7 @@ Style properties currently applied to the element appear on the top of the style
 
 You can turn style property on or off by checking or unchecking the box to the left of the property. When unchecked, the style will be crossed out and an inherited style below may become active (removing it's strikeout). The style pane also breaks out which styles are being applied due to [CSS media queries](https://msdn.microsoft.com/library/bg124120.aspx).
 
-![Edge DOM Explorer Style Inheritance](../media/Edge_DomExplorer_inheritingstyles.gif)
+![video](../media/Edge_DomExplorer_inheritingstyles.mp4,../media/Edge_DomExplorer_inheritingstyles.webm) 
 
 The style pane updates in real time, so if you have media queries based on window width, resizing the window alters the list of applied styles as different media queries are matched.
 
@@ -86,7 +87,7 @@ To edit a rule name or property, click it. When typing a property name, matching
 
 To add a new rule or add a property to an existing rule, right-click in the tab and click **Add rule** or Add property.
 
-![Edge DOM Explorer Style Editing](../media/Edge_DomExplorer_editingstyles.gif)
+![video](../media/Edge_DomExplorer_editingstyles.mp4,../media/Edge_DomExplorer_editingstyles.webm) 
 
 ### Computed
 The **Computed** tab traces the source of an element's styling and provides computed values for properties.

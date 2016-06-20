@@ -1,4 +1,4 @@
-# Flexible box ("Flexbox") layout
+﻿# Flexible box ("Flexbox") layout
 
 Flexible box layout (flexbox) adds to the four basic layout modes defined in [Cascading Style Sheets, Level 2 Revision 1 (CSS2.1)](http://go.microsoft.com/fwlink/p/?LinkId=142049): block layout, inline layout, table layout, and positioned layout. With Flexbox layout, you can lay out complex webpages more easily and make the relative position and size of elements adjust as screen and browser window sizes change. Flexbox can lessen the reliance on floats and table-based layouts, which are more complicated to position and size correctly.
 
@@ -43,7 +43,7 @@ flex-flow: <flex-direction> || <flex-wrap>
 
 When necessary, the [`order`](https://msdn.microsoft.com/library/jj127303(v=vs.85).aspx) property can visually reorder flex items. By default, flex items in a flex container are displayed in the same order as in the source document unless changed using this property.
 
-![An animated gif showing the reodering of elements](../../media/flexbox_order.gif) 
+![video](../media/flexbox_order.mp4,../media/flexbox_order.webm)  
 
 ## Setting flexbox alignment
 
