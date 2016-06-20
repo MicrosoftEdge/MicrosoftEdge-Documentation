@@ -53,7 +53,7 @@ This property aligns the IME candidate window box relative to the element on whi
 * **after** : The IME should attempt to align the candidate window below the element (in left-to-right and right-to-left layouts).
 
 
-![IME API demo typing in shanghai with candidate box integerated into dropdown](../../media/ime.gif)
+![video](../../media/ime.mp4,../../media/ime.webm)
 
 ![spec](Input Method Editor API)
 
