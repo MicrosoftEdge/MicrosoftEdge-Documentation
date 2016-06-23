@@ -16,7 +16,7 @@ The following `browserAction` API are supported:
 | [browserAction.getBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeBackgroundColor) |  | |
 | [browserAction.setBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeBackgroundColor) | | |
 | [browserAction.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/onClicked) | | |
-| [browserAction.setBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeText)            | `browserAction.setBadgetText` does not clear on navigate within the same tab.   `browserAction.setBadgeText` renders incorrectly for icons in the More (...) menu. | |
+| [browserAction.setBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeText)            | | |
 | [browserAction.getBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeText)   | | |
 | [browserAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setIcon) | `browserAction.setIcon` is not persisted. | |
 
@@ -58,7 +58,7 @@ The following `extension` API are supported:
 |---------------------------------------|----------------------------------------------------------|-------------|
 [extension](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/extension) | | |
 [extension.getBackgroundPage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/extension/getBackgroundPage) | | |
-[extension.getURL](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/extension/getURL) | `extension.getURL` is available in the background script but not the content script. | |
+[extension.getURL](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/extension/getURL) | | |
 
 
 ## i18n
@@ -157,7 +157,7 @@ API | Known issues | Chrome incompatibilities
 [webNavigation.onBeforeNavigate](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onBeforeNavigate) | | |
 [webNavigation.onCommited](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onBeforeNavigate) | | |
 [webNavigation.onCompleted](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onCompleted) | | |
-[webNavigation.onCreatedNavigationTarget](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onCreatedNavigationTarget) | Event does not fire.| |
+[webNavigation.onCreatedNavigationTarget](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onCreatedNavigationTarget) | | |
 [webNavigation.onDOMContentLoaded](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onDOMContentLoaded) | | |
 [webNavigation.onErrorOccurred](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onErrorOccurred) | | |
 [webNavigation.onHistoryStateUpdated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onHistoryStateUpdated) | | |
