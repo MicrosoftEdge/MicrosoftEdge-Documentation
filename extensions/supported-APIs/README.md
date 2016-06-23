@@ -1,8 +1,7 @@
 #  Supported APIs
 
-The following is a detailed list of API members that are supported as of build 14316. Development of the extension platform is ongoing, so check back frequently for updates!
+The following is a detailed list of API members that are supported. Development of the extension platform is ongoing, so check back frequently for updates!
 
-> NOTE: Extensions won't work with `window.open` popups.
 
 ## browserAction
 
