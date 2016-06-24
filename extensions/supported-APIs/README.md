@@ -9,7 +9,7 @@ The following `browserAction` API are supported:
 
 | API                                   | Known issues                                             | Chrome incompatibilities
 |---------------------------------------|----------------------------------------------------------|--------------------------|
-| [browserAction](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction) | The `default_title` attribute is not optional for `browserAction`.  The `default_icon` attribute is not optional for `browserAction`.| |
+| [browserAction](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction) | | |
 | [browserAction.disable](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/disable) | | |
 | [browserAction.enable](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/enable) | | |
 | [browserAction.getBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeBackgroundColor) |  | |
@@ -83,8 +83,8 @@ API | Known issues | Chrome incompatibilities
 [pageAction.getTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/getTitle) | | |
 [pageAction.hide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/hide) | | |
 [pageAction.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/onClicked) | | | 
-[pageAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setIcon) | String format is not supported.  | `ImageData` is not supported. |
-[pageAction.setPopup](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setPopup) | `pageAction.setPopup` doesn't work. | |
+[pageAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setIcon) | | `ImageData` is not supported. |
+[pageAction.setPopup](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setPopup) | | |
 [pageAction.setTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setTitle) | | |
 [pageAction.show](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/show) | | |
 
@@ -114,7 +114,7 @@ API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :------------------------
 [storage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage) |  | |
 [storage.local.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/local)  | | |
-[storage.local.set](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/local)  |`storage` has a 1MB limit per value. |  |
+[storage.local.set](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/local)  | | `storage` has a 1MB limit per value. |
 storage.local.remove  | | |
 storage.local.clear | | |
 storage.local.getBytesInUse | | `storage.local` data is persisted in a different format than Chrome, causing a different value to be returned when calling `storage.local.getBytesInUse`.  Ex: storage.local.set({ "k": { "s": "âas" } } Returns 13 in Chrome and 50 in Microsoft Edge.|
@@ -131,7 +131,7 @@ API | Known issues | Chrome incompatibilities
 [tabs.detectLanguage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/detectLanguage) | | |
 [tabs.executeScript](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` is ignored, though checked.| |
 [tabs.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/get) | Options pages, when asking about a tab not in their window, fail this call. | |
-[tabs.getCurrent](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/getCurrent) | `tabs.getCurrent` doesn't return when used on the option page. | |
+[tabs.getCurrent](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/getCurrent) | | |
 [tabs.insertCSS](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` is ignored, though checked. | |
 [tabs.onActivated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onActivated) | | |
 [tabs.onCreated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onCreated) | | |
@@ -189,7 +189,7 @@ The following `windows` API are supported:
 
 API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :-------------------
-[windows](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows) | InPrivate is not supported. | `Window` objects do not support `alwaysOnTop` property in Microsoft Edge.|
+[windows](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows) | | `Window` objects do not support `alwaysOnTop` property in Microsoft Edge. InPrivate is not supported.|
 [windows.CreateType]() | | `"panel"` and `"detached_panel"` are not supported in Microsoft Edge. |
 [windows.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/get) | | |
 [windows.getAll](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getAll) | `window.getAll({populate: true})` is missing `tabs` property. | | |
