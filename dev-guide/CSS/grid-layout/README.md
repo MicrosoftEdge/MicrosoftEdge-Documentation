@@ -70,21 +70,19 @@ Similarly, this Grid has three rows, and each row appears as described here:
 
 If there are a large number of columns or rows that are the same or exhibit a recurring pattern, a repeat syntax can be applied to define the columns or rows in a more compact form. The two snippets below have the same effect. There is a single row, and a pattern of repetitive column tracks: a 250px column followed by a 10px gutter. This makes things a lot less repetitive!
 
-```html
-<style type="text/css">
-  #grid {
+```css
+  #myGrid {
     display: -ms-grid;
     -ms-grid-columns: 10px 250px 10px 250px 10px 250px 10px 250px 10px;
     -ms-grid-rows: 1fr;
   } 
 
   /* Equivalent definition. */
-  #grid {
+  #myGrid {
     display: -ms-grid;
     -ms-grid-columns: 10px (250px 10px)[4];
     -ms-grid-rows: 1fr;
   }
-</style>
 ```
 
 ## Grid items
