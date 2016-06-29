@@ -2,6 +2,12 @@
 
 The following is a detailed list of API members that are supported. Development of the extension platform is ongoing, so check back frequently for updates!
 
+## Overarching issues
+
+The following known issues span across the extension platform and will be fixed in the near future:
+
+- Regardless of any `catch()` statements, exceptions thown in the content script context by predefined JavaScript methods (such as `document.querySelector()`) will be dispatched to both the content script's and page's `window.onerror` handlers.
+- When using the CSS `url()` property, absolute urls using `ms-browser-extension://` will not work like they do in Chrome. To bypass this issue, use relative paths to resources (starting in the root extension directory) instead.
 
 ## browserAction
 
