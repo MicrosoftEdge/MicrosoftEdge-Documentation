@@ -17,7 +17,7 @@ The basic building block of Grid Layout is the Grid element, which is declared b
 ```
 
 
-> WARNING: Because of the preliminary status of the Grid Layout draft, all properties in this section must be used with the Microsoft-specific vendor prefix, "-ms-", in order to work correctly.
+>note.warning Because of the preliminary status of the Grid Layout draft, all properties in this section must be used with the Microsoft-specific vendor prefix, "-ms-", in order to work correctly.
 
 ## Tracks (Columns and Rows)
 
@@ -137,9 +137,9 @@ Now, apply these selectors to the following markup:
 </div>
 ```
 
-The four blocks create this image once placed:
+The results can be seen in the following CodePen. Feel free to play around with the items!
 
-![Example of grid items](../../media/grid_layout-grid+4.PNG)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/JKWgoK)
 
 ### Aligning Grid items
 
@@ -159,8 +159,8 @@ If you modify the `item3` selector by adding the four lines seen below...
 	border: black solid 1px;
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
-	width: 40px;
-	height: 40px;
+	width: 45px;
+	height: 45px;
 	-ms-grid-column-align: end;
 	-ms-grid-row-align: center;
 }
@@ -189,8 +189,8 @@ And add the following item along with its accompanying selector...
 
 You get an Item 3 that is resized, centered, and moved to the far end of the column that it's in. You also get an Item 5 that fills position 3,3.
 
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/XKMvGM)
 
-![Example of grid alignment and positioning](../../media/grid_layout-grid+5.PNG)
 
 ### Stacking Grid items
 
@@ -200,7 +200,7 @@ To try this out, change the selector for Item 5 so that it is placed in row 2, c
 
 Because the [div](http://go.microsoft.com/fwlink/p/?LinkID=209627) for Item 5 comes after the [div](http://go.microsoft.com/fwlink/p/?LinkID=209627) for Item 3, Item 5 draws on top of Item 3.
 
-![Example of grid stacking](../../media/grid_layout-stack.PNG)
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/aZWovE)
 
 
 To override this default behavior, use the [`z-index`](https://msdn.microsoft.com/library/ms531188) property:
@@ -214,15 +214,7 @@ While the `z-index` property normally only applies to objects that have the [`po
 
 In the selector for Item 5, assign a value of "-1" to the `z-index` property to push that item back in the stacking order:
 
-```css
-#item5 {
-  background: SkyBlue;
-  border: black solid 1px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  z-index: -1;
-}
-```
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/NrpQVK)
 
 This makes Item 3 appear on top of Item 5.
 
@@ -238,15 +230,7 @@ You can make grid items span multiple columns or rows by using the following two
 
 Remove all the selectors except for Item 1 and assign a value of "4" to the `-ms-grid-column-span`property. Also change the value of the `-ms-grid-column` property to "1" to cause it to span four column widths (all the columns):
 
-```css
-#item1 {
-  background: OrangeRed;
-  border: maroon solid 1px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-}
-```
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/rLyXgy)
 
 
 Be aware that if you attempt to span past the number of defined columns or rows in the Grid (for instance, in the previous example, if you leave the value of the `-ms-grid-column` property as "2" and set the `-ms-grid-column-span` property to "4", you have exceeded the number of defined columns by 1), another column or row is implicitly created and its width or height is set to `auto` (fit to content) for every column or row beyond the defined number.
