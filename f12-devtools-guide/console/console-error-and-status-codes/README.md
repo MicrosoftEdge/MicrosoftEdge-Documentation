@@ -2,7 +2,7 @@
 
 Use this reference to interpret error messages shown in the  [Console](../) and the [Debugger](../../debugger/) in Microsoft Edge.
 
-## Introduction
+#### Introduction
 When you're debugging with F12 developer tools, error codes such as `SEC7111` or `HTML1114` are shown in the Console and the Debugger tools.
 
 Here we list common console error codes and their associated messages. We also provide more detailed descriptions and/or suggestions to fix the problem where appropriate. While the descriptions in the table give you a starting point for debugging problems, the best way to get more info is to search online developer forums or the [Microsoft Edge developer center](https://dev.windows.com/microsoft-edge-for-devs).
@@ -178,7 +178,7 @@ CSS3117 | "@font-face failed cross-origin request. Resource access is restricted
 CSS3118 | "Failed to create new stylesheet. There are more than [maximum] stylesheets in the document." | Microsoft Edge has created more than 4095 stylesheet objects during the process of rendering your page. | This might be an out-of-control JavaScript process or a build system error. Reduce the number of stylesheet objects being generated.
 CSS3119 | "The media query -ms-view-state has been deprecated. -ms-view-state media queries may be altered or unavailable for releases after Windows 8.1. Instead, use max-width and min-width queries." | Your CSS contains an `-ms-view-state` media query. | Use max-width and min-width.
 
-## Scalable Vector Graphics (SVG) codes
+### Scalable Vector Graphics (SVG) codes
 F12 tools don't currently support extensive Scalable Vector Graphics (SVG) debugging, but some console messages are displayed to help debug SVG code.
 
 Code | Message | Description | Suggested fix
@@ -311,7 +311,7 @@ Code | Message | Description | Suggested fix
 **Note** For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
 
 
-## Related topics
+#### Related topics
 
 [GLSL errors](https://msdn.microsoft.com/library/dn611835.aspx)
 
