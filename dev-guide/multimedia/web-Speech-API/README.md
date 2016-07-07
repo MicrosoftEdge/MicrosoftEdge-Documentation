@@ -1,4 +1,4 @@
-# Speech Synthesis API
+# Web Speech API: Speech Synthesis
 
 The [Web Speech API](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html) is a JavaScript API made up of two parts: speech recognition and speech synthesis (or text to speech). At this time Microsoft Edge supports only speech synthesis. Speech synthesis involves the conversion of text to speech that a user hears through their speakers. 
 
