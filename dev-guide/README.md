@@ -10,4 +10,4 @@ Feature | Build Number
 [Microsoft Edge Extensions](../extensions) | 14291
 Updates to the [Selection  API](./HTML5/selection-API) | 14291
 [Web Notifications API](./device/web-Notifications-API)| 14267
-[Speech Synthesis](./multimedia/web-speech-api) | 14316 
+[Speech Synthesis API](./multimedia/web-speech-api) | 14316 
