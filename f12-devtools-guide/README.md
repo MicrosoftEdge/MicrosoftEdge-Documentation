@@ -1,12 +1,14 @@
 # Meet the Microsoft Edge Developer Tools
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+Microsoft Edge introduces great new improvements to F12 developer tools, including some of the most requested features from [UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).  The new tools are built in TypeScript, and are always running, so no reloads are required. In addition, F12 developer tools documentation is now fully available on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation). From this point on, the docs will not only be influenced by your feedback, but you're invited to contribute and help shape our documentation.
 
-Microsoft Edge implements the improved F12 developer tools found so useful in Internet Explorer 11. Debug, test, and speed up your webpages using a familiar tool that will continue to grow and improve with Microsoft Edge.
+![channel9](https://channel9.msdn.com/Blogs/One-Dev-Minute/Microsoft-Edge-F12-tools)
 
 ## The F12 tools at work
 
 There are seven distinct tools, each with their own tab in the F12 tools interface. Here you'll find an image of each tool and a quick summary of what it does, followed by lists of its main features and typical tasks.
+
+> Visit the [Settings](./settings/) page for more information about how to adjust Developer Settings in Microsoft Edge.
 
 ## The DOM Explorer tool (CTRL+1)
 
@@ -18,7 +20,7 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
  - Drag DOM nodes to rearrange them.		+|Drag DOM nodes to rearrange them.|
  - Support for compiled CSS sourcemaps		+|Support for compiled CSS sourcemaps|
 
-**Development and debugging tasks it makes easier:**		
+**Development and debugging tasks it makes easier:**
   - Determining why an element is not displaying at the right place or right size.
  - Figuring out which CSS styles and media queries are being applied to an element.
  - Testing a series of different colors for an element to see which looks best.

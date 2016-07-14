@@ -1,9 +1,10 @@
 # Microsoft Edge documentation
-This is the repository for Microsoft Edge **documentation** hosted at [http://dev.modern.ie](http://dev.modern.ie/platform/documentation/).
+
+This is the repository for Microsoft Edge **documentation** hosted at [https://dev.windows.com/en-us/microsoft-edge/platform/documentation/](https://dev.windows.com/en-us/microsoft-edge/platform/documentation/).
 
 Over the coming months, we will add new sections and content to enhance the documentation experience. If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs. 
 
-Find the source code for [Status.Modern.IE](https://status.modern.ie/) at: [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status). Status.Modern.IE provides the latest implementation status and future plans for web platform features in Microsoft Edge.
+Find the data for the [`Status`](https://dev.windows.com/en-us/microsoft-edge/platform/status/) page at: https://github.com/MicrosoftEdge/Status. The `Status` page provides the latest implementation status and future plans for web platform features in Microsoft Edge.
 
 # Conventions
 
@@ -59,7 +60,7 @@ You can use inline `code` Markdown syntax (with the backticks).
 
 Or you can display blocks of code like so:
 
-```
+```css
 body {
 	background: #fff;
 }
@@ -88,13 +89,19 @@ Respectively, those look like:
 
 ### How they work
 
-You precede a single line of Markdown with the `>note.*` syntax, like so:
+You precede a single line of Markdown with the `>note.*` syntax. No closing tag is needed. See example below. 
 
 ```
 >note.warning Hello.  Yes.  I am a warning note that has been automagically created. My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single (sometimes very long line) in the Markdown itself.
 ```
 
-No closing tag is needed. If you try to "wrap" this custom syntax around multiple lines, **it will not work!**
+For multi-line blockquote notes, use a > in front of each line of the notes as seen in the example below.
+
+```
+>note(.warning/.error) sometext
+>next line of the note
+>one more line for the note
+```
 
 But how do the titles ("Note", "Warning", "Error") get inserted into the note output? The custom Markdown tag actually does a lot
 more than you might think. By using `>note.warning`, you are creating a `div` with class `.note--warning`, and adding to that `div` a
@@ -112,3 +119,6 @@ than the element containing the documentation article. Currently, that containin
 largest, so that should probably be the largest image size you use.
 
 P.S. If your computer automatically inserts "smart quotes" into content, consider disabling this feature when writing markup or code samples.
+
+## Code of Conduct
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

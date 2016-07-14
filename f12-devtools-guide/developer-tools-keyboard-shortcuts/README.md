@@ -1,10 +1,9 @@
 # Developer Tools Keyboard Shortcuts
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Keyboard shortcuts in F12 developer tools for Microsoft Edge make tools and features accessible without a mouse or pointing device.
 
 ## Using keyboard shortcuts
-You can use keyboard shortcuts to navigate the F12 developer tools directly from your keyboard. The current shortcut set is listed below. For older versions, see [the keyboard shortcuts for Internet Explorer versions 8, 9, and 10](https://msdn.microsoft.com/en-us/library/dd565630(v=vs.85).aspx).
+You can use keyboard shortcuts to navigate the F12 developer tools directly from your keyboard. The current shortcut set is listed below. For older versions, see [the keyboard shortcuts for Internet Explorer versions 8, 9, and 10](https://msdn.microsoft.com/library/dd565630.aspx).
 
 ## General Shortcuts
 These shortcuts either control the F12 tools window or work across all tools.
@@ -136,5 +135,4 @@ Reset Emulation settings | CTRL+SHIFT+L
 
 ## Related topics
 
-[Keyboard shortcuts in Internet Explorer versions 8, 9, and 10](https://msdn.microsoft.com/en-us/library/dd565630(v=vs.85).aspx)
-
+[Keyboard shortcuts in Internet Explorer versions 8, 9, and 10](https://msdn.microsoft.com/library/dd565630.aspx)

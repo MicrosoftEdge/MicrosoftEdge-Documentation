@@ -1,7 +1,5 @@
 # Memory
 
-[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
 Use the Memory tool to diagnose memory issues that can impact the speed and stability of webpages.
 
 ## Memory matters
@@ -10,7 +8,7 @@ If your webpage is performing well when it first loads, but gradually slows and 
 
 ## Diagnosing a memory issue
 
-After you've loaded your webpage in the browser, open the F12 developer tools and open the **Memory** tool (CTRL + 7). You can start profiling from this screen and take heap snapshots during the profiling session. 
+After you've loaded your webpage in the browser, open the F12 developer tools and open the **Memory** tool (CTRL + 6). You can start profiling from this screen and take heap snapshots during the profiling session. 
 
 If your problem is high memory usage from the start, but not memory growth, take one snapshot and examine it to find your bigger areas of memory use. If your memory use grows over time, you can compare snapshots to look at the areas where memory is growing.
 
@@ -62,7 +60,7 @@ If you click the object, you'll see the objects referring to it in the bottom po
 
   - **Roots** view shows the major root objects that you can expand to see the child objects associated with them.
 
-In all three views, there are column headings for an object's size and retained size. The **Size** column documents the amount of memory the object itself uses. The **Retained size** column documents the amount of memory used by the object and its child nodes. For example, an [**HTMLDivElement**](https://msdn.microsoft.com/en-us/library/hh869694(v=vs.85).aspx) might only consume tens of bytes itself, but might have a retained size in the megabytes because a large image or video is one of its child elements.
+In all three views, there are column headings for an object's size and retained size. The **Size** column documents the amount of memory the object itself uses. The **Retained size** column documents the amount of memory used by the object and its child nodes. For example, an [**HTMLDivElement**](https://msdn.microsoft.com/library/hh869694.aspx) might only consume tens of bytes itself, but might have a retained size in the megabytes because a large image or video is one of its child elements.
 
 In large, complex pages, only the first two thousand objects are loaded, sorted by their retained size. In that case a filtering option is provided to help you narrow down the object set.
 
@@ -114,8 +112,10 @@ You shouldn't have to reproduce your test case every time you want to analyze th
 
 ## ECMAScript 6 containers
 
-Microsoft Edge supports [**`Set`**](https://msdn.microsoft.com/en-us/library/dn251547(v=vs.85).aspx), [**`Map`**](https://msdn.microsoft.com/en-us/library/dn263029(v=vs.85).aspx), and [**`WeakMap`**](https://msdn.microsoft.com/en-us/library/dn251546(v=vs.85).aspx) container objects in the **Memory** tool, making it easier to inspect the details of their memory use.
+Microsoft Edge supports [**`Set`**](https://msdn.microsoft.com/library/dn251547.aspx), [**`Map`**](https://msdn.microsoft.com/library/dn263029.aspx), and [**`WeakMap`**](https://msdn.microsoft.com/library/dn251546.aspx) container objects in the **Memory** tool, making it easier to inspect the details of their memory use.
 
 ## Related topics
 
-[Understanding and Solving Internet Explorer Leak Patterns](https://msdn.microsoft.com/en-us/library/bb250448(v=VS.85).aspx)
+[Understanding and Solving Internet Explorer Leak Patterns](https://msdn.microsoft.com/library/bb250448.aspx)
+
+[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
