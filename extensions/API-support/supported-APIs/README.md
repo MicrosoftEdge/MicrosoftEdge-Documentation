@@ -199,7 +199,7 @@ API | Known issues | Chrome incompatibilities
 [windows.CreateType](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/CreateType) | | `"panel"` and `"detached_panel"` are not supported in Microsoft Edge. |
 [windows.create](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/create) | | |
 [windows.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/get) | | |
-[windows.getAll](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getAll) | `window.getAll({populate: true})` is missing `tabs` property. | | |
+[windows.getAll](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getAll) | `windows.getAll({populate: true})` is missing `tabs` property. | | |
 [windows.getCurrent](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getCurrent) | | |
 [windows.getLastFocused](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getLastFocused) | | |
 [windows.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/update) | Specifying position is not supported. | `"minimized"`/`"maximized"`/`"fullscreen"` and `drawAttention` are not supported in Microsoft Edge. |
