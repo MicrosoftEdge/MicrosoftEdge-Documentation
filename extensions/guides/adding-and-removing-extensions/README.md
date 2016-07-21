@@ -3,9 +3,11 @@ When fully released to mainstream builds of Windows 10, extensions will be avail
 
 ## Adding an extension
 
-1. Open Microsoft Edge and type 'about:flags' into the address bar.
+1. Make sure you are running the latest Windows Insider Flights. The Slow ring is sufficient.
 
-2. Make sure the "Enable extension developer features" box is checked.
+2. Open Microsoft Edge and    type 'about:flags' into the address bar.
+
+2. Select the "Enable extension developer features" checkbox.
 
    ![about:flags turn on developer features](../../media/sideload-aboutflags.png)
 
