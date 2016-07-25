@@ -9,7 +9,7 @@ The **Network** tool in F12 developer tools helps you inspect page load times, r
 
 The top row of icons in the **Network** tool control the recording of network traffic and give you tools to provide better accuracy, manage your results, and search through the traffic you capture.
 
-![Edge F12 Network Toolbar](../media/network-icons.png) 
+![Edge F12 Network Toolbar](../media/network-icons.png)
 
 From left to right, the tools are:
 
