@@ -123,7 +123,7 @@ HTTP error codes are returned from remote servers in response to requests. Proba
 
 Code | Message | Description
 :------------ | :------------- | :-------------
-HTML400 | BAD REQUEST | The request could not be processed by the server due to invalid syntax.
+HTTP400 | BAD REQUEST | The request could not be processed by the server due to invalid syntax.
 HTTP401 | DENIED | The requested resource requires user authentication.
 HTTP402 | PAYMENT REQUIRED | Not currently implemented in the HTTP protocol.
 HTTP403 | FORBIDDEN | The server understood the request, but is refusing to fulfill it.
