@@ -21,7 +21,8 @@ From left to right, the tools are:
 
   - **Clear cache** removes saved files from the browser's cache. Browsers commonly save page elements to disk and use them again for faster reloads. When you're trying to get the true measure of a page's load time, clearing the cache makes sure all elements are being downloaded from the network.
 
-  - **Clear cookies** ensures that all cookies related to the current domain are removed, so that you get the experience of loading the page for the first time.
+  - **Clear cookies** ensures that all cookies are removed, so that you get the experience of loading the page for the first time.
+>note.warning This will clear *all* cookies associated with Edge.
 
   - **Clear entries on navigate** is a toggle switch with on and off states. When in the off state, network traffic for a window or tab is recorded continuously as the browser moves from page to page. When in the on state, recorded traffic is cleared each time you navigate to a new page. This is turned on by default.
 
@@ -85,4 +86,4 @@ HTTP traffic is captured only for the process associated with the Microsoft Edge
 
 [Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
 
-[A look at new feedback-driven improvements to the network tool in our F12 Developer Tools](https://blogs.windows.com/msedgedev/2015/05/08/updates-for-the-f12-developer-tools-in-windows-insider-preview-10074/)
+-[A look at new feedback-driven improvements to the network tool in our F12 Developer Tools](https://blogs.windows.com/msedgedev/2015/05/08/updates-for-the-f12-developer-tools-in-windows-insider-preview-10074/) 
