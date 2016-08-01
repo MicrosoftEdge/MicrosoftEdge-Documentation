@@ -2,8 +2,8 @@
 Microsoft Edge extensions have a similar workflow when compared to other enterprise UWP apps. The information below details enterprise specific aspects of Microsoft Edge extensions.
 
 
-## Enterprise data protection
-Microsoft Edge extensions currently don't honor [enterprise data protection (EDP)](https://technet.microsoft.com/en-us/itpro/windows/whats-new/edp-whats-new-overview) settings. If an enterprise is concerned about data protection, extensions support should not be enabled for Microsoft Edge.
+## Windows Information Protection
+Microsoft Edge extensions currently don't honor Windows Information Protection (WIP) settings. If an enterprise is concerned about data protection, extensions support should not be enabled for Microsoft Edge.
 
 To disable extensions for employees, configure Group Policy and Microsoft Intune settings. Check out [Available policies for Microsoft Edge](https://technet.microsoft.com/en-us/itpro/microsoft-edge/available-policies) on TechNet for info on what policies to configure.
 

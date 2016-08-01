@@ -20,7 +20,7 @@ author  | | Specifies the author. Not supported in Chrome.
 
 The following keys are recommended:
 
-Key | Known issues | Chrome incompatibilities 
+Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
 [description](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/description) | | |
 [manifest_version](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/manifest_version) | | Currently ignored in Microsoft Edge.
@@ -32,7 +32,7 @@ One or none of the following keys must be specified:
 
 Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
-[browser_action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action)  | | Microsoft Edge does not support the following syntax:  `browser_action : {"default_icon" : "icon.png" }`   Size for icons must be specified. Preferred sizes: 20px, 25px, 30px, 40px. Other supported sizes: 19px, 35px, 38px.|
+[browser_action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action)  | | Microsoft Edge does not support the following syntax:<br/>  `browser_action : {"default_icon" : "icon.png" }`   <br/>Size for icons must be specified. Preferred sizes: 20px, 25px, 30px, 40px. Other supported sizes: 19px, 35px, 38px.|
 [page_action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) | | Microsoft Edge does not support the following syntax:  `page_action : {"default_icon" : "icon.png" }`   Size for icons must be specified. Preffered sizes: 20px, 25px, 30px, 40px. Other supported sizes: 19px, 35px, 38px.|
 
 ## Optional keys
@@ -59,9 +59,8 @@ contextMenus | Gives access to `contextMenus` API. This enables adding items to 
 cookies | Gives access to the `cookies` API. This enable querying and modifying cookies as well as being notified when they change.
 geolocation | Allow the extension to use the HTML5 `geolocation` API without prompting the user for permission.
 idle | Gives access to the `idle` API. This enables detection of when the machine's idle state changes.
-storage | Gives access to the `storage` API. This enables storing, retrieving, and tracking changes to user data. 
-tabs | Gives access to the `tabs` API to interact with the browser's tab system. This enables creating, modifying, and rearranging tabs in the browser, including the URLs associated with each tab. 
+storage | Gives access to the `storage` API. This enables storing, retrieving, and tracking changes to user data.
+tabs | Gives access to the `tabs` API to interact with the browser's tab system. This enables creating, modifying, and rearranging tabs in the browser, including the URLs associated with each tab.
 webNavigation | Gives access to the `webNavigation` API. This enables receiving notifications about the status of navigation requests.
 webRequest | Gives access to the `webRequest` API. This enables observing and analyzing traffic, as well as intercepting, blocking or modifying request in-flight.
 webRequestBlocking | Required if an extension uses the `webRequest` API in a blocking fashion.
-
