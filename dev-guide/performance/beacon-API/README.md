@@ -67,6 +67,7 @@ function sendXhr() {
 
 ```
 
+![spec](Beacon)
 
 ## API reference
 [Navigator.sendBeacon](https://msdn.microsoft.com/library/mt668926)

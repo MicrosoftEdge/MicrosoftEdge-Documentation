@@ -65,6 +65,8 @@ Method | Description
 [clone](https://msdn.microsoft.com/library/mt718784) | Creates a copy of the current Request object.
 
 
+![spec](Fetch)
+
 ## API reference
 [Fetch](https://msdn.microsoft.com/library/mt718765)
 

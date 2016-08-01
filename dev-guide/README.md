@@ -6,6 +6,7 @@ This list highlights new documentation for new web platform features in Microsof
 
 Feature | Build Number
 :----------| :-------------
+[Beacon API](./performance/beacon-API) | 14393
 [Fetch API](./performance/fetch-API) | 14393
 [Microsoft Edge Extensions](../extensions) | 14393
 Updates to the [Selection  API](./HTML5/selection-API) | 14393
