@@ -6,8 +6,10 @@ This list highlights new documentation for new web platform features in Microsof
 
 Feature | Build Number
 :----------| :-------------
-[Web Authentication and Windows Hello](./device/web-authentication) | 10586
-[Microsoft Edge Extensions](../extensions) | 14291
-Updates to the [Selection  API](./HTML5/selection-API) | 14291
-[Web Notifications API](./device/web-Notifications-API)| 14267
-[Speech Synthesis API](./multimedia/web-speech-api) | 14316 
+[Fetch API](./performance/fetch-API) | 14393
+[Microsoft Edge Extensions](../extensions) | 14393
+Updates to the [Selection  API](./HTML5/selection-API) | 14393
+[Speech Synthesis API](./multimedia/web-speech-api) | 14393
+[Streams API](./performance/streams-API) | 14393
+[Web Authentication and Windows Hello](./device/web-authentication) | 14393
+[Web Notifications API](./device/web-Notifications-API)| 14393
