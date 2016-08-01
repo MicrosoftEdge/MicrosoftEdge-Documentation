@@ -32,7 +32,7 @@ One or none of the following keys must be specified:
 
 Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
-[browser_action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action)  | | Microsoft Edge does not support the following syntax:<br/>  `browser_action : {"default_icon" : "icon.png" }`   <br/>Size for icons must be specified. Preferred sizes: 20px, 25px, 30px, 40px. Other supported sizes: 19px, 35px, 38px.|
+[browser_action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action)  | | Microsoft Edge does not support the following syntax:  `browser_action : {"default_icon" : "icon.png" }`   Size for icons must be specified. Preferred sizes: 20px, 25px, 30px, 40px. Other supported sizes: 19px, 35px, 38px.|
 [page_action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) | | Microsoft Edge does not support the following syntax:  `page_action : {"default_icon" : "icon.png" }`   Size for icons must be specified. Preffered sizes: 20px, 25px, 30px, 40px. Other supported sizes: 19px, 35px, 38px.|
 
 ## Optional keys
