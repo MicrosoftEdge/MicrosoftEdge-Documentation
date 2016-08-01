@@ -10,7 +10,7 @@ Use [`setImmediate`](./efficient-script-yielding) to solve the problems of using
 
 ## Fetch API
 
-The [Fetch API] is the modern-day replacement for `XMLHttpRequest` that allows for low-level handling of responses and requests, as well as the ability to stream data.
+The [Fetch API](./fetch-API/) is the modern-day replacement for `XMLHttpRequest` that allows for low-level handling of responses and requests, as well as the ability to stream data.
 
 ## Navigation Timing API
 
