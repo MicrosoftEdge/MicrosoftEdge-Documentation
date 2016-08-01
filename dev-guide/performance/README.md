@@ -4,6 +4,10 @@
 
 The [Animation Timing API](./animation-Timing-API) provides a smoother and more efficient way to create animated webpages by calling the animation frame when the system is ready to paint the frame. This helps you avoid overdrawn animations, wasted CPU cycles, and unnecessary power usage.
 
+## Beacon API
+
+The [Beacon API](./beacon-API) provides a way to efficiently send beacons of critical information to a server. 
+
 ## Efficient Script Yielding
 
 Use [`setImmediate`](./efficient-script-yielding) to solve the problems of using `setTimeout` by addressing the core performance problem without negatively impacting power consumption. Flush the browser event queue and receive an immediate callback without the minimum delays enforced by `setTimeout`.
