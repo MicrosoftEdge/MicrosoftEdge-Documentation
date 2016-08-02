@@ -107,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function (e) {
 });
 ```
 
+![spec](ReadableStream, ReadableStreamReader)
+
 ## API reference
 
 [Streams](https://msdn.microsoft.com/library/mt709019)
