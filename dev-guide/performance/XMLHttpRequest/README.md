@@ -2,7 +2,7 @@
 
 The [XMLHttpRequest (XHR)](https://msdn.microsoft.com/library/ms535874) object supports a variety of developer scenarios involving transferring data to and from a server by sending requests. It supports any text based format, and can make both HTTP and HTTPS requests.
 
-The modern-day equivalent of `XMLHttpRequest` is the [Fetch API](./fetch-API). This API was introduced in Microsoft Edge. Use the Fetch API instead of `XMLHttpRequest` if you want lower-level interaction with responses and requests, and want the ability to stream the data within a response.
+The modern-day equivalent of `XMLHttpRequest` is the [Fetch API](../fetch-API). This API was introduced in Microsoft Edge. Use the Fetch API instead of `XMLHttpRequest` if you want lower-level interaction with responses and requests, and want the ability to stream the data within a response.
 
 
 
@@ -154,7 +154,7 @@ Networking performance is improved by caching resources downloaded via CORS-enab
 
 ## Related topics
 
-[Fetch API](./fetch-API)
+[Fetch API](../fetch-API)
 
 [Asynchronous Programming in JavaScript with “Promises”](http://blogs.msdn.com/b/ie/archive/2011/09/11/asynchronous-programming-in-javascript-with-promises.aspx)
 
