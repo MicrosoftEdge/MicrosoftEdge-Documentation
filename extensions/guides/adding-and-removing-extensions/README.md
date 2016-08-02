@@ -3,9 +3,7 @@ When fully released to mainstream builds of Windows 10, extensions will be avail
 
 ## Adding an extension
 
-1. Make sure you are running the latest Windows Insider Flights. The Slow ring is sufficient.
-
-2. Open Microsoft Edge and    type 'about:flags' into the address bar.
+1. Open Microsoft Edge and type 'about:flags' into the address bar.
 
 2. Select the "Enable extension developer features" checkbox.
 
@@ -23,6 +21,7 @@ When fully released to mainstream builds of Windows 10, extensions will be avail
 
 7. Navigate to your extension's folder and select the  **"Select folder"** button.
    ![selecting extension folder to load](../../media/sideload-select-extension.PNG)
+>note If you encounter an error message when loading your extension, refer to the [troubleshooting](../../troubleshooting) page for guidance.
 
 **You're all set! You should now see the extension listed in Microsoft Edge's extension pane!**
 

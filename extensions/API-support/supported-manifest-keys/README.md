@@ -4,7 +4,7 @@ Every extension has a JSON-formatted manifest file, named manifest.json. This fi
 
 See example of a [Microsoft Edge JSON manifest file](json-manifest-example/).
 
-The following is the list of JSON manifest keys that are supported as of build 14316:
+The following is the list of JSON manifest keys that are currently supported:
 
 ## Required keys
 
