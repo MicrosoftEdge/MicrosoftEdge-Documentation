@@ -106,6 +106,8 @@ For the compatibility notes on use with previous versions of Internet Explorer, 
 
 The [HandJS](http://go.microsoft.com/fwlink/p/?LinkID=285827) JavaScript polyfill provides a library you can use to write to the pointer event model across browsers that don’t yet support W3C Pointer Events. For a demo, see [Creating an universal virtual touch joystick with Hand.JS](http://go.microsoft.com/fwlink/p/?LinkID=320943).
 
+The [PEP JavaScript library](https://github.com/jquery/pep) allows you to use the pointer event model across browsers that don’t yet support W3C Pointer Events. The jQuery Foundation maintains a set of [samples](http://jquery.github.io/PEP/) you can use to get started. 
+
 ![spec](Pointer Events)
 
 ## Demos
