@@ -6,7 +6,7 @@ The [Animation Timing API](./animation-Timing-API) provides a smoother and more 
 
 ## Beacon API
 
-The [Beacon API](./beacon-API) provides a way to efficiently send beacons of critical information to a server. 
+The [Beacon API](./beacon-API) provides a way to efficiently send beacons of critical information to a server.
 
 ## Efficient Script Yielding
 
@@ -39,3 +39,7 @@ The [Streams API](./streams-API) enables streaming of chunks of data from stream
 ## User Timing API
 
 The [User Timing API](./user-Timing-API) enables developers to accurately measure the length of AJAX requests, report on performance, and create benchmarks for JavaScript code using high precision timestamps.
+
+## XMLHttpRequest
+
+Use [XMLHttpRequest](./XMLHttpRequest) to transfer data to and from a client and server.

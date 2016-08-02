@@ -77,5 +77,7 @@ Method | Description
 
 [Streams API](../streams-API/)
 
+[XMLHttpRequest](../XMLHttpRequest)
+
 ## Specification
 [Fetch](https://fetch.spec.whatwg.org/)
