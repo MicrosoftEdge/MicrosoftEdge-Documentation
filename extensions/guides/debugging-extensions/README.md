@@ -1,7 +1,11 @@
 # Debugging extensions
 
 You can debug your extensions in Microsoft Edge by using F12 Developer Tools.
-Continue reading for step-by-step guides on debugging extension background scripts, content scripts, and extension pages.
+
+The following video goes through a buggy Microsoft Edge extension, walking though each debugging scenario and fixing it up along the way. See the step-by-step instructions below for more info.
+
+![channel9](https://channel9.msdn.com/Blogs/One-Dev-Minute/Microsoft-Edge-F12-tools)
+
 
 >note In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](../../adding-and-removing-extensions) for details on how to do this.
 
