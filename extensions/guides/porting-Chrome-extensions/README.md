@@ -22,7 +22,8 @@ The following instructions detail how to convert your Chrome extension to run on
 2. Make a copy of your Chrome extension's folder for safe keeping. The conversion process will overwrite the code. 
 3. Run the Microsoft Edge Extension Toolkit and load the copy of your extension.  
  ![load extension button](../../media/save-folder.PNG)
-4. Correct all the errors that are reported within the tool's text editor. Select "Re-validate" to check for errors after making corrections. ![extension-toolkit finding errors](../../media/extension-toolkit.png)
+4. Correct all the errors that are reported within the tool's text editor. Select "Re-validate" to check for errors after making corrections.  
+ ![extension-toolkit finding errors](../../media/extension-toolkit.png)
 5. Select "Save files".
 
 You can now exit out of the toolkit and load your extension in Microsoft Edge! 
