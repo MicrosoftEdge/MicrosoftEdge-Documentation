@@ -11,14 +11,6 @@ Microsoft Edge has logic for determining the most optimal scale factor, incorpor
 Zoom level settings range from 100% all the way up to 1000%, going up by increments of 25%.
 Windows 10 consumers and OEMs  (Original Equipment Manufacturers) get more flexibility for consistently optimal viewing of your website across device form factors and screen resolutions.
 
-| Zoom level settings  | 100% | 125% | 150% | 175% | 200% | 250% | 300% | 400% | ...1000% |
-|----------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----: |:-------:
-| IE10                 | X    | X    | X    | X    |      | X    |      |      | |
-| IE10 for desktop     | X    | X    | X    |      | X    |      |      | X    | |
-| IE11                 | X    | X    | X    | X    | X    | X    | X    | X    | |
-| IE11 for desktop     | X    | X    | X    | X    | X    | X    | X    | X    | |
-| Microsoft Edge       | X    | X    | X    | X    | X    | X    | X    | X    | X
-
 ## Unified optical zooming model
 
 With Microsoft Edge all zooming is now handled with optical zoom, making the experience across zooming scenarios (such as the [Zoom menu](http://go.microsoft.com/fwlink/p/?LinkId=614840), [Pinch zoom](https://msdn.microsoft.com/library/windows/desktop/Dn742468#inter_touch_image5), [Keyboard / mouse shortcuts](http://go.microsoft.com/fwlink/p/?LinkId=619896), [`@-ms-viewport`](https://msdn.microsoft.com/library/Hh869615), and [`msContentZoomFactor`](http://msdn.microsoft.com/library/ie/hh772066)) much simpler and more predictable.
