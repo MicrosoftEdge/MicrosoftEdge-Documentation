@@ -1,11 +1,10 @@
 ## Troubleshooting
 
-If you are trying to load unpacked extensions downloaded from [https://dev.windows.com](http://www.aka.ms/msedge-extensions) and are experiencing issues,
-the following troubleshoot topics may help:
+If you are trying to load unpacked extensions and are experiencing issues, the info below may help:
 
 ### 1. I see the error "We couldn't load this extension"
 
-This usually means that Microsoft Edge cannot access the extension folder you attempted to load. Try deleting the extension folder, running the .EXE again and then loading the extension folder that was created in your **Downloads** folder.
+This usually means that Microsoft Edge cannot access the extension folder you attempted to load.
 
 Here is a summary of the possible errors you may encounter:
 

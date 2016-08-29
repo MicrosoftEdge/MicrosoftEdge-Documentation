@@ -4,6 +4,8 @@
 ## Creating accessible extension icons for Microsoft Edge
 
 Third-party extension developers are encouraged to use image assets that meet Microsoft’s strict accessibility requirements so that icons are clearly visible for both light and dark themes. We recommend that all extension icons have a 14:1 ratio between the icon’s background color and the dominant color of the icon itself.
+
+
 First-party extensions developed by Microsoft apply a “stickering” visual treatment to satisfy these requirements.
 
 ### Examples of the "stickering"

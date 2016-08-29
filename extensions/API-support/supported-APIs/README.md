@@ -7,12 +7,12 @@ The following is a detailed list of API members that are supported. Development 
 The following known issues span across the extension platform and will be fixed in the near future:
 
 - Regardless of any `catch()` statements, exceptions thown in the content script context by predefined JavaScript methods (such as `document.querySelector()`) will be dispatched to both the content script's and page's `window.onerror` handlers.
-- When using the CSS `url()` property, absolute urls using `ms-browser-extension://` will not work like they do in Chrome. To bypass this issue, use relative paths to resources (starting in the root extension directory) instead.
+- When using the CSS `url()` property, absolute URLs using `ms-browser-extension://` will not work like they do in Chrome. To bypass this issue, use relative paths to resources (starting in the root extension directory) instead.
 - `window.open()` does not work in extension background scripts. Please use `browser.windows.create()` instead.
 
 ## browserAction
 
-The following `browserAction` API are supported:
+The following `browserAction` APIs are supported:
 
 | API                                   | Known issues                                             | Chrome incompatibilities
 |---------------------------------------|----------------------------------------------------------|--------------------------|
@@ -29,7 +29,7 @@ The following `browserAction` API are supported:
 
 ## contextMenus
 
-The following `contextMenus` API are supported:
+The following `contextMenus` APIs are supported:
 
 | API                    | Known issues | Chrome incompatibilities
 |------------------------|--------------|----------------------|
@@ -39,11 +39,11 @@ The following `contextMenus` API are supported:
 | [contextMenus.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/contextMenus/onClicked) | | |
 | [contextMenus.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/contextMenus/remove) | | |
 | [contextMenus.removeAll](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/contextMenus/removeAll) | | |
-| [contextMenus.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/contextMenus/update) | | | 
+| [contextMenus.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/contextMenus/update) | | |
 
 ## cookies
 
-The following `cookies` API are supported:
+The following `cookies` APIs are supported:
 
 | API                    | Known issues | Chrome incompatibilities
 |------------------------|--------------|----------------------|
@@ -59,7 +59,7 @@ The following `cookies` API are supported:
 
 ## extension
 
-The following `extension` API are supported:
+The following `extension` APIs are supported:
 
 | API                                   | Known issues | Chrome incompatibilities
 |---------------------------------------|----------------------------------------------------------|-------------|
@@ -71,7 +71,7 @@ The following `extension` API are supported:
 
 ## i18n
 
-The following `i18n` API are supported:
+The following `i18n` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------| :-------- | :---------------------
@@ -81,6 +81,8 @@ API | Known issues | Chrome incompatibilities
 [i18n.getUILanguage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/i18n/getUILanguage) | | |
 
 ## idle
+
+The following `idle` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------| :-------- | :---------------------
@@ -92,7 +94,7 @@ API | Known issues | Chrome incompatibilities
 
 ## pageAction
 
-The following `pageAction` API are supported:
+The following `pageAction` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------------
@@ -100,7 +102,7 @@ API | Known issues | Chrome incompatibilities
 [pageAction.getPopup](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/getPopup) | | |
 [pageAction.getTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/getTitle) | | |
 [pageAction.hide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/hide) | | |
-[pageAction.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/onClicked) | | | 
+[pageAction.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/onClicked) | | |
 [pageAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setIcon) | | `ImageData` is not supported. |
 [pageAction.setPopup](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setPopup) | | |
 [pageAction.setTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setTitle) | | |
@@ -110,25 +112,25 @@ API | Known issues | Chrome incompatibilities
 
 ## runtime
 
-The following `runtime` API are supported:
+The following `runtime` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :-------------------
-[runtime](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime) | | | 
+[runtime](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime) | | |
 [runtime.connect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/connect) | | |
 [runtime.id](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/id) | | |
-[runtime.getBackgroundPage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/getBackgroundPage) | | | 
+[runtime.getBackgroundPage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/getBackgroundPage) | | |
 [runtime.getManifest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/getManifest) | | |
 [runtime.getURL](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/getURL) | | |
 [runtime.lastError](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/lastError) | | |
 [runtime.onConnect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/onConnect) | | |
-[runtime.onInstalled](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onInstalled) | | | 
+[runtime.onInstalled](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onInstalled) | | |
 [runtime.onMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onMessage) | `tab` object in `runtime.onMessage` event is not fully implemented. | `MessageSender.tlsChannelId` is not supported in Microsoft Edge.|
 [runtime.sendMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/sendMessage) | Microsoft Edge extension pages can use `runtime.sendMessage`/`onMessage` to send messages to themselves.   `runtime.sendmessage` is not supported from site pages. | Microsoft Edge does not support the `options` parameter.|
 
 ## storage
 
-The following `storage` API are supported:
+The following `storage` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :------------------------
@@ -142,7 +144,7 @@ API | Known issues | Chrome incompatibilities
 
 ## tabs
 
-The following `tabs` API are supported:
+The following `tabs` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :----------------
@@ -161,14 +163,14 @@ API | Known issues | Chrome incompatibilities
 [tabs.onUpdated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onUpdated) | After uninstall/reinstall, the URL is not received until Microsoft Edge is restarted. | |
 [tabs.query](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/query) | `pinned`, `audible`, and `muted` are not yet supported.  `"popup"` `windowType` is not yet supported. | `highlighted` is not supported.   `"panel"`, `"app"`, and `"devtools"` `windowType` are not supported. |
 [tabs.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/remove) | | |
-[tabs.sendMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/sendMessage) | Messaging a specific frame is not yet supported. `tabs.sendMessage` never sends a response after a tab refresh if no `runtime.onMessage` listeners are present on the receiving tab. | | 
+[tabs.sendMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/sendMessage) | Messaging a specific frame is not yet supported. `tabs.sendMessage` never sends a response after a tab refresh if no `runtime.onMessage` listeners are present on the receiving tab. | |
 [tabs.Tab](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab) | `audible`, `mutedInfo`, `inPrivate`, `width`, and `height` properties are not yet supported. | `openerTabId`, `selected`, and `highlighted` properties are not supported. |
 [tabs.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/update) | `pinned` and `muted` are not yet supported. | `highlighted` and `selected` are not supported. |
 
 
 ## webNavigation
 
-The following `webNavigation` API are supported:
+The following `webNavigation` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------ | :----- | :-------
@@ -189,7 +191,7 @@ API | Known issues | Chrome incompatibilities
 
 ## webRequest
 
-The following `webRequest` API are supported:
+The following `webRequest` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------ | :----- | :-------
@@ -199,7 +201,7 @@ API | Known issues | Chrome incompatibilities
 [onBeforeRedirect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onBeforeRedirect) | | |
 [onBeforeRequest](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onBeforeRequest) | | `requestBody` is not supported. |
 [onBeforeSendHeaders](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onBeforeSendHeaders) | | |
-[onCompleted](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onCompleted) | | | 
+[onCompleted](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onCompleted) | | |
 [onErrorOccurred](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onErrorOccurred) | | |
 [onHeadersReceived](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onHeadersReceived) | |  |
 [onResponseStarted](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onResponseStarted) | |  |
@@ -207,7 +209,7 @@ API | Known issues | Chrome incompatibilities
 
 ## windows
 
-The following `windows` API are supported:
+The following `windows` APIs are supported:
 
 API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :-------------------
@@ -221,7 +223,7 @@ API | Known issues | Chrome incompatibilities
 [windows.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/update) | Specifying position is not supported. | `"minimized"`/`"maximized"`/`"fullscreen"` and `drawAttention` are not supported in Microsoft Edge. |
 [windows.onCreated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/onCreated) | | `WindowType` filter is not supported. |
 [windows.onFocusChanged](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/onFocusChanged) | | `WindowType` filter is not supported. |
-[windows.WindowState](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/WindowState) | `"minimized"`,`"maximized"`, `"fullscreen"` are not supported.| `"docked"` is not supported in Microsoft Edge. | 
+[windows.WindowState](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/WindowState) | `"minimized"`,`"maximized"`, `"fullscreen"` are not supported.| `"docked"` is not supported in Microsoft Edge. |
 [windows.WindowType](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/WindowType) | | `"panel"`, `"app"`, and `"devtools"` are not supported in Microsoft Edge. |
 [windows.WINDOW_ID_CURRENT](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/WINDOW_ID_CURRENT) | | |
 [windows.WINDOW_ID_NONE](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/WINDOW_ID_NONE) | | |

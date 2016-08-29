@@ -2,9 +2,7 @@
 
 Every extension has a JSON-formatted manifest file, named manifest.json. This file provides important information for the extension ranging from its name to its permissions. Unless specified in a note below, the Microsoft Edge manifest properties follow the same implementation as Chrome.
 
-See example of a [Microsoft Edge JSON manifest file](json-manifest-example/).
-
-The following is the list of JSON manifest keys that are currently supported:
+Here is an example of a [Microsoft Edge JSON manifest file](json-manifest-example/).
 
 ## Required keys
 
@@ -28,7 +26,7 @@ Key | Known issues | Chrome incompatibilities
 
 ## browser_action or page_action keys
 
-One or none of the following keys must be specified:
+You can only include one of the following keys (or none):
 
 Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
@@ -50,7 +48,7 @@ short_name  | | |
 [content_security_policy](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/content_security_policy)  | The content security policy of a page blocks websockets in content scripts, generating an undefined exception. | Microsoft Edge extensions currently only support [Default Policy Restrictions](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Content_Security_Policy#Default_content_security_policy): `script-src 'self'; object-src 'self'` |
 
 ### Supported permissions
-The following permissions are supported as of build 14316:
+The following [permissions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions) are supported:
 
 Permission | Description
 :---------- | :------------

@@ -12,3 +12,6 @@ With F12 Developer Tools, learn [how to debug an extension](./debugging-extensio
 
 ## Internationalization
 Make your extension accessible for different languages and test your language strings with the [internationalization](./internationalization) guide.
+
+## Porting Chrome extensions
+See how to easily [port your Chrome extension to Microsoft Edge](./porting-Chrome-extensions) using the Microsoft Edge Extension Toolkit.

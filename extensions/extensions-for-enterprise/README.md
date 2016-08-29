@@ -5,7 +5,7 @@ Microsoft Edge extensions have a similar workflow when compared to other enterpr
 ## Windows Information Protection
 Microsoft Edge extensions currently don't honor Windows Information Protection (WIP) settings. If an enterprise is concerned about data protection, extensions support should not be enabled for Microsoft Edge.
 
-To disable extensions for employees, configure Group Policy and Microsoft Intune settings. Check out [Available policies for Microsoft Edge](https://technet.microsoft.com/en-us/itpro/microsoft-edge/available-policies) on TechNet for info on what policies to configure.
+To disable extensions for employees, configure Group Policy and Microsoft Intune settings. For more info on which policies to configure, see [Available policies for Microsoft Edge](https://technet.microsoft.com/en-us/itpro/microsoft-edge/available-policies).
 
 
 ## Packaging extensions
@@ -17,8 +17,7 @@ Before an enterprise can distribute an extension to its employees, it must first
 
 Once an extension has been packaged, it can be distributed to employees through the Windows Store, Windows Store for Business, or by sideloading.
 
-Extensions distributed though the Windows Store for Business can either be assigned to employees, or added to a private store where all employees can access them. This can be done by following the
-[Distribute "Line-of-Business" (LOB) apps to enterprises](https://msdn.microsoft.com/windows/uwp/publish/distribute-lob-apps-to-enterprises) guide.
+Extensions distributed though the Windows Store for Business can either be assigned to employees, or added to a private store where all employees can access them. This can be done by following the [Distribute "Line-of-Business" (LOB) apps to enterprises](https://msdn.microsoft.com/windows/uwp/publish/distribute-lob-apps-to-enterprises) guide.
 
 To sideload extensions, devices (unmanaged or managed) must be unlocked for sideloading. See [Sideload LOB apps in Windows 10](https://technet.microsoft.com/itpro/windows/deploy/sideload-apps-in-windows-10) for more info on how to sideload packaged extensions.
 

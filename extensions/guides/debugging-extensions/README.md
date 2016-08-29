@@ -8,18 +8,18 @@ Continue reading for step-by-step guides on debugging extension background scrip
 ## Background script debugging
 To start debugging the background script of your extension:
 
-1. Click on **"More (...)"** followed by **"Extensions"** to go into the extension pane.  
+1. Click on **More (...)** followed by **Extensions** to go into the extension pane.  
  ![more button](../../media/morebutton.PNG)
 2. Click on the extension that you want to debug.
-3. Click on the **"Background page"** link to bring up F12 for the background process.
+3. Click on the **Background page** link to bring up F12 for the background process.
 
  ![selected extension view of options with inspect link](../../media/debug-inspect.png)
-4. Select the **"Debugger"** tab in F12.
+4. Select the **Debugger** tab in F12.
 5. Navigate to and select your extension's background script.
 6. Place breakpoints for debugging by clicking to the left of the source code line number.
 
  ![f12 console showing background script with break points](../../media/debug-f12-background.png)
-7. Select the **"Console"** tab and execute the command "`location.reload()`". This will re-execute the background script, allowing you to step through your code.
+7. Select the **Console** tab and execute the command "`location.reload()`". This will re-execute the background script, allowing you to step through your code.
 
  ![console with location.reload entered](../../media/debug-f12-background-console.png)
 
@@ -27,10 +27,10 @@ To start debugging the background script of your extension:
 ## Content script debugging
 To start debugging the content script of your extension:
 
-1. Launch F12 by either navigating to the **"More (...)"** button and selecting **"F12 Developer Tools"** or by pressing F12 on your keyboard.
+1. Launch F12 by either navigating to the **More (...)** button and selecting **"F12 Developer Tools"** or by pressing F12 on your keyboard.
 2. Navigate to and select your extension's content script. Content scripts for extensions currently running will be depicted by a different folder for each extension.
 
- > NOTE: Only running content scripts will appear.
+ >note Only running content scripts will appear.
 
 3. Place breakpoints for debugging by clicking to the left of the source code line number.
 
