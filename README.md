@@ -12,7 +12,7 @@ Find the data for the [`Status`](https://dev.windows.com/en-us/microsoft-edge/pl
   - A folder can contain more folders or a `readme.md`
   - One `.md` file per folder
   - Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs on the Microsoft Edge Dev site. Don't use underscores or PascalCase/camelCase.
-  - Relative links are formatted with only the folder name of the referenced readme doc. E.g.,   `../perfomance/`  (not `../perfomance/readme.md`)
+  - Relative links are formatted with only the folder name of the referenced readme doc. E.g.,   `../performance/`  (not `../performance/readme.md`)
   - Section headers require a space after hashes, formatted as  `## Section Heading` *(not `##Section Heading`)*. Otherwise, the markdown doesn't parse correctly into the site.
 
 # Styling
