@@ -20,6 +20,9 @@ var notification = new Notification("Incoming Message", { icon: “http://www.sk
 
 It is strongly recommended that an `icon` be specified for each notification. This not only improves a notification from a UI point of view, but also helps alert users of where the notification is being sent from.
 
+Watch the video below for a walkthrough on creating a web notification and to see it's behavior within Windows 10!
+![channel9](https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications)
+
 ### Notification properties
 
 Notifications can be set with the following options:
