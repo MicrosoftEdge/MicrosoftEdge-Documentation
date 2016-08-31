@@ -4,19 +4,9 @@ The Web Notifications API allows websites to send users notifications outside th
 
 ## Creating a notification
 
-The code snippet below creates a mock Skype notification by making a [`Notification`](https://msdn.microsoft.com/library/mt710818) object with the [`title`](https://msdn.microsoft.com/library/mt710826), [`icon`](https://msdn.microsoft.com/library/mt710814), and [`body`](https://msdn.microsoft.com/library/mt710811) options set:
+The CodePen below creates a mock Skype notification by making a [`Notification`](https://msdn.microsoft.com/library/mt710818) object with the [`title`](https://msdn.microsoft.com/library/mt710826), [`icon`](https://msdn.microsoft.com/library/mt710814), and [`body`](https://msdn.microsoft.com/library/mt710811) options set:
 
-```javascript
-var notification = new Notification("Incoming Message", { icon: “http://www.skype.com/skypeicon.png”, body: “You have a new message” })
-  notification.onshow = function() { }
-  notification.onclick = function() { }       
-  notification.onerror = function() { }       
-  notification.onclose = function() { }                   
-  });
-```
-
-![Image of a notification that has a Skype icon, a title saying "incoming message" and body text that says "You have a new message".](../../media/skype_notificaiton.png)
-
+![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/RGbxWW/)
 
 It is strongly recommended that an `icon` be specified for each notification. This not only improves a notification from a UI point of view, but also helps alert users of where the notification is being sent from.
 
