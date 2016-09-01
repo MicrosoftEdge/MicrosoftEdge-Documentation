@@ -6,7 +6,7 @@ This table also details our current progress towards completing the Microsoft Ed
 
 | Class         | Description | Status — Build Number
 |---------------|--------------|---------------------|
-bookmarks     | Used to create, organize, and manipulate bookmarks. | Under consideration |
+bookmarks     | Used to create, organize, and manipulate bookmarks. | In development |
 browserAction | Enables extensions to add a persistent button within Microsoft Edge. | Supported — Microsoft Edge (38) / Windows 10 (14393)
 contextMenus  | Adds a context menu item on a specific URL, in a specified context of a webpage. | Supported — Microsoft Edge (38) / Windows 10 (14393)
 cookies       | Used to query and modify cookies, as well as notify when they change. | Supported — Microsoft Edge (38) / Windows 10 (14393) |
