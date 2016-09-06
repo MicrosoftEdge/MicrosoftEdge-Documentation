@@ -73,7 +73,7 @@ The [`transition-delay`](https://msdn.microsoft.com/library/hh772285(v=vs.85).as
 
 ## The transition property
 
-The [`transition`](https://msdn.microsoft.com/library/hh772284(v=vs.85).aspx) shorthand property combines the four transition properties described previously into a single property. The transition property values must be set in the following order:
+The [`transition`](https://msdn.microsoft.com/library/hh772284) shorthand property combines the four transition properties described previously into a single property. The transition property values must be set in the following order:
 
 -  `transition-property`
 -  `transition-duration`
@@ -85,6 +85,10 @@ The [`transition`](https://msdn.microsoft.com/library/hh772284(v=vs.85).aspx) sh
   transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 }
 ```
+
+See the following video and CodePen for examples of using the `transition` property.
+
+![channel9](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-Started-with-CSS-Transitions)
 
 ![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/pyWJEL?editors=1100)
 
