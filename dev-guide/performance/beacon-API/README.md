@@ -67,6 +67,8 @@ function sendXhr() {
 
 ```
 
+To see this code in action with a Node server, head over to [GitHub](https://github.com/MicrosoftEdge/Demos/tree/master/beacon) and download the project.
+
 ![spec](NavigatorBeacon)
 
 ## API reference
