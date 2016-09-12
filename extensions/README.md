@@ -4,4 +4,3 @@ Extensions are small programs that can be used to add new features to Microsoft 
 
 Microsoft Edge supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge with minimal changes.
 
-We’re currently building and validating our extension platform and documentation with the help of a small number of extension authors. Please stay tuned for future updates!
