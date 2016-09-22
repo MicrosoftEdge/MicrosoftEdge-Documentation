@@ -215,7 +215,7 @@ API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :-------------------
 [windows](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows) | | `Window` objects do not support `alwaysOnTop` property in Microsoft Edge. InPrivate is not supported.|
 [windows.CreateType](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/CreateType) | | `"panel"` and `"detached_panel"` are not supported in Microsoft Edge. |
-[windows.create](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/create) | | |
+[windows.create](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/create) | | `tabId` parameter for tearing off a tab is not supported. |
 [windows.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/get) | | |
 [windows.getAll](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getAll) | `windows.getAll({populate: true})` is missing `tabs` property. | | |
 [windows.getCurrent](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getCurrent) | | |
