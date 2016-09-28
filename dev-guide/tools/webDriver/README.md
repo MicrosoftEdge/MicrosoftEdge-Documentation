@@ -11,7 +11,8 @@ The Microsoft Edge implementation of WebDriver supports both the W3C [WebDriver]
 * Install Windows 10.
 * Download the appropriate [Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) server for your build of Windows.
 * Download the WebDriver language binding of your choice. Currently the [Selenium C#, Java and JavaScript language bindings](http://docs.seleniumhq.org/download/) are supported.
-* Where to find help - [Edge Feedback & Support](https://developer.microsoft.com/en-us/microsoft-edge/support/)
+
+>note You can find help, report issues, and file feature requests at [Microsoft Edge Feedback & Support](https://developer.microsoft.com/en-us/microsoft-edge/support/).
 
 ## Using WebDriver
 To get started using WebDriver with Microsoft Edge, check out these samples:
