@@ -64,7 +64,7 @@ To return to the top level window, use `cd()` with no argument.
 Console selectors provide simple shorthands for quickly selecting elements in your DOM structure. They are:
 
    - **$()** is a shorthand for [**`document.querySelector()`**](https://msdn.microsoft.com/library/cc288169.aspx).
-   - **$$()** is a shorthand for [**`document.querySelectorAll()`**](https://msdn.microsoft.com/library/cc304115.85).aspx).
+   - **$$()** is a shorthand for [**`document.querySelectorAll()`**](https://msdn.microsoft.com/library/cc304115.aspx).
    - **$_()** is a shorthand for the last selected element or object.
    - **$0, $1, $2, $3, $4** return the last items selected in the [**DOM Explorer tool**](../dom-explorer/).
 
