@@ -2,7 +2,7 @@
 
 In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation.  Check out the table below for descriptions on how these classes can empower your extensions.
 
-This table also details our current progress towards completing the Microsoft Edge extension API. Status updates will be made here as classes move through development towards completion.
+This table also details our current progress towards completing the Microsoft Edge extension API. Status updates will be made here as classes move through development towards completion. APIs that are not actively being considered will not appear in this table.
 
 | Class         | Description | Status — Build Number
 |---------------|--------------|---------------------|
