@@ -9,7 +9,6 @@ Web Storage is often compared to HTTP cookies. Like cookies, Web developers can 
 
 For example, a user might open two browser windows to buy airline tickets for two different flights. However, if the airline's Web application uses cookies to store its session state, information could "leak" from one transaction into the other, potentially causing the user to buy two tickets for the same flight without noticing. As applications become more capable of offline behaviors, such as storing values locally for later return to the server, the potential for this sort of information "leak" becomes more prevalent.
 
-Web Storage also offers significantly more disk space than cookies. In Internet Explorer, cookies can store only 4 kilobytes (KB) of data. This byte total can be one name/value pair of 4 KB, or it can be up to 20 name/value pairs that have a total size of 4 KB. By comparison, Web Storage in Microsoft Edge provides each subdomain with 5,242,880 bytes of space (i.e 5,242,880 UTF-8 characters), each domain with 10,485,760 bytes of space, and 52,428,800 bytes of space total for all domains.
 
 Functionally, client storage areas are quite different from cookies. Web Storage doesn't transmit values to the server with every request as cookies do, nor does the data in a local storage area ever expire. And unlike cookies, it is easy to access individual pieces of data using a standard interface that has growing support among browser vendors.
 
@@ -61,9 +60,9 @@ For example, a Web site can display a count of how many times the user has visit
  
 Each domain and subdomain has its own separate local storage area. Domains can access the storage areas of subdomains, and subdomains can access the storage areas of parent domains. For example, `localStorage['example.com']` is accessible to example.com and any of its subdomains. The subdomain `localStorage['www.example.com']` is accessible to example.com, but not to other subdomains, such as mail.example.com. The storage limits in Microsoft Edge are:
 
-* Subdomains: Up to 5,242,880 byes of space
-* Domains: Up to 10,485,760 bytes of space
-* Total for all domains: Up to 52,428,800 bytes of space 
+* Subdomains: up to 5 MBs of space
+* Domains: up to 10 MBs of space
+* Total for all domains: up to 50 MBs of space
 
 
 ### The `Storage` Object
