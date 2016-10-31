@@ -47,8 +47,9 @@ To start debugging extension pages like the options page or the popup of your ex
  ![unique id of extension](../../media/debug-popup-id.png)
 2. Obtain the name of the HTML file for the page you want to debug. This is the file that is specified in the JSON manifest or, for the case of popups, via `browserAction.setPopup`/`pageAction.setPopup`.
 
-3. Open your page in a browser tab by navigating a tab to the page. The URL of the page will be in the following format:
-`ms-browser-extension://<Extension Unique Id>/<my_page.html>` . In this example for a popup, the URL is `ms-browser-extension://MyExtension_qa7jysbkj0350/popup.html`. This URL format is the same for any extension page.
+3. Open your page in a browser tab by navigating a tab to the page. The URL of the page will be in the following format: <br/>
+`ms-browser-extension://<Extension Unique Id>/<my_page.html>`<br/>
+In this example for a popup, the URL is:<br/>`ms-browser-extension://MyExtension_qa7jysbkj0350/popup.html`. <br/>This URL format is the same for any extension page.
 
 4. Once the page is opened in a tab, you can launch F12 to debug the page similar to how you would debug a website by placing breakpoints and stepping through the code.  
  ![popup debugging with f12](../../media/debug-popup-f12.png)

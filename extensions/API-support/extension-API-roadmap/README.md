@@ -4,6 +4,8 @@ In addition to web APIs, the extension API allows extensions to achieve deeper i
 
 This table also details our current progress towards completing the Microsoft Edge extension API. Status updates will be made here as classes move through development towards completion. APIs that are not actively being considered will not appear in this table.
 
+>note Native messaging is currently in development
+
 | Class         | Description | Status — Build Number
 |---------------|--------------|---------------------|
 bookmarks     | Used to create, organize, and manipulate bookmarks. | In development |
