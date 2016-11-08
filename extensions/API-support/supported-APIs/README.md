@@ -2,6 +2,8 @@
 
 The following is a detailed list of API members that are supported. Development of the extension platform is ongoing, so check back frequently for updates!
 
+>note For Microsoft Edge, all extension APIs are under the `browser` namespace, e.g. `browser.browserAction.disable()`.
+
 ## Overarching issues
 
 The following known issues span across the extension platform and will be fixed in the near future:
