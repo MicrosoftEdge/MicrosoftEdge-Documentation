@@ -99,7 +99,7 @@ To associate a manifest with a webpage, assign the name of the manifest file to 
 
 In this example, the webpage declares "appcache.manifest" as the manifest file. The manifest declaration is interpreted like any other file reference. Because this example uses a relative file name, the manifest is presumed to be located in the same directory as the webpage itself.
 
-> NOTE: File references in the manifest are interpreted with respect to the location of the manifest file, not the webpage that declares it.
+>note File references in the manifest are interpreted with respect to the location of the manifest file, not the webpage that declares it.
 
 
 
@@ -113,7 +113,7 @@ The [`ApplicationCache`](http://go.microsoft.com/fwlink/p/?LinkId=228546) object
 
 The [`ApplicationCache`](http://go.microsoft.com/fwlink/p/?LinkId=228546) object supports two methods for controlling the cache. The [`update`](http://go.microsoft.com/fwlink/p/?LinkId=228551) method initiates an asynchronous check for updates, similar to the one performed when a webpage is first loaded. Any existing cache will be used until the webpage is reloaded or the [`swapCache`](http://go.microsoft.com/fwlink/p/?LinkId=228552) method Is called. To begin using an updated cache, either reload the webpage (manually or programmatically) or call the `swapCache` method. Because the cache is updated when a webpage is reloaded, it is not necessary to call `swapCache` before reloading or refreshing a webpage.
 
-> NOTE: The updated cache is not used by the webpage until it is reloaded, either manually by the user or programmatically using the [reload](http://go.microsoft.com/fwlink/p/?LinkId=228553) method of the [window.location](http://go.microsoft.com/fwlink/p/?LinkId=228554) object.
+>note The updated cache is not used by the webpage until it is reloaded, either manually by the user or programmatically using the [reload](http://go.microsoft.com/fwlink/p/?LinkId=228553) method of the [window.location](http://go.microsoft.com/fwlink/p/?LinkId=228554) object.
 
 
 

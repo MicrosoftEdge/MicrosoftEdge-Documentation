@@ -3,7 +3,7 @@
 
 This page demonstrates how to save files of arbitrary size locally by using the [Indexed Database API](https://msdn.microsoft.com/library/Hh772651)(often abbreviated `IndexedDB` or IDB). Review the [Indexed Database API](https://msdn.microsoft.com/library/Hh772651) before proceeding.
 
-> NOTE: The following code examples require a browser that supports [`File`](http://go.microsoft.com/fwlink/p/?LinkId=248922) API and `IndexedDB` API, such as Microsoft Edge. For security reasons, `IndexedDB` API only works through the http, https, ms-wwa, or ms-wwa-web protocols in Microsoft Edge. Local HTML pages ( `file://`) won't fully execute the `IndexedDB` API. The page must be behind a supported protocol such as `http://` or `https://`.
+>note The following code examples require a browser that supports [`File`](http://go.microsoft.com/fwlink/p/?LinkId=248922) API and `IndexedDB` API, such as Microsoft Edge. For security reasons, `IndexedDB` API only works through the http, https, ms-wwa, or ms-wwa-web protocols in Microsoft Edge. Local HTML pages ( `file://`) won't fully execute the `IndexedDB` API. The page must be behind a supported protocol such as `http://` or `https://`.
 
 ## Database UI skeleton
 
@@ -243,7 +243,7 @@ function handleFileSelection(evt) {
 } // handleFileSelection
 ```
 
-> NOTE: A database's object store can only be accessed within the context of a transaction, as shown in the prior code example (`handleFileSection`).
+>note A database's object store can only be accessed within the context of a transaction, as shown in the prior code example (`handleFileSection`).
 
 
 

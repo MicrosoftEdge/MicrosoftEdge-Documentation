@@ -3,7 +3,7 @@
 
 Microsoft Edge now implements Content Security Policy (CSP) 1.0. For extended details, see the [W3C Content Security Policy specification](http://www.w3.org/TR/2012/CR-CSP-20121115/).
 
-> NOTE: Content Security Policy 1.0 is supported in Microsoft Edge build 10240+. [Content Security Policy Level 2](http://go.microsoft.com/fwlink/p/?LinkID=524582), an evolution of the specification, is currently [under consideration](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/contentsecuritypolicylevel2?filter=f3f0000bf&search=content%20security) for implementation in the Microsoft Edge browser pending the spec stabilization, foundational work, and an evaluation of community input.
+>note Content Security Policy 1.0 is supported in Microsoft Edge build 10240+. [Content Security Policy Level 2](http://go.microsoft.com/fwlink/p/?LinkID=524582), an evolution of the specification, is currently [under consideration](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/contentsecuritypolicylevel2?filter=f3f0000bf&search=content%20security) for implementation in the Microsoft Edge browser pending the spec stabilization, foundational work, and an evaluation of community input.
 
 The CSP security standard enables web developers to control the resources (JS, CSS, plugins, images, etc) which a particular page can fetch or execute with the aim of preventing cross-site scripting (XSS), clickjacking, and other code injection attacks seeking to execute malicious content in the context of a trusted web page. With CSP, web developers can create an allow list of sources of trusted content in the HTTP headers, pre-approving certain servers for content loaded into a webpage and instructing the browser to only execute or render resources from those sources.
 
@@ -80,7 +80,7 @@ For compatibility, if you implement CSP at the server level, it will disable or 
 Resources blocked by CSP are reported through F12 tools and, optionally, as a report back to the server. For a list of CSP error codes, see the [Console error and status codes](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/console/console-error-and-status-codes/) page of the F12 devtools guide.
 [![CSP errors](http://i.imgur.com/KzyzDle.png)](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/console/console-error-and-status-codes/)
 
-> NOTE: For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
+>note For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
 
 ## Related articles
 

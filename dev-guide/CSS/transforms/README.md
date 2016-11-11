@@ -36,7 +36,7 @@ The units of <*length*> are the same as supplied to any of the translation funct
 
 ![video](../../media/CSStransform_perspective.mp4,../../media/CSStransform_perspective.webm)
 
-> NOTE: The perspective property doesn't affect how the element is rendered; it simply enables a 3D-space for child elements. This is the main difference between the `transform: perspective()` function and the `perspective` property. The first gives element depth while the later creates a 3D-space shared by all its transformed children.
+>note The perspective property doesn't affect how the element is rendered; it simply enables a 3D-space for child elements. This is the main difference between the `transform: perspective()` function and the `perspective` property. The first gives element depth while the later creates a 3D-space shared by all its transformed children.
 
 ### 3-D matrix
 

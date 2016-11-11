@@ -53,7 +53,7 @@ We next copy the content from `blobObject` and save it to a text file (which is 
 window.navigator.msSaveBlob(blobObject, 'msSaveBlob_testFile.txt');`
 ```
 
-> NOTE: In Microsoft Edge, the download is started automatically.
+>note In Microsoft Edge, the download is started automatically.
 
 ### `Blob` feature detection
 

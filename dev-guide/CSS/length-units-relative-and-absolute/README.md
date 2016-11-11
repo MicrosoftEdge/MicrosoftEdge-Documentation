@@ -14,7 +14,7 @@ vmax | The larger (maximum) value of viewport width or height
 ex | The height of a lowercase "x" in a font. 
 ch | Zero-width, width of the zero glyph in the rendering font (Unicode character U+0030)
 
-> NOTE: In a @page at-rule declaration block, the use of the viewport lengths are invalid and the declaration will be dropped.
+>note In a @page at-rule declaration block, the use of the viewport lengths are invalid and the declaration will be dropped.
 
 Absolute length units | Description
 :------------ | :-------------

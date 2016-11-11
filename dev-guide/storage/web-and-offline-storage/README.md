@@ -57,7 +57,7 @@ For example, a Web site can display a count of how many times the user has visit
 </script> 
 ```
 
-> NOTE:  Before incrementing `pageLoadCount` it must first be converted to a number with the [`parseInt` Method (JScript 5.6)](https://msdn.microsoft.com/library/x53yedee).
+>note  Before incrementing `pageLoadCount` it must first be converted to a number with the [`parseInt` Method (JScript 5.6)](https://msdn.microsoft.com/library/x53yedee).
  
 Each domain and subdomain has its own separate local storage area. Domains can access the storage areas of subdomains, and subdomains can access the storage areas of parent domains. For example, `localStorage['example.com']` is accessible to example.com and any of its subdomains. The subdomain `localStorage['www.example.com']` is accessible to example.com, but not to other subdomains, such as mail.example.com. The storage limits in Microsoft Edge are:
 

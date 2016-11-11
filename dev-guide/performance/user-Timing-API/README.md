@@ -2,7 +2,7 @@
 
 The [*User Timing API*](http://www.w3.org/TR/user-timing/) enables developers to accurately measure the length of [AJAX](https://msdn.microsoft.com/library/cc891506(v=vs.85).aspx) requests, report on performance, and create benchmarks for JavaScript code using high precision timestamps. With the *User Timing API*, you can insert API calls at different places in your Javascript and then extract a detailed trail of timing data to track where time is being spent.
 
-> NOTE: The [User Timing API Specification](http://www.w3.org/TR/user-timing/) is a stable W3C Recommendation and has unprefixed supported in Microsoft Edge build 10240+. 
+>note The [User Timing API Specification](http://www.w3.org/TR/user-timing/) is a stable W3C Recommendation and has unprefixed supported in Microsoft Edge build 10240+. 
 
 
 The *User Timing API* deals with two main event types: **Mark** and **Measure**. The first implements [`PerformanceMark`](https://msdn.microsoft.com/library/jj585582(v=vs.85).aspx), while the second implements [`PerformanceMeasure`](https://msdn.microsoft.com/library/jj585583(v=vs.85).aspx), and both extend [`PerformanceEntry`](https://msdn.microsoft.com/library/jj585577(v=vs.85).aspx).

@@ -52,7 +52,7 @@ Once you have your audio element, you can choose the best preloading strategy. T
 * `metadata`: The document author does not expect the user to need the resource. However, if the resource metadata (dimensions, first frame, track list, duration, and so on) is available, using a resource is preferred unless it impacts performance to do so.
 * `auto`: The document author gives the user access to media content, which includes the ability to download the entire resource.
 
-> NOTE: When you set the `src` property of the `audio` element, the `preload` property will be set to `auto`.
+>note When you set the `src` property of the `audio` element, the `preload` property will be set to `auto`.
 
 ## Looping audio
 

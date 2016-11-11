@@ -41,11 +41,11 @@ DNS prefetch identifies a specific URL so that, when the browser needs an asset 
 <link rel="dns-prefetch" href="http://example.com/"/>
 ```
 
-> NOTE: Microsoft Edge also supports the `next` and `prev` values for the `rel` attribute. For more info, see [Determining flip ahead targets](http://go.microsoft.com/fwlink/p/?LinkId=306028).
+>note Microsoft Edge also supports the `next` and `prev` values for the `rel` attribute. For more info, see [Determining flip ahead targets](http://go.microsoft.com/fwlink/p/?LinkId=306028).
 
 These link element values are supported only for top-level documents; they are ignored when applied to child (iframe) documents. Target URLs must refer to individual filenames (relative or fully-qualified). Wildcards are not supported.
 
-> WARNING: The preconnect value is not yet supported: <link rel="preconnect" href="" />. This may receive support in the future, see [Microsoft Edge Platform Status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/preconnectresourcehints?filter=f3f0000bf&search=preconnect).
+>note.warning The preconnect value is not yet supported: <link rel="preconnect" href="" />. This may receive support in the future, see [Microsoft Edge Platform Status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/preconnectresourcehints?filter=f3f0000bf&search=preconnect).
 
 ## Loading background resources effectively
 
