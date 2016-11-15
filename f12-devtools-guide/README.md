@@ -1,4 +1,4 @@
-# Meet the Microsoft Edge Developer Tools
+# Meet the Microsoft Edge F12 DevTools
 
 Microsoft Edge introduces great new improvements to F12 developer tools, including some of the most requested features from [UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).  The new tools are built in TypeScript, and are always running, so no reloads are required. In addition, F12 developer tools documentation is now fully available on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation). From this point on, the docs will not only be influenced by your feedback, but you're invited to contribute and help shape our documentation.
 
