@@ -36,7 +36,7 @@ console.log(mytext);
 ```javascript
 var mytext = 'pieces';
 var myval = 0;
-console.log("The number of " + mytext + "is " + myval);
+console.log("The number of " + mytext + " is " + myval);
 ```
 >`The number of pieces is 0`
 
@@ -68,7 +68,7 @@ To display an inspectable JavaScript object, send it to the console using [`cons
 
 To display an inspectable DOM node, send it to the console using [`console.dirxml()`](https://msdn.microsoft.com/library/dn265067.aspx)
 
-Open this codepen sample with the F12 tool, click the "show it" button to display both objects and nodes in the console.
+Open the F12 tools for this page, then click the "show it" button in the codepen sample below to display both objects and nodes in the console.
 
 ![codepen](https://codepen.io/MicrosoftEdgeDocumentation/pen/PNEKQX?editors=1010)(325)
 
