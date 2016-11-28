@@ -6,9 +6,6 @@ CSS [Animations](./animations) enable you to create visually appealing rich appl
 ## The calc() Function
 The ['calc()' function](./calc-function) can be used wherever length values are allowed: it's a way to do simple math right in your native CSS. The expression within the parentheses is computed at the same time as 'em' lengths are computed.
 
-## Device Adaptation
-As a web developer, you are faced with a dilemma: Code your site to work with as many devices, sizes, and resolutions as possible; or risk alienating users by potentially allowing your content to be either clipped (in fixed layouts) or jumbled confusingly (in fluid layouts). The [`@-ms-viewport` rule](./device-adaptation), in combination with CSS Media Queries, attempts to solve this dilemma by enabling developers to optimize the layout of sites and apps for different devices with minimal effort.
-
 ## Exclusions
 CSS [Exclusions](./exclusions) define how inline content flow around elements, extending the content wrapping ability of floats to any block-level element. 
 
