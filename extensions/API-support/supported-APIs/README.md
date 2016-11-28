@@ -27,7 +27,7 @@ The following `browserAction` APIs are supported:
 | [browserAction.setBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeText)            | | |
 | [browserAction.setPopup](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction/setPopup)  | | |
 | [browserAction.getBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeText)   | | |
-| [browserAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setIcon) | `browserAction.setIcon` is not persisted. | |
+| [browserAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setIcon) | `browserAction.setIcon` is not persisted. <br/><br/> ImageData is not supported. | |
 
 ## contextMenus
 
