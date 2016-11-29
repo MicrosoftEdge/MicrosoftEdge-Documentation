@@ -11,7 +11,7 @@ package|Specify the application id of the UWP app to be launched with WebDriver|
 verbose|Enable verbose log output from the server|--verbose|
 
 # [W3C WebDriver Specification Support](https://w3c.github.io/webdriver/webdriver-spec.html)
-The support on a per command basis for the W3C WebDriver Spectication.
+The support on a per command basis for the W3C WebDriver Specification.
 
 Locator Strategies | Status | Available Build
 :---------------| :----------- | :--------------
