@@ -22,7 +22,7 @@ An extension can either have a browser action or page action icon. The browser a
 
 The preferred sizes for browser action and page action icons are 20px, 25px, 30px, 40px. Other supported sizes include 19px, 35px, 38px.
 
-The following [JSON manifest](../api-support/supported-manifest-keys) snippet shows a standard and high definition browser action icon being specified using the [`"browser_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action) field. The same syntax applies for [`"page_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action):
+The following [JSON manifest](../../API-support/supported-manifest-keys) snippet shows a standard and high definition browser action icon being specified using the [`"browser_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action) field. The same syntax applies for [`"page_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action):
 ```json
 "browser_action": {
 	"default_icon": {
@@ -44,7 +44,7 @@ If the browser action has been set by the extension, it will appear either in th
 
 [`"page_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) has the same JSON manifest syntax as [`"browser_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action). Page action also has the same icon size requirements as browser action.
 
-If page action is specified in the [JSON manifest](../api-support/supported-manifest-keys), it will appear within the address bar whenever `pageAction.show()` is called.
+If page action is specified in the [JSON manifest](../../API-support/supported-manifest-keys), it will appear within the address bar whenever `pageAction.show()` is called.
 
 ![page action](../../media/pageaction.png)
 
@@ -77,4 +77,4 @@ Once your extension is ready to be packaged, you'll need to have three additiona
 - 50px - Packaging requirement (not visible anywhere)
 - 150px - Windows Store image
 
->note Microsoft Edge extensions are currently not being accepted into the Windows Store.
+>note Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
