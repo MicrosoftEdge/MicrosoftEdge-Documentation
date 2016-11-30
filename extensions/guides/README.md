@@ -10,6 +10,9 @@ Learn how to [add and remove extensions](./adding-and-removing-extensions), as w
 ## Debugging extensions
 With F12 Developer Tools, learn [how to debug an extension](./debugging-extensions)'s background script, content scripts, and extension pages.
 
+## Design
+Learn about the [design](./design) aspects of extensions including the various icon sizes you need and where these icons appear.
+
 ## Internationalization
 Make your extension accessible for different languages and test your language strings with the [internationalization](./internationalization) guide.
 
