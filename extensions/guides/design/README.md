@@ -15,7 +15,7 @@ While any webkit image format is supported, PNG is recommended for transparency 
 
 For your extension, you'll need one icon size for its browser action/page action, and one icon size for the extensions pane. More than one size for each can be provided to support high resolution displays.
 
-An extension can either have a browser action or page action icon. The browser action and page action icons can be changed at runtime using `browserAction.setIcon` or `pageAction.setIcon`.
+An extension can either have a browser action or page action icon. The browser action and page action icons can be changed at runtime using [`browserAction.setIcon`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction/setIcon) or [`pageAction.setIcon`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction/setIcon).
 
 
 **Browser action**
@@ -44,7 +44,7 @@ If the browser action has been set by the extension, it will appear either in th
 
 [`"page_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) has the same JSON manifest syntax as [`"browser_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action). Page action also has the same icon size requirements as browser action.
 
-If page action is specified in the [JSON manifest](../../API-support/supported-manifest-keys), it will appear within the address bar whenever `pageAction.show()` is called.
+If page action is specified in the [JSON manifest](../../API-support/supported-manifest-keys), it will appear within the address bar whenever [`pageAction.show`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction/show) is called.
 
 ![page action](../../media/pageaction.png)
 
