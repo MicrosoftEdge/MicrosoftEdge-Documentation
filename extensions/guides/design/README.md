@@ -36,9 +36,9 @@ The following [JSON manifest](../../API-support/supported-manifest-keys) snippet
 
 If the browser action has been set by the extension, it will appear either in the Actions menu after selecting "More(...)",  or to the right of the address bar if "Show button next to the address bar" has been toggled on by the user.
 
-![browser action](../../media/browseractionicon.png)
-
 ![browser action in action menu](../../media/actionmenu-browseraction.png)
+
+![browser action](../../media/browseractionicon.png)
 
 **Page action**
 
