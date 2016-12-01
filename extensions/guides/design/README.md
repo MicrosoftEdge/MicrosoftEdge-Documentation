@@ -6,7 +6,7 @@ The following page contains various design aspects and UI behavior to consider w
 
 It's recommended that you make the icons of your extension using a vector graphic. You'll need a few different sizes of your icon for your extension, and three additional sizes if you want to package your extension.
 
-Before you create your extension, we recommend that you review the [accessibility](../accessibility) guide to ensure that your icons have high enough contrast and are visible in both the light and dark themes of Microsoft Edge.
+Before you create your extension icons, we recommend that you review the [accessibility](../accessibility) guide to ensure that your icons have high enough contrast and are visible in both the light and dark themes of Microsoft Edge.
 
 While any webkit image format is supported, PNG is recommended for transparency support.
 
