@@ -75,6 +75,6 @@ Once your extension is ready to be packaged, you'll need to have three additiona
 
 - 44px - Used in the Windows UI (App List, Settings->System->Apps & features)
 - 50px - Packaging requirement (not visible anywhere)
-- 150px - Windows Store image
+- 150px - This icon will be used by the Windows Store. If the background is transparent, the theme of the device will become the background color. Use an opaque background if you want to select your own background color. 
 
 >note Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
