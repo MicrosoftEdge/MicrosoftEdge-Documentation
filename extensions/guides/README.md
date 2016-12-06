@@ -17,7 +17,7 @@ Learn about the [design](./design) aspects of extensions including the various i
 Make your extension accessible for different languages and test your language strings with the [internationalization](./internationalization) guide.
 
 ## Packaging
-Once you've completed your extension, learn about the final steps needed to package it for the Windows Store.
+Once you've completed your extension, learn about the final steps needed to [package it](./packaging).
 
 ## Porting Chrome extensions
 See how to easily [port your Chrome extension to Microsoft Edge](./porting-Chrome-extensions) using the Microsoft Edge Extension Toolkit.
