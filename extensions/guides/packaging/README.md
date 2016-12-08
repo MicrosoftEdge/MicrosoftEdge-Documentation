@@ -13,7 +13,7 @@ Use the process outline below to map out your packaging adventure!
 
 No matter which package creation route you choose, manual or ManifoldJS, the first step is registering for a Windows Developer account and reserving the name(s) of your extension.
 
-Once you've done this, you can either move on to [Creating and testing Microsoft Edge extension packages](./creating-and-testing-Microsoft-Edge-extension-packages) to learn how AppXs are created and manually package your extension, or go the easier route and jump to [Using ManifoldJS to package extensions](./using-ManifoldJS-package-extensions).
+Once you've done this, you can either move on to [Creating and testing Microsoft Edge extension packages](./creating-and-testing-Microsoft-Edge-extension-packages) to learn how AppXs are created and manually package your extension, or go the easier route and jump to [Using ManifoldJS to package extensions](./using-ManifoldJS-to-package-extensions).
 
 ## [Creating and testing Microsoft Edge extension packages](./creating-and-testing-Microsoft-Edge-extension-packages)
 
