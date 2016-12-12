@@ -2,6 +2,7 @@
 
 In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The two tables on this page detail what is suported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.
 
+>note This page was last updated December 12th, 2016.
 
 ## Windows 10 Insider Preview builds
 The following new APIs and features are available/in development for [Windows 10 Insider Preview](https://insider.windows.com/) builds:
