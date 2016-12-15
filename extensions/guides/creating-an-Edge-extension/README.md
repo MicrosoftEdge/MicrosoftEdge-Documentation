@@ -112,7 +112,7 @@ You should end up with a manifest.json file that looks similar to this:
 
 **JavaScript**
 
-- The Beastify example uses promises which aren't currently supported for Microsoft Edge extensions. You'll need to change these to callbacks for the extension to run correctly. You can do this by replacing `document.addEventListener` in the choose_beast.js file with the following code:
+The Beastify example uses promises which aren't currently supported for Microsoft Edge extensions. You'll need to change these to callbacks for the extension to run correctly. You can do this by replacing `document.addEventListener` in the choose_beast.js file with the following code:
  ```js
 document.addEventListener("click", function(e) {
       if (e.target.classList.contains("beast")) {
