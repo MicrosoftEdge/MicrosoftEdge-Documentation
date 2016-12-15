@@ -6,6 +6,8 @@ To ensure your extension's icon is visible while in both light and dark mode, fo
 ## Adding and removing extensions
 Learn how to [add and remove extensions](./adding-and-removing-extensions), as well as move an extension's button next to the address bar.
 
+## Creating an Edge extension
+Get started with [creating extensions](./creating-an-Edge-extension) by following a couple tutorials and learning the basics.
 
 ## Debugging extensions
 With F12 Developer Tools, learn [how to debug an extension](./debugging-extensions)'s background script, content scripts, and extension pages.
