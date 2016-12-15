@@ -27,6 +27,7 @@ While making your way though the tutorial, the following adjustments should be m
 the extension will work with Microsoft Edge:
 
 **manifest.json**
+
 For the manifest.json file, you'll need to add the `"author"` key. This is required in Microsoft Edge.
 
 Once you've added the `"author"` key and updated the icons sizes, you should have something similar to this:
