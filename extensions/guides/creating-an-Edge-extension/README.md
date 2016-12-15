@@ -19,7 +19,7 @@ For more info on icon sizes and best practices, see the [Design](../design) guid
 
 Learn how to make a very basic extension and ease into the world of extensions by following the [Borderify](https://developer.mozilla.org/Add-ons/WebExtensions/Your_first_WebExtension) tutorial.
 
-Borderify is a simple extension that draws a red border around pages that match a URL pattern that you specify. The border code is handled with a [content script](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Content_scripts), while the URL match pattern is specified in your [manifest.json](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json) file within the [`"content_scripts"`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/content_scripts) field.
+Borderify is a simple extension that draws a red border around pages that match a URL pattern that you specify. The border code is handled with a [content script](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Content_scripts), while the URL match pattern is specified in your [manifest.json](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json) file within the [`"content_scripts"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts) field.
 
 ### Code differences
 
@@ -33,7 +33,7 @@ Once you've made these changes to your manifest file, you should have something 
 ```json
 {
     "author": "My Name",
-    "description": "Adds a solid red border to all webpages matching developer.microsoft.com/microsoft-edge/. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#borderify",
+    "description": "Adds a solid red border to all webpages matching developer.microsoft.com/microsoft-edge/.",
     "name": "Borderify",
     "version": "1.0",
     "icons": {
@@ -65,7 +65,7 @@ the extension will work with Microsoft Edge:
    -  `"homepage_url"`
 While these keys aren't supported, if you don't remove them Microsoft Edge will ignore them.
 - Add the `"author"` key. This is required in Microsoft Edge.
-- Since `activeTab` is unsupported, as a workaround you can remove the `"permissions"` key and replace it with the `"content_scripts"` key:
+- Since [`activeTab`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions#activeTab_permission) is unsupported, as a workaround you can remove the [`"permissions"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions) key and replace it with the [`"content_scripts"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts) key:
 
  ```json
 "content_scripts": [{
