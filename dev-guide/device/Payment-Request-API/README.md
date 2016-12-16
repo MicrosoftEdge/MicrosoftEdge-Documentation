@@ -183,5 +183,5 @@ var options = {
 # API Reference
 [Payment Request API](https://msdn.microsoft.com/en-us/library/mt790447)
 
-#Specification
+# Specification
 [Payment Request API](http://www.w3.org/TR/payment-request/)
