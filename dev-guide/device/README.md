@@ -12,6 +12,10 @@ The [Geolocation API](./Geolocation) is a built-in location provider that uses W
 ## High-DPI support
 Microsoft Edge brings enhanced scaling for [high DPI](./high-DPI-support) screens and small slates, ensuring the consistency of your website’s text, touch targets, and layout across devices.
 
+## Payment Request API
+The [Payment Request API](./Payment-Request-API) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud.
+
+
 ## Screen Orientation API
 The [Screen Orientation API](./screen-Orientation-API) enables you to prevent or override the browser from automatically reflowing your web app's content during changes to the orientation of your user's device. You can also lock the display so that your user's device orientation and motion sensor data is accurate.
 
