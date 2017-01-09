@@ -59,6 +59,7 @@ geolocation | Allow the extension to use the HTML5 `geolocation` API without pro
 idle | Gives access to the `idle` API. This enables detection of when the machine's idle state changes.
 storage | Gives access to the `storage` API. This enables storing, retrieving, and tracking changes to user data.
 tabs | Gives access to the `tabs` API to interact with the browser's tab system. This enables creating, modifying, and rearranging tabs in the browser, including the URLs associated with each tab.
+unlimitedStorage | Allows [storage.local](https://developer.mozilla.org/Add-ons/WebExtensions/API/storage/local) to have unlimited storage (depending on system resources) instead of 5MB. The max storage per key value pair is also increased from 5MB to unlimited (depending on system resources).
 webNavigation | Gives access to the `webNavigation` API. This enables receiving notifications about the status of navigation requests.
 webRequest | Gives access to the `webRequest` API. This enables observing and analyzing traffic, as well as intercepting, blocking or modifying request in-flight.
 webRequestBlocking | Required if an extension uses the `webRequest` API in a blocking fashion.
