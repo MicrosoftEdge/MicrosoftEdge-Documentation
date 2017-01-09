@@ -138,7 +138,7 @@ API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :------------------------
 [storage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage) |  | |
 [storage.local.get](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/get)  | | |
-[storage.local.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | `storage` has a 1MB limit per value. |
+[storage.local.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | |
 [storage.local.remove](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/remove)  | | |
 [storage.local.clear](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/clear) | | |
 [storage.local.getBytesInUse](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/getBytesInUse) | | `storage.local` data is persisted in a different format than Chrome, causing a different value to be returned when calling `storage.local.getBytesInUse`.  <br/><br/>Ex: `storage.local.set({ "k": { "s": "âas" } }` returns 13 in Chrome and 50 in Microsoft Edge.|
