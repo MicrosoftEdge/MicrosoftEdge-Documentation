@@ -31,3 +31,5 @@ Rich search integration is built into the Microsoft Edge address bar, including 
 	```
 
 When a user browses to your search service, your OpenSearch description will be automatically picked up and saved for later use. The user will then be able to go to Microsoft Edge settings and choose to add your search service to his or her list of search providers for the Microsoft Edge address bar.
+
+See the [OpenSearch 1.1](http://go.microsoft.com/fwlink/p/?LinkID=208582) specification for further details on creating your OpenSearch description document.
