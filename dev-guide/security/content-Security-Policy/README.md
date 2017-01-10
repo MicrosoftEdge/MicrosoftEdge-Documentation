@@ -1,7 +1,7 @@
 # Content Security Policy
 
 
-The latest preview release (EdgeHTML 15.15002) of Microsoft Edge supports [Content Security Policy Level 2](http://www.w3.org/TR/CSP2/), which extends and replaces the original Content Security Policy (Level 1) support in the current stable public release.
+The latest preview release ([EdgeHTML 15.15002](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/15002/)) of Microsoft Edge supports [Content Security Policy Level 2](http://www.w3.org/TR/CSP2/), which extends and replaces the original Content Security Policy (Level 1) support in the current stable public release.
 
 The CSP security standard enables web developers to control the resources (script, CSS, plugins, images, etc.) which a particular page can fetch or execute with the aim of preventing cross-site scripting (XSS), clickjacking, and other code injection attacks seeking to execute malicious content in the context of a trusted web page. With CSP, web developers can create an allow list of sources of trusted content in the HTTP headers, pre-approving certain servers for content loaded into a webpage and instructing the browser to only execute or render resources from those sources.
 
