@@ -3,7 +3,7 @@
 
 Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites. Microsoft Edge follows the [OpenSearch 1.1](http://go.microsoft.com/fwlink/p/?LinkID=208582) specification to discover and use web search providers. If you are a search provider, here's how to ensure that Microsoft Edge supports your service.
 
-*For user security and privacy, Microsoft Edge requires all searches be conducted over SSL.* The following resources must be specified as `https` URLs to enable Microsoft Edge integration of your search engine:
+**For user security and privacy, Microsoft Edge requires all searches be conducted over SSL.** The following resources must be specified as `https` URLs to enable Microsoft Edge integration of your search engine:
 * The site that contains the reference to the description document
 * The URL to the description document itself
 * The search query template 
