@@ -2,20 +2,29 @@
 
 In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The two tables on this page detail what is suported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.
 
->note This page was last updated December 12th, 2016.
+>note This page was last updated January 18th, 2017.
 
 ## Windows 10 Insider Preview builds
 The following new APIs and features are available/in development for [Windows 10 Insider Preview](https://insider.windows.com/) builds:
 
 | API/Feature        | Status — Build Number
 |---------------|--------------|
+bookmarks.create | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.remove | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.getTree | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.move | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.remove | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.removeTree | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.update | Supported — Microsoft Edge (38) / Windows 10 (15002)
 browserAction.setTitle | Supported — Microsoft Edge (38) / Windows 10 (14926)
+Custom CSP | Supported — Microsoft Edge (38) / Windows 10 (15002)
 Popup debugging | Supported — Microsoft Edge (38) / Windows 10 (14971)
 port.disconnect |In Development
 port.onDisconnect |In Development
-port.postMessage |In Development
-runtime.connectNative |In Development
-runtime.onConnect |In Development
+port.postMessage | Supported — Microsoft Edge (38) / Windows 10 (15002)
+runtime.connectNative | Supported — Microsoft Edge (38) / Windows 10 (15002)
+runtime.onConnect | In Development
+runtime.sendMessage | Supported — Microsoft Edge (38) / Windows 10 (15002)
 runtime.sendNativeMessage | In Development
 runtime.setUninstallUrl | Supported — Microsoft Edge (38) / Windows 10 (14971)
 Shared cookies (Fix for [8438075](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/8438075/)) |In Development
