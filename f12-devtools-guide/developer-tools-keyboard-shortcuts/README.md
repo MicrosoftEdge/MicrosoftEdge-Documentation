@@ -8,7 +8,6 @@ You can use keyboard shortcuts to navigate the F12 developer tools directly from
 ## General Shortcuts
 These shortcuts either control the F12 tools window or work across all tools.
 
-
 Action | Shortcut 
 :------------ | :------------- 
 Show/hide Console at the bottom of any other tool  | CTRL+**`**
@@ -33,6 +32,7 @@ Next match in Search box | F3
 Previous match in Search box | SHIFT+F3
 Find in search box | CTRL+F
 Give focus to console at the bottom | ALT+SHIFT+I 
+Dock/undock tools (toggle docking) | CTRL+P
 
 Refresh the page <br>**Note:** if you're debugging and paused at a breakpoint,<br> this resumes execution first. | CTRL+SHIFT+F5 <br>or CTRL+R
 
