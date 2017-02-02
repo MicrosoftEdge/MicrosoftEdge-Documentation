@@ -24,6 +24,20 @@ There are a few instances where native messaging can't be used due to security o
 * Transferring data to remote endpoint via native message host.
 * Allowing other apps to download content that changes extension behavior.
 
+## Demos
+
+To get a feel for what an Edge native messaging extension that has both a companion UWP app and a Desktop Bridge looks like, checkout the [SecureInput](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/SecureInput) example on GitHub. 
+
+### How it works
+
+The Edge extension component of the sample uses its content script to detect when a user is typing in information that should be encrypted. The extension communicates this to the Desktop Bridge component via native messaging. When the user is ready to submit the data, the extension will return an encrypted value back to the website.
+
+
+>note This sample will only work on a webpage that uses custom events to communicate with the extension's content script. The sample folder includes a [.html file](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/SecureInput/SecureInput.html) to test the extension with.
+
+In this example, the UWP app is used to pass responses from the Desktop Bridge to Edge, which then gets sent to the Edge extension via callback. While this example has the native messaging host run in the main app, it's also able to run as a background task. Switching between the two requires editing the extension's background script, changing the string within `port = browser.runtime.connectNative("NativeMessagingHostInProcessService");` to `"NativeMessagingHostOutOfProcess"`.
+
+
 ## Chrome vs Edge implementation
 
 While Chrome goes the route of using message passing APIs for their extensions to communicate with apps, Edge utilizes the [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API which now enables Edge extensions and UWP apps to communicate.
