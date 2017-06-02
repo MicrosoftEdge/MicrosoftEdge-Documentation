@@ -3,15 +3,6 @@
 (function () {
 	'use strict';
 
-	document.querySelector('.getflash').addEventListener('click', function () {
-		var otherWindow = window.open();
-
-		otherWindow.opener = null;
-		otherWindow.location = 'https://get.adobe.com/flashplayer';
-
-		return false;
-	});
-
 	document.addEventListener('DOMContentLoaded', function() {
 		var hasFlash = false;
 
