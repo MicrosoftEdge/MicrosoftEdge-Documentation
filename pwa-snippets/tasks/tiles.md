@@ -1,12 +1,12 @@
 # Start screen tiles
 
-Upon installation, every Windows 10 app gets a *primary tile* (created from the [visual elements](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-visualelements) specified in its `.appxmanifest` file). When you [package your PWA for Windows 10](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/get-started#enhance-your-web-app-into-a-pwa), *PWA Builder* will use the visuals described in your *Web App Manifest* file to generate a *.appxmanfest* and an installable app package.  
+Upon installation, every Windows 10 app gets a *primary tile* (created from the [visual elements](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-visualelements) specified in its `.appxmanifest` file). When you [package your PWA for Windows 10](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#set-up-and-run-your-universal-windows-app), Visual Studio will use the visuals described in your *Web App Manifest* file to generate a *.appxmanfest* and an installable app package.  
 
-Primary tiles are unpinned by default: the user gets to decide if they wish to pin it to their *Start* menu. It's also possible to pin tiles to the Start menu programmatically, by creating a *secondary tile* and prompting the user to authorize a request to pin it.
+Primary tiles are unpinned by default: the user gets to decide whether to pin it to the *Start* menu. It's also possible to pin tiles to the Start menu programmatically, by creating a *secondary tile* and prompting the user with a request to pin it.
 
 ![Dialog window for pinning app tile to Start menu](../media/pin-tile-prompt.png)
 
-Upon acceptance, your tile will be pinned to the Start menu.
+If the user accepts, your tile will be pinned to the Start menu.
 
 ## Pinning a secondary tile
 
