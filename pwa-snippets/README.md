@@ -44,7 +44,7 @@ Caching and data storage
 
 [Cortana voice commands](./tasks/cortana-voice-commands.md)
 
-Hosting HTMLWebView
+[Hosting a WebView control](./tasks/webview.md)
 
 Using a custom WinRT component
 
