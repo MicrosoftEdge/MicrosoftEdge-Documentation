@@ -32,7 +32,7 @@ As with Windows Runtime APIs, the EdgeHTML WebView element is only available in 
 ```JavaScript
 // Feature detect for webview support
 if (MSHTMLWebViewElement) {
-    var wv = document.createElement('x-ms-webview');
+    var wv = document.createElement('x-ms-webview'); // Use CSS to set width, height and other styles
     wv.navigate("https://www.bing.com");
     document.body.appendChild(wv);
 }
