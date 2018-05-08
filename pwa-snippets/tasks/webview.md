@@ -40,7 +40,6 @@ if (MSHTMLWebViewElement) {
 You can also instantiate a WebView in in its own separate process:
 
 ```JavaScript
-// Create an out-of-process webview
 var wvprocess = new MSWebViewProcess();
 
 // WebViews created with the same MSWebViewProcess object share the same process
