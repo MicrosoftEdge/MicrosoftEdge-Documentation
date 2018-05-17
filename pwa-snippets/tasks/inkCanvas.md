@@ -26,7 +26,7 @@ var inkContext;
 var inkPresenter;
 ...
 // Set initial ink stroke attributes.
-inkCanvas = id("InkCanvas");
+inkCanvas = document.getElementById("InkCanvas"); // get canvas control
 inkCanvas.setAttribute("width", inkCanvas.offsetWidth);
 inkCanvas.setAttribute("height", inkCanvas.offsetHeight);
 
