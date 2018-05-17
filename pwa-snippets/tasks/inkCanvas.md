@@ -1,4 +1,4 @@
-# Native Inking comes to Progressive Web Apps on Windows 10 (1803)
+# InkCanvas
 
 An exciting new feature in the Edge rendering engine (EdgeHTML 17) available in the Spring 2018 (1803) update of Windows 10 are the native inking extensions added to the ``<canvas>`` control. These extensions include support for the methods and properties of the InkCanvas class documented here: https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.inkcanvas.
 
@@ -21,24 +21,26 @@ function runningWindows10withInkCanvasSupport() {
 Next we'll initialize the Inking properties of the canvas control:
 
 ```javascript
-try {
-    var Inking = Windows.UI.Input.Inking;
-    var drawingAttributes = new Inking.InkDrawingAttributes();
-}
-catch (e) { }
-
+var inkCanvas;
+...
 // Set initial ink stroke attributes.
-Inking.InkInputProcessingMode = InkInputProcessingMode.Inking;
-drawingAttributes.color = Windows.UI.Colors.black;
-drawingAttributes.ignorePressure = false;
-drawingAttributes.fitToCurve = true;
-canvasContext.msInkPresenter.updateDefaultDrawingAttributes(drawingAttributes);
-canvasContext.msInkPresenter.inputDeviceTypes =
-    Windows.UI.Core.CoreInputDeviceTypes.mouse |
-    Windows.UI.Core.CoreInputDeviceTypes.pen |
-    Windows.UI.Core.CoreInputDeviceTypes.touch;
+inkCanvas = id("InkCanvas");
+inkCanvas.setAttribute("width", inkCanvas.offsetWidth);
+inkCanvas.setAttribute("height", inkCanvas.offsetHeight);
+
+// Get the ms-ink context
+inkContext = inkCanvas.getContext("ms-ink");
+inkPresenter = inkContext.msInkPresenter;
+
+inkPresenter.inputDeviceTypes =
+Windows.UI.Core.CoreInputDeviceTypes.mouse |
+Windows.UI.Core.CoreInputDeviceTypes.pen |
+Windows.UI.Core.CoreInputDeviceTypes.touch;
+
+// Set the default drawing attributes.
+inkColor = Windows.UI.Colors.black;
 ```
-Sample code for demoing this can be found here: https://github.com/Microsoft/Windows-AppConsult-samples-PWA/tree/master/Canvas
+Sample code can be found here: https://github.com/Microsoft/Windows-AppConsult-samples-PWA/tree/master/Canvas
 
 
 Resources:
