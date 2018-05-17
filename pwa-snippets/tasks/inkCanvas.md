@@ -22,6 +22,8 @@ Next we'll initialize the Inking properties of the canvas control:
 
 ```javascript
 var inkCanvas;
+var inkContext;
+var inkPresenter;
 ...
 // Set initial ink stroke attributes.
 inkCanvas = id("InkCanvas");
