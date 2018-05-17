@@ -40,7 +40,7 @@ Windows.UI.Core.CoreInputDeviceTypes.touch;
 // Set the default drawing attributes.
 inkColor = Windows.UI.Colors.black;
 ```
-Sample code can be found here: https://github.com/Microsoft/Windows-AppConsult-samples-PWA/tree/master/Canvas
+Code can be found here: https://github.com/Microsoft/Windows-AppConsult-samples-PWA/blob/master/Canvas/CanvasSimple/js/main.js
 
 
 Resources:
