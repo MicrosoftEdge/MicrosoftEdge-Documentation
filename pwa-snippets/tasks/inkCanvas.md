@@ -6,19 +6,7 @@ With this control you can now support simple and complex inking scenarios in you
 
 The canvas control is a good example of the 'progressive' nature of EdgeHTML. That is, the Inking extensions 'light up' when your page is run in a Windows PWA container.
 
-With the following code we can detect if we're running as a Windows PWA and if the `InkingPresenter` is supported since this is supported in EdgeHTML 17.17134 introduced in the Windows 1803 release. If the test is successful we'll display UI that will let us change the inking properties of the canvas control.
-
-```javascript
-function runningWindows10withInkCanvasSupport() {
-    if (typeof Windows !== 'undefined' &&
-        typeof Windows.UI !== 'undefined' &&
-        typeof Windows.UI.Input.Inking.InkPresenter !== 'undefined')
-        return true;
-    else
-        return false;
-}
-```
-Next we'll initialize the Inking properties of the canvas control:
+With the following code, initialize the Inking properties of the canvas control:
 
 ```javascript
 var inkCanvas;
